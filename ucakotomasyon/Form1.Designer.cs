@@ -44,6 +44,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.destekboxcerceve)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -63,6 +64,7 @@
             // 
             this.panel1.BackgroundImage = global::ucakotomasyon.Properties.Resources.arkapan_giriş;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.guna2VScrollBar1);
             this.panel1.Controls.Add(this.destekbox);
             this.panel1.Controls.Add(this.destekgonderb);
             this.panel1.Controls.Add(this.destekboxcerceve);
@@ -175,7 +177,6 @@
             this.guna2GradientButton2.Size = new System.Drawing.Size(131, 33);
             this.guna2GradientButton2.TabIndex = 4;
             this.guna2GradientButton2.Text = "Kayıt Ol";
-          
             // 
             // guna2GradientButton1
             // 
@@ -232,9 +233,8 @@
             this.txtgirissifre.SelectionStart = 5;
             this.txtgirissifre.ShadowDecoration.Parent = this.txtgirissifre;
             this.txtgirissifre.Size = new System.Drawing.Size(243, 41);
-            this.txtgirissifre.TabIndex = 2;         
+            this.txtgirissifre.TabIndex = 2;
             this.txtgirissifre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgirissifre_KeyPress);
-            
             // 
             // txtgiris
             // 
@@ -331,6 +331,20 @@
             this.guna2ControlBox1.TabIndex = 0;
             this.guna2ControlBox1.UseTransparentBackground = true;
             // 
+            // guna2VScrollBar1
+            // 
+            this.guna2VScrollBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.guna2VScrollBar1.HoverState.Parent = null;
+            this.guna2VScrollBar1.LargeChange = 10;
+            this.guna2VScrollBar1.Location = new System.Drawing.Point(803, 86);
+            this.guna2VScrollBar1.MouseWheelBarPartitions = 10;
+            this.guna2VScrollBar1.Name = "guna2VScrollBar1";
+            this.guna2VScrollBar1.PressedState.Parent = this.guna2VScrollBar1;
+            this.guna2VScrollBar1.ScrollbarSize = 18;
+            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 300);
+            this.guna2VScrollBar1.TabIndex = 13;
+            this.guna2VScrollBar1.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,6 +379,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton destekgonderb;
         private Guna.UI.WinForms.GunaTransfarantPictureBox destekboxcerceve;
         private System.Windows.Forms.RichTextBox destekbox;
+        private Guna.UI2.WinForms.Guna2VScrollBar guna2VScrollBar1;
     }
 }
 
