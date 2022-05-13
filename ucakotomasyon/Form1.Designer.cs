@@ -336,7 +336,7 @@
             this.guna2VScrollBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.guna2VScrollBar1.HoverState.Parent = null;
             this.guna2VScrollBar1.LargeChange = 10;
-            this.guna2VScrollBar1.Location = new System.Drawing.Point(803, 86);
+            this.guna2VScrollBar1.Location = new System.Drawing.Point(761, 73);
             this.guna2VScrollBar1.MouseWheelBarPartitions = 10;
             this.guna2VScrollBar1.Name = "guna2VScrollBar1";
             this.guna2VScrollBar1.PressedState.Parent = this.guna2VScrollBar1;
