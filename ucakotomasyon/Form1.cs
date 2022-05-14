@@ -130,7 +130,7 @@ namespace ucakotomasyon
 
         private void destekgonderb_Click(object sender, EventArgs e)
         {
-            guna2Button1.Text = "Çalıştır";
+            guna2Button1.Text = "Çalıştırdeneme";
         }
     }
 }
