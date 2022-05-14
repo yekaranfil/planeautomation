@@ -53,7 +53,7 @@ namespace ucakotomasyon
 
             if(txtgiris.Text.Equals(""))
             {
-                txtgiris.Text = "Kullanıcı adı";
+                txtgiris.Text = "T.C. Kimlik Numarası";
             }
 
         }
@@ -81,7 +81,7 @@ namespace ucakotomasyon
 
         private void txtgiris_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(txtgiris.Text.Equals("Kullanıcı adı"))
+            if(txtgiris.Text.Equals("T.C. Kimlik Numarası"))
             {
                 txtgiris.Clear();
             }
@@ -128,17 +128,24 @@ namespace ucakotomasyon
             destekbox.Clear();
         }
 
-        private void destekgonderb_Click(object sender, EventArgs e)
+       
+
+    
+
+        private void txtgiris_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void kayitolbuton_Click(object sender, EventArgs e)
         {
-
+            girisbuton.Visible = false;
+            mailtext.Visible = true;
+            kayitolbuton.Visible = false;
+            kayitbuton2.Visible = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void kayitbuton2_Click(object sender, EventArgs e)
         {
 
         }
