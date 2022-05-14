@@ -32,7 +32,6 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.destekbox = new System.Windows.Forms.RichTextBox();
             this.destekgonderb = new Guna.UI2.WinForms.Guna2GradientButton();
             this.destekboxcerceve = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -64,7 +63,6 @@
             // 
             this.panel1.BackgroundImage = global::ucakotomasyon.Properties.Resources.arkapan_giriş;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.destekbox);
             this.panel1.Controls.Add(this.destekgonderb);
             this.panel1.Controls.Add(this.destekboxcerceve);
@@ -82,20 +80,6 @@
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseEnter += new System.EventHandler(this.guna2GradientPanel1_MouseEnter);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(433, 308);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 13;
-            this.guna2Button1.Text = "guna2Button1";
             // 
             // destekbox
             // 
@@ -380,7 +364,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton destekgonderb;
         private Guna.UI.WinForms.GunaTransfarantPictureBox destekboxcerceve;
         private System.Windows.Forms.RichTextBox destekbox;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
 

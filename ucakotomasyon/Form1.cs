@@ -132,5 +132,10 @@ namespace ucakotomasyon
         {
             guna2Button1.Text = "Çalıştırdeneme";
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
