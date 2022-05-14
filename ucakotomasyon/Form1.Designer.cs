@@ -32,6 +32,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.destekbox = new System.Windows.Forms.RichTextBox();
             this.destekgonderb = new Guna.UI2.WinForms.Guna2GradientButton();
             this.destekboxcerceve = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -44,7 +45,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.destekboxcerceve)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -83,6 +83,20 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseEnter += new System.EventHandler(this.guna2GradientPanel1_MouseEnter);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(433, 308);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.Text = "guna2Button1";
+            // 
             // destekbox
             // 
             this.destekbox.BackColor = System.Drawing.Color.White;
@@ -113,6 +127,7 @@
             this.destekgonderb.Text = "Gönder";
             this.destekgonderb.UseTransparentBackground = true;
             this.destekgonderb.Visible = false;
+            this.destekgonderb.Click += new System.EventHandler(this.destekgonderb_Click);
             this.destekgonderb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.destekgonderb_MouseDown);
             // 
             // destekboxcerceve
@@ -330,20 +345,6 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(50, 31);
             this.guna2ControlBox1.TabIndex = 0;
             this.guna2ControlBox1.UseTransparentBackground = true;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(433, 308);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 13;
-            this.guna2Button1.Text = "guna2Button1";
             // 
             // Form1
             // 

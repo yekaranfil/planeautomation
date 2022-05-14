@@ -128,6 +128,9 @@ namespace ucakotomasyon
             destekbox.Clear();
         }
 
-     
+        private void destekgonderb_Click(object sender, EventArgs e)
+        {
+            guna2Button1.Text = "Çalıştı";
+        }
     }
 }
