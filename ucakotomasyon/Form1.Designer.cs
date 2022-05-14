@@ -44,7 +44,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.destekboxcerceve)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -64,7 +64,7 @@
             // 
             this.panel1.BackgroundImage = global::ucakotomasyon.Properties.Resources.arkapan_giriş;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.guna2VScrollBar1);
+            this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.destekbox);
             this.panel1.Controls.Add(this.destekgonderb);
             this.panel1.Controls.Add(this.destekboxcerceve);
@@ -331,19 +331,19 @@
             this.guna2ControlBox1.TabIndex = 0;
             this.guna2ControlBox1.UseTransparentBackground = true;
             // 
-            // guna2VScrollBar1
+            // guna2Button1
             // 
-            this.guna2VScrollBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2VScrollBar1.HoverState.Parent = null;
-            this.guna2VScrollBar1.LargeChange = 10;
-            this.guna2VScrollBar1.Location = new System.Drawing.Point(761, 73);
-            this.guna2VScrollBar1.MouseWheelBarPartitions = 10;
-            this.guna2VScrollBar1.Name = "guna2VScrollBar1";
-            this.guna2VScrollBar1.PressedState.Parent = this.guna2VScrollBar1;
-            this.guna2VScrollBar1.ScrollbarSize = 18;
-            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 300);
-            this.guna2VScrollBar1.TabIndex = 13;
-            this.guna2VScrollBar1.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(433, 308);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.Text = "guna2Button1";
             // 
             // Form1
             // 
@@ -379,7 +379,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton destekgonderb;
         private Guna.UI.WinForms.GunaTransfarantPictureBox destekboxcerceve;
         private System.Windows.Forms.RichTextBox destekbox;
-        private Guna.UI2.WinForms.Guna2VScrollBar guna2VScrollBar1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
 
