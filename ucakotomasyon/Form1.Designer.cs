@@ -44,6 +44,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.destekboxcerceve)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -63,6 +64,7 @@
             // 
             this.panel1.BackgroundImage = global::ucakotomasyon.Properties.Resources.arkapan_giriş;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.destekbox);
             this.panel1.Controls.Add(this.destekgonderb);
             this.panel1.Controls.Add(this.destekboxcerceve);
@@ -330,6 +332,16 @@
             this.guna2ControlBox1.TabIndex = 0;
             this.guna2ControlBox1.UseTransparentBackground = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(400, 438);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(187, 55);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "sait";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,6 +376,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton destekgonderb;
         private Guna.UI.WinForms.GunaTransfarantPictureBox destekboxcerceve;
         private System.Windows.Forms.RichTextBox destekbox;
+        private System.Windows.Forms.Button button1;
     }
 }
 
