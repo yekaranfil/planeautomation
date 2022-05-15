@@ -8,23 +8,55 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using MySql.Data.MySqlClient;
+using MySql.Data;
+
 namespace ucakotomasyon
 {
+
+
     public partial class Form1 : Form
     {
+        MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
+
+
         int sayac = 0;
+        public static String _tcno, _mail, _sifre, _ad, _soyad, _telefon, _dogumtarihi,_cinsiyet,_sikayetmetin,_sikayetmail;
         
         
+        public bool TcKontrol()
+        {
+            _tcno = txtgiris.Text;
+            _tcno = _tcno.Trim();
+            if (_tcno.Length != 11)
+            {
+                txtgiris.Focus();
+                return false;
+            }
+            int[] sayilar = new int[11];
+            for (int i = 0; i < _tcno.Length; i++)
+            {
+                sayilar[i] = Int32.Parse(_tcno[i].ToString());
+            }
+            int toplam = 0;
+            for (int i = 0; i < _tcno.Length - 1; i++)
+            {
+                toplam += sayilar[i];
+            }
+            if (toplam.ToString()[1].ToString() == sayilar[10].ToString() & sayilar[10] % 2 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                txtgiris.Focus();
+                return false;
+            }
+        }
 
         public Form1()
         {
             InitializeComponent();
-
-
-            
-
-
-
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -55,6 +87,13 @@ namespace ucakotomasyon
             {
                 txtgiris.Text = "T.C. Kimlik Numarası";
             }
+
+            if (mailtext.Text.Equals(""))
+            {
+                mailtext.Text = "Mail Adresi";
+            }
+
+           
 
         }
         private void txtgirissifre_KeyPress(object sender, KeyPressEventArgs e)
@@ -91,24 +130,90 @@ namespace ucakotomasyon
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-               
+
+        private void mailtext_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mailtext.Text.Equals("Mail Adresi"))
+            {
+                mailtext.Clear();
+            }
+
+        }
+
+       
+
+        private void girisbuton_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void girisbuton_Click(object sender, EventArgs e)
+        {
+            _tcno = txtgiris.Text;
+            _sifre = txtgirissifre.Text;
+
+            baglanti.Close();
+            baglanti.Open();
+            MySqlCommand kontroltc = new MySqlCommand("SELECT yolcu_tc,yolcu_sifre FROM yolcular WHERE (yolcu_tc = @tc AND yolcu_sifre = @sifre)", baglanti);
+            kontroltc.Parameters.AddWithValue("@tc", _tcno);
+            kontroltc.Parameters.AddWithValue("@sifre", _sifre);
+            MySqlDataReader dr = kontroltc.ExecuteReader();
+
+            if (dr.Read())
+            {
+                HataBox.mesaj = "Giriş başarılı";
+                HataBox.text = "Giriş Yapıldı";
+                HataBox f = new HataBox();
+                f.hataresim.Visible = false;
+                f.onayresim.Visible = true;
+                f.Show();
+            } else
+            {
+                HataBox.mesaj = "Hatalı Giriş";
+                HataBox.text = "Kullanıcı Adı Veya Şifre Hatalı!";
+                HataBox f = new HataBox();
+                f.Show();
+            }
+
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void destekbutonn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maildestekbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (maildestekbox.Text.Equals("Mail Adresi"))
+            {
+                maildestekbox.Clear();
+            }
+        }
 
         private void destekbutonn_MouseDown(object sender, MouseEventArgs e)
         {
 
             
 
-            if ((destekbox.Visible == true) || (destekboxcerceve.Visible == true) || (destekgonderb.Visible == true) )
+            if ((destekbox.Visible == true) || (destekboxcerceve.Visible == true) || (destekgonderb.Visible == true || maildestekbox.Visible == true) )
             {
                 destekbox.Visible = false;
                 destekboxcerceve.Visible = false; 
                 destekgonderb.Visible = false;
+                maildestekbox.Visible = false;
                 destekbox.Clear();
             } else
             {
                 destekbox.Visible = true;
                 destekboxcerceve.Visible = true;
                 destekgonderb.Visible = true;
+                maildestekbox.Visible = true;
             }
         }
 
@@ -117,15 +222,43 @@ namespace ucakotomasyon
             destekbox.Visible = false;
             destekboxcerceve.Visible = false;
             destekgonderb.Visible = false;
+            maildestekbox.Visible = false;
+            if (maildestekbox.Text.Equals(""))
+            {
+                maildestekbox.Text = "Mail Adresi";
+                
+            }
             destekbox.Clear();
         }
 
         private void destekgonderb_MouseDown(object sender, MouseEventArgs e)
         {
+            
+
+            _sikayetmail = maildestekbox.Text;
+            _sikayetmetin = destekbox.Text;
+
+            baglanti.Close();
+            baglanti.Open();
+            MySqlCommand sikayetkomut = new MySqlCommand("INSERT INTO sikayetler (sikayet_metin,sikayet_mail) VALUES ('" + _sikayetmetin + "','" + _sikayetmail + "')", baglanti);
+            sikayetkomut.ExecuteNonQuery();
+            baglanti.Close();
+            HataBox f = new HataBox();
+            HataBox.mesaj = "Talep Oluşturuldu";
+            HataBox.text = "Talebiniz başarılı bir şekilde \nGönderilmiştir!";
+            f.hataresim.Visible = false;
+            f.onayresim.Visible = true;
+
+            f.Show();
+
+
             destekbox.Visible = false;
             destekboxcerceve.Visible = false;
             destekgonderb.Visible = false;
+            maildestekbox.Visible = false;
+            maildestekbox.Text = "Mail Adresi";
             destekbox.Clear();
+
         }
 
        
@@ -135,6 +268,9 @@ namespace ucakotomasyon
         private void txtgiris_TextChanged(object sender, EventArgs e)
         {
 
+
+
+
         }
 
         private void kayitolbuton_Click(object sender, EventArgs e)
@@ -143,10 +279,100 @@ namespace ucakotomasyon
             mailtext.Visible = true;
             kayitolbuton.Visible = false;
             kayitbuton2.Visible = true;
+            geributon.Visible = true;
+            txtgiris.BorderColor = Color.Red;
+            txtgirissifre.BorderColor = Color.Red;
+            mailtext.BorderColor = Color.Red;
         }
 
         private void kayitbuton2_Click(object sender, EventArgs e)
         {
+            
+            _tcno = Convert.ToString(txtgiris.Text);
+            _sifre = Convert.ToString(txtgirissifre.Text); 
+            _mail = Convert.ToString(mailtext.Text); 
+
+            //boş kontrol
+            if(_tcno == "" || _sifre == "" || _mail == "" || _tcno == "T.C Kimlik Numarası" || _sifre == "Şifre" || _mail == "Mail Adresi")
+            {
+                HataBox.mesaj = "Uyarı";
+                HataBox.text = "Zorunlu alanlar boş geçilemez!";               
+                HataBox f = new HataBox();
+                f.Show();             
+               // MessageBox.Show("Zorunlu alanlar boş geçilemez!","Hata",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            } else
+            {
+                //tc kontrol
+                if(TcKontrol() == false )
+                {          
+                    errorProvider1.SetError(txtgiris, "Geçerli Bir Kimlik No Giriniz.");
+                    HataBox.mesaj = "Yanlış Veri";
+                    HataBox.text = "Lütfen Geçerli Bir T.C kimlik \nNumarası Giriniz";
+                    HataBox f = new HataBox();
+                    f.Show();
+                //tc kayıtlı mı?
+                } else if (TcKontrol() == true ){
+                    baglanti.Close();
+                    baglanti.Open();
+                    MySqlCommand kayitkomuttc = new MySqlCommand("SELECT yolcu_tc FROM yolcular WHERE yolcu_tc = @tc", baglanti);
+                    kayitkomuttc.Parameters.AddWithValue("@tc", _tcno);
+                    MySqlDataReader dr = kayitkomuttc.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        HataBox.mesaj = "Kayıt Hatası";
+                        HataBox.text = "Bu T.C Kimlik Numarası \nZaten Kayıtlı";
+                        HataBox f = new HataBox();
+                        f.Show();
+                    }
+                    
+                    // tc veritabanında kayıtlıysa 
+                    else
+                    {
+                        //baglanti veri kaydı
+                        errorProvider1.Clear();
+                        baglanti.Close();
+                        baglanti.Open();
+                        MySqlCommand kayitkomut1 = new MySqlCommand("INSERT INTO yolcular (yolcu_tc,yolcu_mail,yolcu_sifre,cinsiyetler_cinsiyet_id) VALUES ('" + _tcno + "','" + _mail + "','" + _sifre + "','0')", baglanti);
+                        kayitkomut1.ExecuteNonQuery();
+                        baglanti.Close();
+                        HataBox f = new HataBox();
+                        HataBox.mesaj = "Kayıt Başarılı";
+                        HataBox.text = "Kaydınız başarılı bir şekilde \ntamamlanmıştır!";
+                        f.hataresim.Visible = false;
+                        f.onayresim.Visible = true;
+                        f.Show();
+                        // kayit ekranı geri çıkış
+                        girisbuton.Visible = true;
+                        mailtext.Visible = false;
+                        kayitolbuton.Visible = true;
+                        kayitbuton2.Visible = false;
+                        geributon.Visible = false;
+                        txtgiris.BorderColor = Color.Blue;
+                        txtgirissifre.BorderColor = Color.Blue;
+
+                    }
+                }
+
+
+
+
+
+
+            }
+
+
+        }
+
+        private void geributon_Click(object sender, EventArgs e)
+        {
+
+            girisbuton.Visible = true;
+            mailtext.Visible = false;
+            kayitolbuton.Visible = true;
+            kayitbuton2.Visible = false;
+            geributon.Visible = false;
+            txtgiris.BorderColor = Color.Blue;
+            txtgirissifre.BorderColor = Color.Blue;
 
         }
     }

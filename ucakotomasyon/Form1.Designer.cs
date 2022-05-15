@@ -31,7 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.maildestekbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.geributon = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.kayitbuton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.mailtext = new Guna.UI2.WinForms.Guna2TextBox();
             this.destekbox = new System.Windows.Forms.RichTextBox();
             this.destekgonderb = new Guna.UI2.WinForms.Guna2GradientButton();
             this.destekboxcerceve = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -44,9 +50,7 @@
             this.firmalogo = new System.Windows.Forms.PictureBox();
             this.minimizebuton = new Guna.UI2.WinForms.Guna2ControlBox();
             this.cikisbuton = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.mailtext = new Guna.UI2.WinForms.Guna2TextBox();
-            this.kayitbuton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.destekboxcerceve)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -62,11 +66,17 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::ucakotomasyon.Properties.Resources.arkapan_giriş;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.guna2GradientButton1);
+            this.panel1.Controls.Add(this.maildestekbox);
+            this.panel1.Controls.Add(this.geributon);
             this.panel1.Controls.Add(this.kayitbuton2);
             this.panel1.Controls.Add(this.mailtext);
             this.panel1.Controls.Add(this.destekbox);
@@ -87,14 +97,164 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseEnter += new System.EventHandler(this.guna2GradientPanel1_MouseEnter);
             // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.Animated = true;
+            this.guna2GradientButton1.AutoRoundedCorners = true;
+            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.BackgroundImage = global::ucakotomasyon.Properties.Resources.yonetici;
+            this.guna2GradientButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2GradientButton1.BorderRadius = 22;
+            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.HoverState.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(12, 460);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.PressedColor = System.Drawing.Color.DeepPink;
+            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(47, 46);
+            this.guna2GradientButton1.TabIndex = 17;
+            this.guna2GradientButton1.UseTransparentBackground = true;
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            // 
+            // maildestekbox
+            // 
+            this.maildestekbox.Animated = true;
+            this.maildestekbox.AutoRoundedCorners = true;
+            this.maildestekbox.BackColor = System.Drawing.Color.Transparent;
+            this.maildestekbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.maildestekbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(141)))), ((int)(((byte)(251)))));
+            this.maildestekbox.BorderRadius = 16;
+            this.maildestekbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.maildestekbox.DefaultText = "Mail Adresi";
+            this.maildestekbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.maildestekbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.maildestekbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.maildestekbox.DisabledState.Parent = this.maildestekbox;
+            this.maildestekbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.maildestekbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.maildestekbox.FocusedState.Parent = this.maildestekbox;
+            this.maildestekbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.maildestekbox.HoverState.Parent = this.maildestekbox;
+            this.maildestekbox.IconLeft = global::ucakotomasyon.Properties.Resources.mailbox;
+            this.maildestekbox.IconLeftSize = new System.Drawing.Size(25, 25);
+            this.maildestekbox.Location = new System.Drawing.Point(800, 445);
+            this.maildestekbox.Name = "maildestekbox";
+            this.maildestekbox.PasswordChar = '\0';
+            this.maildestekbox.PlaceholderText = "";
+            this.maildestekbox.SelectedText = "";
+            this.maildestekbox.SelectionStart = 11;
+            this.maildestekbox.ShadowDecoration.Parent = this.maildestekbox;
+            this.maildestekbox.Size = new System.Drawing.Size(173, 34);
+            this.maildestekbox.TabIndex = 16;
+            this.maildestekbox.Visible = false;
+            this.maildestekbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maildestekbox_KeyPress);
+            // 
+            // geributon
+            // 
+            this.geributon.Animated = true;
+            this.geributon.AutoRoundedCorners = true;
+            this.geributon.BackColor = System.Drawing.Color.Transparent;
+            this.geributon.BackgroundImage = global::ucakotomasyon.Properties.Resources.icons8_undo_32;
+            this.geributon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.geributon.BorderColor = System.Drawing.Color.Transparent;
+            this.geributon.BorderRadius = 15;
+            this.geributon.CheckedState.Parent = this.geributon;
+            this.geributon.CustomImages.Parent = this.geributon;
+            this.geributon.FillColor = System.Drawing.Color.Transparent;
+            this.geributon.FillColor2 = System.Drawing.Color.Transparent;
+            this.geributon.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.geributon.ForeColor = System.Drawing.Color.White;
+            this.geributon.HoverState.Parent = this.geributon;
+            this.geributon.Location = new System.Drawing.Point(76, 308);
+            this.geributon.Name = "geributon";
+            this.geributon.PressedColor = System.Drawing.Color.MediumVioletRed;
+            this.geributon.ShadowDecoration.BorderRadius = 20;
+            this.geributon.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.geributon.ShadowDecoration.Depth = 12;
+            this.geributon.ShadowDecoration.Enabled = true;
+            this.geributon.ShadowDecoration.Parent = this.geributon;
+            this.geributon.Size = new System.Drawing.Size(37, 33);
+            this.geributon.TabIndex = 15;
+            this.geributon.UseTransparentBackground = true;
+            this.geributon.Visible = false;
+            this.geributon.Click += new System.EventHandler(this.geributon_Click);
+            // 
+            // kayitbuton2
+            // 
+            this.kayitbuton2.Animated = true;
+            this.kayitbuton2.AutoRoundedCorners = true;
+            this.kayitbuton2.BackColor = System.Drawing.Color.Transparent;
+            this.kayitbuton2.BorderColor = System.Drawing.Color.Crimson;
+            this.kayitbuton2.BorderRadius = 15;
+            this.kayitbuton2.CheckedState.Parent = this.kayitbuton2;
+            this.kayitbuton2.CustomImages.Parent = this.kayitbuton2;
+            this.kayitbuton2.FillColor = System.Drawing.Color.DarkOrchid;
+            this.kayitbuton2.FillColor2 = System.Drawing.Color.CornflowerBlue;
+            this.kayitbuton2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kayitbuton2.ForeColor = System.Drawing.Color.White;
+            this.kayitbuton2.HoverState.Parent = this.kayitbuton2;
+            this.kayitbuton2.Location = new System.Drawing.Point(119, 308);
+            this.kayitbuton2.Name = "kayitbuton2";
+            this.kayitbuton2.PressedColor = System.Drawing.Color.MediumVioletRed;
+            this.kayitbuton2.ShadowDecoration.BorderRadius = 20;
+            this.kayitbuton2.ShadowDecoration.Depth = 12;
+            this.kayitbuton2.ShadowDecoration.Enabled = true;
+            this.kayitbuton2.ShadowDecoration.Parent = this.kayitbuton2;
+            this.kayitbuton2.Size = new System.Drawing.Size(131, 33);
+            this.kayitbuton2.TabIndex = 14;
+            this.kayitbuton2.Text = "Kaydı Tamamla";
+            this.kayitbuton2.Visible = false;
+            this.kayitbuton2.Click += new System.EventHandler(this.kayitbuton2_Click);
+            // 
+            // mailtext
+            // 
+            this.mailtext.Animated = true;
+            this.mailtext.AutoRoundedCorners = true;
+            this.mailtext.BackColor = System.Drawing.Color.Transparent;
+            this.mailtext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.mailtext.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(141)))), ((int)(((byte)(251)))));
+            this.mailtext.BorderRadius = 19;
+            this.mailtext.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.mailtext.DefaultText = "Mail Adresi";
+            this.mailtext.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.mailtext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.mailtext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.mailtext.DisabledState.Parent = this.mailtext;
+            this.mailtext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.mailtext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.mailtext.FocusedState.Parent = this.mailtext;
+            this.mailtext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.mailtext.HoverState.Parent = this.mailtext;
+            this.mailtext.IconLeft = global::ucakotomasyon.Properties.Resources.mailbox;
+            this.mailtext.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.mailtext.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.mailtext.IconRightSize = new System.Drawing.Size(25, 25);
+            this.mailtext.Location = new System.Drawing.Point(65, 261);
+            this.mailtext.Name = "mailtext";
+            this.mailtext.PasswordChar = '\0';
+            this.mailtext.PlaceholderText = "";
+            this.mailtext.SelectedText = "";
+            this.mailtext.SelectionStart = 11;
+            this.mailtext.ShadowDecoration.Parent = this.mailtext;
+            this.mailtext.Size = new System.Drawing.Size(243, 41);
+            this.mailtext.TabIndex = 13;
+            this.mailtext.Visible = false;
+            this.mailtext.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mailtext_KeyPress);
+            // 
             // destekbox
             // 
             this.destekbox.BackColor = System.Drawing.Color.White;
             this.destekbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.destekbox.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.destekbox.Location = new System.Drawing.Point(799, 243);
+            this.destekbox.Location = new System.Drawing.Point(809, 241);
             this.destekbox.Name = "destekbox";
-            this.destekbox.Size = new System.Drawing.Size(196, 182);
+            this.destekbox.Size = new System.Drawing.Size(218, 156);
             this.destekbox.TabIndex = 12;
             this.destekbox.Text = "";
             this.destekbox.Visible = false;
@@ -106,10 +266,11 @@
             this.destekgonderb.BorderRadius = 14;
             this.destekgonderb.CheckedState.Parent = this.destekgonderb;
             this.destekgonderb.CustomImages.Parent = this.destekgonderb;
+            this.destekgonderb.FillColor = System.Drawing.Color.Blue;
             this.destekgonderb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.destekgonderb.ForeColor = System.Drawing.Color.White;
             this.destekgonderb.HoverState.Parent = this.destekgonderb;
-            this.destekgonderb.Location = new System.Drawing.Point(882, 479);
+            this.destekgonderb.Location = new System.Drawing.Point(838, 481);
             this.destekgonderb.Name = "destekgonderb";
             this.destekgonderb.ShadowDecoration.Parent = this.destekgonderb;
             this.destekgonderb.Size = new System.Drawing.Size(113, 30);
@@ -123,10 +284,10 @@
             // 
             this.destekboxcerceve.BackColor = System.Drawing.Color.Transparent;
             this.destekboxcerceve.BaseColor = System.Drawing.Color.Black;
-            this.destekboxcerceve.Image = global::ucakotomasyon.Properties.Resources.chatbox2;
-            this.destekboxcerceve.Location = new System.Drawing.Point(749, 200);
+            this.destekboxcerceve.Image = global::ucakotomasyon.Properties.Resources.Destekkutusu1;
+            this.destekboxcerceve.Location = new System.Drawing.Point(800, 230);
             this.destekboxcerceve.Name = "destekboxcerceve";
-            this.destekboxcerceve.Size = new System.Drawing.Size(297, 280);
+            this.destekboxcerceve.Size = new System.Drawing.Size(237, 209);
             this.destekboxcerceve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.destekboxcerceve.TabIndex = 10;
             this.destekboxcerceve.TabStop = false;
@@ -148,13 +309,14 @@
             this.destekbutonn.ForeColor = System.Drawing.Color.White;
             this.destekbutonn.HoverState.ForeColor = System.Drawing.Color.Transparent;
             this.destekbutonn.HoverState.Parent = this.destekbutonn;
-            this.destekbutonn.Location = new System.Drawing.Point(766, 462);
+            this.destekbutonn.Location = new System.Drawing.Point(979, 445);
             this.destekbutonn.Name = "destekbutonn";
             this.destekbutonn.PressedColor = System.Drawing.Color.DeepPink;
             this.destekbutonn.ShadowDecoration.Parent = this.destekbutonn;
             this.destekbutonn.Size = new System.Drawing.Size(58, 61);
             this.destekbutonn.TabIndex = 9;
             this.destekbutonn.UseTransparentBackground = true;
+            this.destekbutonn.Click += new System.EventHandler(this.destekbutonn_Click);
             this.destekbutonn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.destekbutonn_MouseDown);
             // 
             // kayitolbuton
@@ -207,6 +369,8 @@
             this.girisbuton.Size = new System.Drawing.Size(131, 33);
             this.girisbuton.TabIndex = 3;
             this.girisbuton.Text = "Giriş Yap";
+            this.girisbuton.Click += new System.EventHandler(this.girisbuton_Click);
+            this.girisbuton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.girisbuton_MouseDown);
             // 
             // txtgirissifre
             // 
@@ -230,7 +394,7 @@
             this.txtgirissifre.IconLeft = global::ucakotomasyon.Properties.Resources.resim_2022_05_13_203358808_removebg_preview;
             this.txtgirissifre.IconLeftOffset = new System.Drawing.Point(3, 0);
             this.txtgirissifre.IconLeftSize = new System.Drawing.Size(23, 20);
-            this.txtgirissifre.Location = new System.Drawing.Point(65, 208);
+            this.txtgirissifre.Location = new System.Drawing.Point(65, 200);
             this.txtgirissifre.Name = "txtgirissifre";
             this.txtgirissifre.PasswordChar = '\0';
             this.txtgirissifre.PlaceholderText = "";
@@ -262,7 +426,7 @@
             this.txtgiris.HoverState.Parent = this.txtgiris;
             this.txtgiris.IconLeft = global::ucakotomasyon.Properties.Resources.user;
             this.txtgiris.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.txtgiris.Location = new System.Drawing.Point(65, 149);
+            this.txtgiris.Location = new System.Drawing.Point(65, 138);
             this.txtgiris.Name = "txtgiris";
             this.txtgiris.PasswordChar = '\0';
             this.txtgiris.PlaceholderText = "";
@@ -338,89 +502,6 @@
             this.cikisbuton.TabIndex = 0;
             this.cikisbuton.UseTransparentBackground = true;
             // 
-            // mailtext
-            // 
-            this.mailtext.Animated = true;
-            this.mailtext.AutoRoundedCorners = true;
-            this.mailtext.BackColor = System.Drawing.Color.Transparent;
-            this.mailtext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.mailtext.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(141)))), ((int)(((byte)(251)))));
-            this.mailtext.BorderRadius = 19;
-            this.mailtext.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.mailtext.DefaultText = "Mail Adresi";
-            this.mailtext.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.mailtext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.mailtext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.mailtext.DisabledState.Parent = this.mailtext;
-            this.mailtext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.mailtext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.mailtext.FocusedState.Parent = this.mailtext;
-            this.mailtext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.mailtext.HoverState.Parent = this.mailtext;
-            this.mailtext.IconLeft = global::ucakotomasyon.Properties.Resources.user;
-            this.mailtext.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.mailtext.Location = new System.Drawing.Point(65, 261);
-            this.mailtext.Name = "mailtext";
-            this.mailtext.PasswordChar = '\0';
-            this.mailtext.PlaceholderText = "";
-            this.mailtext.SelectedText = "";
-            this.mailtext.ShadowDecoration.Parent = this.mailtext;
-            this.mailtext.Size = new System.Drawing.Size(243, 41);
-            this.mailtext.TabIndex = 13;
-            this.mailtext.Visible = false;
-            // 
-            // kayitbuton2
-            // 
-            this.kayitbuton2.Animated = true;
-            this.kayitbuton2.AutoRoundedCorners = true;
-            this.kayitbuton2.BackColor = System.Drawing.Color.Transparent;
-            this.kayitbuton2.BorderColor = System.Drawing.Color.Crimson;
-            this.kayitbuton2.BorderRadius = 15;
-            this.kayitbuton2.CheckedState.Parent = this.kayitbuton2;
-            this.kayitbuton2.CustomImages.Parent = this.kayitbuton2;
-            this.kayitbuton2.FillColor = System.Drawing.Color.DarkOrchid;
-            this.kayitbuton2.FillColor2 = System.Drawing.Color.CornflowerBlue;
-            this.kayitbuton2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kayitbuton2.ForeColor = System.Drawing.Color.White;
-            this.kayitbuton2.HoverState.Parent = this.kayitbuton2;
-            this.kayitbuton2.Location = new System.Drawing.Point(119, 308);
-            this.kayitbuton2.Name = "kayitbuton2";
-            this.kayitbuton2.PressedColor = System.Drawing.Color.MediumVioletRed;
-            this.kayitbuton2.ShadowDecoration.BorderRadius = 20;
-            this.kayitbuton2.ShadowDecoration.Depth = 12;
-            this.kayitbuton2.ShadowDecoration.Enabled = true;
-            this.kayitbuton2.ShadowDecoration.Parent = this.kayitbuton2;
-            this.kayitbuton2.Size = new System.Drawing.Size(131, 33);
-            this.kayitbuton2.TabIndex = 14;
-            this.kayitbuton2.Text = "Kaydı Tamamla";
-            this.kayitbuton2.Visible = false;
-            this.kayitbuton2.Click += new System.EventHandler(this.kayitbuton2_Click);
-            // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.AutoRoundedCorners = true;
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderColor = System.Drawing.Color.Crimson;
-            this.guna2GradientButton1.BorderRadius = 15;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.DarkOrchid;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.CornflowerBlue;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(74, 308);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.PressedColor = System.Drawing.Color.MediumVioletRed;
-            this.guna2GradientButton1.ShadowDecoration.BorderRadius = 20;
-            this.guna2GradientButton1.ShadowDecoration.Depth = 12;
-            this.guna2GradientButton1.ShadowDecoration.Enabled = true;
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(39, 33);
-            this.guna2GradientButton1.TabIndex = 15;
-            this.guna2GradientButton1.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,7 +510,9 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.destekboxcerceve)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
@@ -441,13 +524,9 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2GradientPanel panel1;
         public Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2ControlBox minimizebuton;
         private Guna.UI2.WinForms.Guna2ControlBox cikisbuton;
-        private Guna.UI2.WinForms.Guna2TextBox txtgiris;
-        private Guna.UI2.WinForms.Guna2GradientButton girisbuton;
-        private Guna.UI2.WinForms.Guna2GradientButton kayitolbuton;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         public Guna.UI2.WinForms.Guna2TextBox txtgirissifre;
         internal System.Windows.Forms.PictureBox firmalogo;
@@ -455,8 +534,15 @@
         private Guna.UI2.WinForms.Guna2GradientButton destekgonderb;
         private Guna.UI.WinForms.GunaTransfarantPictureBox destekboxcerceve;
         private System.Windows.Forms.RichTextBox destekbox;
-        private Guna.UI2.WinForms.Guna2TextBox mailtext;
-        private Guna.UI2.WinForms.Guna2GradientButton kayitbuton2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        public Guna.UI2.WinForms.Guna2TextBox txtgiris;
+        public Guna.UI2.WinForms.Guna2TextBox mailtext;
+        public Guna.UI2.WinForms.Guna2GradientButton kayitbuton2;
+        public Guna.UI2.WinForms.Guna2GradientButton geributon;
+        public Guna.UI2.WinForms.Guna2GradientButton girisbuton;
+        public Guna.UI2.WinForms.Guna2GradientButton kayitolbuton;
+        public Guna.UI2.WinForms.Guna2GradientPanel panel1;
+        public Guna.UI2.WinForms.Guna2TextBox maildestekbox;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
     }
 }

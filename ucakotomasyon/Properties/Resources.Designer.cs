@@ -93,6 +93,16 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap carpi {
+            get {
+                object obj = ResourceManager.GetObject("carpi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap chatbox {
             get {
                 object obj = ResourceManager.GetObject("chatbox", resourceCulture);
@@ -116,6 +126,36 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap chatbox2 {
             get {
                 object obj = ResourceManager.GetObject("chatbox2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Destekkutusu {
+            get {
+                object obj = ResourceManager.GetObject("Destekkutusu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Destekkutusu1 {
+            get {
+                object obj = ResourceManager.GetObject("Destekkutusu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Destekkutususs {
+            get {
+                object obj = ResourceManager.GetObject("Destekkutususs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +193,16 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_undo_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_undo_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap keepass_50px {
             get {
                 object obj = ResourceManager.GetObject("keepass_50px", resourceCulture);
@@ -166,6 +216,26 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap logolar {
             get {
                 object obj = ResourceManager.GetObject("logolar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap mailbox {
+            get {
+                object obj = ResourceManager.GetObject("mailbox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Onay {
+            get {
+                object obj = ResourceManager.GetObject("Onay", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +266,16 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap yonetici {
+            get {
+                object obj = ResourceManager.GetObject("yonetici", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
