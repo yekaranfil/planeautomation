@@ -117,6 +117,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +227,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\yonetici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1659417.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\254367.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-flying-over-world-map-1557403 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anamenu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anamenu1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

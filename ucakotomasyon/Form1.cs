@@ -23,7 +23,7 @@ namespace ucakotomasyon
         int sayac = 0;
         public static String _tcno, _mail, _sifre, _ad, _soyad, _telefon, _dogumtarihi,_cinsiyet,_sikayetmetin,_sikayetmail;
         
-        
+        //tc kontrol fonksiyonu
         public bool TcKontrol()
         {
             _tcno = txtgiris.Text;
@@ -53,7 +53,7 @@ namespace ucakotomasyon
                 return false;
             }
         }
-
+        //tc kontrol fonksiyonu bitiş
         public Form1()
         {
             InitializeComponent();
@@ -149,6 +149,8 @@ namespace ucakotomasyon
 
         private void girisbuton_Click(object sender, EventArgs e)
         {
+
+            //giriş ekranı veritabanı tc şifre kontrolü
             _tcno = txtgiris.Text;
             _sifre = txtgirissifre.Text;
 
@@ -163,10 +165,14 @@ namespace ucakotomasyon
             {
                 HataBox.mesaj = "Giriş başarılı";
                 HataBox.text = "Giriş Yapıldı";
-                HataBox f = new HataBox();
-                f.hataresim.Visible = false;
-                f.onayresim.Visible = true;
-                f.Show();
+                HataBox hataform = new HataBox();
+                this.Hide();
+
+                AnaSayfa anasayfaform = new AnaSayfa();
+                anasayfaform.Show();
+                hataform.hataresim.Visible = false;
+                hataform.onayresim.Visible = true;
+                hataform.Show();
             } else
             {
                 HataBox.mesaj = "Hatalı Giriş";
@@ -200,7 +206,7 @@ namespace ucakotomasyon
         {
 
             
-
+            // destek buton görünüm ayarlama
             if ((destekbox.Visible == true) || (destekboxcerceve.Visible == true) || (destekgonderb.Visible == true || maildestekbox.Visible == true) )
             {
                 destekbox.Visible = false;
@@ -234,7 +240,7 @@ namespace ucakotomasyon
         private void destekgonderb_MouseDown(object sender, MouseEventArgs e)
         {
             
-
+            //destek veritabanı bağlantısı
             _sikayetmail = maildestekbox.Text;
             _sikayetmetin = destekbox.Text;
 

@@ -63,9 +63,49 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap _1659417 {
+            get {
+                object obj = ResourceManager.GetObject("1659417", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _254367 {
+            get {
+                object obj = ResourceManager.GetObject("254367", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap _2840156 {
             get {
                 object obj = ResourceManager.GetObject("2840156", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap anamenu1 {
+            get {
+                object obj = ResourceManager.GetObject("anamenu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap anamenu2 {
+            get {
+                object obj = ResourceManager.GetObject("anamenu2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +276,16 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap Onay {
             get {
                 object obj = ResourceManager.GetObject("Onay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap plane_flying_over_world_map_1557403__1_ {
+            get {
+                object obj = ResourceManager.GetObject("plane-flying-over-world-map-1557403 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
