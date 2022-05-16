@@ -118,85 +118,94 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8_undo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_undo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2840156" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2840156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chatbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chatbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_lock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_lock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resim_2022-05-13_203358808-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resim_2022-05-13_203358808-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anamenu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anamenu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logolar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logolar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="254367" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\254367.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carpi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carpi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unlock_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unlock_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chatbox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chatbox1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8_lock_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_lock_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Destekkutusu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Destekkutusu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arkapan giriş" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arkapan giriş.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="plane-flying-over-world-map-1557403 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plane-flying-over-world-map-1557403 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chatbox2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chatbox2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Destekkutusu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Destekkutusu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mailbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mailbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Destekkutususs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Destekkutususs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="keepass_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\keepass_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arkaplan üst" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arkaplan üst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Onay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Onay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="yonetici" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yonetici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1659417" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1659417.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chatbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chatbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_lock_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_lock_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1659417" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1659417.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_undo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_undo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlock_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unlock_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plane-flying-over-world-map-1557403 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plane-flying-over-world-map-1557403 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Onay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Onay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ucusicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ucusicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anamenu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anamenu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="254367" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\254367.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chatbox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chatbox1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carpi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carpi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resim_2022-05-13_203358808-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resim_2022-05-13_203358808-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Destekkutususs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Destekkutususs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="anamenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anamenu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2840156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2840156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mailbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mailbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gidisgelis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gidisgelis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arkaplan üst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arkaplan üst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Destekkutusu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Destekkutusu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yonetici" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yonetici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Destekkutusu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Destekkutusu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chatbox2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chatbox2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logolar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logolar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keepass_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keepass_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_lock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_lock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gidisgelis1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gidisgelis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

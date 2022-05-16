@@ -43,5 +43,61 @@ namespace ucakotomasyon
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void secenekbuton_Click(object sender, EventArgs e)
+        {
+            anamenulabel.Visible = false;
+            anamenulabel2.Visible = false;
+            neredenbox.Visible = true;
+            nereyebox.Visible = true;
+            nereyetxt.Visible = true;
+            neredentxt.Visible = true;
+            ucakicon.Visible = true;
+            kisisayilbl.Visible = true;
+            kisibox.Visible = true;
+            ekonomilbl.Visible = true;
+            ekonomiradiobtn.Visible = true;
+            bussineslbl.Visible = true;
+            bussinesradiobtn.Visible = true;
+            tekyonlbl.Visible = true;
+            tekyonradiobtn.Visible = true;
+            gidisdonuslbl.Visible = true;
+            gidisdonusradiobtn.Visible = true;
+            neredentxt.Visible = true;
+            nereyetxt.Visible = true;
+            ucusarabtn.Visible = true;
+
+
+           
+
+
+        }
+
+        private void tekyonradiobtn_CheckedChanged(object sender, EventArgs e)
+        {
+            gidistarihbox.Visible = true;
+            gidistarihlbl.Visible = true;
+
+
+            
+            donustarihbox.Visible = false;
+            donustarihlbl.Visible = false;
+            gidisgelisicon.Visible = false;
+        }
+
+        private void gidisdonuslbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gidisdonusradiobtn_CheckedChanged(object sender, EventArgs e)
+        {
+            gidistarihbox.Visible = true;
+            gidistarihlbl.Visible = true;
+            donustarihbox.Visible = true;
+            donustarihlbl.Visible = true;
+            gidisgelisicon.Visible = true;
+
+        }
     }
 }

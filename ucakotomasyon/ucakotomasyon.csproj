@@ -243,5 +243,14 @@
   <ItemGroup>
     <None Include="Resources\anamenu1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ucusicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gidisgelis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gidisgelis1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
