@@ -93,6 +93,26 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap adminpanel {
+            get {
+                object obj = ResourceManager.GetObject("adminpanel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap adminpanel_1_1210x770 {
+            get {
+                object obj = ResourceManager.GetObject("adminpanel_1_1210x770", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap anamenu1 {
             get {
                 object obj = ResourceManager.GetObject("anamenu1", resourceCulture);
@@ -126,6 +146,16 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap arkaplan_üst {
             get {
                 object obj = ResourceManager.GetObject("arkaplan üst", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Başlıksız_2 {
+            get {
+                object obj = ResourceManager.GetObject("Başlıksız-2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +286,16 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap icons8_undo_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_undo_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1212284111_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1212284111-612x612", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

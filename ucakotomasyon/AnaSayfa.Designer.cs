@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.anamenupanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.ucusarabtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gidisgelisicon = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.donustarihlbl = new System.Windows.Forms.Label();
             this.donustarihbox = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -60,11 +61,14 @@
             this.secenekbuton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.ucusarabtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.anamenupanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gidisgelisicon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucakicon)).BeginInit();
             this.anamenuustpanel.SuspendLayout();
+            this.guna2GroupBox1.SuspendLayout();
+            this.guna2GroupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -75,6 +79,8 @@
             // 
             this.anamenupanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.anamenu1;
             this.anamenupanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.anamenupanel.Controls.Add(this.guna2GroupBox2);
+            this.anamenupanel.Controls.Add(this.guna2GroupBox1);
             this.anamenupanel.Controls.Add(this.ucusarabtn);
             this.anamenupanel.Controls.Add(this.gidisgelisicon);
             this.anamenupanel.Controls.Add(this.donustarihlbl);
@@ -83,12 +89,8 @@
             this.anamenupanel.Controls.Add(this.gidistarihbox);
             this.anamenupanel.Controls.Add(this.tekyonlbl);
             this.anamenupanel.Controls.Add(this.gidisdonuslbl);
-            this.anamenupanel.Controls.Add(this.gidisdonusradiobtn);
-            this.anamenupanel.Controls.Add(this.tekyonradiobtn);
-            this.anamenupanel.Controls.Add(this.ekonomiradiobtn);
             this.anamenupanel.Controls.Add(this.bussineslbl);
             this.anamenupanel.Controls.Add(this.ekonomilbl);
-            this.anamenupanel.Controls.Add(this.bussinesradiobtn);
             this.anamenupanel.Controls.Add(this.nereyetxt);
             this.anamenupanel.Controls.Add(this.neredentxt);
             this.anamenupanel.Controls.Add(this.kisisayilbl);
@@ -107,6 +109,29 @@
             this.anamenupanel.ShadowDecoration.Parent = this.anamenupanel;
             this.anamenupanel.Size = new System.Drawing.Size(1197, 581);
             this.anamenupanel.TabIndex = 2;
+            // 
+            // ucusarabtn
+            // 
+            this.ucusarabtn.Animated = true;
+            this.ucusarabtn.AutoRoundedCorners = true;
+            this.ucusarabtn.BackColor = System.Drawing.Color.Transparent;
+            this.ucusarabtn.BorderColor = System.Drawing.Color.Blue;
+            this.ucusarabtn.BorderRadius = 17;
+            this.ucusarabtn.CheckedState.Parent = this.ucusarabtn;
+            this.ucusarabtn.CustomImages.Parent = this.ucusarabtn;
+            this.ucusarabtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.ucusarabtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.ucusarabtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
+            this.ucusarabtn.ForeColor = System.Drawing.Color.White;
+            this.ucusarabtn.HoverState.Parent = this.ucusarabtn;
+            this.ucusarabtn.Location = new System.Drawing.Point(473, 243);
+            this.ucusarabtn.Name = "ucusarabtn";
+            this.ucusarabtn.ShadowDecoration.Parent = this.ucusarabtn;
+            this.ucusarabtn.Size = new System.Drawing.Size(114, 36);
+            this.ucusarabtn.TabIndex = 30;
+            this.ucusarabtn.Text = "Uçuş Ara";
+            this.ucusarabtn.UseTransparentBackground = true;
+            this.ucusarabtn.Visible = false;
             // 
             // gidisgelisicon
             // 
@@ -222,7 +247,7 @@
             this.gidisdonusradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
             this.gidisdonusradiobtn.CheckedState.InnerOffset = 10;
             this.gidisdonusradiobtn.CheckedState.Parent = this.gidisdonusradiobtn;
-            this.gidisdonusradiobtn.Location = new System.Drawing.Point(568, 191);
+            this.gidisdonusradiobtn.Location = new System.Drawing.Point(0, 37);
             this.gidisdonusradiobtn.Name = "gidisdonusradiobtn";
             this.gidisdonusradiobtn.ShadowDecoration.Parent = this.gidisdonusradiobtn;
             this.gidisdonusradiobtn.Size = new System.Drawing.Size(15, 15);
@@ -245,7 +270,7 @@
             this.tekyonradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
             this.tekyonradiobtn.CheckedState.InnerOffset = 10;
             this.tekyonradiobtn.CheckedState.Parent = this.tekyonradiobtn;
-            this.tekyonradiobtn.Location = new System.Drawing.Point(568, 162);
+            this.tekyonradiobtn.Location = new System.Drawing.Point(0, 8);
             this.tekyonradiobtn.Name = "tekyonradiobtn";
             this.tekyonradiobtn.ShadowDecoration.Parent = this.tekyonradiobtn;
             this.tekyonradiobtn.Size = new System.Drawing.Size(15, 15);
@@ -268,7 +293,7 @@
             this.ekonomiradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
             this.ekonomiradiobtn.CheckedState.InnerOffset = 10;
             this.ekonomiradiobtn.CheckedState.Parent = this.ekonomiradiobtn;
-            this.ekonomiradiobtn.Location = new System.Drawing.Point(90, 162);
+            this.ekonomiradiobtn.Location = new System.Drawing.Point(3, 11);
             this.ekonomiradiobtn.Name = "ekonomiradiobtn";
             this.ekonomiradiobtn.ShadowDecoration.Parent = this.ekonomiradiobtn;
             this.ekonomiradiobtn.Size = new System.Drawing.Size(15, 15);
@@ -314,7 +339,7 @@
             this.bussinesradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
             this.bussinesradiobtn.CheckedState.InnerOffset = 10;
             this.bussinesradiobtn.CheckedState.Parent = this.bussinesradiobtn;
-            this.bussinesradiobtn.Location = new System.Drawing.Point(90, 191);
+            this.bussinesradiobtn.Location = new System.Drawing.Point(3, 40);
             this.bussinesradiobtn.Name = "bussinesradiobtn";
             this.bussinesradiobtn.ShadowDecoration.Parent = this.bussinesradiobtn;
             this.bussinesradiobtn.Size = new System.Drawing.Size(15, 15);
@@ -625,28 +650,41 @@
             this.guna2ControlBox1.UseTransparentBackground = true;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click_1);
             // 
-            // ucusarabtn
+            // guna2GroupBox1
             // 
-            this.ucusarabtn.Animated = true;
-            this.ucusarabtn.AutoRoundedCorners = true;
-            this.ucusarabtn.BackColor = System.Drawing.Color.Transparent;
-            this.ucusarabtn.BorderColor = System.Drawing.Color.Blue;
-            this.ucusarabtn.BorderRadius = 17;
-            this.ucusarabtn.CheckedState.Parent = this.ucusarabtn;
-            this.ucusarabtn.CustomImages.Parent = this.ucusarabtn;
-            this.ucusarabtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.ucusarabtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.ucusarabtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
-            this.ucusarabtn.ForeColor = System.Drawing.Color.White;
-            this.ucusarabtn.HoverState.Parent = this.ucusarabtn;
-            this.ucusarabtn.Location = new System.Drawing.Point(473, 243);
-            this.ucusarabtn.Name = "ucusarabtn";
-            this.ucusarabtn.ShadowDecoration.Parent = this.ucusarabtn;
-            this.ucusarabtn.Size = new System.Drawing.Size(114, 36);
-            this.ucusarabtn.TabIndex = 30;
-            this.ucusarabtn.Text = "Uçuş Ara";
-            this.ucusarabtn.UseTransparentBackground = true;
-            this.ucusarabtn.Visible = false;
+            this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Controls.Add(this.ekonomiradiobtn);
+            this.guna2GroupBox1.Controls.Add(this.bussinesradiobtn);
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(92, 152);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
+            this.guna2GroupBox1.Size = new System.Drawing.Size(27, 66);
+            this.guna2GroupBox1.TabIndex = 32;
+            this.guna2GroupBox1.Text = "guna2GroupBox1";
+            this.guna2GroupBox1.UseTransparentBackground = true;
+            // 
+            // guna2GroupBox2
+            // 
+            this.guna2GroupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.Controls.Add(this.tekyonradiobtn);
+            this.guna2GroupBox2.Controls.Add(this.gidisdonusradiobtn);
+            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GroupBox2.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.Location = new System.Drawing.Point(546, 156);
+            this.guna2GroupBox2.Name = "guna2GroupBox2";
+            this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
+            this.guna2GroupBox2.Size = new System.Drawing.Size(27, 66);
+            this.guna2GroupBox2.TabIndex = 33;
+            this.guna2GroupBox2.Text = "guna2GroupBox2";
+            this.guna2GroupBox2.UseTransparentBackground = true;
             // 
             // AnaSayfa
             // 
@@ -663,6 +701,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gidisgelisicon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucakicon)).EndInit();
             this.anamenuustpanel.ResumeLayout(false);
+            this.guna2GroupBox1.ResumeLayout(false);
+            this.guna2GroupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -701,5 +741,7 @@
         private System.Windows.Forms.Label gidistarihlbl;
         private Guna.UI.WinForms.GunaTransfarantPictureBox gidisgelisicon;
         private Guna.UI2.WinForms.Guna2GradientButton ucusarabtn;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
     }
 }

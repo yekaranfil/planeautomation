@@ -59,3 +59,4 @@ C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\bin\Debug\Sys
 C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.HataBox.resources
 C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.AnaSayfa.resources
+C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.AdminPanelForm.resources

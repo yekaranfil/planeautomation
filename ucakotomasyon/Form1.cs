@@ -185,7 +185,8 @@ namespace ucakotomasyon
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-
+            AdminPanelForm adminpanel = new AdminPanelForm();
+            adminpanel.Show();
         }
 
         private void destekbutonn_Click(object sender, EventArgs e)
