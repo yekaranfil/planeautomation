@@ -31,18 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.adminformpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.adminformustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.adminformminimize = new Guna.UI2.WinForms.Guna2ControlBox();
             this.adminformkapatma = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.islemlerpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.adminformpanel.SuspendLayout();
             this.adminformustpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -55,7 +54,7 @@
             this.adminformpanel.BackColor = System.Drawing.Color.Transparent;
             this.adminformpanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.adminpanel_1_1210x770;
             this.adminformpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.adminformpanel.Controls.Add(this.gunaTransfarantPictureBox1);
+            this.adminformpanel.Controls.Add(this.islemlerpanel);
             this.adminformpanel.Controls.Add(this.guna2GradientButton5);
             this.adminformpanel.Controls.Add(this.guna2GradientButton4);
             this.adminformpanel.Controls.Add(this.guna2GradientButton3);
@@ -67,6 +66,111 @@
             this.adminformpanel.ShadowDecoration.Parent = this.adminformpanel;
             this.adminformpanel.Size = new System.Drawing.Size(1256, 818);
             this.adminformpanel.TabIndex = 0;
+            // 
+            // guna2GradientButton5
+            // 
+            this.guna2GradientButton5.Animated = true;
+            this.guna2GradientButton5.AutoRoundedCorners = true;
+            this.guna2GradientButton5.BorderRadius = 21;
+            this.guna2GradientButton5.CheckedState.Parent = this.guna2GradientButton5;
+            this.guna2GradientButton5.CustomImages.Parent = this.guna2GradientButton5;
+            this.guna2GradientButton5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton5.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientButton5.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton5.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton5.HoverState.Parent = this.guna2GradientButton5;
+            this.guna2GradientButton5.Location = new System.Drawing.Point(83, 506);
+            this.guna2GradientButton5.Name = "guna2GradientButton5";
+            this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
+            this.guna2GradientButton5.Size = new System.Drawing.Size(142, 45);
+            this.guna2GradientButton5.TabIndex = 5;
+            this.guna2GradientButton5.Text = "BİLET İPTAL";
+            this.guna2GradientButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton5.UseTransparentBackground = true;
+            // 
+            // guna2GradientButton4
+            // 
+            this.guna2GradientButton4.Animated = true;
+            this.guna2GradientButton4.AutoRoundedCorners = true;
+            this.guna2GradientButton4.BorderRadius = 21;
+            this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientButton4.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.Location = new System.Drawing.Point(83, 455);
+            this.guna2GradientButton4.Name = "guna2GradientButton4";
+            this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.Size = new System.Drawing.Size(142, 45);
+            this.guna2GradientButton4.TabIndex = 4;
+            this.guna2GradientButton4.Text = "BİLET GÜNCELLE";
+            this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton4.UseTransparentBackground = true;
+            // 
+            // guna2GradientButton3
+            // 
+            this.guna2GradientButton3.Animated = true;
+            this.guna2GradientButton3.AutoRoundedCorners = true;
+            this.guna2GradientButton3.BorderRadius = 21;
+            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientButton3.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.Location = new System.Drawing.Point(83, 404);
+            this.guna2GradientButton3.Name = "guna2GradientButton3";
+            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.Size = new System.Drawing.Size(142, 45);
+            this.guna2GradientButton3.TabIndex = 3;
+            this.guna2GradientButton3.Text = "UÇAK EKLE";
+            this.guna2GradientButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton3.UseTransparentBackground = true;
+            // 
+            // guna2GradientButton2
+            // 
+            this.guna2GradientButton2.Animated = true;
+            this.guna2GradientButton2.AutoRoundedCorners = true;
+            this.guna2GradientButton2.BorderRadius = 21;
+            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientButton2.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Location = new System.Drawing.Point(83, 353);
+            this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Size = new System.Drawing.Size(142, 45);
+            this.guna2GradientButton2.TabIndex = 2;
+            this.guna2GradientButton2.Text = "UÇUŞ GÜNCELLE";
+            this.guna2GradientButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton2.UseTransparentBackground = true;
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.Animated = true;
+            this.guna2GradientButton1.AutoRoundedCorners = true;
+            this.guna2GradientButton1.BorderRadius = 21;
+            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(83, 302);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(142, 45);
+            this.guna2GradientButton1.TabIndex = 1;
+            this.guna2GradientButton1.Text = "UÇUŞ EKLE";
+            this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton1.UseTransparentBackground = true;
             // 
             // adminformustpanel
             // 
@@ -110,126 +214,19 @@
             this.adminformkapatma.TabIndex = 0;
             this.adminformkapatma.UseTransparentBackground = true;
             // 
-            // guna2GradientButton1
+            // islemlerpanel
             // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.AutoRoundedCorners = true;
-            this.guna2GradientButton1.BorderRadius = 21;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(83, 302);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(142, 45);
-            this.guna2GradientButton1.TabIndex = 1;
-            this.guna2GradientButton1.Text = "UÇUŞ EKLE";
-            this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton1.UseTransparentBackground = true;
-            // 
-            // guna2GradientButton2
-            // 
-            this.guna2GradientButton2.Animated = true;
-            this.guna2GradientButton2.AutoRoundedCorners = true;
-            this.guna2GradientButton2.BorderRadius = 21;
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(83, 353);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(142, 45);
-            this.guna2GradientButton2.TabIndex = 2;
-            this.guna2GradientButton2.Text = "UÇUŞ GÜNCELLE";
-            this.guna2GradientButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton2.UseTransparentBackground = true;
-            // 
-            // guna2GradientButton3
-            // 
-            this.guna2GradientButton3.Animated = true;
-            this.guna2GradientButton3.AutoRoundedCorners = true;
-            this.guna2GradientButton3.BorderRadius = 21;
-            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(83, 404);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Size = new System.Drawing.Size(142, 45);
-            this.guna2GradientButton3.TabIndex = 3;
-            this.guna2GradientButton3.Text = "UÇAK EKLE";
-            this.guna2GradientButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton3.UseTransparentBackground = true;
-            // 
-            // guna2GradientButton4
-            // 
-            this.guna2GradientButton4.Animated = true;
-            this.guna2GradientButton4.AutoRoundedCorners = true;
-            this.guna2GradientButton4.BorderRadius = 21;
-            this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientButton4.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(83, 455);
-            this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Size = new System.Drawing.Size(142, 45);
-            this.guna2GradientButton4.TabIndex = 4;
-            this.guna2GradientButton4.Text = "BİLET GÜNCELLE";
-            this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton4.UseTransparentBackground = true;
-            // 
-            // guna2GradientButton5
-            // 
-            this.guna2GradientButton5.Animated = true;
-            this.guna2GradientButton5.AutoRoundedCorners = true;
-            this.guna2GradientButton5.BorderRadius = 21;
-            this.guna2GradientButton5.CheckedState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.CustomImages.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton5.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientButton5.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton5.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton5.HoverState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(83, 506);
-            this.guna2GradientButton5.Name = "guna2GradientButton5";
-            this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Size = new System.Drawing.Size(142, 45);
-            this.guna2GradientButton5.TabIndex = 5;
-            this.guna2GradientButton5.Text = "BİLET İPTAL";
-            this.guna2GradientButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton5.UseTransparentBackground = true;
-            // 
-            // gunaTransfarantPictureBox1
-            // 
-            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(131, 225);
-            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
-            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaTransfarantPictureBox1.TabIndex = 6;
-            this.gunaTransfarantPictureBox1.TabStop = false;
+            this.islemlerpanel.Location = new System.Drawing.Point(225, 85);
+            this.islemlerpanel.Name = "islemlerpanel";
+            this.islemlerpanel.ShadowDecoration.Parent = this.islemlerpanel;
+            this.islemlerpanel.Size = new System.Drawing.Size(1007, 582);
+            this.islemlerpanel.TabIndex = 6;
             // 
             // AdminPanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 770);
+            this.ClientSize = new System.Drawing.Size(1210, 640);
             this.Controls.Add(this.adminformpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminPanelForm";
@@ -237,7 +234,6 @@
             this.Text = "AdminPanelForm";
             this.adminformpanel.ResumeLayout(false);
             this.adminformustpanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -254,6 +250,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
-        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
+        private Guna.UI2.WinForms.Guna2GradientPanel islemlerpanel;
     }
 }

@@ -103,6 +103,12 @@
     <Compile Include="AdminPanelForm.Designer.cs">
       <DependentUpon>AdminPanelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminUcusEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUcusEkleForm.Designer.cs">
+      <DependentUpon>AdminUcusEkleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnaSayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,8 +129,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeferEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferEkleForm.Designer.cs">
+      <DependentUpon>SeferEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcusBilgileri.cs" />
     <EmbeddedResource Include="AdminPanelForm.resx">
       <DependentUpon>AdminPanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUcusEkleForm.resx">
+      <DependentUpon>AdminUcusEkleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnaSayfa.resx">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
@@ -145,6 +161,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SeferEkleForm.resx">
+      <DependentUpon>SeferEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -272,6 +291,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\adminpanel_1_1210x770.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucusekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucusguncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pegasus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

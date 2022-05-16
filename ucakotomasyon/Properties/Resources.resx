@@ -127,8 +127,8 @@
   <data name="chatbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chatbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="adminpanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\adminpanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="istockphoto-1212284111-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1212284111-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_lock_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_lock_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +163,11 @@
   <data name="254367" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\254367.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yonetici" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yonetici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="adminpanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adminpanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ucusguncelle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ucusguncelle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gidisgelis1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gidisgelis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,6 +184,9 @@
   <data name="Destekkutususs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Destekkutususs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="anamenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anamenu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2840156" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2840156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,14 +199,17 @@
   <data name="arkaplan üst" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arkaplan üst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="istockphoto-1212284111-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\istockphoto-1212284111-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ucusekle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ucusekle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Destekkutusu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Destekkutusu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="anamenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anamenu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="adminpanel_1_1210x770" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adminpanel_1_1210x770.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yonetici" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yonetici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Destekkutusu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Destekkutusu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,7 +226,7 @@
   <data name="icons8_lock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_lock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="adminpanel_1_1210x770" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\adminpanel_1_1210x770.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pegasus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pegasus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

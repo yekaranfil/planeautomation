@@ -343,6 +343,16 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap pegasus {
+            get {
+                object obj = ResourceManager.GetObject("pegasus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap plane_flying_over_world_map_1557403__1_ {
             get {
                 object obj = ResourceManager.GetObject("plane-flying-over-world-map-1557403 (1)", resourceCulture);
@@ -356,6 +366,26 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap resim_2022_05_13_203358808_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("resim_2022-05-13_203358808-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ucusekle {
+            get {
+                object obj = ResourceManager.GetObject("ucusekle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ucusguncelle {
+            get {
+                object obj = ResourceManager.GetObject("ucusguncelle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

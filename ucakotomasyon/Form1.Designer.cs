@@ -245,6 +245,7 @@
             this.mailtext.Size = new System.Drawing.Size(243, 41);
             this.mailtext.TabIndex = 13;
             this.mailtext.Visible = false;
+            this.mailtext.TextChanged += new System.EventHandler(this.mailtext_TextChanged);
             this.mailtext.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mailtext_KeyPress);
             // 
             // destekbox

@@ -189,6 +189,11 @@ namespace ucakotomasyon
             adminpanel.Show();
         }
 
+        private void mailtext_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void destekbutonn_Click(object sender, EventArgs e)
         {
 
