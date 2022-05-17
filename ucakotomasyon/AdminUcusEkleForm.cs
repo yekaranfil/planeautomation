@@ -24,6 +24,7 @@ namespace ucakotomasyon
 
         private void AdminUcusEkleForm_Load(object sender, EventArgs e)
         {
+            //comboboxa firma adı çekme
             baglanti.Close();
             baglanti.Open();
             MySqlCommand kontrolfirma = new MySqlCommand("SELECT firma_adi FROM firmalar ", baglanti);
@@ -56,10 +57,11 @@ namespace ucakotomasyon
 
             plaka = plakabox.Text;
             koltuk = koltuksayibox.Text;
+
             //ucak verileri kaydetme
             baglanti.Close();
             baglanti.Open();
-            MySqlCommand ucakekleme = new MySqlCommand("INSERT INTO ucaklar (ucak_plaka, ucak_koltuksayisi, firmalar_firmalar_id) VALUES ('"+plaka+ "','" + koltuk + "','" + int.Parse(firmaid) + "')", baglanti);
+            MySqlCommand ucakekleme = new MySqlCommand("INSERT INTO ucaklar (ucak_plaka, ucak_koltuksayisi, firmalar_firmalar_id) VALUES ('"+plaka+ "','" + koltuk + "','" + firmaid + "')", baglanti);
             ucakekleme.ExecuteNonQuery();
             baglanti.Close();
             HataBox f = new HataBox();
@@ -77,6 +79,8 @@ namespace ucakotomasyon
         private void firmabox_SelectedIndexChanged(object sender, EventArgs e)
         {
             String secim;
+
+            // seçilen uçağın logosunu getirme
 
             secim = firmabox.SelectedItem.ToString();
             if(secim == "Pegasus")

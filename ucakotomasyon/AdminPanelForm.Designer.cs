@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.adminformpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.islemlerpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -39,7 +40,6 @@
             this.adminformustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.adminformminimize = new Guna.UI2.WinForms.Guna2ControlBox();
             this.adminformkapatma = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.islemlerpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.adminformpanel.SuspendLayout();
             this.adminformustpanel.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,17 @@
             this.adminformpanel.ShadowDecoration.Parent = this.adminformpanel;
             this.adminformpanel.Size = new System.Drawing.Size(1256, 818);
             this.adminformpanel.TabIndex = 0;
+            // 
+            // islemlerpanel
+            // 
+            this.islemlerpanel.BackColor = System.Drawing.Color.Transparent;
+            this.islemlerpanel.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.islemlerpanel.FillColor2 = System.Drawing.Color.Cyan;
+            this.islemlerpanel.Location = new System.Drawing.Point(225, 85);
+            this.islemlerpanel.Name = "islemlerpanel";
+            this.islemlerpanel.ShadowDecoration.Parent = this.islemlerpanel;
+            this.islemlerpanel.Size = new System.Drawing.Size(1007, 582);
+            this.islemlerpanel.TabIndex = 6;
             // 
             // guna2GradientButton5
             // 
@@ -129,6 +140,7 @@
             this.guna2GradientButton3.Text = "UÇAK EKLE";
             this.guna2GradientButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton3.UseTransparentBackground = true;
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // guna2GradientButton2
             // 
@@ -171,6 +183,7 @@
             this.guna2GradientButton1.Text = "UÇUŞ EKLE";
             this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton1.UseTransparentBackground = true;
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // adminformustpanel
             // 
@@ -213,14 +226,6 @@
             this.adminformkapatma.Size = new System.Drawing.Size(45, 29);
             this.adminformkapatma.TabIndex = 0;
             this.adminformkapatma.UseTransparentBackground = true;
-            // 
-            // islemlerpanel
-            // 
-            this.islemlerpanel.Location = new System.Drawing.Point(225, 85);
-            this.islemlerpanel.Name = "islemlerpanel";
-            this.islemlerpanel.ShadowDecoration.Parent = this.islemlerpanel;
-            this.islemlerpanel.Size = new System.Drawing.Size(1007, 582);
-            this.islemlerpanel.TabIndex = 6;
             // 
             // AdminPanelForm
             // 

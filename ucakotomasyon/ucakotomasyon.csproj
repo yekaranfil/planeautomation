@@ -135,6 +135,7 @@
     <Compile Include="SeferEkleForm.Designer.cs">
       <DependentUpon>SeferEkleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UcakBilgileri.cs" />
     <Compile Include="UcusBilgileri.cs" />
     <EmbeddedResource Include="AdminPanelForm.resx">
       <DependentUpon>AdminPanelForm.cs</DependentUpon>

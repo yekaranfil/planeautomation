@@ -16,6 +16,7 @@ namespace ucakotomasyon
         public AdminPanelForm()
         {
             InitializeComponent();
+            
         }
 
 
@@ -31,6 +32,33 @@ namespace ucakotomasyon
 
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+            islemlerpanel.Controls.Clear();
+            SeferEkleForm seferform = new SeferEkleForm();
+            seferform.TopLevel = false;
+            islemlerpanel.Controls.Add(seferform);
+            seferform.Show();
+            seferform.Dock = DockStyle.Fill;
+            seferform.BringToFront();
+
+
+
+
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            islemlerpanel.Controls.Clear();
+            AdminUcusEkleForm ucakekleform = new AdminUcusEkleForm();
+            ucakekleform.TopLevel = false;
+            islemlerpanel.Controls.Add(ucakekleform);
+            ucakekleform.Show();
+            ucakekleform.Dock = DockStyle.Fill;
+            ucakekleform.BringToFront();
         }
     }
 }

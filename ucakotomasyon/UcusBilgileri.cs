@@ -8,6 +8,8 @@ namespace ucakotomasyon
 {
     internal class UcusBilgileri
     {
+
+
         public static String ucus_neredenID, ucus_nereyeID, ucus_saati, ucus_tarihi, ucus_tahminsure, normal_bilet, bussines_bilet, ucaklar_ucak_id, ucaklar_firmalar_firmalar_id;
 
         public static String ucusnereden
@@ -31,6 +33,37 @@ namespace ucakotomasyon
             get { return ucus_tarihi; }
             set { ucus_tarihi = value; }
         }
+
+        public static String ucustahminisure
+        {
+            get { return ucus_tahminsure; }
+            set { ucus_tahminsure = value; }
+        }
+
+        public static String normalbilet
+        {
+            get { return normal_bilet; }
+            set { normal_bilet = value; }
+        }
+
+        public static String bussinesbilet
+        {
+            get { return bussines_bilet; }
+            set { bussines_bilet = value; }
+        }
+
+        public static String ucaklarid
+        {
+            get { return ucaklar_ucak_id; }
+            set { ucaklar_ucak_id = value; }
+        }
+
+        public static String ucaklarfirmalarid
+        {
+            get { return ucaklar_firmalar_firmalar_id; }
+            set { ucaklar_firmalar_firmalar_id = value; }
+        }
+
     }
 
 }
