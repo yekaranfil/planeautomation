@@ -22,9 +22,21 @@ namespace ucakotomasyon
             InitializeComponent();
         }
 
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int sonuc = ucaksecimbox.SelectedIndex + 1 ;
+            UcusBilgileri.ucaklarid = sonuc.ToString();
+
+          
+
+
+        }
+
         private void onaylabuton1_Click(object sender, EventArgs e)
         {
             String ucussaat, ucusdakika, tahminisaat, tahminidakika;
+            int ucakid, firmaid;
             ucussaat = ucussaatbox.Text;
             ucusdakika = ucusdakikabox.Text;
             tahminisaat = tahminisaatbox.Text;
@@ -35,9 +47,67 @@ namespace ucakotomasyon
             UcusBilgileri.ucustahminisure = tahminisaat + ":" + tahminidakika;
             UcusBilgileri.normalbilet = ekonomifiyatbox.Text; 
             UcusBilgileri.bussinesbilet = bussinesfiyatbox.Text;
-           
 
 
+            String sorgu1 = UcakBilgileri.Ucakplaka + " - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "Pegasus";
+
+
+            try
+            {
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand kontrolnereden = new MySqlCommand("SELECT firmalar_id FROM firmalar WHERE (firma_adi=@firmaadi)", baglanti);
+
+
+                //firma id çekmek için eklenen uçaklar ile şartlı sorgulama
+
+                if (ucaksecimbox.Text == sorgu1)
+                {
+                    kontrolnereden.Parameters.AddWithValue("@firmaadi","Pegasus");
+
+                }
+                else if (ucaksecimbox.Text == UcakBilgileri.Ucakplaka + " - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "Türk Hava Yolları")
+                {
+                    kontrolnereden.Parameters.AddWithValue("@firmaadi","Türk Hava Yolları");
+                }
+                else if (ucaksecimbox.Text == UcakBilgileri.Ucakplaka + " - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "Sunexpress")
+                {
+                    kontrolnereden.Parameters.AddWithValue("@firmaadi","Sunexpress");
+                }
+                else if (ucaksecimbox.Text == UcakBilgileri.Ucakplaka + " - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "AnadoluJet")
+                {
+                    kontrolnereden.Parameters.AddWithValue("@firmaadi","AnadoluJet");
+                }
+
+                MySqlDataReader dr = kontrolnereden.ExecuteReader();
+                if (dr.Read())
+                {
+
+                    UcakBilgileri.Firmalarid = dr["firmalar_id"].ToString();
+
+
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+
+
+
+
+            //firma id çekme
+
+
+
+
+
+
+
+            //nereden şehir id çekme
 
             try
             {
@@ -90,7 +160,7 @@ namespace ucakotomasyon
             baglanti.Open();
 
             MySqlCommand seferekleme = new MySqlCommand("INSERT INTO ucuslar (ucus_neredenID,ucus_nereyeID,ucus_saati, ucus_tarih, ucus_tahminsure,normal_bilet,bussines_bilet,ucaklar_ucak_id,ucaklar_firmalar_firmalar_id) VALUES ('" + UcusBilgileri.ucusnereden + "','" + UcusBilgileri.ucusnereye + "','" + UcusBilgileri.ucussaati  + "','" + UcusBilgileri.ucustarihi + "','" + UcusBilgileri.ucustahminisure + 
-                "','" + UcusBilgileri.normalbilet + "','" + UcusBilgileri.bussinesbilet + "','" + UcusBilgileri.ucaklarid + "','" + UcakBilgileri.Firmalarid+ "')", baglanti);
+                "','" + UcusBilgileri.normalbilet + "','" + UcusBilgileri.bussinesbilet + "','" + UcusBilgileri.ucaklarid + "','" + UcakBilgileri.Firmalarid + "')", baglanti);
             seferekleme.ExecuteNonQuery();
             baglanti.Close();
             HataBox f = new HataBox();
@@ -98,7 +168,6 @@ namespace ucakotomasyon
             HataBox.text = "Uçuş eklendi";
             f.hataresim.Visible = false;
             f.onayresim.Visible = true;
-
             f.Show();
 
 
@@ -123,11 +192,12 @@ namespace ucakotomasyon
                     
                 }
             } catch(Exception ex) 
+
             {
 
             }
 
-
+            String ucakid1;
             try
             {
                 baglanti.Close();
@@ -136,7 +206,7 @@ namespace ucakotomasyon
                 MySqlDataReader dr = ucakekle.ExecuteReader();
                 while (dr.Read())
                 {
-
+                    ucakid1 = dr["ucak_id"].ToString();
                     UcakBilgileri.Ucakplaka = dr["ucak_plaka"].ToString();
                     UcakBilgileri.Ucakkoltuksayisi = dr["ucak_koltuksayisi"].ToString();
                     UcakBilgileri.Firmalarid = dr["firmalar_firmalar_id"].ToString();
@@ -165,7 +235,10 @@ namespace ucakotomasyon
 
             }
 
+           
 
+
+            
         }
 
         private void neredenbox_SelectedValueChanged(object sender, EventArgs e)
@@ -233,10 +306,14 @@ namespace ucakotomasyon
 
         }
 
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
         {
-            int sonuc = ucaksecimbox.SelectedIndex+1;
-            UcusBilgileri.ucaklarid = sonuc.ToString();
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+          
         }
     }
 }

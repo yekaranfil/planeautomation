@@ -61,7 +61,7 @@ namespace ucakotomasyon
             //ucak verileri kaydetme
             baglanti.Close();
             baglanti.Open();
-            MySqlCommand ucakekleme = new MySqlCommand("INSERT INTO ucaklar (ucak_plaka, ucak_koltuksayisi, firmalar_firmalar_id) VALUES ('"+plaka+ "','" + koltuk + "','" + firmaid + "')", baglanti);
+            MySqlCommand ucakekleme = new MySqlCommand("INSERT INTO ucaklar (ucak_plaka, ucak_koltuksayisi, firmalar_firmalar_id) VALUES ('"+plaka+ "','" + koltuk + "','" + int.Parse(firmaid) + "')", baglanti);
             ucakekleme.ExecuteNonQuery();
             baglanti.Close();
             HataBox f = new HataBox();
