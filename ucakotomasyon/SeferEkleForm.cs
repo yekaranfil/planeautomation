@@ -54,36 +54,22 @@ namespace ucakotomasyon
 
             try
             {
+                int sonuc1 = ucaksecimbox.SelectedIndex + 1;
+
+
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolnereden = new MySqlCommand("SELECT firmalar_id FROM firmalar WHERE (firma_adi=@firmaadi)", baglanti);
-
+                MySqlCommand kontrolnereden = new MySqlCommand("SELECT firmalar_firmalar_id FROM ucaklar WHERE (ucak_id=@ucakid)", baglanti);
+                kontrolnereden.Parameters.AddWithValue("@ucakid", sonuc1);  
 
                 //firma id çekmek için eklenen uçaklar ile şartlı sorgulama
 
-                if (ucaksecimbox.Text == sorgu1)
-                {
-                    kontrolnereden.Parameters.AddWithValue("@firmaadi","Pegasus");
-
-                }
-                else if (ucaksecimbox.Text == UcakBilgileri.Ucakplaka + " - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "Türk Hava Yolları")
-                {
-                    kontrolnereden.Parameters.AddWithValue("@firmaadi","Türk Hava Yolları");
-                }
-                else if (ucaksecimbox.Text == UcakBilgileri.Ucakplaka + " - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "Sunexpress")
-                {
-                    kontrolnereden.Parameters.AddWithValue("@firmaadi","Sunexpress");
-                }
-                else if (ucaksecimbox.Text == UcakBilgileri.Ucakplaka + " - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "AnadoluJet")
-                {
-                    kontrolnereden.Parameters.AddWithValue("@firmaadi","AnadoluJet");
-                }
-
+              
                 MySqlDataReader dr = kontrolnereden.ExecuteReader();
                 if (dr.Read())
                 {
 
-                    UcakBilgileri.Firmalarid = dr["firmalar_id"].ToString();
+                    UcakBilgileri.Firmalarid = dr["firmalar_firmalar_id"].ToString();
 
 
 
