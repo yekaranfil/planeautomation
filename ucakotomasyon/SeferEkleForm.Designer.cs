@@ -43,7 +43,6 @@
             this.ekonomilbl = new System.Windows.Forms.Label();
             this.ekonomifiyatbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.bussinesfiyatbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.ucussaatbox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ucusdakikabox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,9 +54,11 @@
             this.ucaksecimbox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ucussaatbox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ucakicon)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -77,7 +78,7 @@
             this.onaylabuton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.onaylabuton1.ForeColor = System.Drawing.Color.White;
             this.onaylabuton1.HoverState.Parent = this.onaylabuton1;
-            this.onaylabuton1.Location = new System.Drawing.Point(21, 459);
+            this.onaylabuton1.Location = new System.Drawing.Point(171, 457);
             this.onaylabuton1.Name = "onaylabuton1";
             this.onaylabuton1.ShadowDecoration.Parent = this.onaylabuton1;
             this.onaylabuton1.Size = new System.Drawing.Size(103, 33);
@@ -91,7 +92,7 @@
             this.nereyetxt.AutoSize = true;
             this.nereyetxt.BackColor = System.Drawing.Color.Transparent;
             this.nereyetxt.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.nereyetxt.Location = new System.Drawing.Point(351, 145);
+            this.nereyetxt.Location = new System.Drawing.Point(501, 143);
             this.nereyetxt.Name = "nereyetxt";
             this.nereyetxt.Size = new System.Drawing.Size(83, 28);
             this.nereyetxt.TabIndex = 20;
@@ -102,7 +103,7 @@
             this.neredentxt.AutoSize = true;
             this.neredentxt.BackColor = System.Drawing.Color.Transparent;
             this.neredentxt.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.neredentxt.Location = new System.Drawing.Point(26, 145);
+            this.neredentxt.Location = new System.Drawing.Point(176, 143);
             this.neredentxt.Name = "neredentxt";
             this.neredentxt.Size = new System.Drawing.Size(98, 28);
             this.neredentxt.TabIndex = 19;
@@ -113,7 +114,7 @@
             this.ucakicon.BackColor = System.Drawing.Color.Transparent;
             this.ucakicon.BaseColor = System.Drawing.Color.Black;
             this.ucakicon.Image = global::ucakotomasyon.Properties.Resources.Ucusicon;
-            this.ucakicon.Location = new System.Drawing.Point(300, 176);
+            this.ucakicon.Location = new System.Drawing.Point(450, 174);
             this.ucakicon.Name = "ucakicon";
             this.ucakicon.Size = new System.Drawing.Size(32, 47);
             this.ucakicon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -142,7 +143,7 @@
             this.neredenbox.IntegralHeight = false;
             this.neredenbox.ItemHeight = 30;
             this.neredenbox.ItemsAppearance.Parent = this.neredenbox;
-            this.neredenbox.Location = new System.Drawing.Point(26, 176);
+            this.neredenbox.Location = new System.Drawing.Point(176, 174);
             this.neredenbox.Name = "neredenbox";
             this.neredenbox.ShadowDecoration.BorderRadius = 15;
             this.neredenbox.ShadowDecoration.Depth = 10;
@@ -176,7 +177,7 @@
             this.nereyebox.IntegralHeight = false;
             this.nereyebox.ItemHeight = 30;
             this.nereyebox.ItemsAppearance.Parent = this.nereyebox;
-            this.nereyebox.Location = new System.Drawing.Point(347, 176);
+            this.nereyebox.Location = new System.Drawing.Point(497, 174);
             this.nereyebox.Name = "nereyebox";
             this.nereyebox.ShadowDecoration.BorderRadius = 15;
             this.nereyebox.ShadowDecoration.Depth = 10;
@@ -194,7 +195,7 @@
             this.gidistarihlbl.AutoSize = true;
             this.gidistarihlbl.BackColor = System.Drawing.Color.Transparent;
             this.gidistarihlbl.Font = new System.Drawing.Font("Exo 2", 11.25F, System.Drawing.FontStyle.Bold);
-            this.gidistarihlbl.Location = new System.Drawing.Point(26, 289);
+            this.gidistarihlbl.Location = new System.Drawing.Point(176, 287);
             this.gidistarihlbl.Name = "gidistarihlbl";
             this.gidistarihlbl.Size = new System.Drawing.Size(88, 22);
             this.gidistarihlbl.TabIndex = 36;
@@ -208,9 +209,10 @@
             this.gidistarihbox.BorderRadius = 17;
             this.gidistarihbox.CheckedState.Parent = this.gidistarihbox;
             this.gidistarihbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.gidistarihbox.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.gidistarihbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gidistarihbox.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.gidistarihbox.HoverState.Parent = this.gidistarihbox;
-            this.gidistarihbox.Location = new System.Drawing.Point(23, 314);
+            this.gidistarihbox.Location = new System.Drawing.Point(173, 312);
             this.gidistarihbox.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gidistarihbox.MinDate = new System.DateTime(2022, 5, 18, 0, 0, 0, 0);
             this.gidistarihbox.Name = "gidistarihbox";
@@ -225,7 +227,7 @@
             this.bussineslbl.AutoSize = true;
             this.bussineslbl.BackColor = System.Drawing.Color.Transparent;
             this.bussineslbl.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
-            this.bussineslbl.Location = new System.Drawing.Point(26, 259);
+            this.bussineslbl.Location = new System.Drawing.Point(176, 257);
             this.bussineslbl.Name = "bussineslbl";
             this.bussineslbl.Size = new System.Drawing.Size(67, 20);
             this.bussineslbl.TabIndex = 34;
@@ -236,7 +238,7 @@
             this.ekonomilbl.AutoSize = true;
             this.ekonomilbl.BackColor = System.Drawing.Color.Transparent;
             this.ekonomilbl.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
-            this.ekonomilbl.Location = new System.Drawing.Point(26, 230);
+            this.ekonomilbl.Location = new System.Drawing.Point(176, 228);
             this.ekonomilbl.Name = "ekonomilbl";
             this.ekonomilbl.Size = new System.Drawing.Size(65, 20);
             this.ekonomilbl.TabIndex = 33;
@@ -260,7 +262,7 @@
             this.ekonomifiyatbox.FocusedState.Parent = this.ekonomifiyatbox;
             this.ekonomifiyatbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ekonomifiyatbox.HoverState.Parent = this.ekonomifiyatbox;
-            this.ekonomifiyatbox.Location = new System.Drawing.Point(99, 230);
+            this.ekonomifiyatbox.Location = new System.Drawing.Point(249, 228);
             this.ekonomifiyatbox.Name = "ekonomifiyatbox";
             this.ekonomifiyatbox.PasswordChar = '\0';
             this.ekonomifiyatbox.PlaceholderText = "";
@@ -287,7 +289,7 @@
             this.bussinesfiyatbox.FocusedState.Parent = this.bussinesfiyatbox;
             this.bussinesfiyatbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.bussinesfiyatbox.HoverState.Parent = this.bussinesfiyatbox;
-            this.bussinesfiyatbox.Location = new System.Drawing.Point(99, 262);
+            this.bussinesfiyatbox.Location = new System.Drawing.Point(249, 260);
             this.bussinesfiyatbox.Name = "bussinesfiyatbox";
             this.bussinesfiyatbox.PasswordChar = '\0';
             this.bussinesfiyatbox.PlaceholderText = "";
@@ -295,59 +297,6 @@
             this.bussinesfiyatbox.ShadowDecoration.Parent = this.bussinesfiyatbox;
             this.bussinesfiyatbox.Size = new System.Drawing.Size(79, 24);
             this.bussinesfiyatbox.TabIndex = 41;
-            // 
-            // ucussaatbox
-            // 
-            this.ucussaatbox.Animated = true;
-            this.ucussaatbox.AutoRoundedCorners = true;
-            this.ucussaatbox.BackColor = System.Drawing.Color.Transparent;
-            this.ucussaatbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
-            this.ucussaatbox.BorderRadius = 17;
-            this.ucussaatbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ucussaatbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ucussaatbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ucussaatbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ucussaatbox.FocusedState.Parent = this.ucussaatbox;
-            this.ucussaatbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ucussaatbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ucussaatbox.FormattingEnabled = true;
-            this.ucussaatbox.HoverState.BorderColor = System.Drawing.Color.Blue;
-            this.ucussaatbox.HoverState.Parent = this.ucussaatbox;
-            this.ucussaatbox.ItemHeight = 30;
-            this.ucussaatbox.Items.AddRange(new object[] {
-            "00",
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23"});
-            this.ucussaatbox.ItemsAppearance.Parent = this.ucussaatbox;
-            this.ucussaatbox.Location = new System.Drawing.Point(236, 314);
-            this.ucussaatbox.Name = "ucussaatbox";
-            this.ucussaatbox.ShadowDecoration.BorderRadius = 15;
-            this.ucussaatbox.ShadowDecoration.Depth = 10;
-            this.ucussaatbox.ShadowDecoration.Enabled = true;
-            this.ucussaatbox.ShadowDecoration.Parent = this.ucussaatbox;
-            this.ucussaatbox.Size = new System.Drawing.Size(82, 36);
-            this.ucussaatbox.TabIndex = 42;
             // 
             // ucusdakikabox
             // 
@@ -366,6 +315,7 @@
             this.ucusdakikabox.FormattingEnabled = true;
             this.ucusdakikabox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.ucusdakikabox.HoverState.Parent = this.ucusdakikabox;
+            this.ucusdakikabox.IntegralHeight = false;
             this.ucusdakikabox.ItemHeight = 30;
             this.ucusdakikabox.Items.AddRange(new object[] {
             "00",
@@ -382,7 +332,7 @@
             "55",
             ""});
             this.ucusdakikabox.ItemsAppearance.Parent = this.ucusdakikabox;
-            this.ucusdakikabox.Location = new System.Drawing.Point(338, 314);
+            this.ucusdakikabox.Location = new System.Drawing.Point(488, 312);
             this.ucusdakikabox.Name = "ucusdakikabox";
             this.ucusdakikabox.ShadowDecoration.BorderRadius = 15;
             this.ucusdakikabox.ShadowDecoration.Depth = 10;
@@ -396,7 +346,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(320, 314);
+            this.label1.Location = new System.Drawing.Point(470, 312);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(17, 28);
             this.label1.TabIndex = 44;
@@ -407,7 +357,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(28, 368);
+            this.label2.Location = new System.Drawing.Point(178, 366);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 25);
             this.label2.TabIndex = 45;
@@ -418,7 +368,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(280, 361);
+            this.label3.Location = new System.Drawing.Point(430, 359);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(17, 28);
             this.label3.TabIndex = 48;
@@ -441,6 +391,7 @@
             this.tahminidakikabox.FormattingEnabled = true;
             this.tahminidakikabox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.tahminidakikabox.HoverState.Parent = this.tahminidakikabox;
+            this.tahminidakikabox.IntegralHeight = false;
             this.tahminidakikabox.ItemHeight = 30;
             this.tahminidakikabox.Items.AddRange(new object[] {
             "00",
@@ -457,7 +408,7 @@
             "55",
             ""});
             this.tahminidakikabox.ItemsAppearance.Parent = this.tahminidakikabox;
-            this.tahminidakikabox.Location = new System.Drawing.Point(298, 361);
+            this.tahminidakikabox.Location = new System.Drawing.Point(448, 359);
             this.tahminidakikabox.Name = "tahminidakikabox";
             this.tahminidakikabox.ShadowDecoration.BorderRadius = 15;
             this.tahminidakikabox.ShadowDecoration.Depth = 10;
@@ -483,6 +434,7 @@
             this.tahminisaatbox.FormattingEnabled = true;
             this.tahminisaatbox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.tahminisaatbox.HoverState.Parent = this.tahminisaatbox;
+            this.tahminisaatbox.IntegralHeight = false;
             this.tahminisaatbox.ItemHeight = 30;
             this.tahminisaatbox.Items.AddRange(new object[] {
             "00",
@@ -510,7 +462,7 @@
             "22",
             "23"});
             this.tahminisaatbox.ItemsAppearance.Parent = this.tahminisaatbox;
-            this.tahminisaatbox.Location = new System.Drawing.Point(196, 361);
+            this.tahminisaatbox.Location = new System.Drawing.Point(346, 359);
             this.tahminisaatbox.Name = "tahminisaatbox";
             this.tahminisaatbox.ShadowDecoration.BorderRadius = 15;
             this.tahminisaatbox.ShadowDecoration.Depth = 10;
@@ -524,7 +476,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(184, 230);
+            this.label4.Location = new System.Drawing.Point(334, 228);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 20);
             this.label4.TabIndex = 49;
@@ -535,7 +487,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(184, 266);
+            this.label5.Location = new System.Drawing.Point(334, 264);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(25, 20);
             this.label5.TabIndex = 50;
@@ -562,13 +514,13 @@
             this.ucaksecimbox.IntegralHeight = false;
             this.ucaksecimbox.ItemHeight = 30;
             this.ucaksecimbox.ItemsAppearance.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.Location = new System.Drawing.Point(26, 89);
+            this.ucaksecimbox.Location = new System.Drawing.Point(325, 53);
             this.ucaksecimbox.Name = "ucaksecimbox";
             this.ucaksecimbox.ShadowDecoration.BorderRadius = 15;
             this.ucaksecimbox.ShadowDecoration.Depth = 10;
             this.ucaksecimbox.ShadowDecoration.Enabled = true;
             this.ucaksecimbox.ShadowDecoration.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.Size = new System.Drawing.Size(387, 36);
+            this.ucaksecimbox.Size = new System.Drawing.Size(606, 36);
             this.ucaksecimbox.TabIndex = 51;
             this.ucaksecimbox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.ucaksecimbox.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
@@ -578,7 +530,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(25, 58);
+            this.label6.Location = new System.Drawing.Point(171, 61);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(126, 28);
             this.label6.TabIndex = 52;
@@ -587,7 +539,8 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.Controls.Add(this.guna2ComboBox1);
+            this.guna2GradientPanel1.Controls.Add(this.logobox);
+            this.guna2GradientPanel1.Controls.Add(this.ucussaatbox);
             this.guna2GradientPanel1.Controls.Add(this.ucaksecimbox);
             this.guna2GradientPanel1.Controls.Add(this.label6);
             this.guna2GradientPanel1.Controls.Add(this.onaylabuton1);
@@ -608,7 +561,6 @@
             this.guna2GradientPanel1.Controls.Add(this.gidistarihbox);
             this.guna2GradientPanel1.Controls.Add(this.ucusdakikabox);
             this.guna2GradientPanel1.Controls.Add(this.gidistarihlbl);
-            this.guna2GradientPanel1.Controls.Add(this.ucussaatbox);
             this.guna2GradientPanel1.Controls.Add(this.ekonomifiyatbox);
             this.guna2GradientPanel1.Controls.Add(this.bussinesfiyatbox);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -621,36 +573,70 @@
             this.guna2GradientPanel1.TabIndex = 53;
             this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
-            // guna2ComboBox1
+            // ucussaatbox
             // 
-            this.guna2ComboBox1.Animated = true;
-            this.guna2ComboBox1.AutoRoundedCorners = true;
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
-            this.guna2ComboBox1.BorderRadius = 17;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.DropDownWidth = 70;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.BorderColor = System.Drawing.Color.Blue;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.IntegralHeight = false;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(21, 19);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.BorderRadius = 15;
-            this.guna2ComboBox1.ShadowDecoration.Depth = 10;
-            this.guna2ComboBox1.ShadowDecoration.Enabled = true;
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(387, 36);
-            this.guna2ComboBox1.TabIndex = 53;
-            this.guna2ComboBox1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.ucussaatbox.Animated = true;
+            this.ucussaatbox.AutoRoundedCorners = true;
+            this.ucussaatbox.BackColor = System.Drawing.Color.Transparent;
+            this.ucussaatbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
+            this.ucussaatbox.BorderRadius = 17;
+            this.ucussaatbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ucussaatbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ucussaatbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucussaatbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucussaatbox.FocusedState.Parent = this.ucussaatbox;
+            this.ucussaatbox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ucussaatbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ucussaatbox.FormattingEnabled = true;
+            this.ucussaatbox.HoverState.BorderColor = System.Drawing.Color.Blue;
+            this.ucussaatbox.HoverState.Parent = this.ucussaatbox;
+            this.ucussaatbox.IntegralHeight = false;
+            this.ucussaatbox.ItemHeight = 30;
+            this.ucussaatbox.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.ucussaatbox.ItemsAppearance.Parent = this.ucussaatbox;
+            this.ucussaatbox.Location = new System.Drawing.Point(382, 312);
+            this.ucussaatbox.Name = "ucussaatbox";
+            this.ucussaatbox.ShadowDecoration.BorderRadius = 15;
+            this.ucussaatbox.ShadowDecoration.Depth = 10;
+            this.ucussaatbox.ShadowDecoration.Enabled = true;
+            this.ucussaatbox.ShadowDecoration.Parent = this.ucussaatbox;
+            this.ucussaatbox.Size = new System.Drawing.Size(82, 36);
+            this.ucussaatbox.TabIndex = 53;
+            // 
+            // logobox
+            // 
+            this.logobox.BackColor = System.Drawing.Color.Transparent;
+            this.logobox.BaseColor = System.Drawing.Color.Black;
+            this.logobox.Location = new System.Drawing.Point(597, 276);
+            this.logobox.Name = "logobox";
+            this.logobox.Size = new System.Drawing.Size(377, 244);
+            this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logobox.TabIndex = 54;
+            this.logobox.TabStop = false;
             // 
             // SeferEkleForm
             // 
@@ -668,6 +654,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ucakicon)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logobox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -687,7 +674,6 @@
         private System.Windows.Forms.Label bussineslbl;
         private System.Windows.Forms.Label ekonomilbl;
         public Guna.UI2.WinForms.Guna2ComboBox ucusdakikabox;
-        public Guna.UI2.WinForms.Guna2ComboBox ucussaatbox;
         private Guna.UI2.WinForms.Guna2TextBox bussinesfiyatbox;
         private Guna.UI2.WinForms.Guna2TextBox ekonomifiyatbox;
         private System.Windows.Forms.Label label1;
@@ -700,6 +686,7 @@
         public Guna.UI2.WinForms.Guna2ComboBox ucaksecimbox;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        public Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        public Guna.UI2.WinForms.Guna2ComboBox ucussaatbox;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox logobox;
     }
 }

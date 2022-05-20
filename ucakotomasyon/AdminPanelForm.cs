@@ -60,5 +60,24 @@ namespace ucakotomasyon
             ucakekleform.Dock = DockStyle.Fill;
             ucakekleform.BringToFront();
         }
+
+        private void ucakguncellebuton_Click(object sender, EventArgs e)
+        {
+
+            islemlerpanel.Controls.Clear();
+            UcakGuncelle ucakguncelle = new UcakGuncelle();
+            ucakguncelle.TopLevel = false;
+            islemlerpanel.Controls.Add(ucakguncelle);
+            ucakguncelle.Show();
+            ucakguncelle.Dock = DockStyle.Fill;
+            ucakguncelle.BringToFront();
+
+
+        }
+
+        private void adminformkapatma_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

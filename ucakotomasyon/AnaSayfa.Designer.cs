@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.anamenupanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.tekyonradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.gidisdonusradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.ekonomiradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.bussinesradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.ucusarabtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gidisgelisicon = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.donustarihlbl = new System.Windows.Forms.Label();
@@ -39,12 +45,8 @@
             this.gidistarihbox = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.tekyonlbl = new System.Windows.Forms.Label();
             this.gidisdonuslbl = new System.Windows.Forms.Label();
-            this.gidisdonusradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.tekyonradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.ekonomiradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.bussineslbl = new System.Windows.Forms.Label();
             this.ekonomilbl = new System.Windows.Forms.Label();
-            this.bussinesradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.nereyetxt = new System.Windows.Forms.Label();
             this.neredentxt = new System.Windows.Forms.Label();
             this.kisisayilbl = new System.Windows.Forms.Label();
@@ -61,14 +63,12 @@
             this.secenekbuton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.anamenupanel.SuspendLayout();
+            this.guna2GroupBox2.SuspendLayout();
+            this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gidisgelisicon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucakicon)).BeginInit();
             this.anamenuustpanel.SuspendLayout();
-            this.guna2GroupBox1.SuspendLayout();
-            this.guna2GroupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -109,6 +109,132 @@
             this.anamenupanel.ShadowDecoration.Parent = this.anamenupanel;
             this.anamenupanel.Size = new System.Drawing.Size(1197, 581);
             this.anamenupanel.TabIndex = 2;
+            // 
+            // guna2GroupBox2
+            // 
+            this.guna2GroupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.Controls.Add(this.tekyonradiobtn);
+            this.guna2GroupBox2.Controls.Add(this.gidisdonusradiobtn);
+            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GroupBox2.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.Location = new System.Drawing.Point(546, 156);
+            this.guna2GroupBox2.Name = "guna2GroupBox2";
+            this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
+            this.guna2GroupBox2.Size = new System.Drawing.Size(27, 66);
+            this.guna2GroupBox2.TabIndex = 33;
+            this.guna2GroupBox2.Text = "guna2GroupBox2";
+            this.guna2GroupBox2.UseTransparentBackground = true;
+            // 
+            // tekyonradiobtn
+            // 
+            this.tekyonradiobtn.Animated = true;
+            this.tekyonradiobtn.BackColor = System.Drawing.Color.Transparent;
+            this.tekyonradiobtn.CheckedState.BorderColor = System.Drawing.Color.Navy;
+            this.tekyonradiobtn.CheckedState.BorderThickness = 2;
+            this.tekyonradiobtn.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.tekyonradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.tekyonradiobtn.CheckedState.InnerOffset = 10;
+            this.tekyonradiobtn.CheckedState.Parent = this.tekyonradiobtn;
+            this.tekyonradiobtn.Location = new System.Drawing.Point(0, 8);
+            this.tekyonradiobtn.Name = "tekyonradiobtn";
+            this.tekyonradiobtn.ShadowDecoration.Parent = this.tekyonradiobtn;
+            this.tekyonradiobtn.Size = new System.Drawing.Size(15, 15);
+            this.tekyonradiobtn.TabIndex = 21;
+            this.tekyonradiobtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.tekyonradiobtn.UncheckedState.BorderThickness = 2;
+            this.tekyonradiobtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.tekyonradiobtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.tekyonradiobtn.UncheckedState.Parent = this.tekyonradiobtn;
+            this.tekyonradiobtn.Visible = false;
+            this.tekyonradiobtn.CheckedChanged += new System.EventHandler(this.tekyonradiobtn_CheckedChanged);
+            // 
+            // gidisdonusradiobtn
+            // 
+            this.gidisdonusradiobtn.Animated = true;
+            this.gidisdonusradiobtn.BackColor = System.Drawing.Color.Transparent;
+            this.gidisdonusradiobtn.CheckedState.BorderColor = System.Drawing.Color.Navy;
+            this.gidisdonusradiobtn.CheckedState.BorderThickness = 2;
+            this.gidisdonusradiobtn.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.gidisdonusradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.gidisdonusradiobtn.CheckedState.InnerOffset = 10;
+            this.gidisdonusradiobtn.CheckedState.Parent = this.gidisdonusradiobtn;
+            this.gidisdonusradiobtn.Location = new System.Drawing.Point(0, 37);
+            this.gidisdonusradiobtn.Name = "gidisdonusradiobtn";
+            this.gidisdonusradiobtn.ShadowDecoration.Parent = this.gidisdonusradiobtn;
+            this.gidisdonusradiobtn.Size = new System.Drawing.Size(15, 15);
+            this.gidisdonusradiobtn.TabIndex = 22;
+            this.gidisdonusradiobtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.gidisdonusradiobtn.UncheckedState.BorderThickness = 2;
+            this.gidisdonusradiobtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.gidisdonusradiobtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.gidisdonusradiobtn.UncheckedState.Parent = this.gidisdonusradiobtn;
+            this.gidisdonusradiobtn.Visible = false;
+            this.gidisdonusradiobtn.CheckedChanged += new System.EventHandler(this.gidisdonusradiobtn_CheckedChanged);
+            // 
+            // guna2GroupBox1
+            // 
+            this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Controls.Add(this.ekonomiradiobtn);
+            this.guna2GroupBox1.Controls.Add(this.bussinesradiobtn);
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(92, 152);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
+            this.guna2GroupBox1.Size = new System.Drawing.Size(27, 66);
+            this.guna2GroupBox1.TabIndex = 32;
+            this.guna2GroupBox1.Text = "guna2GroupBox1";
+            this.guna2GroupBox1.UseTransparentBackground = true;
+            // 
+            // ekonomiradiobtn
+            // 
+            this.ekonomiradiobtn.Animated = true;
+            this.ekonomiradiobtn.BackColor = System.Drawing.Color.Transparent;
+            this.ekonomiradiobtn.CheckedState.BorderColor = System.Drawing.Color.Navy;
+            this.ekonomiradiobtn.CheckedState.BorderThickness = 2;
+            this.ekonomiradiobtn.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.ekonomiradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.ekonomiradiobtn.CheckedState.InnerOffset = 10;
+            this.ekonomiradiobtn.CheckedState.Parent = this.ekonomiradiobtn;
+            this.ekonomiradiobtn.Location = new System.Drawing.Point(3, 11);
+            this.ekonomiradiobtn.Name = "ekonomiradiobtn";
+            this.ekonomiradiobtn.ShadowDecoration.Parent = this.ekonomiradiobtn;
+            this.ekonomiradiobtn.Size = new System.Drawing.Size(15, 15);
+            this.ekonomiradiobtn.TabIndex = 20;
+            this.ekonomiradiobtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ekonomiradiobtn.UncheckedState.BorderThickness = 2;
+            this.ekonomiradiobtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.ekonomiradiobtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.ekonomiradiobtn.UncheckedState.Parent = this.ekonomiradiobtn;
+            this.ekonomiradiobtn.Visible = false;
+            // 
+            // bussinesradiobtn
+            // 
+            this.bussinesradiobtn.Animated = true;
+            this.bussinesradiobtn.BackColor = System.Drawing.Color.Transparent;
+            this.bussinesradiobtn.CheckedState.BorderColor = System.Drawing.Color.Navy;
+            this.bussinesradiobtn.CheckedState.BorderThickness = 2;
+            this.bussinesradiobtn.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.bussinesradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.bussinesradiobtn.CheckedState.InnerOffset = 10;
+            this.bussinesradiobtn.CheckedState.Parent = this.bussinesradiobtn;
+            this.bussinesradiobtn.Location = new System.Drawing.Point(3, 40);
+            this.bussinesradiobtn.Name = "bussinesradiobtn";
+            this.bussinesradiobtn.ShadowDecoration.Parent = this.bussinesradiobtn;
+            this.bussinesradiobtn.Size = new System.Drawing.Size(15, 15);
+            this.bussinesradiobtn.TabIndex = 17;
+            this.bussinesradiobtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.bussinesradiobtn.UncheckedState.BorderThickness = 2;
+            this.bussinesradiobtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.bussinesradiobtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.bussinesradiobtn.UncheckedState.Parent = this.bussinesradiobtn;
+            this.bussinesradiobtn.Visible = false;
             // 
             // ucusarabtn
             // 
@@ -237,74 +363,6 @@
             this.gidisdonuslbl.Visible = false;
             this.gidisdonuslbl.Click += new System.EventHandler(this.gidisdonuslbl_Click);
             // 
-            // gidisdonusradiobtn
-            // 
-            this.gidisdonusradiobtn.Animated = true;
-            this.gidisdonusradiobtn.BackColor = System.Drawing.Color.Transparent;
-            this.gidisdonusradiobtn.CheckedState.BorderColor = System.Drawing.Color.Navy;
-            this.gidisdonusradiobtn.CheckedState.BorderThickness = 2;
-            this.gidisdonusradiobtn.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gidisdonusradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.gidisdonusradiobtn.CheckedState.InnerOffset = 10;
-            this.gidisdonusradiobtn.CheckedState.Parent = this.gidisdonusradiobtn;
-            this.gidisdonusradiobtn.Location = new System.Drawing.Point(0, 37);
-            this.gidisdonusradiobtn.Name = "gidisdonusradiobtn";
-            this.gidisdonusradiobtn.ShadowDecoration.Parent = this.gidisdonusradiobtn;
-            this.gidisdonusradiobtn.Size = new System.Drawing.Size(15, 15);
-            this.gidisdonusradiobtn.TabIndex = 22;
-            this.gidisdonusradiobtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gidisdonusradiobtn.UncheckedState.BorderThickness = 2;
-            this.gidisdonusradiobtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gidisdonusradiobtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.gidisdonusradiobtn.UncheckedState.Parent = this.gidisdonusradiobtn;
-            this.gidisdonusradiobtn.Visible = false;
-            this.gidisdonusradiobtn.CheckedChanged += new System.EventHandler(this.gidisdonusradiobtn_CheckedChanged);
-            // 
-            // tekyonradiobtn
-            // 
-            this.tekyonradiobtn.Animated = true;
-            this.tekyonradiobtn.BackColor = System.Drawing.Color.Transparent;
-            this.tekyonradiobtn.CheckedState.BorderColor = System.Drawing.Color.Navy;
-            this.tekyonradiobtn.CheckedState.BorderThickness = 2;
-            this.tekyonradiobtn.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.tekyonradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.tekyonradiobtn.CheckedState.InnerOffset = 10;
-            this.tekyonradiobtn.CheckedState.Parent = this.tekyonradiobtn;
-            this.tekyonradiobtn.Location = new System.Drawing.Point(0, 8);
-            this.tekyonradiobtn.Name = "tekyonradiobtn";
-            this.tekyonradiobtn.ShadowDecoration.Parent = this.tekyonradiobtn;
-            this.tekyonradiobtn.Size = new System.Drawing.Size(15, 15);
-            this.tekyonradiobtn.TabIndex = 21;
-            this.tekyonradiobtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.tekyonradiobtn.UncheckedState.BorderThickness = 2;
-            this.tekyonradiobtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.tekyonradiobtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.tekyonradiobtn.UncheckedState.Parent = this.tekyonradiobtn;
-            this.tekyonradiobtn.Visible = false;
-            this.tekyonradiobtn.CheckedChanged += new System.EventHandler(this.tekyonradiobtn_CheckedChanged);
-            // 
-            // ekonomiradiobtn
-            // 
-            this.ekonomiradiobtn.Animated = true;
-            this.ekonomiradiobtn.BackColor = System.Drawing.Color.Transparent;
-            this.ekonomiradiobtn.CheckedState.BorderColor = System.Drawing.Color.Navy;
-            this.ekonomiradiobtn.CheckedState.BorderThickness = 2;
-            this.ekonomiradiobtn.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.ekonomiradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.ekonomiradiobtn.CheckedState.InnerOffset = 10;
-            this.ekonomiradiobtn.CheckedState.Parent = this.ekonomiradiobtn;
-            this.ekonomiradiobtn.Location = new System.Drawing.Point(3, 11);
-            this.ekonomiradiobtn.Name = "ekonomiradiobtn";
-            this.ekonomiradiobtn.ShadowDecoration.Parent = this.ekonomiradiobtn;
-            this.ekonomiradiobtn.Size = new System.Drawing.Size(15, 15);
-            this.ekonomiradiobtn.TabIndex = 20;
-            this.ekonomiradiobtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ekonomiradiobtn.UncheckedState.BorderThickness = 2;
-            this.ekonomiradiobtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.ekonomiradiobtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.ekonomiradiobtn.UncheckedState.Parent = this.ekonomiradiobtn;
-            this.ekonomiradiobtn.Visible = false;
-            // 
             // bussineslbl
             // 
             this.bussineslbl.AutoSize = true;
@@ -328,28 +386,6 @@
             this.ekonomilbl.TabIndex = 18;
             this.ekonomilbl.Text = "Ekonomi";
             this.ekonomilbl.Visible = false;
-            // 
-            // bussinesradiobtn
-            // 
-            this.bussinesradiobtn.Animated = true;
-            this.bussinesradiobtn.BackColor = System.Drawing.Color.Transparent;
-            this.bussinesradiobtn.CheckedState.BorderColor = System.Drawing.Color.Navy;
-            this.bussinesradiobtn.CheckedState.BorderThickness = 2;
-            this.bussinesradiobtn.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.bussinesradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.bussinesradiobtn.CheckedState.InnerOffset = 10;
-            this.bussinesradiobtn.CheckedState.Parent = this.bussinesradiobtn;
-            this.bussinesradiobtn.Location = new System.Drawing.Point(3, 40);
-            this.bussinesradiobtn.Name = "bussinesradiobtn";
-            this.bussinesradiobtn.ShadowDecoration.Parent = this.bussinesradiobtn;
-            this.bussinesradiobtn.Size = new System.Drawing.Size(15, 15);
-            this.bussinesradiobtn.TabIndex = 17;
-            this.bussinesradiobtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.bussinesradiobtn.UncheckedState.BorderThickness = 2;
-            this.bussinesradiobtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.bussinesradiobtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.bussinesradiobtn.UncheckedState.Parent = this.bussinesradiobtn;
-            this.bussinesradiobtn.Visible = false;
             // 
             // nereyetxt
             // 
@@ -493,7 +529,7 @@
             this.anamenulabel2.BackColor = System.Drawing.Color.Transparent;
             this.anamenulabel2.Font = new System.Drawing.Font("Exo 2", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.anamenulabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
-            this.anamenulabel2.Location = new System.Drawing.Point(85, 510);
+            this.anamenulabel2.Location = new System.Drawing.Point(62, 352);
             this.anamenulabel2.Name = "anamenulabel2";
             this.anamenulabel2.Size = new System.Drawing.Size(514, 39);
             this.anamenulabel2.TabIndex = 2;
@@ -505,7 +541,7 @@
             this.anamenulabel.BackColor = System.Drawing.Color.Transparent;
             this.anamenulabel.Font = new System.Drawing.Font("Exo 2 ExtraBold", 57F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.anamenulabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.anamenulabel.Location = new System.Drawing.Point(73, 398);
+            this.anamenulabel.Location = new System.Drawing.Point(50, 240);
             this.anamenulabel.Name = "anamenulabel";
             this.anamenulabel.Size = new System.Drawing.Size(553, 112);
             this.anamenulabel.TabIndex = 1;
@@ -650,42 +686,6 @@
             this.guna2ControlBox1.UseTransparentBackground = true;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click_1);
             // 
-            // guna2GroupBox1
-            // 
-            this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.Controls.Add(this.ekonomiradiobtn);
-            this.guna2GroupBox1.Controls.Add(this.bussinesradiobtn);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(92, 152);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(27, 66);
-            this.guna2GroupBox1.TabIndex = 32;
-            this.guna2GroupBox1.Text = "guna2GroupBox1";
-            this.guna2GroupBox1.UseTransparentBackground = true;
-            // 
-            // guna2GroupBox2
-            // 
-            this.guna2GroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.Controls.Add(this.tekyonradiobtn);
-            this.guna2GroupBox2.Controls.Add(this.gidisdonusradiobtn);
-            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox2.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(546, 156);
-            this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
-            this.guna2GroupBox2.Size = new System.Drawing.Size(27, 66);
-            this.guna2GroupBox2.TabIndex = 33;
-            this.guna2GroupBox2.Text = "guna2GroupBox2";
-            this.guna2GroupBox2.UseTransparentBackground = true;
-            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -698,11 +698,11 @@
             this.Text = "AnaSayfa";
             this.anamenupanel.ResumeLayout(false);
             this.anamenupanel.PerformLayout();
+            this.guna2GroupBox2.ResumeLayout(false);
+            this.guna2GroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gidisgelisicon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucakicon)).EndInit();
             this.anamenuustpanel.ResumeLayout(false);
-            this.guna2GroupBox1.ResumeLayout(false);
-            this.guna2GroupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

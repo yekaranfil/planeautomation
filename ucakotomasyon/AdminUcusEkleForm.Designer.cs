@@ -35,13 +35,13 @@
             this.koltuksayibox = new Guna.UI2.WinForms.Guna2TextBox();
             this.firmabox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.onaylabuton = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
+            this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -59,6 +59,7 @@
             this.plakabox.BackColor = System.Drawing.Color.Transparent;
             this.plakabox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.plakabox.BorderRadius = 17;
+            this.plakabox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.plakabox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.plakabox.DefaultText = "";
             this.plakabox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -70,7 +71,8 @@
             this.plakabox.FocusedState.Parent = this.plakabox;
             this.plakabox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.plakabox.HoverState.Parent = this.plakabox;
-            this.plakabox.Location = new System.Drawing.Point(165, 209);
+            this.plakabox.Location = new System.Drawing.Point(233, 240);
+            this.plakabox.MaxLength = 6;
             this.plakabox.Name = "plakabox";
             this.plakabox.PasswordChar = '\0';
             this.plakabox.PlaceholderText = "";
@@ -97,7 +99,8 @@
             this.koltuksayibox.FocusedState.Parent = this.koltuksayibox;
             this.koltuksayibox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.koltuksayibox.HoverState.Parent = this.koltuksayibox;
-            this.koltuksayibox.Location = new System.Drawing.Point(165, 260);
+            this.koltuksayibox.Location = new System.Drawing.Point(233, 291);
+            this.koltuksayibox.MaxLength = 3;
             this.koltuksayibox.Name = "koltuksayibox";
             this.koltuksayibox.PasswordChar = '\0';
             this.koltuksayibox.PlaceholderText = "";
@@ -123,7 +126,7 @@
             this.firmabox.HoverState.Parent = this.firmabox;
             this.firmabox.ItemHeight = 30;
             this.firmabox.ItemsAppearance.Parent = this.firmabox;
-            this.firmabox.Location = new System.Drawing.Point(165, 154);
+            this.firmabox.Location = new System.Drawing.Point(233, 185);
             this.firmabox.Name = "firmabox";
             this.firmabox.ShadowDecoration.Parent = this.firmabox;
             this.firmabox.Size = new System.Drawing.Size(180, 36);
@@ -143,7 +146,7 @@
             this.onaylabuton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.onaylabuton.ForeColor = System.Drawing.Color.White;
             this.onaylabuton.HoverState.Parent = this.onaylabuton;
-            this.onaylabuton.Location = new System.Drawing.Point(150, 316);
+            this.onaylabuton.Location = new System.Drawing.Point(218, 347);
             this.onaylabuton.Name = "onaylabuton";
             this.onaylabuton.ShadowDecoration.Parent = this.onaylabuton;
             this.onaylabuton.Size = new System.Drawing.Size(103, 33);
@@ -152,23 +155,12 @@
             this.onaylabuton.UseTransparentBackground = true;
             this.onaylabuton.Click += new System.EventHandler(this.onaylabuton_Click);
             // 
-            // logobox
-            // 
-            this.logobox.BackColor = System.Drawing.Color.Transparent;
-            this.logobox.BaseColor = System.Drawing.Color.Black;
-            this.logobox.Location = new System.Drawing.Point(381, 101);
-            this.logobox.Name = "logobox";
-            this.logobox.Size = new System.Drawing.Size(147, 89);
-            this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logobox.TabIndex = 5;
-            this.logobox.TabStop = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(17, 162);
+            this.label6.Location = new System.Drawing.Point(85, 193);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 28);
             this.label6.TabIndex = 53;
@@ -179,7 +171,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(17, 217);
+            this.label1.Location = new System.Drawing.Point(85, 248);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 28);
             this.label1.TabIndex = 54;
@@ -190,7 +182,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(17, 268);
+            this.label2.Location = new System.Drawing.Point(85, 299);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 28);
             this.label2.TabIndex = 55;
@@ -216,6 +208,17 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1007, 582);
             this.guna2GradientPanel1.TabIndex = 56;
             // 
+            // logobox
+            // 
+            this.logobox.BackColor = System.Drawing.Color.Transparent;
+            this.logobox.BaseColor = System.Drawing.Color.Black;
+            this.logobox.Location = new System.Drawing.Point(439, 105);
+            this.logobox.Name = "logobox";
+            this.logobox.Size = new System.Drawing.Size(568, 311);
+            this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logobox.TabIndex = 5;
+            this.logobox.TabStop = false;
+            // 
             // AdminUcusEkleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,9 +230,9 @@
             this.Name = "AdminUcusEkleForm";
             this.Text = "AdminUcusEkleForm";
             this.Load += new System.EventHandler(this.AdminUcusEkleForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.logobox)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logobox)).EndInit();
             this.ResumeLayout(false);
 
         }

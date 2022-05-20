@@ -21,8 +21,8 @@ namespace ucakotomasyon
 
 
         int sayac = 0;
-        public static String _tcno, _mail, _sifre, _ad, _soyad, _telefon, _dogumtarihi,_cinsiyet,_sikayetmetin,_sikayetmail;
-        
+        public static String _tcno, _mail, _sifre, _ad, _soyad, _telefon, _dogumtarihi, _cinsiyet, _sikayetmetin, _sikayetmail;
+
         //tc kontrol fonksiyonu
         public bool TcKontrol()
         {
@@ -65,7 +65,7 @@ namespace ucakotomasyon
 
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-       
+
 
         private void guna2GradientPanel2_MouseDown(object sender, MouseEventArgs e)
         {
@@ -83,7 +83,7 @@ namespace ucakotomasyon
                 sayac = 0;
             }
 
-            if(txtgiris.Text.Equals(""))
+            if (txtgiris.Text.Equals(""))
             {
                 txtgiris.Text = "T.C. Kimlik Numarası";
             }
@@ -93,12 +93,12 @@ namespace ucakotomasyon
                 mailtext.Text = "Mail Adresi";
             }
 
-           
+
 
         }
         private void txtgirissifre_KeyPress(object sender, KeyPressEventArgs e)
         {
-           
+
 
             if (sayac == 0)
             {
@@ -107,7 +107,7 @@ namespace ucakotomasyon
 
             }
 
-            if(txtgirissifre.Text.Equals(""))
+            if (txtgirissifre.Text.Equals(""))
             {
                 txtgirissifre.PasswordChar = '\0';
             }
@@ -115,12 +115,12 @@ namespace ucakotomasyon
             {
                 txtgirissifre.PasswordChar = '*';
             }
-            
+
         }
 
         private void txtgiris_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(txtgiris.Text.Equals("T.C. Kimlik Numarası"))
+            if (txtgiris.Text.Equals("T.C. Kimlik Numarası"))
             {
                 txtgiris.Clear();
             }
@@ -140,7 +140,7 @@ namespace ucakotomasyon
 
         }
 
-       
+
 
         private void girisbuton_MouseDown(object sender, MouseEventArgs e)
         {
@@ -173,7 +173,8 @@ namespace ucakotomasyon
                 hataform.hataresim.Visible = false;
                 hataform.onayresim.Visible = true;
                 hataform.Show();
-            } else
+            }
+            else
             {
                 HataBox.mesaj = "Hatalı Giriş";
                 HataBox.text = "Kullanıcı Adı Veya Şifre Hatalı!";
@@ -185,8 +186,10 @@ namespace ucakotomasyon
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            AdminPanelForm adminpanel = new AdminPanelForm();
-            adminpanel.Show();
+            AdminGiris adminpanelgiris = new AdminGiris();
+            adminpanelgiris.Show();
+
+
         }
 
         private void mailtext_TextChanged(object sender, EventArgs e)
@@ -211,16 +214,17 @@ namespace ucakotomasyon
         private void destekbutonn_MouseDown(object sender, MouseEventArgs e)
         {
 
-            
+
             // destek buton görünüm ayarlama
-            if ((destekbox.Visible == true) || (destekboxcerceve.Visible == true) || (destekgonderb.Visible == true || maildestekbox.Visible == true) )
+            if ((destekbox.Visible == true) || (destekboxcerceve.Visible == true) || (destekgonderb.Visible == true || maildestekbox.Visible == true))
             {
                 destekbox.Visible = false;
-                destekboxcerceve.Visible = false; 
+                destekboxcerceve.Visible = false;
                 destekgonderb.Visible = false;
                 maildestekbox.Visible = false;
                 destekbox.Clear();
-            } else
+            }
+            else
             {
                 destekbox.Visible = true;
                 destekboxcerceve.Visible = true;
@@ -238,14 +242,14 @@ namespace ucakotomasyon
             if (maildestekbox.Text.Equals(""))
             {
                 maildestekbox.Text = "Mail Adresi";
-                
+
             }
             destekbox.Clear();
         }
 
         private void destekgonderb_MouseDown(object sender, MouseEventArgs e)
         {
-            
+
             //destek veritabanı bağlantısı
             _sikayetmail = maildestekbox.Text;
             _sikayetmetin = destekbox.Text;
@@ -273,9 +277,9 @@ namespace ucakotomasyon
 
         }
 
-       
 
-    
+
+
 
         private void txtgiris_TextChanged(object sender, EventArgs e)
         {
@@ -299,31 +303,34 @@ namespace ucakotomasyon
 
         private void kayitbuton2_Click(object sender, EventArgs e)
         {
-            
+
             _tcno = Convert.ToString(txtgiris.Text);
-            _sifre = Convert.ToString(txtgirissifre.Text); 
-            _mail = Convert.ToString(mailtext.Text); 
+            _sifre = Convert.ToString(txtgirissifre.Text);
+            _mail = Convert.ToString(mailtext.Text);
 
             //boş kontrol
-            if(_tcno == "" || _sifre == "" || _mail == "" || _tcno == "T.C Kimlik Numarası" || _sifre == "Şifre" || _mail == "Mail Adresi")
+            if (_tcno == "" || _sifre == "" || _mail == "" || _tcno == "T.C Kimlik Numarası" || _sifre == "Şifre" || _mail == "Mail Adresi")
             {
                 HataBox.mesaj = "Uyarı";
-                HataBox.text = "Zorunlu alanlar boş geçilemez!";               
+                HataBox.text = "Zorunlu alanlar boş geçilemez!";
                 HataBox f = new HataBox();
-                f.Show();             
-               // MessageBox.Show("Zorunlu alanlar boş geçilemez!","Hata",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-            } else
+                f.Show();
+                // MessageBox.Show("Zorunlu alanlar boş geçilemez!","Hata",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            else
             {
                 //tc kontrol
-                if(TcKontrol() == false )
-                {          
+                if (TcKontrol() == false)
+                {
                     errorProvider1.SetError(txtgiris, "Geçerli Bir Kimlik No Giriniz.");
                     HataBox.mesaj = "Yanlış Veri";
                     HataBox.text = "Lütfen Geçerli Bir T.C kimlik \nNumarası Giriniz";
                     HataBox f = new HataBox();
                     f.Show();
-                //tc kayıtlı mı?
-                } else if (TcKontrol() == true ){
+                    //tc kayıtlı mı?
+                }
+                else if (TcKontrol() == true)
+                {
                     baglanti.Close();
                     baglanti.Open();
                     MySqlCommand kayitkomuttc = new MySqlCommand("SELECT yolcu_tc FROM yolcular WHERE yolcu_tc = @tc", baglanti);
@@ -336,7 +343,7 @@ namespace ucakotomasyon
                         HataBox f = new HataBox();
                         f.Show();
                     }
-                    
+
                     // tc veritabanında kayıtlıysa 
                     else
                     {

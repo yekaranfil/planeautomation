@@ -97,6 +97,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminPanelForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,7 +142,16 @@
       <DependentUpon>SeferEkleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UcakBilgileri.cs" />
+    <Compile Include="UcakGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcakGuncelle.Designer.cs">
+      <DependentUpon>UcakGuncelle.cs</DependentUpon>
+    </Compile>
     <Compile Include="UcusBilgileri.cs" />
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminPanelForm.resx">
       <DependentUpon>AdminPanelForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +179,9 @@
     </Compile>
     <EmbeddedResource Include="SeferEkleForm.resx">
       <DependentUpon>SeferEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcakGuncelle.resx">
+      <DependentUpon>UcakGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

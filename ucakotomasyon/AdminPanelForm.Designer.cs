@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.adminformpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.ucakguncellebuton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.islemlerpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -54,6 +55,7 @@
             this.adminformpanel.BackColor = System.Drawing.Color.Transparent;
             this.adminformpanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.adminpanel_1_1210x770;
             this.adminformpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adminformpanel.Controls.Add(this.ucakguncellebuton);
             this.adminformpanel.Controls.Add(this.islemlerpanel);
             this.adminformpanel.Controls.Add(this.guna2GradientButton5);
             this.adminformpanel.Controls.Add(this.guna2GradientButton4);
@@ -66,6 +68,28 @@
             this.adminformpanel.ShadowDecoration.Parent = this.adminformpanel;
             this.adminformpanel.Size = new System.Drawing.Size(1256, 818);
             this.adminformpanel.TabIndex = 0;
+            // 
+            // ucakguncellebuton
+            // 
+            this.ucakguncellebuton.Animated = true;
+            this.ucakguncellebuton.AutoRoundedCorners = true;
+            this.ucakguncellebuton.BorderRadius = 21;
+            this.ucakguncellebuton.CheckedState.Parent = this.ucakguncellebuton;
+            this.ucakguncellebuton.CustomImages.Parent = this.ucakguncellebuton;
+            this.ucakguncellebuton.FillColor = System.Drawing.Color.Transparent;
+            this.ucakguncellebuton.FillColor2 = System.Drawing.Color.Transparent;
+            this.ucakguncellebuton.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
+            this.ucakguncellebuton.ForeColor = System.Drawing.Color.White;
+            this.ucakguncellebuton.HoverState.Parent = this.ucakguncellebuton;
+            this.ucakguncellebuton.Location = new System.Drawing.Point(83, 451);
+            this.ucakguncellebuton.Name = "ucakguncellebuton";
+            this.ucakguncellebuton.ShadowDecoration.Parent = this.ucakguncellebuton;
+            this.ucakguncellebuton.Size = new System.Drawing.Size(142, 45);
+            this.ucakguncellebuton.TabIndex = 7;
+            this.ucakguncellebuton.Text = "UÇAK GÜNCELLE";
+            this.ucakguncellebuton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ucakguncellebuton.UseTransparentBackground = true;
+            this.ucakguncellebuton.Click += new System.EventHandler(this.ucakguncellebuton_Click);
             // 
             // islemlerpanel
             // 
@@ -90,7 +114,7 @@
             this.guna2GradientButton5.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
             this.guna2GradientButton5.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton5.HoverState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(83, 506);
+            this.guna2GradientButton5.Location = new System.Drawing.Point(83, 553);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
             this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
             this.guna2GradientButton5.Size = new System.Drawing.Size(142, 45);
@@ -111,7 +135,7 @@
             this.guna2GradientButton4.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(83, 455);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(83, 502);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.Size = new System.Drawing.Size(142, 45);
@@ -226,6 +250,7 @@
             this.adminformkapatma.Size = new System.Drawing.Size(45, 29);
             this.adminformkapatma.TabIndex = 0;
             this.adminformkapatma.UseTransparentBackground = true;
+            this.adminformkapatma.Click += new System.EventHandler(this.adminformkapatma_Click);
             // 
             // AdminPanelForm
             // 
@@ -256,5 +281,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private Guna.UI2.WinForms.Guna2GradientPanel islemlerpanel;
+        private Guna.UI2.WinForms.Guna2GradientButton ucakguncellebuton;
     }
 }
