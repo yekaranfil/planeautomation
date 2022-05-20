@@ -149,6 +149,12 @@
       <DependentUpon>UcakGuncelle.cs</DependentUpon>
     </Compile>
     <Compile Include="UcusBilgileri.cs" />
+    <Compile Include="UcusGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcusGuncelleForm.Designer.cs">
+      <DependentUpon>UcusGuncelleForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminGiris.resx">
       <DependentUpon>AdminGiris.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UcakGuncelle.resx">
       <DependentUpon>UcakGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcusGuncelleForm.resx">
+      <DependentUpon>UcusGuncelleForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

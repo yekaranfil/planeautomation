@@ -186,6 +186,7 @@
             this.guna2GradientButton2.Text = "UÇUŞ GÜNCELLE";
             this.guna2GradientButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton2.UseTransparentBackground = true;
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2GradientButton1
             // 

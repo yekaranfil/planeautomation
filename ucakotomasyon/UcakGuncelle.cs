@@ -120,7 +120,6 @@ namespace ucakotomasyon
             HataBox.text = "Uçak Güncellendi";
             f.hataresim.Visible = false;
             f.onayresim.Visible = true;
-
             f.Show();
 
 
