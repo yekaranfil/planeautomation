@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guncellebuton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -44,6 +44,8 @@
             this.nereyetxt = new System.Windows.Forms.Label();
             this.neredenlbl = new System.Windows.Forms.Label();
             this.nereyelbl = new System.Windows.Forms.Label();
+            this.ucaksecimbox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucustable)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -109,28 +111,28 @@
             // 
             // ucustable
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ucustable.BackgroundColor = System.Drawing.Color.Cyan;
             this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.ucustable.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ucustable.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ucustable.DefaultCellStyle = dataGridViewCellStyle9;
             this.ucustable.EnableHeadersVisualStyles = false;
             this.ucustable.GridColor = System.Drawing.Color.Blue;
             this.ucustable.Location = new System.Drawing.Point(3, 45);
@@ -167,6 +169,8 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.ucaksecimbox);
+            this.guna2GradientPanel1.Controls.Add(this.label6);
             this.guna2GradientPanel1.Controls.Add(this.nereyelbl);
             this.guna2GradientPanel1.Controls.Add(this.neredenlbl);
             this.guna2GradientPanel1.Controls.Add(this.nereyebox);
@@ -295,6 +299,49 @@
             this.nereyelbl.Size = new System.Drawing.Size(0, 28);
             this.nereyelbl.TabIndex = 89;
             // 
+            // ucaksecimbox
+            // 
+            this.ucaksecimbox.Animated = true;
+            this.ucaksecimbox.AutoRoundedCorners = true;
+            this.ucaksecimbox.BackColor = System.Drawing.Color.Transparent;
+            this.ucaksecimbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
+            this.ucaksecimbox.BorderRadius = 17;
+            this.ucaksecimbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ucaksecimbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ucaksecimbox.DropDownWidth = 70;
+            this.ucaksecimbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucaksecimbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucaksecimbox.FocusedState.Parent = this.ucaksecimbox;
+            this.ucaksecimbox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ucaksecimbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ucaksecimbox.FormattingEnabled = true;
+            this.ucaksecimbox.HoverState.BorderColor = System.Drawing.Color.Blue;
+            this.ucaksecimbox.HoverState.Parent = this.ucaksecimbox;
+            this.ucaksecimbox.IntegralHeight = false;
+            this.ucaksecimbox.ItemHeight = 30;
+            this.ucaksecimbox.ItemsAppearance.Parent = this.ucaksecimbox;
+            this.ucaksecimbox.Location = new System.Drawing.Point(389, 5);
+            this.ucaksecimbox.Name = "ucaksecimbox";
+            this.ucaksecimbox.ShadowDecoration.BorderRadius = 15;
+            this.ucaksecimbox.ShadowDecoration.Depth = 10;
+            this.ucaksecimbox.ShadowDecoration.Enabled = true;
+            this.ucaksecimbox.ShadowDecoration.Parent = this.ucaksecimbox;
+            this.ucaksecimbox.Size = new System.Drawing.Size(606, 36);
+            this.ucaksecimbox.TabIndex = 90;
+            this.ucaksecimbox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.ucaksecimbox.SelectedIndexChanged += new System.EventHandler(this.ucaksecimbox_SelectedIndexChanged_1);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(235, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(126, 28);
+            this.label6.TabIndex = 91;
+            this.label6.Text = "UÇAK SEÇİMİ";
+            // 
             // UcusGuncelleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,5 +374,7 @@
         private System.Windows.Forms.Label nereyetxt;
         private System.Windows.Forms.Label nereyelbl;
         private System.Windows.Forms.Label neredenlbl;
+        public Guna.UI2.WinForms.Guna2ComboBox ucaksecimbox;
+        private System.Windows.Forms.Label label6;
     }
 }

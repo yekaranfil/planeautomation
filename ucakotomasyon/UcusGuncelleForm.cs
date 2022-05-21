@@ -80,6 +80,48 @@ namespace ucakotomasyon
             }
 
 
+            try
+            {
+
+                //comboboxa uçakları listeleme
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand ucakekle = new MySqlCommand("SELECT *FROM ucaklar", baglanti);
+                MySqlDataReader dr = ucakekle.ExecuteReader();
+                while (dr.Read())
+                {
+                    String ucakid1 = dr["ucak_id"].ToString();
+                    UcakBilgileri.Ucakplaka = dr["ucak_plaka"].ToString();
+                    UcakBilgileri.Ucakkoltuksayisi = dr["ucak_koltuksayisi"].ToString();
+                    UcakBilgileri.Firmalarid = dr["firmalar_firmalar_id"].ToString();
+
+
+                    if (UcakBilgileri.Firmalarid == "1")
+                    {
+                        ucaksecimbox.Items.Add("Uçak Plaka - " + UcakBilgileri.Ucakplaka + " - " + " Koltuk Sayısı - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "Pegasus");
+                    }
+                    else if (UcakBilgileri.Firmalarid == "2")
+                    {
+                        ucaksecimbox.Items.Add("Uçak Plaka - " + UcakBilgileri.Ucakplaka + " - " + " Koltuk Sayısı - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "Türk Hava Yolları");
+                    }
+                    else if (UcakBilgileri.Firmalarid == "3")
+                    {
+                        ucaksecimbox.Items.Add("Uçak Plaka - " + UcakBilgileri.Ucakplaka + " - " + " Koltuk Sayısı - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "Sunexpress");
+                    }
+                    else if (UcakBilgileri.Firmalarid == "4")
+                    {
+                        ucaksecimbox.Items.Add("Uçak Plaka - " + UcakBilgileri.Ucakplaka + " - " + " Koltuk Sayısı - " + UcakBilgileri.Ucakkoltuksayisi + " - " + "AnadoluJet");
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+
+
         }
 
         private void guncellebuton_Click(object sender, EventArgs e)
@@ -119,53 +161,67 @@ namespace ucakotomasyon
         int satirsayisi;
         private void ucustable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //seçilen satır ve sutundaki şehir id verisibi alma
-            String deger = ucustable.Rows[e.RowIndex].Cells[1].Value.ToString();
-            String deger1 = ucustable.Rows[e.RowIndex].Cells[2].Value.ToString();
-
-            satirsayisi = e.RowIndex;
-
-            //alınan id ile şehir adını çekme
-            try
-            {
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", baglanti);
-                kontrolfirma.Parameters.AddWithValue("@sehirid", deger);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
-                while (dr.Read())
-                {
-                    //seçilen hücrenin içindeki şehrin adını lbl yazdırma
-                    neredenlbl.Text = (dr["sehir_ad"]).ToString();
-
-                }
-            }
-            catch (Exception ex)
-
-            {
-
-            }
 
             try
             {
+                //seçilen satır ve sutundaki şehir id verisibi alma
+                String deger = ucustable.Rows[e.RowIndex].Cells[1].Value.ToString();
+                String deger1 = ucustable.Rows[e.RowIndex].Cells[2].Value.ToString();
 
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", baglanti);
-                kontrolfirma.Parameters.AddWithValue("@sehirid", deger1);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
-                while (dr.Read())
+                satirsayisi = e.RowIndex;
+
+                //alınan id ile şehir adını çekme
+                try
                 {
-                    //seçilen hücrenin içindeki şehrin adını lbl yazdırma
-                    nereyelbl.Text = (dr["sehir_ad"]).ToString();
+                    baglanti.Close();
+                    baglanti.Open();
+                    MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", baglanti);
+                    kontrolfirma.Parameters.AddWithValue("@sehirid", deger);
+                    MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        //seçilen hücrenin içindeki şehrin adını lbl yazdırma
+                        neredenlbl.Text = (dr["sehir_ad"]).ToString();
+
+                    }
+                }
+                catch (Exception ex)
+
+                {
 
                 }
-            }
-            catch (Exception ex)
 
+                try
+                {
+
+                    baglanti.Close();
+                    baglanti.Open();
+                    MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", baglanti);
+                    kontrolfirma.Parameters.AddWithValue("@sehirid", deger1);
+                    MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        //seçilen hücrenin içindeki şehrin adını lbl yazdırma
+                        nereyelbl.Text = (dr["sehir_ad"]).ToString();
+
+                    }
+                }
+                catch (Exception ex)
+
+                {
+                    HataBox f = new HataBox();
+                    HataBox.mesaj = "Uçak Güncelleme";
+                    HataBox.text = "Hatalı Seçim";
+                    f.hataresim.Visible = true;
+                    f.onayresim.Visible = false;
+                    f.Show();
+                }
+
+            } catch (Exception ex)
             {
 
             }
+           
 
 
         }
@@ -227,6 +283,41 @@ namespace ucakotomasyon
             {
 
             }
+
+        }
+
+        private void ucaksecimbox_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            try
+            {
+                //ucak plakasına göre uçak id ve firma id sorgulama
+                String secim;
+                secim = ucaksecimbox.SelectedItem.ToString();
+
+                // uçak ve firma id çekme
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand ucakidcekme = new MySqlCommand("SELECT ucak_id,firmalar_firmalar_id FROM ucaklar WHERE (ucak_plaka=@ucakplaka)", baglanti);
+                ucakidcekme.Parameters.AddWithValue("@ucakplaka", secim.Substring(13, 6));
+                MySqlDataReader dr = ucakidcekme.ExecuteReader();
+                if (dr.Read())
+                {
+
+                    UcusBilgileri.ucaklar_firmalar_firmalar_id = dr["firmalar_firmalar_id"].ToString();
+                    String firmaidlogo = dr["firmalar_firmalar_id"].ToString();
+                    UcusBilgileri.ucaklarid = dr["ucak_id"].ToString();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            };
+
+            ucustable.Rows[satirsayisi].Cells[8].Value = UcusBilgileri.ucaklarid;
+            ucustable.Rows[satirsayisi].Cells[9].Value = UcusBilgileri.ucaklar_firmalar_firmalar_id;
+
 
         }
     }
