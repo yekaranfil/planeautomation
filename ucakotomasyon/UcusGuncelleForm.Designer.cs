@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guncellebuton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -42,6 +42,8 @@
             this.neredenbox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.neredentxt = new System.Windows.Forms.Label();
             this.nereyetxt = new System.Windows.Forms.Label();
+            this.neredenlbl = new System.Windows.Forms.Label();
+            this.nereyelbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucustable)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -98,37 +100,37 @@
             // 
             this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(702, 442);
+            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(858, 442);
             this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
-            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(277, 128);
+            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(121, 128);
             this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaTransfarantPictureBox1.TabIndex = 82;
             this.gunaTransfarantPictureBox1.TabStop = false;
             // 
             // ucustable
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ucustable.BackgroundColor = System.Drawing.Color.Cyan;
             this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ucustable.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ucustable.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ucustable.DefaultCellStyle = dataGridViewCellStyle3;
             this.ucustable.EnableHeadersVisualStyles = false;
             this.ucustable.GridColor = System.Drawing.Color.Blue;
             this.ucustable.Location = new System.Drawing.Point(3, 45);
@@ -165,6 +167,8 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.nereyelbl);
+            this.guna2GradientPanel1.Controls.Add(this.neredenlbl);
             this.guna2GradientPanel1.Controls.Add(this.nereyebox);
             this.guna2GradientPanel1.Controls.Add(this.neredenbox);
             this.guna2GradientPanel1.Controls.Add(this.neredentxt);
@@ -203,16 +207,17 @@
             this.nereyebox.IntegralHeight = false;
             this.nereyebox.ItemHeight = 30;
             this.nereyebox.ItemsAppearance.Parent = this.nereyebox;
-            this.nereyebox.Location = new System.Drawing.Point(439, 493);
+            this.nereyebox.Location = new System.Drawing.Point(489, 493);
             this.nereyebox.Name = "nereyebox";
             this.nereyebox.ShadowDecoration.BorderRadius = 15;
             this.nereyebox.ShadowDecoration.Depth = 10;
             this.nereyebox.ShadowDecoration.Enabled = true;
             this.nereyebox.ShadowDecoration.Parent = this.nereyebox;
-            this.nereyebox.Size = new System.Drawing.Size(257, 36);
+            this.nereyebox.Size = new System.Drawing.Size(312, 36);
             this.nereyebox.Sorted = true;
             this.nereyebox.TabIndex = 84;
             this.nereyebox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.nereyebox.SelectedIndexChanged += new System.EventHandler(this.nereyebox_SelectedIndexChanged);
             // 
             // neredenbox
             // 
@@ -242,10 +247,11 @@
             this.neredenbox.ShadowDecoration.Depth = 10;
             this.neredenbox.ShadowDecoration.Enabled = true;
             this.neredenbox.ShadowDecoration.Parent = this.neredenbox;
-            this.neredenbox.Size = new System.Drawing.Size(257, 36);
+            this.neredenbox.Size = new System.Drawing.Size(312, 36);
             this.neredenbox.Sorted = true;
             this.neredenbox.TabIndex = 85;
             this.neredenbox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.neredenbox.SelectedIndexChanged += new System.EventHandler(this.neredenbox_SelectedIndexChanged);
             // 
             // neredentxt
             // 
@@ -263,11 +269,31 @@
             this.nereyetxt.AutoSize = true;
             this.nereyetxt.BackColor = System.Drawing.Color.Transparent;
             this.nereyetxt.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.nereyetxt.Location = new System.Drawing.Point(443, 462);
+            this.nereyetxt.Location = new System.Drawing.Point(484, 462);
             this.nereyetxt.Name = "nereyetxt";
             this.nereyetxt.Size = new System.Drawing.Size(83, 28);
             this.nereyetxt.TabIndex = 87;
             this.nereyetxt.Text = "NEREYE";
+            // 
+            // neredenlbl
+            // 
+            this.neredenlbl.AutoSize = true;
+            this.neredenlbl.BackColor = System.Drawing.Color.Transparent;
+            this.neredenlbl.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
+            this.neredenlbl.Location = new System.Drawing.Point(162, 434);
+            this.neredenlbl.Name = "neredenlbl";
+            this.neredenlbl.Size = new System.Drawing.Size(0, 28);
+            this.neredenlbl.TabIndex = 88;
+            // 
+            // nereyelbl
+            // 
+            this.nereyelbl.AutoSize = true;
+            this.nereyelbl.BackColor = System.Drawing.Color.Transparent;
+            this.nereyelbl.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
+            this.nereyelbl.Location = new System.Drawing.Point(443, 434);
+            this.nereyelbl.Name = "nereyelbl";
+            this.nereyelbl.Size = new System.Drawing.Size(0, 28);
+            this.nereyelbl.TabIndex = 89;
             // 
             // UcusGuncelleForm
             // 
@@ -299,5 +325,7 @@
         public Guna.UI2.WinForms.Guna2ComboBox neredenbox;
         private System.Windows.Forms.Label neredentxt;
         private System.Windows.Forms.Label nereyetxt;
+        private System.Windows.Forms.Label nereyelbl;
+        private System.Windows.Forms.Label neredenlbl;
     }
 }

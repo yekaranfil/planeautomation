@@ -83,18 +83,6 @@ namespace ucakotomasyon
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         private void onaylabuton_Click(object sender, EventArgs e)
