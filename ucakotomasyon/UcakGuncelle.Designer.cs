@@ -243,6 +243,7 @@
             this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logobox.TabIndex = 5;
             this.logobox.TabStop = false;
+            this.logobox.Click += new System.EventHandler(this.logobox_Click);
             // 
             // UcakGuncelle
             // 

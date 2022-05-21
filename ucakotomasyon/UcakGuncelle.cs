@@ -119,9 +119,9 @@ namespace ucakotomasyon
             {
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand ucakekleme = new MySqlCommand("DELETE FROM ucaklar WHERE ucak_id=@ucakid", baglanti);
-                ucakekleme.Parameters.AddWithValue("@ucakid", UcusBilgileri.ucaklarid);
-                ucakekleme.ExecuteNonQuery();
+                MySqlCommand ucaksilme = new MySqlCommand("DELETE FROM ucaklar WHERE ucak_id=@ucakid", baglanti);
+                ucaksilme.Parameters.AddWithValue("@ucakid", UcusBilgileri.ucaklarid);
+                ucaksilme.ExecuteNonQuery();
                 baglanti.Close();
                 HataBox f = new HataBox();
                 HataBox.mesaj = "Uçak ekleme";
@@ -141,6 +141,11 @@ namespace ucakotomasyon
                 f.Show();
             }
 
+
+        }
+
+        private void logobox_Click(object sender, EventArgs e)
+        {
 
         }
 

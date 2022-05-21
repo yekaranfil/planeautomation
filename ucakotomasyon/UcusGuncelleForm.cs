@@ -154,7 +154,13 @@ namespace ucakotomasyon
                 f.Show();
             }
 
-            
+
+
+
+            tablo.Clear();
+            UcusGuncelleForm_Load(null, null);
+
+
 
 
         }
@@ -285,7 +291,7 @@ namespace ucakotomasyon
             }
 
         }
-
+        String firmaidlogo;
         private void ucaksecimbox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             try
@@ -304,7 +310,7 @@ namespace ucakotomasyon
                 {
 
                     UcusBilgileri.ucaklar_firmalar_firmalar_id = dr["firmalar_firmalar_id"].ToString();
-                    String firmaidlogo = dr["firmalar_firmalar_id"].ToString();
+                     firmaidlogo = dr["firmalar_firmalar_id"].ToString();
                     UcusBilgileri.ucaklarid = dr["ucak_id"].ToString();
 
                 }
@@ -318,7 +324,62 @@ namespace ucakotomasyon
             ucustable.Rows[satirsayisi].Cells[8].Value = UcusBilgileri.ucaklarid;
             ucustable.Rows[satirsayisi].Cells[9].Value = UcusBilgileri.ucaklar_firmalar_firmalar_id;
 
+            // seçilen firmanın logosunu basma
+            int secim1 = int.Parse(firmaidlogo);
+            if (secim1 == 1)
+            {
+                logobox.Image = Image.FromFile(Application.StartupPath + "\\pegasus.png");
+                logobox.Refresh();
+            }
+            else if (secim1 == 2)
+            {
 
+                logobox.Image = Image.FromFile(Application.StartupPath + "\\turkishairlines.png");
+                logobox.Refresh();
+            }
+            else if (secim1 == 3)
+            {
+                logobox.Image = Image.FromFile(Application.StartupPath + "\\sunexpress.png");
+                logobox.Refresh();
+            }
+
+            else if (secim1 == 4)
+            {
+                logobox.Image = Image.FromFile(Application.StartupPath + "\\anadolujet.png");
+                logobox.Refresh();
+            }
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand ucussilme = new MySqlCommand("DELETE FROM ucuslar WHERE ucus_id=@ucusid", baglanti);
+                ucussilme.Parameters.AddWithValue("@ucusid", ucustable.Rows[satirsayisi].Cells[0].Value);
+                ucussilme.ExecuteNonQuery();
+                baglanti.Close();
+                HataBox f = new HataBox();
+                HataBox.mesaj = "Uçuş silme";
+                HataBox.text = "Uçuş Silindi";
+                f.hataresim.Visible = false;
+                f.onayresim.Visible = true;
+
+                f.Show();
+            }
+            catch (Exception ex)
+            {
+                HataBox f = new HataBox();
+                HataBox.mesaj = "Uçuş Silme";
+                HataBox.text = "Hata";
+                f.hataresim.Visible = true;
+                f.onayresim.Visible = false;
+                f.Show();
+            }
+
+            tablo.Clear();
+            UcusGuncelleForm_Load(null, null);
         }
     }
 }
