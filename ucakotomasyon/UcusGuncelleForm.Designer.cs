@@ -38,14 +38,14 @@
             this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.ucustable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.ucaksecimbox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.nereyelbl = new System.Windows.Forms.Label();
+            this.neredenlbl = new System.Windows.Forms.Label();
             this.nereyebox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.neredenbox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.neredentxt = new System.Windows.Forms.Label();
             this.nereyetxt = new System.Windows.Forms.Label();
-            this.neredenlbl = new System.Windows.Forms.Label();
-            this.nereyelbl = new System.Windows.Forms.Label();
-            this.ucaksecimbox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucustable)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -90,7 +90,7 @@
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(3, 454);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(3, 442);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(103, 33);
@@ -116,6 +116,7 @@
             this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ucustable.BackgroundColor = System.Drawing.Color.Cyan;
+            this.ucustable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -134,6 +135,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ucustable.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ucustable.EnableHeadersVisualStyles = false;
             this.ucustable.GridColor = System.Drawing.Color.Blue;
             this.ucustable.Location = new System.Drawing.Point(3, 45);
             this.ucustable.Name = "ucustable";
@@ -164,6 +166,7 @@
             this.ucustable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ucustable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.ucustable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ucustable_CellClick);
+            this.ucustable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ucustable_CellContentClick);
             this.ucustable.Click += new System.EventHandler(this.ucustable_Click);
             // 
             // guna2GradientPanel1
@@ -189,6 +192,69 @@
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1007, 582);
             this.guna2GradientPanel1.TabIndex = 58;
+            // 
+            // ucaksecimbox
+            // 
+            this.ucaksecimbox.Animated = true;
+            this.ucaksecimbox.AutoRoundedCorners = true;
+            this.ucaksecimbox.BackColor = System.Drawing.Color.Transparent;
+            this.ucaksecimbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
+            this.ucaksecimbox.BorderRadius = 17;
+            this.ucaksecimbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ucaksecimbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ucaksecimbox.DropDownWidth = 70;
+            this.ucaksecimbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucaksecimbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucaksecimbox.FocusedState.Parent = this.ucaksecimbox;
+            this.ucaksecimbox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ucaksecimbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ucaksecimbox.FormattingEnabled = true;
+            this.ucaksecimbox.HoverState.BorderColor = System.Drawing.Color.Blue;
+            this.ucaksecimbox.HoverState.Parent = this.ucaksecimbox;
+            this.ucaksecimbox.IntegralHeight = false;
+            this.ucaksecimbox.ItemHeight = 30;
+            this.ucaksecimbox.ItemsAppearance.Parent = this.ucaksecimbox;
+            this.ucaksecimbox.Location = new System.Drawing.Point(389, 5);
+            this.ucaksecimbox.Name = "ucaksecimbox";
+            this.ucaksecimbox.ShadowDecoration.BorderRadius = 15;
+            this.ucaksecimbox.ShadowDecoration.Depth = 10;
+            this.ucaksecimbox.ShadowDecoration.Enabled = true;
+            this.ucaksecimbox.ShadowDecoration.Parent = this.ucaksecimbox;
+            this.ucaksecimbox.Size = new System.Drawing.Size(606, 36);
+            this.ucaksecimbox.TabIndex = 90;
+            this.ucaksecimbox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.ucaksecimbox.SelectedIndexChanged += new System.EventHandler(this.ucaksecimbox_SelectedIndexChanged_1);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(238, 7);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(146, 28);
+            this.label6.TabIndex = 91;
+            this.label6.Text = "UÇAK DEĞİŞTİR";
+            // 
+            // nereyelbl
+            // 
+            this.nereyelbl.AutoSize = true;
+            this.nereyelbl.BackColor = System.Drawing.Color.Transparent;
+            this.nereyelbl.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
+            this.nereyelbl.Location = new System.Drawing.Point(443, 434);
+            this.nereyelbl.Name = "nereyelbl";
+            this.nereyelbl.Size = new System.Drawing.Size(0, 28);
+            this.nereyelbl.TabIndex = 89;
+            // 
+            // neredenlbl
+            // 
+            this.neredenlbl.AutoSize = true;
+            this.neredenlbl.BackColor = System.Drawing.Color.Transparent;
+            this.neredenlbl.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
+            this.neredenlbl.Location = new System.Drawing.Point(162, 434);
+            this.neredenlbl.Name = "neredenlbl";
+            this.neredenlbl.Size = new System.Drawing.Size(0, 28);
+            this.neredenlbl.TabIndex = 88;
             // 
             // nereyebox
             // 
@@ -278,69 +344,6 @@
             this.nereyetxt.Size = new System.Drawing.Size(83, 28);
             this.nereyetxt.TabIndex = 87;
             this.nereyetxt.Text = "NEREYE";
-            // 
-            // neredenlbl
-            // 
-            this.neredenlbl.AutoSize = true;
-            this.neredenlbl.BackColor = System.Drawing.Color.Transparent;
-            this.neredenlbl.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.neredenlbl.Location = new System.Drawing.Point(162, 434);
-            this.neredenlbl.Name = "neredenlbl";
-            this.neredenlbl.Size = new System.Drawing.Size(0, 28);
-            this.neredenlbl.TabIndex = 88;
-            // 
-            // nereyelbl
-            // 
-            this.nereyelbl.AutoSize = true;
-            this.nereyelbl.BackColor = System.Drawing.Color.Transparent;
-            this.nereyelbl.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.nereyelbl.Location = new System.Drawing.Point(443, 434);
-            this.nereyelbl.Name = "nereyelbl";
-            this.nereyelbl.Size = new System.Drawing.Size(0, 28);
-            this.nereyelbl.TabIndex = 89;
-            // 
-            // ucaksecimbox
-            // 
-            this.ucaksecimbox.Animated = true;
-            this.ucaksecimbox.AutoRoundedCorners = true;
-            this.ucaksecimbox.BackColor = System.Drawing.Color.Transparent;
-            this.ucaksecimbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
-            this.ucaksecimbox.BorderRadius = 17;
-            this.ucaksecimbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ucaksecimbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ucaksecimbox.DropDownWidth = 70;
-            this.ucaksecimbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ucaksecimbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ucaksecimbox.FocusedState.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ucaksecimbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ucaksecimbox.FormattingEnabled = true;
-            this.ucaksecimbox.HoverState.BorderColor = System.Drawing.Color.Blue;
-            this.ucaksecimbox.HoverState.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.IntegralHeight = false;
-            this.ucaksecimbox.ItemHeight = 30;
-            this.ucaksecimbox.ItemsAppearance.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.Location = new System.Drawing.Point(389, 5);
-            this.ucaksecimbox.Name = "ucaksecimbox";
-            this.ucaksecimbox.ShadowDecoration.BorderRadius = 15;
-            this.ucaksecimbox.ShadowDecoration.Depth = 10;
-            this.ucaksecimbox.ShadowDecoration.Enabled = true;
-            this.ucaksecimbox.ShadowDecoration.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.Size = new System.Drawing.Size(606, 36);
-            this.ucaksecimbox.TabIndex = 90;
-            this.ucaksecimbox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            this.ucaksecimbox.SelectedIndexChanged += new System.EventHandler(this.ucaksecimbox_SelectedIndexChanged_1);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(257, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 28);
-            this.label6.TabIndex = 91;
-            this.label6.Text = "UÇAK SEÇİMİ";
             // 
             // UcusGuncelleForm
             // 

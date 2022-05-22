@@ -90,13 +90,13 @@
             this.ucaksecimbox.IntegralHeight = false;
             this.ucaksecimbox.ItemHeight = 30;
             this.ucaksecimbox.ItemsAppearance.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.Location = new System.Drawing.Point(213, 183);
+            this.ucaksecimbox.Location = new System.Drawing.Point(226, 136);
             this.ucaksecimbox.Name = "ucaksecimbox";
             this.ucaksecimbox.ShadowDecoration.BorderRadius = 15;
             this.ucaksecimbox.ShadowDecoration.Depth = 10;
             this.ucaksecimbox.ShadowDecoration.Enabled = true;
             this.ucaksecimbox.ShadowDecoration.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.Size = new System.Drawing.Size(606, 36);
+            this.ucaksecimbox.Size = new System.Drawing.Size(597, 36);
             this.ucaksecimbox.TabIndex = 57;
             this.ucaksecimbox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.ucaksecimbox.SelectedIndexChanged += new System.EventHandler(this.ucaksecimbox_SelectedIndexChanged);
@@ -106,7 +106,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(73, 187);
+            this.label3.Location = new System.Drawing.Point(77, 140);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 28);
             this.label3.TabIndex = 58;
@@ -125,7 +125,7 @@
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(331, 366);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(335, 307);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(103, 33);
@@ -152,7 +152,7 @@
             this.koltuksayibox.FocusedState.Parent = this.koltuksayibox;
             this.koltuksayibox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.koltuksayibox.HoverState.Parent = this.koltuksayibox;
-            this.koltuksayibox.Location = new System.Drawing.Point(222, 310);
+            this.koltuksayibox.Location = new System.Drawing.Point(226, 251);
             this.koltuksayibox.Name = "koltuksayibox";
             this.koltuksayibox.PasswordChar = '\0';
             this.koltuksayibox.PlaceholderText = "";
@@ -166,7 +166,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(74, 318);
+            this.label2.Location = new System.Drawing.Point(78, 259);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 28);
             this.label2.TabIndex = 55;
@@ -185,7 +185,7 @@
             this.guncellebuton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guncellebuton.ForeColor = System.Drawing.Color.White;
             this.guncellebuton.HoverState.Parent = this.guncellebuton;
-            this.guncellebuton.Location = new System.Drawing.Point(222, 366);
+            this.guncellebuton.Location = new System.Drawing.Point(226, 307);
             this.guncellebuton.Name = "guncellebuton";
             this.guncellebuton.ShadowDecoration.Parent = this.guncellebuton;
             this.guncellebuton.Size = new System.Drawing.Size(103, 33);
@@ -213,7 +213,7 @@
             this.plakabox.FocusedState.Parent = this.plakabox;
             this.plakabox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.plakabox.HoverState.Parent = this.plakabox;
-            this.plakabox.Location = new System.Drawing.Point(222, 259);
+            this.plakabox.Location = new System.Drawing.Point(226, 200);
             this.plakabox.Name = "plakabox";
             this.plakabox.PasswordChar = '\0';
             this.plakabox.PlaceholderText = "";
@@ -227,7 +227,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(74, 267);
+            this.label1.Location = new System.Drawing.Point(78, 208);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 28);
             this.label1.TabIndex = 54;
@@ -237,9 +237,9 @@
             // 
             this.logobox.BackColor = System.Drawing.Color.Transparent;
             this.logobox.BaseColor = System.Drawing.Color.Black;
-            this.logobox.Location = new System.Drawing.Point(440, 239);
+            this.logobox.Location = new System.Drawing.Point(444, 178);
             this.logobox.Name = "logobox";
-            this.logobox.Size = new System.Drawing.Size(368, 215);
+            this.logobox.Size = new System.Drawing.Size(368, 194);
             this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logobox.TabIndex = 5;
             this.logobox.TabStop = false;

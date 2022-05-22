@@ -381,5 +381,10 @@ namespace ucakotomasyon
             tablo.Clear();
             UcusGuncelleForm_Load(null, null);
         }
+
+        private void ucustable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

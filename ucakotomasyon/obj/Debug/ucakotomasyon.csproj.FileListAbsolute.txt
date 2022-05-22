@@ -65,3 +65,4 @@ C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\uca
 C:\Users\yekar\Source\Repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.UcakGuncelle.resources
 C:\Users\yekar\Source\Repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.AdminGiris.resources
 C:\Users\yekar\Source\Repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.UcusGuncelleForm.resources
+C:\Users\yekar\Source\Repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.AdminDestekForm.resources

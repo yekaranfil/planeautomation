@@ -119,9 +119,10 @@
             this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
             this.guna2GradientButton5.Size = new System.Drawing.Size(142, 45);
             this.guna2GradientButton5.TabIndex = 5;
-            this.guna2GradientButton5.Text = "BİLET İPTAL";
+            this.guna2GradientButton5.Text = "DESTEK PANEL";
             this.guna2GradientButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton5.UseTransparentBackground = true;
+            this.guna2GradientButton5.Click += new System.EventHandler(this.guna2GradientButton5_Click);
             // 
             // guna2GradientButton4
             // 
@@ -214,8 +215,8 @@
             // 
             this.adminformustpanel.Controls.Add(this.adminformminimize);
             this.adminformustpanel.Controls.Add(this.adminformkapatma);
-            this.adminformustpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.adminformustpanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.adminformustpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(72)))), ((int)(((byte)(231)))));
+            this.adminformustpanel.FillColor2 = System.Drawing.Color.Aqua;
             this.adminformustpanel.Location = new System.Drawing.Point(225, 23);
             this.adminformustpanel.Name = "adminformustpanel";
             this.adminformustpanel.ShadowDecoration.Parent = this.adminformustpanel;

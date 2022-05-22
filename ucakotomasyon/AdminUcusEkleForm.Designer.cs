@@ -71,8 +71,7 @@
             this.plakabox.FocusedState.Parent = this.plakabox;
             this.plakabox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.plakabox.HoverState.Parent = this.plakabox;
-            this.plakabox.Location = new System.Drawing.Point(233, 240);
-            this.plakabox.MaxLength = 6;
+            this.plakabox.Location = new System.Drawing.Point(226, 195);
             this.plakabox.Name = "plakabox";
             this.plakabox.PasswordChar = '\0';
             this.plakabox.PlaceholderText = "";
@@ -99,8 +98,7 @@
             this.koltuksayibox.FocusedState.Parent = this.koltuksayibox;
             this.koltuksayibox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.koltuksayibox.HoverState.Parent = this.koltuksayibox;
-            this.koltuksayibox.Location = new System.Drawing.Point(233, 291);
-            this.koltuksayibox.MaxLength = 3;
+            this.koltuksayibox.Location = new System.Drawing.Point(226, 246);
             this.koltuksayibox.Name = "koltuksayibox";
             this.koltuksayibox.PasswordChar = '\0';
             this.koltuksayibox.PlaceholderText = "";
@@ -126,7 +124,7 @@
             this.firmabox.HoverState.Parent = this.firmabox;
             this.firmabox.ItemHeight = 30;
             this.firmabox.ItemsAppearance.Parent = this.firmabox;
-            this.firmabox.Location = new System.Drawing.Point(233, 185);
+            this.firmabox.Location = new System.Drawing.Point(226, 140);
             this.firmabox.Name = "firmabox";
             this.firmabox.ShadowDecoration.Parent = this.firmabox;
             this.firmabox.Size = new System.Drawing.Size(180, 36);
@@ -146,7 +144,7 @@
             this.onaylabuton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.onaylabuton.ForeColor = System.Drawing.Color.White;
             this.onaylabuton.HoverState.Parent = this.onaylabuton;
-            this.onaylabuton.Location = new System.Drawing.Point(218, 347);
+            this.onaylabuton.Location = new System.Drawing.Point(211, 302);
             this.onaylabuton.Name = "onaylabuton";
             this.onaylabuton.ShadowDecoration.Parent = this.onaylabuton;
             this.onaylabuton.Size = new System.Drawing.Size(103, 33);
@@ -160,7 +158,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(85, 193);
+            this.label6.Location = new System.Drawing.Point(78, 148);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 28);
             this.label6.TabIndex = 53;
@@ -171,7 +169,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(85, 248);
+            this.label1.Location = new System.Drawing.Point(78, 203);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 28);
             this.label1.TabIndex = 54;
@@ -182,7 +180,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(85, 299);
+            this.label2.Location = new System.Drawing.Point(78, 254);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 28);
             this.label2.TabIndex = 55;
@@ -212,9 +210,9 @@
             // 
             this.logobox.BackColor = System.Drawing.Color.Transparent;
             this.logobox.BaseColor = System.Drawing.Color.Black;
-            this.logobox.Location = new System.Drawing.Point(439, 105);
+            this.logobox.Location = new System.Drawing.Point(432, 60);
             this.logobox.Name = "logobox";
-            this.logobox.Size = new System.Drawing.Size(568, 311);
+            this.logobox.Size = new System.Drawing.Size(522, 311);
             this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logobox.TabIndex = 5;
             this.logobox.TabStop = false;

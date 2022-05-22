@@ -90,5 +90,16 @@ namespace ucakotomasyon
             ucusguncelle.Dock = DockStyle.Fill;
             ucusguncelle.BringToFront();
         }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            islemlerpanel.Controls.Clear();
+            AdminDestekForm admindestek = new AdminDestekForm();
+            admindestek.TopLevel = false;
+            islemlerpanel.Controls.Add(admindestek);
+            admindestek.Show();
+            admindestek.Dock = DockStyle.Fill;
+            admindestek.BringToFront();
+        }
     }
 }

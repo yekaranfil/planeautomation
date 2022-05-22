@@ -97,6 +97,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDestekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDestekForm.Designer.cs">
+      <DependentUpon>AdminDestekForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     <Compile Include="UcusGuncelleForm.Designer.cs">
       <DependentUpon>UcusGuncelleForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminDestekForm.resx">
+      <DependentUpon>AdminDestekForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminGiris.resx">
       <DependentUpon>AdminGiris.cs</DependentUpon>
     </EmbeddedResource>
