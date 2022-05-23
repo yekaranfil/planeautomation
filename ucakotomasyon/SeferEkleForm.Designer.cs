@@ -54,8 +54,8 @@
             this.ucaksecimbox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.ucussaatbox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.ucussaatbox = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ucakicon)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
@@ -221,6 +221,7 @@
             this.gidistarihbox.TabIndex = 35;
             this.gidistarihbox.UseTransparentBackground = true;
             this.gidistarihbox.Value = new System.DateTime(2022, 5, 18, 0, 0, 0, 0);
+            this.gidistarihbox.ValueChanged += new System.EventHandler(this.gidistarihbox_ValueChanged);
             // 
             // bussineslbl
             // 
@@ -573,6 +574,17 @@
             this.guna2GradientPanel1.TabIndex = 53;
             this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
+            // logobox
+            // 
+            this.logobox.BackColor = System.Drawing.Color.Transparent;
+            this.logobox.BaseColor = System.Drawing.Color.Black;
+            this.logobox.Location = new System.Drawing.Point(597, 276);
+            this.logobox.Name = "logobox";
+            this.logobox.Size = new System.Drawing.Size(377, 244);
+            this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logobox.TabIndex = 54;
+            this.logobox.TabStop = false;
+            // 
             // ucussaatbox
             // 
             this.ucussaatbox.Animated = true;
@@ -626,17 +638,6 @@
             this.ucussaatbox.ShadowDecoration.Parent = this.ucussaatbox;
             this.ucussaatbox.Size = new System.Drawing.Size(82, 36);
             this.ucussaatbox.TabIndex = 53;
-            // 
-            // logobox
-            // 
-            this.logobox.BackColor = System.Drawing.Color.Transparent;
-            this.logobox.BaseColor = System.Drawing.Color.Black;
-            this.logobox.Location = new System.Drawing.Point(597, 276);
-            this.logobox.Name = "logobox";
-            this.logobox.Size = new System.Drawing.Size(377, 244);
-            this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logobox.TabIndex = 54;
-            this.logobox.TabStop = false;
             // 
             // SeferEkleForm
             // 

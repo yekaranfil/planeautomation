@@ -45,7 +45,7 @@ namespace ucakotomasyon
             {
                 
 
-                koltuk = koltuksayibox.Text;
+                koltuk = koltukbox.Text;
                 plaka = plakabox.Text;
 
 
@@ -67,7 +67,7 @@ namespace ucakotomasyon
                     else
                     {
                         plaka = plakabox.Text;
-                        if (int.Parse(koltuksayibox.Text) > 250)
+                        if (int.Parse(koltukbox.Text) == null)
                         {
                             HataBox f1 = new HataBox();
                             HataBox.mesaj = "Veri hatası";
@@ -78,7 +78,7 @@ namespace ucakotomasyon
                         }
                         else
                         {
-                            koltuk = koltuksayibox.Text;
+                            koltuk = koltukbox.Text;
 
 
                            

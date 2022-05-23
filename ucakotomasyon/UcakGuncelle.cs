@@ -78,7 +78,7 @@ namespace ucakotomasyon
             String deger;
 
             plakabox.Text = secim.Substring(13, 6);
-            koltuksayibox.Text = secim.Substring(39, 3);
+            koltukbox.Text = secim.Substring(39, 3);
 
 
 
@@ -91,7 +91,7 @@ namespace ucakotomasyon
 
 
             plaka = plakabox.Text;
-            koltuksayisi = koltuksayibox.Text;
+            koltuksayisi = koltukbox.Text;
 
 
             baglanti.Close();

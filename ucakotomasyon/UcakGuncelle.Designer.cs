@@ -34,12 +34,12 @@
             this.ucaksecimbox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.koltuksayibox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guncellebuton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.plakabox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.koltukbox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
             this.SuspendLayout();
@@ -51,10 +51,10 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.koltukbox);
             this.guna2GradientPanel1.Controls.Add(this.ucaksecimbox);
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton1);
-            this.guna2GradientPanel1.Controls.Add(this.koltuksayibox);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Controls.Add(this.guncellebuton);
             this.guna2GradientPanel1.Controls.Add(this.plakabox);
@@ -134,33 +134,6 @@
             this.guna2GradientButton1.UseTransparentBackground = true;
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
-            // koltuksayibox
-            // 
-            this.koltuksayibox.Animated = true;
-            this.koltuksayibox.AutoRoundedCorners = true;
-            this.koltuksayibox.BackColor = System.Drawing.Color.Transparent;
-            this.koltuksayibox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.koltuksayibox.BorderRadius = 17;
-            this.koltuksayibox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.koltuksayibox.DefaultText = "";
-            this.koltuksayibox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.koltuksayibox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.koltuksayibox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.koltuksayibox.DisabledState.Parent = this.koltuksayibox;
-            this.koltuksayibox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.koltuksayibox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.koltuksayibox.FocusedState.Parent = this.koltuksayibox;
-            this.koltuksayibox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.koltuksayibox.HoverState.Parent = this.koltuksayibox;
-            this.koltuksayibox.Location = new System.Drawing.Point(226, 251);
-            this.koltuksayibox.Name = "koltuksayibox";
-            this.koltuksayibox.PasswordChar = '\0';
-            this.koltuksayibox.PlaceholderText = "";
-            this.koltuksayibox.SelectedText = "";
-            this.koltuksayibox.ShadowDecoration.Parent = this.koltuksayibox;
-            this.koltuksayibox.Size = new System.Drawing.Size(200, 36);
-            this.koltuksayibox.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -214,6 +187,7 @@
             this.plakabox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.plakabox.HoverState.Parent = this.plakabox;
             this.plakabox.Location = new System.Drawing.Point(226, 200);
+            this.plakabox.MaxLength = 6;
             this.plakabox.Name = "plakabox";
             this.plakabox.PasswordChar = '\0';
             this.plakabox.PlaceholderText = "";
@@ -245,6 +219,33 @@
             this.logobox.TabStop = false;
             this.logobox.Click += new System.EventHandler(this.logobox_Click);
             // 
+            // koltukbox
+            // 
+            this.koltukbox.Animated = true;
+            this.koltukbox.AutoRoundedCorners = true;
+            this.koltukbox.BackColor = System.Drawing.Color.Transparent;
+            this.koltukbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.koltukbox.BorderRadius = 17;
+            this.koltukbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.koltukbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.koltukbox.FocusedColor = System.Drawing.Color.Empty;
+            this.koltukbox.FocusedState.Parent = this.koltukbox;
+            this.koltukbox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.koltukbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.koltukbox.FormattingEnabled = true;
+            this.koltukbox.HoverState.Parent = this.koltukbox;
+            this.koltukbox.ItemHeight = 30;
+            this.koltukbox.Items.AddRange(new object[] {
+            "40",
+            "56",
+            "72"});
+            this.koltukbox.ItemsAppearance.Parent = this.koltukbox;
+            this.koltukbox.Location = new System.Drawing.Point(226, 255);
+            this.koltukbox.Name = "koltukbox";
+            this.koltukbox.ShadowDecoration.Parent = this.koltukbox;
+            this.koltukbox.Size = new System.Drawing.Size(200, 36);
+            this.koltukbox.TabIndex = 59;
+            // 
             // UcakGuncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,7 +268,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2TextBox koltuksayibox;
         private System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2GradientButton guncellebuton;
         private Guna.UI2.WinForms.Guna2TextBox plakabox;
@@ -275,5 +275,6 @@
         private Guna.UI.WinForms.GunaTransfarantPictureBox logobox;
         public Guna.UI2.WinForms.Guna2ComboBox ucaksecimbox;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2ComboBox koltukbox;
     }
 }

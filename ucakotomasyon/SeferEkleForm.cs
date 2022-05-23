@@ -35,8 +35,9 @@ namespace ucakotomasyon
             tahminisaat = tahminisaatbox.Text;
             tahminidakika = tahminidakikabox.Text;
 
+            gidistarihbox.Format = DateTimePickerFormat.Custom;
+            gidistarihbox.CustomFormat = "yyyy-MM-dd";
             UcusBilgileri.ucustarihi = gidistarihbox.Text;
-            UcusBilgileri.ucustarihi = DateTime.Now.ToString("yyyy-MM-dd");
             UcusBilgileri.ucussaati = ucussaat + ":" + ucusdakika;
             UcusBilgileri.ucustahminisure = tahminisaat + ":" + tahminidakika;
             UcusBilgileri.normalbilet = ekonomifiyatbox.Text;
@@ -318,6 +319,11 @@ namespace ucakotomasyon
         }
 
         private void guna2ComboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gidistarihbox_ValueChanged(object sender, EventArgs e)
         {
 
         }
