@@ -118,6 +118,12 @@ namespace ucakotomasyon
         }
 
         public static String firmaid,firmaadi;
+
+        private void logobox_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void firmabox_SelectedIndexChanged(object sender, EventArgs e)
         {
             String secim;

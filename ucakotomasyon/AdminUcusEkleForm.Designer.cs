@@ -38,8 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.koltukbox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +72,6 @@
             this.plakabox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.plakabox.HoverState.Parent = this.plakabox;
             this.plakabox.Location = new System.Drawing.Point(226, 195);
-            this.plakabox.MaxLength = 6;
             this.plakabox.Name = "plakabox";
             this.plakabox.PasswordChar = '\0';
             this.plakabox.PlaceholderText = "";
@@ -180,17 +179,6 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1007, 582);
             this.guna2GradientPanel1.TabIndex = 56;
             // 
-            // logobox
-            // 
-            this.logobox.BackColor = System.Drawing.Color.Transparent;
-            this.logobox.BaseColor = System.Drawing.Color.Black;
-            this.logobox.Location = new System.Drawing.Point(432, 60);
-            this.logobox.Name = "logobox";
-            this.logobox.Size = new System.Drawing.Size(522, 311);
-            this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logobox.TabIndex = 5;
-            this.logobox.TabStop = false;
-            // 
             // koltukbox
             // 
             this.koltukbox.Animated = true;
@@ -217,6 +205,18 @@
             this.koltukbox.ShadowDecoration.Parent = this.koltukbox;
             this.koltukbox.Size = new System.Drawing.Size(180, 36);
             this.koltukbox.TabIndex = 56;
+            // 
+            // logobox
+            // 
+            this.logobox.BackColor = System.Drawing.Color.Transparent;
+            this.logobox.BaseColor = System.Drawing.Color.Black;
+            this.logobox.Location = new System.Drawing.Point(432, 60);
+            this.logobox.Name = "logobox";
+            this.logobox.Size = new System.Drawing.Size(522, 311);
+            this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logobox.TabIndex = 5;
+            this.logobox.TabStop = false;
+            this.logobox.Click += new System.EventHandler(this.logobox_Click);
             // 
             // AdminUcusEkleForm
             // 

@@ -29,11 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.anamenupanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nereyebox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.neredenbox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ucustable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.tekyonradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.gidisdonusradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
@@ -64,16 +74,15 @@
             this.secenekbuton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.ucustable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.nereyebox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.neredenbox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.satinalbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.anamenupanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ucustable)).BeginInit();
             this.guna2GroupBox2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gidisgelisicon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucakicon)).BeginInit();
             this.anamenuustpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ucustable)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -84,6 +93,13 @@
             // 
             this.anamenupanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.anamenu1;
             this.anamenupanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.anamenupanel.Controls.Add(this.satinalbtn);
+            this.anamenupanel.Controls.Add(this.logobox);
+            this.anamenupanel.Controls.Add(this.label5);
+            this.anamenupanel.Controls.Add(this.label4);
+            this.anamenupanel.Controls.Add(this.label3);
+            this.anamenupanel.Controls.Add(this.label2);
+            this.anamenupanel.Controls.Add(this.label1);
             this.anamenupanel.Controls.Add(this.nereyebox);
             this.anamenupanel.Controls.Add(this.neredenbox);
             this.anamenupanel.Controls.Add(this.ucustable);
@@ -115,6 +131,216 @@
             this.anamenupanel.ShadowDecoration.Parent = this.anamenupanel;
             this.anamenupanel.Size = new System.Drawing.Size(1197, 581);
             this.anamenupanel.TabIndex = 2;
+            // 
+            // logobox
+            // 
+            this.logobox.BackColor = System.Drawing.Color.Transparent;
+            this.logobox.BaseColor = System.Drawing.Color.Black;
+            this.logobox.Location = new System.Drawing.Point(240, 205);
+            this.logobox.Name = "logobox";
+            this.logobox.Size = new System.Drawing.Size(195, 110);
+            this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logobox.TabIndex = 43;
+            this.logobox.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(3, 295);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 20);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "Firma Adı";
+            this.label5.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(588, 295);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 20);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Bilet Fiyatı";
+            this.label4.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(441, 295);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(132, 20);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Tahmini Uçuş Saati";
+            this.label3.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(296, 295);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Uçuş Tarihi";
+            this.label2.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(145, 295);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Uçuş Saati";
+            this.label1.Visible = false;
+            // 
+            // nereyebox
+            // 
+            this.nereyebox.Animated = true;
+            this.nereyebox.AutoRoundedCorners = true;
+            this.nereyebox.BackColor = System.Drawing.Color.Transparent;
+            this.nereyebox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
+            this.nereyebox.BorderRadius = 17;
+            this.nereyebox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.nereyebox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.nereyebox.DropDownWidth = 70;
+            this.nereyebox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.nereyebox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.nereyebox.FocusedState.Parent = this.nereyebox;
+            this.nereyebox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.nereyebox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.nereyebox.FormattingEnabled = true;
+            this.nereyebox.HoverState.BorderColor = System.Drawing.Color.Blue;
+            this.nereyebox.HoverState.Parent = this.nereyebox;
+            this.nereyebox.IntegralHeight = false;
+            this.nereyebox.ItemHeight = 30;
+            this.nereyebox.ItemsAppearance.Parent = this.nereyebox;
+            this.nereyebox.Location = new System.Drawing.Point(330, 103);
+            this.nereyebox.Name = "nereyebox";
+            this.nereyebox.ShadowDecoration.BorderRadius = 15;
+            this.nereyebox.ShadowDecoration.Depth = 10;
+            this.nereyebox.ShadowDecoration.Enabled = true;
+            this.nereyebox.ShadowDecoration.Parent = this.nereyebox;
+            this.nereyebox.Size = new System.Drawing.Size(278, 36);
+            this.nereyebox.Sorted = true;
+            this.nereyebox.TabIndex = 35;
+            this.nereyebox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.nereyebox.Visible = false;
+            this.nereyebox.SelectedIndexChanged += new System.EventHandler(this.nereyebox_SelectedIndexChanged);
+            this.nereyebox.Click += new System.EventHandler(this.nereyebox_Click);
+            // 
+            // neredenbox
+            // 
+            this.neredenbox.Animated = true;
+            this.neredenbox.AutoRoundedCorners = true;
+            this.neredenbox.BackColor = System.Drawing.Color.Transparent;
+            this.neredenbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
+            this.neredenbox.BorderRadius = 17;
+            this.neredenbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.neredenbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.neredenbox.DropDownWidth = 70;
+            this.neredenbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.neredenbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.neredenbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.neredenbox.FocusedState.Parent = this.neredenbox;
+            this.neredenbox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.neredenbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.neredenbox.FormattingEnabled = true;
+            this.neredenbox.HoverState.BorderColor = System.Drawing.Color.Blue;
+            this.neredenbox.HoverState.Parent = this.neredenbox;
+            this.neredenbox.IntegralHeight = false;
+            this.neredenbox.ItemHeight = 30;
+            this.neredenbox.ItemsAppearance.Parent = this.neredenbox;
+            this.neredenbox.Location = new System.Drawing.Point(9, 103);
+            this.neredenbox.Name = "neredenbox";
+            this.neredenbox.ShadowDecoration.BorderRadius = 15;
+            this.neredenbox.ShadowDecoration.Depth = 10;
+            this.neredenbox.ShadowDecoration.Enabled = true;
+            this.neredenbox.ShadowDecoration.Parent = this.neredenbox;
+            this.neredenbox.Size = new System.Drawing.Size(278, 36);
+            this.neredenbox.Sorted = true;
+            this.neredenbox.TabIndex = 36;
+            this.neredenbox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.neredenbox.Visible = false;
+            this.neredenbox.SelectedIndexChanged += new System.EventHandler(this.neredenbox_SelectedIndexChanged_1);
+            // 
+            // ucustable
+            // 
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ucustable.BackgroundColor = System.Drawing.Color.White;
+            this.ucustable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ucustable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.ucustable.ColumnHeadersHeight = 15;
+            this.ucustable.ColumnHeadersVisible = false;
+            this.ucustable.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ucustable.DefaultCellStyle = dataGridViewCellStyle7;
+            this.ucustable.EnableHeadersVisualStyles = false;
+            this.ucustable.GridColor = System.Drawing.Color.Navy;
+            this.ucustable.Location = new System.Drawing.Point(0, 318);
+            this.ucustable.Name = "ucustable";
+            this.ucustable.ReadOnly = true;
+            this.ucustable.RowHeadersVisible = false;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.ucustable.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.ucustable.RowTemplate.Height = 35;
+            this.ucustable.RowTemplate.ReadOnly = true;
+            this.ucustable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ucustable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ucustable.Size = new System.Drawing.Size(734, 226);
+            this.ucustable.TabIndex = 34;
+            this.ucustable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.ucustable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.ucustable.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.ucustable.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.ucustable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.ucustable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.ucustable.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.ucustable.ThemeStyle.GridColor = System.Drawing.Color.Navy;
+            this.ucustable.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ucustable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.ucustable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.ucustable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.ucustable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.ucustable.ThemeStyle.HeaderStyle.Height = 15;
+            this.ucustable.ThemeStyle.ReadOnly = true;
+            this.ucustable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.ucustable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ucustable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.ucustable.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ucustable.ThemeStyle.RowsStyle.Height = 35;
+            this.ucustable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ucustable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ucustable.Visible = false;
+            this.ucustable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ucustable_CellClick);
             // 
             // guna2GroupBox2
             // 
@@ -472,7 +698,7 @@
             this.ucakicon.BackColor = System.Drawing.Color.Transparent;
             this.ucakicon.BaseColor = System.Drawing.Color.Black;
             this.ucakicon.Image = global::ucakotomasyon.Properties.Resources.Ucusicon;
-            this.ucakicon.Location = new System.Drawing.Point(283, 103);
+            this.ucakicon.Location = new System.Drawing.Point(293, 102);
             this.ucakicon.Name = "ucakicon";
             this.ucakicon.Size = new System.Drawing.Size(32, 47);
             this.ucakicon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -498,7 +724,7 @@
             this.anamenulabel.BackColor = System.Drawing.Color.Transparent;
             this.anamenulabel.Font = new System.Drawing.Font("Exo 2 ExtraBold", 57F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.anamenulabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.anamenulabel.Location = new System.Drawing.Point(644, 38);
+            this.anamenulabel.Location = new System.Drawing.Point(641, 32);
             this.anamenulabel.Name = "anamenulabel";
             this.anamenulabel.Size = new System.Drawing.Size(553, 112);
             this.anamenulabel.TabIndex = 1;
@@ -643,132 +869,29 @@
             this.guna2ControlBox1.UseTransparentBackground = true;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click_1);
             // 
-            // ucustable
+            // satinalbtn
             // 
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-            this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.ucustable.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.ucustable.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.ucustable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
-            this.ucustable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ucustable.DefaultCellStyle = dataGridViewCellStyle21;
-            this.ucustable.EnableHeadersVisualStyles = false;
-            this.ucustable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ucustable.Location = new System.Drawing.Point(9, 308);
-            this.ucustable.Name = "ucustable";
-            this.ucustable.RowHeadersVisible = false;
-            this.ucustable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ucustable.Size = new System.Drawing.Size(725, 240);
-            this.ucustable.TabIndex = 34;
-            this.ucustable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.ucustable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.ucustable.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.ucustable.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.ucustable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.ucustable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.ucustable.ThemeStyle.BackColor = System.Drawing.Color.DarkOrange;
-            this.ucustable.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ucustable.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.ucustable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.ucustable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.ucustable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.ucustable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ucustable.ThemeStyle.HeaderStyle.Height = 4;
-            this.ucustable.ThemeStyle.ReadOnly = false;
-            this.ucustable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.ucustable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.ucustable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.ucustable.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.ucustable.ThemeStyle.RowsStyle.Height = 22;
-            this.ucustable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ucustable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // nereyebox
-            // 
-            this.nereyebox.Animated = true;
-            this.nereyebox.AutoRoundedCorners = true;
-            this.nereyebox.BackColor = System.Drawing.Color.Transparent;
-            this.nereyebox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
-            this.nereyebox.BorderRadius = 17;
-            this.nereyebox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.nereyebox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.nereyebox.DropDownWidth = 70;
-            this.nereyebox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.nereyebox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.nereyebox.FocusedState.Parent = this.nereyebox;
-            this.nereyebox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.nereyebox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.nereyebox.FormattingEnabled = true;
-            this.nereyebox.HoverState.BorderColor = System.Drawing.Color.Blue;
-            this.nereyebox.HoverState.Parent = this.nereyebox;
-            this.nereyebox.IntegralHeight = false;
-            this.nereyebox.ItemHeight = 30;
-            this.nereyebox.ItemsAppearance.Parent = this.nereyebox;
-            this.nereyebox.Location = new System.Drawing.Point(330, 103);
-            this.nereyebox.Name = "nereyebox";
-            this.nereyebox.ShadowDecoration.BorderRadius = 15;
-            this.nereyebox.ShadowDecoration.Depth = 10;
-            this.nereyebox.ShadowDecoration.Enabled = true;
-            this.nereyebox.ShadowDecoration.Parent = this.nereyebox;
-            this.nereyebox.Size = new System.Drawing.Size(257, 36);
-            this.nereyebox.Sorted = true;
-            this.nereyebox.TabIndex = 35;
-            this.nereyebox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            this.nereyebox.Visible = false;
-            this.nereyebox.SelectedIndexChanged += new System.EventHandler(this.nereyebox_SelectedIndexChanged);
-            this.nereyebox.Click += new System.EventHandler(this.nereyebox_Click);
-            // 
-            // neredenbox
-            // 
-            this.neredenbox.Animated = true;
-            this.neredenbox.AutoRoundedCorners = true;
-            this.neredenbox.BackColor = System.Drawing.Color.Transparent;
-            this.neredenbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
-            this.neredenbox.BorderRadius = 17;
-            this.neredenbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.neredenbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.neredenbox.DropDownWidth = 70;
-            this.neredenbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.neredenbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.neredenbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.neredenbox.FocusedState.Parent = this.neredenbox;
-            this.neredenbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.neredenbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.neredenbox.FormattingEnabled = true;
-            this.neredenbox.HoverState.BorderColor = System.Drawing.Color.Blue;
-            this.neredenbox.HoverState.Parent = this.neredenbox;
-            this.neredenbox.IntegralHeight = false;
-            this.neredenbox.ItemHeight = 30;
-            this.neredenbox.ItemsAppearance.Parent = this.neredenbox;
-            this.neredenbox.Location = new System.Drawing.Point(9, 103);
-            this.neredenbox.Name = "neredenbox";
-            this.neredenbox.ShadowDecoration.BorderRadius = 15;
-            this.neredenbox.ShadowDecoration.Depth = 10;
-            this.neredenbox.ShadowDecoration.Enabled = true;
-            this.neredenbox.ShadowDecoration.Parent = this.neredenbox;
-            this.neredenbox.Size = new System.Drawing.Size(257, 36);
-            this.neredenbox.Sorted = true;
-            this.neredenbox.TabIndex = 36;
-            this.neredenbox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            this.neredenbox.Visible = false;
-            this.neredenbox.SelectedIndexChanged += new System.EventHandler(this.neredenbox_SelectedIndexChanged_1);
+            this.satinalbtn.Animated = true;
+            this.satinalbtn.AutoRoundedCorners = true;
+            this.satinalbtn.BackColor = System.Drawing.Color.Transparent;
+            this.satinalbtn.BorderColor = System.Drawing.Color.Blue;
+            this.satinalbtn.BorderRadius = 17;
+            this.satinalbtn.CheckedState.Parent = this.satinalbtn;
+            this.satinalbtn.CustomImages.Parent = this.satinalbtn;
+            this.satinalbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.satinalbtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.satinalbtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
+            this.satinalbtn.ForeColor = System.Drawing.Color.White;
+            this.satinalbtn.HoverState.Parent = this.satinalbtn;
+            this.satinalbtn.Location = new System.Drawing.Point(690, 508);
+            this.satinalbtn.Name = "satinalbtn";
+            this.satinalbtn.ShadowDecoration.Parent = this.satinalbtn;
+            this.satinalbtn.Size = new System.Drawing.Size(114, 36);
+            this.satinalbtn.TabIndex = 44;
+            this.satinalbtn.Text = "Satın Al";
+            this.satinalbtn.UseTransparentBackground = true;
+            this.satinalbtn.Visible = false;
+            this.satinalbtn.Click += new System.EventHandler(this.satinalbtn_Click);
             // 
             // AnaSayfa
             // 
@@ -783,12 +906,13 @@
             this.Load += new System.EventHandler(this.AnaSayfa_Load);
             this.anamenupanel.ResumeLayout(false);
             this.anamenupanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logobox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ucustable)).EndInit();
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gidisgelisicon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucakicon)).EndInit();
             this.anamenuustpanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ucustable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -830,5 +954,12 @@
         private Guna.UI2.WinForms.Guna2DataGridView ucustable;
         public Guna.UI2.WinForms.Guna2ComboBox nereyebox;
         public Guna.UI2.WinForms.Guna2ComboBox neredenbox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox logobox;
+        private Guna.UI2.WinForms.Guna2GradientButton satinalbtn;
     }
 }

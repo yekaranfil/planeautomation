@@ -14,7 +14,7 @@ using System.Collections;
 
 namespace ucakotomasyon
 {
-   
+
     public partial class AnaSayfa : Form
     {
         String nereden, nereye, tarih;
@@ -23,6 +23,8 @@ namespace ucakotomasyon
         DataSet data = new DataSet();
 
         ArrayList iddizi = new ArrayList();
+        ArrayList firmaiddizi = new ArrayList();
+
         public AnaSayfa()
         {
             InitializeComponent();
@@ -36,12 +38,12 @@ namespace ucakotomasyon
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         private void guna2ControlBox2_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void guna2ControlBox1_Click_1(object sender, EventArgs e)
@@ -79,7 +81,7 @@ namespace ucakotomasyon
             ucusarabtn.Visible = true;
 
 
-           
+
 
 
         }
@@ -90,7 +92,7 @@ namespace ucakotomasyon
             gidistarihlbl.Visible = true;
 
 
-            
+
             donustarihbox.Visible = false;
             donustarihlbl.Visible = false;
             gidisgelisicon.Visible = false;
@@ -111,7 +113,7 @@ namespace ucakotomasyon
 
         }
 
-      
+
 
         private void AnaSayfa_Load(object sender, EventArgs e)
         {
@@ -138,11 +140,14 @@ namespace ucakotomasyon
             }
 
 
-            
+
         }
 
         private void neredenbox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
+
+           
+
             // combobox şehir çakışma kontrol
             String secim1, secim2;
             secim1 = neredenbox.SelectedItem.ToString();
@@ -170,7 +175,7 @@ namespace ucakotomasyon
 
             nereyebox.Items.Remove(secim1);
 
-            
+
 
             //şehir id çekme
             try
@@ -243,7 +248,7 @@ namespace ucakotomasyon
 
         private void gidistarihbox_ValueChanged(object sender, EventArgs e)
         {
-            
+
         }
 
 
@@ -252,12 +257,90 @@ namespace ucakotomasyon
         private void gidistarihbox_TextChanged(object sender, EventArgs e)
         {
 
+
+        }
+
+        int satirsayisi;
+
+        private void ucustable_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            satirsayisi = e.RowIndex;
+            try
+            {
+                if (ucustable.Rows[satirsayisi].Cells[0].Value.ToString().Equals("Pegasus"))
+                {
+                    logobox.Image = Image.FromFile(Application.StartupPath + "\\pegasus.png");
+                    logobox.Refresh();
+                }
+                else if (ucustable.Rows[satirsayisi].Cells[0].Value.ToString().Equals("Türk Hava Yolları"))
+                {
+
+                    logobox.Image = Image.FromFile(Application.StartupPath + "\\turkishairlines.png");
+                    logobox.Refresh();
+                }
+                else if (ucustable.Rows[satirsayisi].Cells[0].Value.ToString().Equals("Sunexpress"))
+                {
+                    logobox.Image = Image.FromFile(Application.StartupPath + "\\sunexpress.png");
+                    logobox.Refresh();
+                }
+
+                else if (ucustable.Rows[satirsayisi].Cells[0].Value.ToString().Equals("AnadoluJet"))
+                {
+                    logobox.Image = Image.FromFile(Application.StartupPath + "\\anadolujet.png");
+                    logobox.Refresh();
+                }
+            } catch
+            {
+
+            }
+
+            satinalbtn.Visible = true;
             
+        }
+
+        private void satinalbtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //seçilen uçuşun satın ala basınca uçuş idsini alma
+                String a = ucustable.Rows[satirsayisi].Cells[1].Value.ToString();
+
+
+
+
+            } catch
+            {
+
+            }
+            
+
+
+
+
         }
 
         private void ucusarabtn_Click(object sender, EventArgs e)
         {
-          if(ekonomiradiobtn.Checked == true || bussinesradiobtn.Checked == true)
+            // ucustablosuna firma adı ekleme
+            try
+            {
+                ucustable.ColumnCount = 1;
+                ucustable.Columns[0].Name = "firmaadı";
+                ucustable.Columns[0].ValueType = typeof(String);
+            }
+            catch
+            {
+
+            }
+            // ucustablosuna label gizleme
+            ucustable.Visible = true;
+            label1.Visible = true;
+            label2.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
+            label5.Visible = true;
+
+            if (ekonomiradiobtn.Checked == true || bussinesradiobtn.Checked == true)
             {
                 tablo.Clear();
                 ucustable.DataSource = tablo;
@@ -293,8 +376,9 @@ namespace ucakotomasyon
 
                 }
 
-
+                int secim = 0;
                 RadioButton rb = null;
+                // ekonomi seçildiyse
                 if (ekonomiradiobtn.Checked == true)
                 {
                     tablo.Clear();
@@ -303,29 +387,67 @@ namespace ucakotomasyon
 
                     try
                     {
-                        
+
                         //Tabloya uçuşları listeleme
                         baglanti.Close();
                         baglanti.Open();
 
+                        // dizideki ucusid ile ucusları listeleme
                         for (int i = 0; i < iddizi.Count; i++)
                         {
+
                             MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM ucuslar WHERE (ucus_id=@ucusid)", baglanti);
                             dr.SelectCommand.Parameters.AddWithValue("@ucusid", iddizi[i]);
                             data = new DataSet();
                             dr.Fill(tablo);
                             ucustable.DataSource = tablo;
+                            
+                            firmaiddizi.Add(ucustable.Rows[i].Cells[10].Value.ToString());
+
+                            String a = firmaiddizi[i].ToString();
+
+                            if (a == "1")
+                            {
+                                ucustable.Rows[i].Cells[0].Value = "Pegasus";
+                            }
+
+                            else if (a == "2")
+                            {
+                                ucustable.Rows[i].Cells[0].Value = "Türk Hava Yolları";
+                            }
+                            else if (a == "3")
+                            {
+                                ucustable.Rows[i].Cells[0].Value = "Sunexpress";
+                            }
+                            else if (a == "4")
+                            {
+                                ucustable.Rows[i].Cells[0].Value = "AnadoluJet";
+                            } else
+                            {
+
+                                HataBox f = new HataBox();
+                                HataBox.mesaj = "Uçuş Arama Hatası";
+                                HataBox.text = "Lütfen Bilet Türü Seçiniz";
+                                f.hataresim.Visible = true;
+                                f.onayresim.Visible = false;
+                                f.Show();
+                            }
+
+
 
 
                         }
-                        iddizi.Clear();
 
-                        ucustable.Columns[0].Visible = false;
+                        iddizi.Clear();
+                        firmaiddizi.Clear();
+
                         ucustable.Columns[1].Visible = false;
                         ucustable.Columns[2].Visible = false;
-                        ucustable.Columns[7].Visible = false;
+                        ucustable.Columns[3].Visible = false;
+                        ucustable.Columns[7].Visible = true;
                         ucustable.Columns[8].Visible = false;
-
+                        ucustable.Columns[9].Visible = false;
+                        ucustable.Columns[10].Visible = false;
 
 
                     }
@@ -335,8 +457,11 @@ namespace ucakotomasyon
                     }
 
 
+                   
 
                 }
+
+                // bussines seçildiyse
                 else if (bussinesradiobtn.Checked == true)
                 {
                     tablo.Clear();
@@ -357,12 +482,52 @@ namespace ucakotomasyon
                             dr.Fill(tablo);
                             ucustable.DataSource = tablo;
 
+                            firmaiddizi.Add(ucustable.Rows[i].Cells[10].Value.ToString());
+
+                            String a = firmaiddizi[i].ToString();
+
+                            if (a == "1")
+                            {
+                                ucustable.Rows[i].Cells[0].Value = "Pegasus";
+                            }
+
+                            else if (a == "2")
+                            {
+                                ucustable.Rows[i].Cells[0].Value = "Türk Hava Yolları";
+                            }
+                            else if (a == "3")
+                            {
+                                ucustable.Rows[i].Cells[0].Value = "Sunexpress";
+                            }
+                            else if (a == "4")
+                            {
+                                ucustable.Rows[i].Cells[0].Value = "AnadoluJet";
+                            }
+                            else
+                            {
+
+                                HataBox f = new HataBox();
+                                HataBox.mesaj = "Uçuş Arama Hatası";
+                                HataBox.text = "Lütfen Bilet Türü Seçiniz";
+                                f.hataresim.Visible = true;
+                                f.onayresim.Visible = false;
+                                f.Show();
+                            }
+
 
                         }
                         iddizi.Clear();
+                        firmaiddizi.Clear();
 
 
 
+                        ucustable.Columns[1].Visible = false;
+                        ucustable.Columns[2].Visible = false;
+                        ucustable.Columns[3].Visible = false;
+                        ucustable.Columns[7].Visible = false;
+                        ucustable.Columns[8].Visible = true;
+                        ucustable.Columns[9].Visible = false;
+                        ucustable.Columns[10].Visible = false;
 
 
                     }
@@ -370,6 +535,7 @@ namespace ucakotomasyon
                     {
 
                     }
+
 
 
 
@@ -382,7 +548,8 @@ namespace ucakotomasyon
                     ucustable.Refresh();
 
                 }
-            }else
+            }
+            else
             {
                 HataBox f = new HataBox();
                 HataBox.mesaj = "Uçuş Arama Hatası";
@@ -391,15 +558,10 @@ namespace ucakotomasyon
                 f.onayresim.Visible = false;
                 f.Show();
             }
-           
-
-
-            
-            
 
         }
 
-      
+
         private void nereyebox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //şehir id çekme
