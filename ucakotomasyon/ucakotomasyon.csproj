@@ -97,6 +97,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="40koltukform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40koltukform.Designer.cs">
+      <DependentUpon>40koltukform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="56koltukform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="56koltukform.Designer.cs">
+      <DependentUpon>56koltukform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="72koltukform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="72koltukform.Designer.cs">
+      <DependentUpon>72koltukform.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminDestekForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +179,15 @@
     <Compile Include="UcusGuncelleForm.Designer.cs">
       <DependentUpon>UcusGuncelleForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="40koltukform.resx">
+      <DependentUpon>40koltukform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="56koltukform.resx">
+      <DependentUpon>56koltukform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="72koltukform.resx">
+      <DependentUpon>72koltukform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminDestekForm.resx">
       <DependentUpon>AdminDestekForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +364,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pegasus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucakkoltuklarsema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucak1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dolu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Secili1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bos1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

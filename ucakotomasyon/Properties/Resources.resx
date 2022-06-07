@@ -127,17 +127,29 @@
   <data name="chatbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chatbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="istockphoto-1212284111-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\istockphoto-1212284111-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ucakkoltuklarsema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ucakkoltuklarsema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pegasus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pegasus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_lock_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_lock_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ucusekle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ucusekle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1659417" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1659417.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="yonetici" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yonetici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_undo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_undo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="unlock_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unlock_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,6 +159,9 @@
   </data>
   <data name="plane-flying-over-world-map-1557403 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plane-flying-over-world-map-1557403 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ucak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ucak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Onay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Onay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +181,9 @@
   <data name="adminpanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adminpanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ucak1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ucak1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ucusguncelle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ucusguncelle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,9 +202,6 @@
   <data name="Destekkutususs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Destekkutususs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="anamenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anamenu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="2840156" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2840156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,8 +214,8 @@
   <data name="arkaplan üst" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arkaplan üst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ucusekle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ucusekle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="istockphoto-1212284111-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1212284111-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Destekkutusu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Destekkutusu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +223,8 @@
   <data name="adminpanel_1_1210x770" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adminpanel_1_1210x770.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yonetici" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yonetici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="anamenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anamenu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Destekkutusu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Destekkutusu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +241,13 @@
   <data name="icons8_lock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_lock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pegasus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pegasus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dolu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dolu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Secili1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Secili1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

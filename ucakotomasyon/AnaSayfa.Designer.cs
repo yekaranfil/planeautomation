@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.anamenupanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.satinalbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -74,7 +75,6 @@
             this.secenekbuton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.satinalbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.anamenupanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucustable)).BeginInit();
@@ -132,13 +132,37 @@
             this.anamenupanel.Size = new System.Drawing.Size(1197, 581);
             this.anamenupanel.TabIndex = 2;
             // 
+            // satinalbtn
+            // 
+            this.satinalbtn.Animated = true;
+            this.satinalbtn.AutoRoundedCorners = true;
+            this.satinalbtn.BackColor = System.Drawing.Color.Transparent;
+            this.satinalbtn.BorderColor = System.Drawing.Color.Blue;
+            this.satinalbtn.BorderRadius = 17;
+            this.satinalbtn.CheckedState.Parent = this.satinalbtn;
+            this.satinalbtn.CustomImages.Parent = this.satinalbtn;
+            this.satinalbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.satinalbtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.satinalbtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
+            this.satinalbtn.ForeColor = System.Drawing.Color.White;
+            this.satinalbtn.HoverState.Parent = this.satinalbtn;
+            this.satinalbtn.Location = new System.Drawing.Point(690, 508);
+            this.satinalbtn.Name = "satinalbtn";
+            this.satinalbtn.ShadowDecoration.Parent = this.satinalbtn;
+            this.satinalbtn.Size = new System.Drawing.Size(114, 36);
+            this.satinalbtn.TabIndex = 44;
+            this.satinalbtn.Text = "Satın Al";
+            this.satinalbtn.UseTransparentBackground = true;
+            this.satinalbtn.Visible = false;
+            this.satinalbtn.Click += new System.EventHandler(this.satinalbtn_Click);
+            // 
             // logobox
             // 
             this.logobox.BackColor = System.Drawing.Color.Transparent;
             this.logobox.BaseColor = System.Drawing.Color.Black;
             this.logobox.Location = new System.Drawing.Point(240, 205);
             this.logobox.Name = "logobox";
-            this.logobox.Size = new System.Drawing.Size(195, 110);
+            this.logobox.Size = new System.Drawing.Size(195, 117);
             this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logobox.TabIndex = 43;
             this.logobox.TabStop = false;
@@ -275,42 +299,42 @@
             // 
             // ucustable
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ucustable.BackgroundColor = System.Drawing.Color.White;
             this.ucustable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ucustable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ucustable.ColumnHeadersHeight = 15;
             this.ucustable.ColumnHeadersVisible = false;
             this.ucustable.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ucustable.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ucustable.DefaultCellStyle = dataGridViewCellStyle3;
             this.ucustable.EnableHeadersVisualStyles = false;
             this.ucustable.GridColor = System.Drawing.Color.Navy;
             this.ucustable.Location = new System.Drawing.Point(0, 318);
             this.ucustable.Name = "ucustable";
             this.ucustable.ReadOnly = true;
             this.ucustable.RowHeadersVisible = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
-            this.ucustable.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.ucustable.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.ucustable.RowTemplate.Height = 35;
             this.ucustable.RowTemplate.ReadOnly = true;
             this.ucustable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -692,6 +716,7 @@
             this.kisibox.Size = new System.Drawing.Size(70, 36);
             this.kisibox.TabIndex = 12;
             this.kisibox.Visible = false;
+            this.kisibox.SelectedIndexChanged += new System.EventHandler(this.kisibox_SelectedIndexChanged);
             // 
             // ucakicon
             // 
@@ -869,30 +894,6 @@
             this.guna2ControlBox1.UseTransparentBackground = true;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click_1);
             // 
-            // satinalbtn
-            // 
-            this.satinalbtn.Animated = true;
-            this.satinalbtn.AutoRoundedCorners = true;
-            this.satinalbtn.BackColor = System.Drawing.Color.Transparent;
-            this.satinalbtn.BorderColor = System.Drawing.Color.Blue;
-            this.satinalbtn.BorderRadius = 17;
-            this.satinalbtn.CheckedState.Parent = this.satinalbtn;
-            this.satinalbtn.CustomImages.Parent = this.satinalbtn;
-            this.satinalbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.satinalbtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.satinalbtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
-            this.satinalbtn.ForeColor = System.Drawing.Color.White;
-            this.satinalbtn.HoverState.Parent = this.satinalbtn;
-            this.satinalbtn.Location = new System.Drawing.Point(690, 508);
-            this.satinalbtn.Name = "satinalbtn";
-            this.satinalbtn.ShadowDecoration.Parent = this.satinalbtn;
-            this.satinalbtn.Size = new System.Drawing.Size(114, 36);
-            this.satinalbtn.TabIndex = 44;
-            this.satinalbtn.Text = "Satın Al";
-            this.satinalbtn.UseTransparentBackground = true;
-            this.satinalbtn.Visible = false;
-            this.satinalbtn.Click += new System.EventHandler(this.satinalbtn_Click);
-            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -934,11 +935,9 @@
         public Guna.UI2.WinForms.Guna2ComboBox kisibox;
         private System.Windows.Forms.Label bussineslbl;
         private System.Windows.Forms.Label ekonomilbl;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton bussinesradiobtn;
         private System.Windows.Forms.Label nereyetxt;
         private System.Windows.Forms.Label neredentxt;
         private System.Windows.Forms.Label kisisayilbl;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton ekonomiradiobtn;
         private Guna.UI2.WinForms.Guna2DateTimePicker gidistarihbox;
         private System.Windows.Forms.Label tekyonlbl;
         private System.Windows.Forms.Label gidisdonuslbl;
@@ -961,5 +960,7 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTransfarantPictureBox logobox;
         private Guna.UI2.WinForms.Guna2GradientButton satinalbtn;
+        public Guna.UI2.WinForms.Guna2CustomRadioButton bussinesradiobtn;
+        public Guna.UI2.WinForms.Guna2CustomRadioButton ekonomiradiobtn;
     }
 }

@@ -17,10 +17,11 @@ namespace ucakotomasyon
 
     public partial class AnaSayfa : Form
     {
-        String nereden, nereye, tarih;
+        public static String nereden, nereye, tarih,kisisayisi;
         MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
         DataTable tablo = new DataTable();
         DataSet data = new DataSet();
+
 
         ArrayList iddizi = new ArrayList();
         ArrayList firmaiddizi = new ArrayList();
@@ -59,6 +60,7 @@ namespace ucakotomasyon
 
         private void secenekbuton_Click(object sender, EventArgs e)
         {
+
             anamenulabel.Visible = false;
             anamenulabel2.Visible = false;
             neredenbox.Visible = true;
@@ -79,10 +81,6 @@ namespace ucakotomasyon
             neredentxt.Visible = true;
             nereyetxt.Visible = true;
             ucusarabtn.Visible = true;
-
-
-
-
 
         }
 
@@ -261,6 +259,7 @@ namespace ucakotomasyon
         }
 
         int satirsayisi;
+        String secilenucakid;
 
         private void ucustable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -294,10 +293,13 @@ namespace ucakotomasyon
 
             }
 
+
+            secilenucakid = ucustable.Rows[satirsayisi].Cells[9].Value.ToString();
             satinalbtn.Visible = true;
             
         }
 
+        String koltuksayisi;
         private void satinalbtn_Click(object sender, EventArgs e)
         {
             try
@@ -306,17 +308,132 @@ namespace ucakotomasyon
                 String a = ucustable.Rows[satirsayisi].Cells[1].Value.ToString();
 
 
-
-
             } catch
             {
 
             }
-            
 
 
 
 
+            try
+            {
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand kontrolfirma = new MySqlCommand("SELECT ucak_koltuksayisi FROM ucaklar WHERE (ucak_id=@ucakid)", baglanti);
+                kontrolfirma.Parameters.AddWithValue("@ucakid", secilenucakid);
+                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                if (dr.Read())
+                {
+                   // seçilen uçuşun uçağının şablonuu getirmek için ucak koltuk sayısını alma
+                    koltuksayisi = (dr["ucak_koltuksayisi"]).ToString();
+                }
+
+            }
+            catch (Exception ex)
+
+            {
+
+
+
+            }
+
+            if(koltuksayisi == "40")
+            {
+
+                HataBox hataform = new HataBox();
+                HataBox.mesaj = "Giriş başarılı";
+                HataBox.text = "Giriş Yapıldı";
+                hataform.Show();
+
+                _40koltukform secim1 = new _40koltukform();
+                secim1.Show();
+                hataform.hataresim.Visible = false;
+                hataform.onayresim.Visible = true;
+                hataform.Show();
+
+                if (ekonomiradiobtn.Checked == true)
+                {
+
+                    secim1.ekonomigrup.Enabled = true;
+                    secim1.bussinesgrup.Enabled = false;
+
+
+                }
+                else if (bussinesradiobtn.Checked == true)
+                { 
+                    secim1.bussinesgrup.Enabled = true;
+                    secim1.ekonomigrup.Enabled = false;
+                }
+            }
+            else if(koltuksayisi =="56")
+            {
+
+                HataBox hataform = new HataBox();
+                HataBox.mesaj = "Giriş başarılı";
+                HataBox.text = "Giriş Yapıldı";
+                hataform.Show();
+
+                _56koltukform secim2 = new _56koltukform();
+                secim2.Show();
+                hataform.hataresim.Visible = false;
+                hataform.onayresim.Visible = true;
+                hataform.Show();
+
+                
+                if (ekonomiradiobtn.Checked == true)
+                {
+
+                    secim2.ekonomigrup.Enabled = true;
+                    secim2.bussinesgrup.Enabled = false;
+
+
+                }
+                else if (bussinesradiobtn.Checked == true)
+                {
+                    secim2.bussinesgrup.Enabled = true;
+                    secim2.ekonomigrup.Enabled = false;
+                }
+
+            } else if(koltuksayisi == "72")
+            {
+
+                HataBox hataform = new HataBox();
+                HataBox.mesaj = "Giriş başarılı";
+                HataBox.text = "Giriş Yapıldı";
+                hataform.Show();
+
+                _72koltukform secim3 = new _72koltukform();
+                secim3.Show();
+                hataform.hataresim.Visible = false;
+                hataform.onayresim.Visible = true;
+                hataform.Show();
+
+
+                if (ekonomiradiobtn.Checked == true)
+                {
+                    secim3.ekonomi.Enabled = true;
+                    secim3.bussinesgrup.Enabled = false;
+
+
+                }
+                else if (bussinesradiobtn.Checked == true)
+                {
+                    secim3.bussinesgrup.Enabled = true;
+                    secim3.ekonomi.Enabled = false;
+                }
+            }
+
+
+
+
+
+        }
+        public static int kisiindex;
+        private void kisibox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            kisisayisi = kisibox.SelectedItem.ToString();
+            kisiindex = kisibox.SelectedIndex;
         }
 
         private void ucusarabtn_Click(object sender, EventArgs e)
@@ -340,7 +457,9 @@ namespace ucakotomasyon
             label4.Visible = true;
             label5.Visible = true;
 
-            if (ekonomiradiobtn.Checked == true || bussinesradiobtn.Checked == true)
+
+            
+            if (ekonomiradiobtn.Checked == true || bussinesradiobtn.Checked == true )
             {
                 tablo.Clear();
                 ucustable.DataSource = tablo;

@@ -163,6 +163,26 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Bos {
+            get {
+                object obj = ResourceManager.GetObject("Bos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bos1 {
+            get {
+                object obj = ResourceManager.GetObject("Bos1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap carpi {
             get {
                 object obj = ResourceManager.GetObject("carpi", resourceCulture);
@@ -226,6 +246,16 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap Destekkutususs {
             get {
                 object obj = ResourceManager.GetObject("Destekkutususs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dolu1 {
+            get {
+                object obj = ResourceManager.GetObject("Dolu1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -366,6 +396,46 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap resim_2022_05_13_203358808_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("resim_2022-05-13_203358808-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Secili1 {
+            get {
+                object obj = ResourceManager.GetObject("Secili1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ucak {
+            get {
+                object obj = ResourceManager.GetObject("ucak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ucak1 {
+            get {
+                object obj = ResourceManager.GetObject("ucak1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ucakkoltuklarsema {
+            get {
+                object obj = ResourceManager.GetObject("ucakkoltuklarsema", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
