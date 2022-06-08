@@ -31,89 +31,89 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.arkapanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.satinalbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bussinesgrup = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.C5 = new System.Windows.Forms.Button();
-            this.A1 = new System.Windows.Forms.Button();
-            this.A2 = new System.Windows.Forms.Button();
-            this.A3 = new System.Windows.Forms.Button();
-            this.A4 = new System.Windows.Forms.Button();
-            this.A5 = new System.Windows.Forms.Button();
-            this.C7 = new System.Windows.Forms.Button();
-            this.B7 = new System.Windows.Forms.Button();
-            this.C4 = new System.Windows.Forms.Button();
-            this.A7 = new System.Windows.Forms.Button();
-            this.B1 = new System.Windows.Forms.Button();
-            this.C3 = new System.Windows.Forms.Button();
-            this.A6 = new System.Windows.Forms.Button();
-            this.B2 = new System.Windows.Forms.Button();
-            this.C2 = new System.Windows.Forms.Button();
-            this.B3 = new System.Windows.Forms.Button();
-            this.C1 = new System.Windows.Forms.Button();
-            this.B4 = new System.Windows.Forms.Button();
-            this.B5 = new System.Windows.Forms.Button();
-            this.C6 = new System.Windows.Forms.Button();
-            this.B6 = new System.Windows.Forms.Button();
+            this.Koltuk_53 = new System.Windows.Forms.Button();
+            this.Koltuk_1 = new System.Windows.Forms.Button();
+            this.Koltuk_2 = new System.Windows.Forms.Button();
+            this.Koltuk_3 = new System.Windows.Forms.Button();
+            this.Koltuk_4 = new System.Windows.Forms.Button();
+            this.Koltuk_5 = new System.Windows.Forms.Button();
+            this.Koltuk_55 = new System.Windows.Forms.Button();
+            this.Koltuk_31 = new System.Windows.Forms.Button();
+            this.Koltuk_52 = new System.Windows.Forms.Button();
+            this.Koltuk_7 = new System.Windows.Forms.Button();
+            this.Koltuk_25 = new System.Windows.Forms.Button();
+            this.Koltuk_51 = new System.Windows.Forms.Button();
+            this.Koltuk_6 = new System.Windows.Forms.Button();
+            this.Koltuk_26 = new System.Windows.Forms.Button();
+            this.Koltuk_50 = new System.Windows.Forms.Button();
+            this.Koltuk_27 = new System.Windows.Forms.Button();
+            this.Koltuk_49 = new System.Windows.Forms.Button();
+            this.Koltuk_28 = new System.Windows.Forms.Button();
+            this.Koltuk_29 = new System.Windows.Forms.Button();
+            this.Koltuk_54 = new System.Windows.Forms.Button();
+            this.Koltuk_30 = new System.Windows.Forms.Button();
             this.ekonomi = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.C24 = new System.Windows.Forms.Button();
-            this.C23 = new System.Windows.Forms.Button();
-            this.B24 = new System.Windows.Forms.Button();
-            this.B23 = new System.Windows.Forms.Button();
-            this.A23 = new System.Windows.Forms.Button();
-            this.A24 = new System.Windows.Forms.Button();
-            this.C22 = new System.Windows.Forms.Button();
-            this.B22 = new System.Windows.Forms.Button();
-            this.A22 = new System.Windows.Forms.Button();
-            this.C21 = new System.Windows.Forms.Button();
-            this.C20 = new System.Windows.Forms.Button();
-            this.C19 = new System.Windows.Forms.Button();
-            this.B21 = new System.Windows.Forms.Button();
-            this.A21 = new System.Windows.Forms.Button();
-            this.A20 = new System.Windows.Forms.Button();
-            this.B20 = new System.Windows.Forms.Button();
-            this.B19 = new System.Windows.Forms.Button();
-            this.C18 = new System.Windows.Forms.Button();
-            this.A19 = new System.Windows.Forms.Button();
-            this.A8 = new System.Windows.Forms.Button();
-            this.A9 = new System.Windows.Forms.Button();
-            this.A10 = new System.Windows.Forms.Button();
-            this.A11 = new System.Windows.Forms.Button();
-            this.A12 = new System.Windows.Forms.Button();
-            this.C17 = new System.Windows.Forms.Button();
-            this.A13 = new System.Windows.Forms.Button();
-            this.C16 = new System.Windows.Forms.Button();
-            this.A14 = new System.Windows.Forms.Button();
-            this.C15 = new System.Windows.Forms.Button();
-            this.A15 = new System.Windows.Forms.Button();
-            this.C14 = new System.Windows.Forms.Button();
-            this.A16 = new System.Windows.Forms.Button();
-            this.C13 = new System.Windows.Forms.Button();
-            this.A17 = new System.Windows.Forms.Button();
-            this.C12 = new System.Windows.Forms.Button();
-            this.A18 = new System.Windows.Forms.Button();
-            this.C11 = new System.Windows.Forms.Button();
-            this.C10 = new System.Windows.Forms.Button();
-            this.C9 = new System.Windows.Forms.Button();
-            this.B8 = new System.Windows.Forms.Button();
-            this.C8 = new System.Windows.Forms.Button();
-            this.B9 = new System.Windows.Forms.Button();
-            this.B10 = new System.Windows.Forms.Button();
-            this.B11 = new System.Windows.Forms.Button();
-            this.B12 = new System.Windows.Forms.Button();
-            this.B13 = new System.Windows.Forms.Button();
-            this.B14 = new System.Windows.Forms.Button();
-            this.B15 = new System.Windows.Forms.Button();
-            this.B16 = new System.Windows.Forms.Button();
-            this.B18 = new System.Windows.Forms.Button();
-            this.B17 = new System.Windows.Forms.Button();
+            this.Koltuk_72 = new System.Windows.Forms.Button();
+            this.Koltuk_71 = new System.Windows.Forms.Button();
+            this.Koltuk_48 = new System.Windows.Forms.Button();
+            this.Koltuk_47 = new System.Windows.Forms.Button();
+            this.Koltuk_23 = new System.Windows.Forms.Button();
+            this.Koltuk_24 = new System.Windows.Forms.Button();
+            this.Koltuk_70 = new System.Windows.Forms.Button();
+            this.Koltuk_46 = new System.Windows.Forms.Button();
+            this.Koltuk_22 = new System.Windows.Forms.Button();
+            this.Koltuk_69 = new System.Windows.Forms.Button();
+            this.Koltuk_68 = new System.Windows.Forms.Button();
+            this.Koltuk_67 = new System.Windows.Forms.Button();
+            this.Koltuk_45 = new System.Windows.Forms.Button();
+            this.Koltuk_21 = new System.Windows.Forms.Button();
+            this.Koltuk_20 = new System.Windows.Forms.Button();
+            this.Koltuk_44 = new System.Windows.Forms.Button();
+            this.Koltuk_43 = new System.Windows.Forms.Button();
+            this.Koltuk_66 = new System.Windows.Forms.Button();
+            this.Koltuk_19 = new System.Windows.Forms.Button();
+            this.Koltuk_8 = new System.Windows.Forms.Button();
+            this.Koltuk_9 = new System.Windows.Forms.Button();
+            this.Koltuk_10 = new System.Windows.Forms.Button();
+            this.Koltuk_11 = new System.Windows.Forms.Button();
+            this.Koltuk_12 = new System.Windows.Forms.Button();
+            this.Koltuk_65 = new System.Windows.Forms.Button();
+            this.Koltuk_13 = new System.Windows.Forms.Button();
+            this.Koltuk_64 = new System.Windows.Forms.Button();
+            this.Koltuk_14 = new System.Windows.Forms.Button();
+            this.Koltuk_63 = new System.Windows.Forms.Button();
+            this.Koltuk_15 = new System.Windows.Forms.Button();
+            this.Koltuk_62 = new System.Windows.Forms.Button();
+            this.Koltuk_16 = new System.Windows.Forms.Button();
+            this.Koltuk_61 = new System.Windows.Forms.Button();
+            this.Koltuk_17 = new System.Windows.Forms.Button();
+            this.Koltuk_60 = new System.Windows.Forms.Button();
+            this.Koltuk_18 = new System.Windows.Forms.Button();
+            this.Koltuk_59 = new System.Windows.Forms.Button();
+            this.Koltuk_58 = new System.Windows.Forms.Button();
+            this.Koltuk_57 = new System.Windows.Forms.Button();
+            this.Koltuk_32 = new System.Windows.Forms.Button();
+            this.Koltuk_56 = new System.Windows.Forms.Button();
+            this.Koltuk_33 = new System.Windows.Forms.Button();
+            this.Koltuk_34 = new System.Windows.Forms.Button();
+            this.Koltuk_35 = new System.Windows.Forms.Button();
+            this.Koltuk_36 = new System.Windows.Forms.Button();
+            this.Koltuk_37 = new System.Windows.Forms.Button();
+            this.Koltuk_38 = new System.Windows.Forms.Button();
+            this.Koltuk_39 = new System.Windows.Forms.Button();
+            this.Koltuk_40 = new System.Windows.Forms.Button();
+            this.Koltuk_42 = new System.Windows.Forms.Button();
+            this.Koltuk_41 = new System.Windows.Forms.Button();
             this.koltuklbl = new Guna.UI.WinForms.GunaLabel();
             this.secilenkoltuklbl = new Guna.UI.WinForms.GunaLabel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.ustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
-            this.satinalbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.arkapanel.SuspendLayout();
             this.bussinesgrup.SuspendLayout();
             this.ekonomi.SuspendLayout();
@@ -149,6 +149,29 @@
             this.arkapanel.ShadowDecoration.Parent = this.arkapanel;
             this.arkapanel.Size = new System.Drawing.Size(1195, 718);
             this.arkapanel.TabIndex = 1;
+            // 
+            // satinalbtn
+            // 
+            this.satinalbtn.Animated = true;
+            this.satinalbtn.AutoRoundedCorners = true;
+            this.satinalbtn.BackColor = System.Drawing.Color.Transparent;
+            this.satinalbtn.BorderColor = System.Drawing.Color.Blue;
+            this.satinalbtn.BorderRadius = 17;
+            this.satinalbtn.CheckedState.Parent = this.satinalbtn;
+            this.satinalbtn.CustomImages.Parent = this.satinalbtn;
+            this.satinalbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.satinalbtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.satinalbtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
+            this.satinalbtn.ForeColor = System.Drawing.Color.White;
+            this.satinalbtn.HoverState.Parent = this.satinalbtn;
+            this.satinalbtn.Location = new System.Drawing.Point(1069, 60);
+            this.satinalbtn.Name = "satinalbtn";
+            this.satinalbtn.ShadowDecoration.Parent = this.satinalbtn;
+            this.satinalbtn.Size = new System.Drawing.Size(114, 36);
+            this.satinalbtn.TabIndex = 141;
+            this.satinalbtn.Text = "Satın Al";
+            this.satinalbtn.UseTransparentBackground = true;
+            this.satinalbtn.Click += new System.EventHandler(this.satinalbtn_Click);
             // 
             // label3
             // 
@@ -187,27 +210,27 @@
             // 
             this.bussinesgrup.BackColor = System.Drawing.Color.Transparent;
             this.bussinesgrup.BorderColor = System.Drawing.Color.Transparent;
-            this.bussinesgrup.Controls.Add(this.C5);
-            this.bussinesgrup.Controls.Add(this.A1);
-            this.bussinesgrup.Controls.Add(this.A2);
-            this.bussinesgrup.Controls.Add(this.A3);
-            this.bussinesgrup.Controls.Add(this.A4);
-            this.bussinesgrup.Controls.Add(this.A5);
-            this.bussinesgrup.Controls.Add(this.C7);
-            this.bussinesgrup.Controls.Add(this.B7);
-            this.bussinesgrup.Controls.Add(this.C4);
-            this.bussinesgrup.Controls.Add(this.A7);
-            this.bussinesgrup.Controls.Add(this.B1);
-            this.bussinesgrup.Controls.Add(this.C3);
-            this.bussinesgrup.Controls.Add(this.A6);
-            this.bussinesgrup.Controls.Add(this.B2);
-            this.bussinesgrup.Controls.Add(this.C2);
-            this.bussinesgrup.Controls.Add(this.B3);
-            this.bussinesgrup.Controls.Add(this.C1);
-            this.bussinesgrup.Controls.Add(this.B4);
-            this.bussinesgrup.Controls.Add(this.B5);
-            this.bussinesgrup.Controls.Add(this.C6);
-            this.bussinesgrup.Controls.Add(this.B6);
+            this.bussinesgrup.Controls.Add(this.Koltuk_53);
+            this.bussinesgrup.Controls.Add(this.Koltuk_1);
+            this.bussinesgrup.Controls.Add(this.Koltuk_2);
+            this.bussinesgrup.Controls.Add(this.Koltuk_3);
+            this.bussinesgrup.Controls.Add(this.Koltuk_4);
+            this.bussinesgrup.Controls.Add(this.Koltuk_5);
+            this.bussinesgrup.Controls.Add(this.Koltuk_55);
+            this.bussinesgrup.Controls.Add(this.Koltuk_31);
+            this.bussinesgrup.Controls.Add(this.Koltuk_52);
+            this.bussinesgrup.Controls.Add(this.Koltuk_7);
+            this.bussinesgrup.Controls.Add(this.Koltuk_25);
+            this.bussinesgrup.Controls.Add(this.Koltuk_51);
+            this.bussinesgrup.Controls.Add(this.Koltuk_6);
+            this.bussinesgrup.Controls.Add(this.Koltuk_26);
+            this.bussinesgrup.Controls.Add(this.Koltuk_50);
+            this.bussinesgrup.Controls.Add(this.Koltuk_27);
+            this.bussinesgrup.Controls.Add(this.Koltuk_49);
+            this.bussinesgrup.Controls.Add(this.Koltuk_28);
+            this.bussinesgrup.Controls.Add(this.Koltuk_29);
+            this.bussinesgrup.Controls.Add(this.Koltuk_54);
+            this.bussinesgrup.Controls.Add(this.Koltuk_30);
             this.bussinesgrup.CustomBorderColor = System.Drawing.Color.Transparent;
             this.bussinesgrup.FillColor = System.Drawing.Color.Transparent;
             this.bussinesgrup.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -221,502 +244,502 @@
             this.bussinesgrup.UseTransparentBackground = true;
             this.bussinesgrup.Click += new System.EventHandler(this.btn_Click);
             // 
-            // C5
+            // Koltuk_53
             // 
-            this.C5.AutoEllipsis = true;
-            this.C5.BackColor = System.Drawing.Color.Transparent;
-            this.C5.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C5.FlatAppearance.BorderSize = 0;
-            this.C5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C5.ForeColor = System.Drawing.Color.Gray;
-            this.C5.Location = new System.Drawing.Point(129, 60);
-            this.C5.Name = "C5";
-            this.C5.Size = new System.Drawing.Size(26, 21);
-            this.C5.TabIndex = 111;
-            this.C5.Text = "53";
-            this.C5.UseVisualStyleBackColor = true;
-            this.C5.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_53.AutoEllipsis = true;
+            this.Koltuk_53.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_53.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_53.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_53.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_53.FlatAppearance.BorderSize = 0;
+            this.Koltuk_53.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_53.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_53.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_53.Location = new System.Drawing.Point(129, 60);
+            this.Koltuk_53.Name = "Koltuk_53";
+            this.Koltuk_53.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_53.TabIndex = 111;
+            this.Koltuk_53.Text = "53";
+            this.Koltuk_53.UseVisualStyleBackColor = true;
+            this.Koltuk_53.Click += new System.EventHandler(this.btn_Click);
             // 
-            // A1
+            // Koltuk_1
             // 
-            this.A1.AutoEllipsis = true;
-            this.A1.BackColor = System.Drawing.Color.Transparent;
-            this.A1.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A1.FlatAppearance.BorderSize = 0;
-            this.A1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A1.ForeColor = System.Drawing.Color.Gray;
-            this.A1.Location = new System.Drawing.Point(3, 4);
-            this.A1.Name = "A1";
-            this.A1.Size = new System.Drawing.Size(26, 21);
-            this.A1.TabIndex = 67;
-            this.A1.Text = "1";
-            this.A1.UseVisualStyleBackColor = true;
-            this.A1.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_1.AutoEllipsis = true;
+            this.Koltuk_1.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_1.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_1.FlatAppearance.BorderSize = 0;
+            this.Koltuk_1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_1.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_1.Location = new System.Drawing.Point(3, 4);
+            this.Koltuk_1.Name = "Koltuk_1";
+            this.Koltuk_1.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_1.TabIndex = 67;
+            this.Koltuk_1.Text = "1";
+            this.Koltuk_1.UseVisualStyleBackColor = true;
+            this.Koltuk_1.Click += new System.EventHandler(this.btn_Click);
             // 
-            // A2
+            // Koltuk_2
             // 
-            this.A2.AutoEllipsis = true;
-            this.A2.BackColor = System.Drawing.Color.Transparent;
-            this.A2.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A2.FlatAppearance.BorderSize = 0;
-            this.A2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A2.ForeColor = System.Drawing.Color.Gray;
-            this.A2.Location = new System.Drawing.Point(35, 4);
-            this.A2.Name = "A2";
-            this.A2.Size = new System.Drawing.Size(26, 21);
-            this.A2.TabIndex = 68;
-            this.A2.Text = "2";
-            this.A2.UseVisualStyleBackColor = true;
-            this.A2.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_2.AutoEllipsis = true;
+            this.Koltuk_2.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_2.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_2.FlatAppearance.BorderSize = 0;
+            this.Koltuk_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_2.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_2.Location = new System.Drawing.Point(35, 4);
+            this.Koltuk_2.Name = "Koltuk_2";
+            this.Koltuk_2.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_2.TabIndex = 68;
+            this.Koltuk_2.Text = "2";
+            this.Koltuk_2.UseVisualStyleBackColor = true;
+            this.Koltuk_2.Click += new System.EventHandler(this.btn_Click);
             // 
-            // A3
+            // Koltuk_3
             // 
-            this.A3.AutoEllipsis = true;
-            this.A3.BackColor = System.Drawing.Color.Transparent;
-            this.A3.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A3.FlatAppearance.BorderSize = 0;
-            this.A3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A3.ForeColor = System.Drawing.Color.Gray;
-            this.A3.Location = new System.Drawing.Point(67, 4);
-            this.A3.Name = "A3";
-            this.A3.Size = new System.Drawing.Size(26, 21);
-            this.A3.TabIndex = 69;
-            this.A3.Text = "3";
-            this.A3.UseVisualStyleBackColor = true;
-            this.A3.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_3.AutoEllipsis = true;
+            this.Koltuk_3.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_3.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_3.FlatAppearance.BorderSize = 0;
+            this.Koltuk_3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_3.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_3.Location = new System.Drawing.Point(67, 4);
+            this.Koltuk_3.Name = "Koltuk_3";
+            this.Koltuk_3.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_3.TabIndex = 69;
+            this.Koltuk_3.Text = "3";
+            this.Koltuk_3.UseVisualStyleBackColor = true;
+            this.Koltuk_3.Click += new System.EventHandler(this.btn_Click);
             // 
-            // A4
+            // Koltuk_4
             // 
-            this.A4.AutoEllipsis = true;
-            this.A4.BackColor = System.Drawing.Color.Transparent;
-            this.A4.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A4.FlatAppearance.BorderSize = 0;
-            this.A4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A4.ForeColor = System.Drawing.Color.Gray;
-            this.A4.Location = new System.Drawing.Point(99, 4);
-            this.A4.Name = "A4";
-            this.A4.Size = new System.Drawing.Size(26, 21);
-            this.A4.TabIndex = 70;
-            this.A4.Text = "4";
-            this.A4.UseVisualStyleBackColor = true;
-            this.A4.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_4.AutoEllipsis = true;
+            this.Koltuk_4.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_4.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_4.FlatAppearance.BorderSize = 0;
+            this.Koltuk_4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_4.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_4.Location = new System.Drawing.Point(99, 4);
+            this.Koltuk_4.Name = "Koltuk_4";
+            this.Koltuk_4.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_4.TabIndex = 70;
+            this.Koltuk_4.Text = "4";
+            this.Koltuk_4.UseVisualStyleBackColor = true;
+            this.Koltuk_4.Click += new System.EventHandler(this.btn_Click);
             // 
-            // A5
+            // Koltuk_5
             // 
-            this.A5.AutoEllipsis = true;
-            this.A5.BackColor = System.Drawing.Color.Transparent;
-            this.A5.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A5.FlatAppearance.BorderSize = 0;
-            this.A5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A5.ForeColor = System.Drawing.Color.Gray;
-            this.A5.Location = new System.Drawing.Point(129, 4);
-            this.A5.Name = "A5";
-            this.A5.Size = new System.Drawing.Size(26, 21);
-            this.A5.TabIndex = 71;
-            this.A5.Text = "5";
-            this.A5.UseVisualStyleBackColor = true;
-            this.A5.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_5.AutoEllipsis = true;
+            this.Koltuk_5.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_5.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_5.FlatAppearance.BorderSize = 0;
+            this.Koltuk_5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_5.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_5.Location = new System.Drawing.Point(129, 4);
+            this.Koltuk_5.Name = "Koltuk_5";
+            this.Koltuk_5.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_5.TabIndex = 71;
+            this.Koltuk_5.Text = "5";
+            this.Koltuk_5.UseVisualStyleBackColor = true;
+            this.Koltuk_5.Click += new System.EventHandler(this.btn_Click);
             // 
-            // C7
+            // Koltuk_55
             // 
-            this.C7.AutoEllipsis = true;
-            this.C7.BackColor = System.Drawing.Color.Transparent;
-            this.C7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C7.FlatAppearance.BorderSize = 0;
-            this.C7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C7.ForeColor = System.Drawing.Color.Gray;
-            this.C7.Location = new System.Drawing.Point(192, 60);
-            this.C7.Name = "C7";
-            this.C7.Size = new System.Drawing.Size(26, 21);
-            this.C7.TabIndex = 113;
-            this.C7.Text = "55";
-            this.C7.UseVisualStyleBackColor = true;
-            this.C7.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_55.AutoEllipsis = true;
+            this.Koltuk_55.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_55.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_55.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_55.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_55.FlatAppearance.BorderSize = 0;
+            this.Koltuk_55.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_55.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_55.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_55.Location = new System.Drawing.Point(192, 60);
+            this.Koltuk_55.Name = "Koltuk_55";
+            this.Koltuk_55.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_55.TabIndex = 113;
+            this.Koltuk_55.Text = "55";
+            this.Koltuk_55.UseVisualStyleBackColor = true;
+            this.Koltuk_55.Click += new System.EventHandler(this.btn_Click);
             // 
-            // B7
+            // Koltuk_31
             // 
-            this.B7.AutoEllipsis = true;
-            this.B7.BackColor = System.Drawing.Color.Transparent;
-            this.B7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B7.FlatAppearance.BorderSize = 0;
-            this.B7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B7.ForeColor = System.Drawing.Color.Gray;
-            this.B7.Location = new System.Drawing.Point(192, 22);
-            this.B7.Name = "B7";
-            this.B7.Size = new System.Drawing.Size(26, 21);
-            this.B7.TabIndex = 93;
-            this.B7.Text = "31";
-            this.B7.UseVisualStyleBackColor = true;
-            this.B7.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_31.AutoEllipsis = true;
+            this.Koltuk_31.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_31.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_31.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_31.FlatAppearance.BorderSize = 0;
+            this.Koltuk_31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_31.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_31.Location = new System.Drawing.Point(192, 22);
+            this.Koltuk_31.Name = "Koltuk_31";
+            this.Koltuk_31.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_31.TabIndex = 93;
+            this.Koltuk_31.Text = "31";
+            this.Koltuk_31.UseVisualStyleBackColor = true;
+            this.Koltuk_31.Click += new System.EventHandler(this.btn_Click);
             // 
-            // C4
+            // Koltuk_52
             // 
-            this.C4.AutoEllipsis = true;
-            this.C4.BackColor = System.Drawing.Color.Transparent;
-            this.C4.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C4.FlatAppearance.BorderSize = 0;
-            this.C4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C4.ForeColor = System.Drawing.Color.Gray;
-            this.C4.Location = new System.Drawing.Point(99, 60);
-            this.C4.Name = "C4";
-            this.C4.Size = new System.Drawing.Size(26, 21);
-            this.C4.TabIndex = 110;
-            this.C4.Text = "52";
-            this.C4.UseVisualStyleBackColor = true;
-            this.C4.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_52.AutoEllipsis = true;
+            this.Koltuk_52.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_52.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_52.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_52.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_52.FlatAppearance.BorderSize = 0;
+            this.Koltuk_52.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_52.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_52.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_52.Location = new System.Drawing.Point(99, 60);
+            this.Koltuk_52.Name = "Koltuk_52";
+            this.Koltuk_52.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_52.TabIndex = 110;
+            this.Koltuk_52.Text = "52";
+            this.Koltuk_52.UseVisualStyleBackColor = true;
+            this.Koltuk_52.Click += new System.EventHandler(this.btn_Click);
             // 
-            // A7
+            // Koltuk_7
             // 
-            this.A7.AutoEllipsis = true;
-            this.A7.BackColor = System.Drawing.Color.Transparent;
-            this.A7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A7.FlatAppearance.BorderSize = 0;
-            this.A7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A7.ForeColor = System.Drawing.Color.Gray;
-            this.A7.Location = new System.Drawing.Point(192, 4);
-            this.A7.Name = "A7";
-            this.A7.Size = new System.Drawing.Size(26, 21);
-            this.A7.TabIndex = 73;
-            this.A7.Text = "7";
-            this.A7.UseVisualStyleBackColor = true;
-            this.A7.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_7.AutoEllipsis = true;
+            this.Koltuk_7.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_7.FlatAppearance.BorderSize = 0;
+            this.Koltuk_7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_7.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_7.Location = new System.Drawing.Point(192, 4);
+            this.Koltuk_7.Name = "Koltuk_7";
+            this.Koltuk_7.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_7.TabIndex = 73;
+            this.Koltuk_7.Text = "7";
+            this.Koltuk_7.UseVisualStyleBackColor = true;
+            this.Koltuk_7.Click += new System.EventHandler(this.btn_Click);
             // 
-            // B1
+            // Koltuk_25
             // 
-            this.B1.AutoEllipsis = true;
-            this.B1.BackColor = System.Drawing.Color.Transparent;
-            this.B1.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B1.FlatAppearance.BorderSize = 0;
-            this.B1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B1.ForeColor = System.Drawing.Color.Gray;
-            this.B1.Location = new System.Drawing.Point(3, 22);
-            this.B1.Name = "B1";
-            this.B1.Size = new System.Drawing.Size(26, 21);
-            this.B1.TabIndex = 87;
-            this.B1.Text = "25";
-            this.B1.UseVisualStyleBackColor = true;
-            this.B1.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_25.AutoEllipsis = true;
+            this.Koltuk_25.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_25.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_25.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_25.FlatAppearance.BorderSize = 0;
+            this.Koltuk_25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_25.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_25.Location = new System.Drawing.Point(3, 22);
+            this.Koltuk_25.Name = "Koltuk_25";
+            this.Koltuk_25.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_25.TabIndex = 87;
+            this.Koltuk_25.Text = "25";
+            this.Koltuk_25.UseVisualStyleBackColor = true;
+            this.Koltuk_25.Click += new System.EventHandler(this.btn_Click);
             // 
-            // C3
+            // Koltuk_51
             // 
-            this.C3.AutoEllipsis = true;
-            this.C3.BackColor = System.Drawing.Color.Transparent;
-            this.C3.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C3.FlatAppearance.BorderSize = 0;
-            this.C3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C3.ForeColor = System.Drawing.Color.Gray;
-            this.C3.Location = new System.Drawing.Point(67, 60);
-            this.C3.Name = "C3";
-            this.C3.Size = new System.Drawing.Size(26, 21);
-            this.C3.TabIndex = 109;
-            this.C3.Text = "51";
-            this.C3.UseVisualStyleBackColor = true;
-            this.C3.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_51.AutoEllipsis = true;
+            this.Koltuk_51.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_51.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_51.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_51.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_51.FlatAppearance.BorderSize = 0;
+            this.Koltuk_51.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_51.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_51.Location = new System.Drawing.Point(67, 60);
+            this.Koltuk_51.Name = "Koltuk_51";
+            this.Koltuk_51.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_51.TabIndex = 109;
+            this.Koltuk_51.Text = "51";
+            this.Koltuk_51.UseVisualStyleBackColor = true;
+            this.Koltuk_51.Click += new System.EventHandler(this.btn_Click);
             // 
-            // A6
+            // Koltuk_6
             // 
-            this.A6.AutoEllipsis = true;
-            this.A6.BackColor = System.Drawing.Color.Transparent;
-            this.A6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A6.FlatAppearance.BorderSize = 0;
-            this.A6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A6.ForeColor = System.Drawing.Color.Gray;
-            this.A6.Location = new System.Drawing.Point(161, 4);
-            this.A6.Name = "A6";
-            this.A6.Size = new System.Drawing.Size(26, 21);
-            this.A6.TabIndex = 72;
-            this.A6.Text = "6";
-            this.A6.UseVisualStyleBackColor = true;
-            this.A6.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_6.AutoEllipsis = true;
+            this.Koltuk_6.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_6.FlatAppearance.BorderSize = 0;
+            this.Koltuk_6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_6.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_6.Location = new System.Drawing.Point(161, 4);
+            this.Koltuk_6.Name = "Koltuk_6";
+            this.Koltuk_6.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_6.TabIndex = 72;
+            this.Koltuk_6.Text = "6";
+            this.Koltuk_6.UseVisualStyleBackColor = true;
+            this.Koltuk_6.Click += new System.EventHandler(this.btn_Click);
             // 
-            // B2
+            // Koltuk_26
             // 
-            this.B2.AutoEllipsis = true;
-            this.B2.BackColor = System.Drawing.Color.Transparent;
-            this.B2.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B2.FlatAppearance.BorderSize = 0;
-            this.B2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B2.ForeColor = System.Drawing.Color.Gray;
-            this.B2.Location = new System.Drawing.Point(35, 22);
-            this.B2.Name = "B2";
-            this.B2.Size = new System.Drawing.Size(26, 21);
-            this.B2.TabIndex = 88;
-            this.B2.Text = "26";
-            this.B2.UseVisualStyleBackColor = true;
-            this.B2.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_26.AutoEllipsis = true;
+            this.Koltuk_26.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_26.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_26.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_26.FlatAppearance.BorderSize = 0;
+            this.Koltuk_26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_26.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_26.Location = new System.Drawing.Point(35, 22);
+            this.Koltuk_26.Name = "Koltuk_26";
+            this.Koltuk_26.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_26.TabIndex = 88;
+            this.Koltuk_26.Text = "26";
+            this.Koltuk_26.UseVisualStyleBackColor = true;
+            this.Koltuk_26.Click += new System.EventHandler(this.btn_Click);
             // 
-            // C2
+            // Koltuk_50
             // 
-            this.C2.AutoEllipsis = true;
-            this.C2.BackColor = System.Drawing.Color.Transparent;
-            this.C2.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C2.FlatAppearance.BorderSize = 0;
-            this.C2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C2.ForeColor = System.Drawing.Color.Gray;
-            this.C2.Location = new System.Drawing.Point(35, 60);
-            this.C2.Name = "C2";
-            this.C2.Size = new System.Drawing.Size(26, 21);
-            this.C2.TabIndex = 108;
-            this.C2.Text = "50";
-            this.C2.UseVisualStyleBackColor = true;
-            this.C2.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_50.AutoEllipsis = true;
+            this.Koltuk_50.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_50.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_50.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_50.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_50.FlatAppearance.BorderSize = 0;
+            this.Koltuk_50.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_50.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_50.Location = new System.Drawing.Point(35, 60);
+            this.Koltuk_50.Name = "Koltuk_50";
+            this.Koltuk_50.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_50.TabIndex = 108;
+            this.Koltuk_50.Text = "50";
+            this.Koltuk_50.UseVisualStyleBackColor = true;
+            this.Koltuk_50.Click += new System.EventHandler(this.btn_Click);
             // 
-            // B3
+            // Koltuk_27
             // 
-            this.B3.AutoEllipsis = true;
-            this.B3.BackColor = System.Drawing.Color.Transparent;
-            this.B3.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B3.FlatAppearance.BorderSize = 0;
-            this.B3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B3.ForeColor = System.Drawing.Color.Gray;
-            this.B3.Location = new System.Drawing.Point(67, 22);
-            this.B3.Name = "B3";
-            this.B3.Size = new System.Drawing.Size(26, 21);
-            this.B3.TabIndex = 89;
-            this.B3.Text = "27";
-            this.B3.UseVisualStyleBackColor = true;
-            this.B3.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_27.AutoEllipsis = true;
+            this.Koltuk_27.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_27.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_27.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_27.FlatAppearance.BorderSize = 0;
+            this.Koltuk_27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_27.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_27.Location = new System.Drawing.Point(67, 22);
+            this.Koltuk_27.Name = "Koltuk_27";
+            this.Koltuk_27.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_27.TabIndex = 89;
+            this.Koltuk_27.Text = "27";
+            this.Koltuk_27.UseVisualStyleBackColor = true;
+            this.Koltuk_27.Click += new System.EventHandler(this.btn_Click);
             // 
-            // C1
+            // Koltuk_49
             // 
-            this.C1.AutoEllipsis = true;
-            this.C1.BackColor = System.Drawing.Color.Transparent;
-            this.C1.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C1.FlatAppearance.BorderSize = 0;
-            this.C1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C1.ForeColor = System.Drawing.Color.Gray;
-            this.C1.Location = new System.Drawing.Point(3, 60);
-            this.C1.Name = "C1";
-            this.C1.Size = new System.Drawing.Size(26, 21);
-            this.C1.TabIndex = 107;
-            this.C1.Text = "49";
-            this.C1.UseVisualStyleBackColor = true;
-            this.C1.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_49.AutoEllipsis = true;
+            this.Koltuk_49.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_49.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_49.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_49.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_49.FlatAppearance.BorderSize = 0;
+            this.Koltuk_49.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_49.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_49.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_49.Location = new System.Drawing.Point(3, 60);
+            this.Koltuk_49.Name = "Koltuk_49";
+            this.Koltuk_49.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_49.TabIndex = 107;
+            this.Koltuk_49.Text = "49";
+            this.Koltuk_49.UseVisualStyleBackColor = true;
+            this.Koltuk_49.Click += new System.EventHandler(this.btn_Click);
             // 
-            // B4
+            // Koltuk_28
             // 
-            this.B4.AutoEllipsis = true;
-            this.B4.BackColor = System.Drawing.Color.Transparent;
-            this.B4.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B4.FlatAppearance.BorderSize = 0;
-            this.B4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B4.ForeColor = System.Drawing.Color.Gray;
-            this.B4.Location = new System.Drawing.Point(99, 22);
-            this.B4.Name = "B4";
-            this.B4.Size = new System.Drawing.Size(26, 21);
-            this.B4.TabIndex = 90;
-            this.B4.Text = "2";
-            this.B4.UseVisualStyleBackColor = true;
-            this.B4.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_28.AutoEllipsis = true;
+            this.Koltuk_28.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_28.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_28.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_28.FlatAppearance.BorderSize = 0;
+            this.Koltuk_28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_28.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_28.Location = new System.Drawing.Point(99, 22);
+            this.Koltuk_28.Name = "Koltuk_28";
+            this.Koltuk_28.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_28.TabIndex = 90;
+            this.Koltuk_28.Text = "2";
+            this.Koltuk_28.UseVisualStyleBackColor = true;
+            this.Koltuk_28.Click += new System.EventHandler(this.btn_Click);
             // 
-            // B5
+            // Koltuk_29
             // 
-            this.B5.AutoEllipsis = true;
-            this.B5.BackColor = System.Drawing.Color.Transparent;
-            this.B5.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B5.FlatAppearance.BorderSize = 0;
-            this.B5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B5.ForeColor = System.Drawing.Color.Gray;
-            this.B5.Location = new System.Drawing.Point(129, 22);
-            this.B5.Name = "B5";
-            this.B5.Size = new System.Drawing.Size(26, 21);
-            this.B5.TabIndex = 91;
-            this.B5.Text = "29";
-            this.B5.UseVisualStyleBackColor = true;
-            this.B5.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_29.AutoEllipsis = true;
+            this.Koltuk_29.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_29.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_29.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_29.FlatAppearance.BorderSize = 0;
+            this.Koltuk_29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_29.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_29.Location = new System.Drawing.Point(129, 22);
+            this.Koltuk_29.Name = "Koltuk_29";
+            this.Koltuk_29.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_29.TabIndex = 91;
+            this.Koltuk_29.Text = "29";
+            this.Koltuk_29.UseVisualStyleBackColor = true;
+            this.Koltuk_29.Click += new System.EventHandler(this.btn_Click);
             // 
-            // C6
+            // Koltuk_54
             // 
-            this.C6.AutoEllipsis = true;
-            this.C6.BackColor = System.Drawing.Color.Transparent;
-            this.C6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C6.FlatAppearance.BorderSize = 0;
-            this.C6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C6.ForeColor = System.Drawing.Color.Gray;
-            this.C6.Location = new System.Drawing.Point(161, 60);
-            this.C6.Name = "C6";
-            this.C6.Size = new System.Drawing.Size(26, 21);
-            this.C6.TabIndex = 112;
-            this.C6.Text = "54";
-            this.C6.UseVisualStyleBackColor = true;
-            this.C6.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_54.AutoEllipsis = true;
+            this.Koltuk_54.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_54.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_54.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_54.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_54.FlatAppearance.BorderSize = 0;
+            this.Koltuk_54.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_54.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_54.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_54.Location = new System.Drawing.Point(161, 60);
+            this.Koltuk_54.Name = "Koltuk_54";
+            this.Koltuk_54.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_54.TabIndex = 112;
+            this.Koltuk_54.Text = "54";
+            this.Koltuk_54.UseVisualStyleBackColor = true;
+            this.Koltuk_54.Click += new System.EventHandler(this.btn_Click);
             // 
-            // B6
+            // Koltuk_30
             // 
-            this.B6.AutoEllipsis = true;
-            this.B6.BackColor = System.Drawing.Color.Transparent;
-            this.B6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B6.FlatAppearance.BorderSize = 0;
-            this.B6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B6.ForeColor = System.Drawing.Color.Gray;
-            this.B6.Location = new System.Drawing.Point(161, 22);
-            this.B6.Name = "B6";
-            this.B6.Size = new System.Drawing.Size(26, 21);
-            this.B6.TabIndex = 92;
-            this.B6.Text = "30";
-            this.B6.UseVisualStyleBackColor = true;
-            this.B6.Click += new System.EventHandler(this.btn_Click);
+            this.Koltuk_30.AutoEllipsis = true;
+            this.Koltuk_30.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_30.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_30.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_30.FlatAppearance.BorderSize = 0;
+            this.Koltuk_30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_30.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_30.Location = new System.Drawing.Point(161, 22);
+            this.Koltuk_30.Name = "Koltuk_30";
+            this.Koltuk_30.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_30.TabIndex = 92;
+            this.Koltuk_30.Text = "30";
+            this.Koltuk_30.UseVisualStyleBackColor = true;
+            this.Koltuk_30.Click += new System.EventHandler(this.btn_Click);
             // 
             // ekonomi
             // 
             this.ekonomi.BackColor = System.Drawing.Color.Transparent;
             this.ekonomi.BorderColor = System.Drawing.Color.Transparent;
-            this.ekonomi.Controls.Add(this.C24);
-            this.ekonomi.Controls.Add(this.C23);
-            this.ekonomi.Controls.Add(this.B24);
-            this.ekonomi.Controls.Add(this.B23);
-            this.ekonomi.Controls.Add(this.A23);
-            this.ekonomi.Controls.Add(this.A24);
-            this.ekonomi.Controls.Add(this.C22);
-            this.ekonomi.Controls.Add(this.B22);
-            this.ekonomi.Controls.Add(this.A22);
-            this.ekonomi.Controls.Add(this.C21);
-            this.ekonomi.Controls.Add(this.C20);
-            this.ekonomi.Controls.Add(this.C19);
-            this.ekonomi.Controls.Add(this.B21);
-            this.ekonomi.Controls.Add(this.A21);
-            this.ekonomi.Controls.Add(this.A20);
-            this.ekonomi.Controls.Add(this.B20);
-            this.ekonomi.Controls.Add(this.B19);
-            this.ekonomi.Controls.Add(this.C18);
-            this.ekonomi.Controls.Add(this.A19);
-            this.ekonomi.Controls.Add(this.A8);
-            this.ekonomi.Controls.Add(this.A9);
-            this.ekonomi.Controls.Add(this.A10);
-            this.ekonomi.Controls.Add(this.A11);
-            this.ekonomi.Controls.Add(this.A12);
-            this.ekonomi.Controls.Add(this.C17);
-            this.ekonomi.Controls.Add(this.A13);
-            this.ekonomi.Controls.Add(this.C16);
-            this.ekonomi.Controls.Add(this.A14);
-            this.ekonomi.Controls.Add(this.C15);
-            this.ekonomi.Controls.Add(this.A15);
-            this.ekonomi.Controls.Add(this.C14);
-            this.ekonomi.Controls.Add(this.A16);
-            this.ekonomi.Controls.Add(this.C13);
-            this.ekonomi.Controls.Add(this.A17);
-            this.ekonomi.Controls.Add(this.C12);
-            this.ekonomi.Controls.Add(this.A18);
-            this.ekonomi.Controls.Add(this.C11);
-            this.ekonomi.Controls.Add(this.C10);
-            this.ekonomi.Controls.Add(this.C9);
-            this.ekonomi.Controls.Add(this.B8);
-            this.ekonomi.Controls.Add(this.C8);
-            this.ekonomi.Controls.Add(this.B9);
-            this.ekonomi.Controls.Add(this.B10);
-            this.ekonomi.Controls.Add(this.B11);
-            this.ekonomi.Controls.Add(this.B12);
-            this.ekonomi.Controls.Add(this.B13);
-            this.ekonomi.Controls.Add(this.B14);
-            this.ekonomi.Controls.Add(this.B15);
-            this.ekonomi.Controls.Add(this.B16);
-            this.ekonomi.Controls.Add(this.B18);
-            this.ekonomi.Controls.Add(this.B17);
+            this.ekonomi.Controls.Add(this.Koltuk_72);
+            this.ekonomi.Controls.Add(this.Koltuk_71);
+            this.ekonomi.Controls.Add(this.Koltuk_48);
+            this.ekonomi.Controls.Add(this.Koltuk_47);
+            this.ekonomi.Controls.Add(this.Koltuk_23);
+            this.ekonomi.Controls.Add(this.Koltuk_24);
+            this.ekonomi.Controls.Add(this.Koltuk_70);
+            this.ekonomi.Controls.Add(this.Koltuk_46);
+            this.ekonomi.Controls.Add(this.Koltuk_22);
+            this.ekonomi.Controls.Add(this.Koltuk_69);
+            this.ekonomi.Controls.Add(this.Koltuk_68);
+            this.ekonomi.Controls.Add(this.Koltuk_67);
+            this.ekonomi.Controls.Add(this.Koltuk_45);
+            this.ekonomi.Controls.Add(this.Koltuk_21);
+            this.ekonomi.Controls.Add(this.Koltuk_20);
+            this.ekonomi.Controls.Add(this.Koltuk_44);
+            this.ekonomi.Controls.Add(this.Koltuk_43);
+            this.ekonomi.Controls.Add(this.Koltuk_66);
+            this.ekonomi.Controls.Add(this.Koltuk_19);
+            this.ekonomi.Controls.Add(this.Koltuk_8);
+            this.ekonomi.Controls.Add(this.Koltuk_9);
+            this.ekonomi.Controls.Add(this.Koltuk_10);
+            this.ekonomi.Controls.Add(this.Koltuk_11);
+            this.ekonomi.Controls.Add(this.Koltuk_12);
+            this.ekonomi.Controls.Add(this.Koltuk_65);
+            this.ekonomi.Controls.Add(this.Koltuk_13);
+            this.ekonomi.Controls.Add(this.Koltuk_64);
+            this.ekonomi.Controls.Add(this.Koltuk_14);
+            this.ekonomi.Controls.Add(this.Koltuk_63);
+            this.ekonomi.Controls.Add(this.Koltuk_15);
+            this.ekonomi.Controls.Add(this.Koltuk_62);
+            this.ekonomi.Controls.Add(this.Koltuk_16);
+            this.ekonomi.Controls.Add(this.Koltuk_61);
+            this.ekonomi.Controls.Add(this.Koltuk_17);
+            this.ekonomi.Controls.Add(this.Koltuk_60);
+            this.ekonomi.Controls.Add(this.Koltuk_18);
+            this.ekonomi.Controls.Add(this.Koltuk_59);
+            this.ekonomi.Controls.Add(this.Koltuk_58);
+            this.ekonomi.Controls.Add(this.Koltuk_57);
+            this.ekonomi.Controls.Add(this.Koltuk_32);
+            this.ekonomi.Controls.Add(this.Koltuk_56);
+            this.ekonomi.Controls.Add(this.Koltuk_33);
+            this.ekonomi.Controls.Add(this.Koltuk_34);
+            this.ekonomi.Controls.Add(this.Koltuk_35);
+            this.ekonomi.Controls.Add(this.Koltuk_36);
+            this.ekonomi.Controls.Add(this.Koltuk_37);
+            this.ekonomi.Controls.Add(this.Koltuk_38);
+            this.ekonomi.Controls.Add(this.Koltuk_39);
+            this.ekonomi.Controls.Add(this.Koltuk_40);
+            this.ekonomi.Controls.Add(this.Koltuk_42);
+            this.ekonomi.Controls.Add(this.Koltuk_41);
             this.ekonomi.CustomBorderColor = System.Drawing.Color.Transparent;
             this.ekonomi.FillColor = System.Drawing.Color.Transparent;
             this.ekonomi.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -729,1077 +752,1077 @@
             this.ekonomi.Text = "guna2GroupBox1";
             this.ekonomi.UseTransparentBackground = true;
             // 
-            // C24
-            // 
-            this.C24.AutoEllipsis = true;
-            this.C24.BackColor = System.Drawing.Color.Transparent;
-            this.C24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C24.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C24.FlatAppearance.BorderSize = 0;
-            this.C24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C24.ForeColor = System.Drawing.Color.Gray;
-            this.C24.Location = new System.Drawing.Point(517, 73);
-            this.C24.Name = "C24";
-            this.C24.Size = new System.Drawing.Size(26, 21);
-            this.C24.TabIndex = 140;
-            this.C24.Text = "72";
-            this.C24.UseVisualStyleBackColor = true;
-            this.C24.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C23
-            // 
-            this.C23.AutoEllipsis = true;
-            this.C23.BackColor = System.Drawing.Color.Transparent;
-            this.C23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C23.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C23.FlatAppearance.BorderSize = 0;
-            this.C23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C23.ForeColor = System.Drawing.Color.Gray;
-            this.C23.Location = new System.Drawing.Point(486, 73);
-            this.C23.Name = "C23";
-            this.C23.Size = new System.Drawing.Size(26, 21);
-            this.C23.TabIndex = 137;
-            this.C23.Text = "71";
-            this.C23.UseVisualStyleBackColor = true;
-            this.C23.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B24
-            // 
-            this.B24.AutoEllipsis = true;
-            this.B24.BackColor = System.Drawing.Color.Transparent;
-            this.B24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B24.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B24.FlatAppearance.BorderSize = 0;
-            this.B24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B24.ForeColor = System.Drawing.Color.Gray;
-            this.B24.Location = new System.Drawing.Point(517, 35);
-            this.B24.Name = "B24";
-            this.B24.Size = new System.Drawing.Size(26, 21);
-            this.B24.TabIndex = 139;
-            this.B24.Text = "48";
-            this.B24.UseVisualStyleBackColor = true;
-            this.B24.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B23
-            // 
-            this.B23.AutoEllipsis = true;
-            this.B23.BackColor = System.Drawing.Color.Transparent;
-            this.B23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B23.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B23.FlatAppearance.BorderSize = 0;
-            this.B23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B23.ForeColor = System.Drawing.Color.Gray;
-            this.B23.Location = new System.Drawing.Point(486, 35);
-            this.B23.Name = "B23";
-            this.B23.Size = new System.Drawing.Size(26, 21);
-            this.B23.TabIndex = 136;
-            this.B23.Text = "47";
-            this.B23.UseVisualStyleBackColor = true;
-            this.B23.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A23
-            // 
-            this.A23.AutoEllipsis = true;
-            this.A23.BackColor = System.Drawing.Color.Transparent;
-            this.A23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A23.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A23.FlatAppearance.BorderSize = 0;
-            this.A23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A23.ForeColor = System.Drawing.Color.Gray;
-            this.A23.Location = new System.Drawing.Point(486, 17);
-            this.A23.Name = "A23";
-            this.A23.Size = new System.Drawing.Size(26, 21);
-            this.A23.TabIndex = 135;
-            this.A23.Text = "23";
-            this.A23.UseVisualStyleBackColor = true;
-            this.A23.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A24
-            // 
-            this.A24.AutoEllipsis = true;
-            this.A24.BackColor = System.Drawing.Color.Transparent;
-            this.A24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A24.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A24.FlatAppearance.BorderSize = 0;
-            this.A24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A24.ForeColor = System.Drawing.Color.Gray;
-            this.A24.Location = new System.Drawing.Point(517, 17);
-            this.A24.Name = "A24";
-            this.A24.Size = new System.Drawing.Size(26, 21);
-            this.A24.TabIndex = 138;
-            this.A24.Text = "24";
-            this.A24.UseVisualStyleBackColor = true;
-            this.A24.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C22
-            // 
-            this.C22.AutoEllipsis = true;
-            this.C22.BackColor = System.Drawing.Color.Transparent;
-            this.C22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C22.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C22.FlatAppearance.BorderSize = 0;
-            this.C22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C22.ForeColor = System.Drawing.Color.Gray;
-            this.C22.Location = new System.Drawing.Point(454, 73);
-            this.C22.Name = "C22";
-            this.C22.Size = new System.Drawing.Size(26, 21);
-            this.C22.TabIndex = 134;
-            this.C22.Text = "70";
-            this.C22.UseVisualStyleBackColor = true;
-            this.C22.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B22
-            // 
-            this.B22.AutoEllipsis = true;
-            this.B22.BackColor = System.Drawing.Color.Transparent;
-            this.B22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B22.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B22.FlatAppearance.BorderSize = 0;
-            this.B22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B22.ForeColor = System.Drawing.Color.Gray;
-            this.B22.Location = new System.Drawing.Point(454, 35);
-            this.B22.Name = "B22";
-            this.B22.Size = new System.Drawing.Size(26, 21);
-            this.B22.TabIndex = 133;
-            this.B22.Text = "46";
-            this.B22.UseVisualStyleBackColor = true;
-            this.B22.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A22
-            // 
-            this.A22.AutoEllipsis = true;
-            this.A22.BackColor = System.Drawing.Color.Transparent;
-            this.A22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A22.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A22.FlatAppearance.BorderSize = 0;
-            this.A22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A22.ForeColor = System.Drawing.Color.Gray;
-            this.A22.Location = new System.Drawing.Point(454, 17);
-            this.A22.Name = "A22";
-            this.A22.Size = new System.Drawing.Size(26, 21);
-            this.A22.TabIndex = 132;
-            this.A22.Text = "22";
-            this.A22.UseVisualStyleBackColor = true;
-            this.A22.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C21
-            // 
-            this.C21.AutoEllipsis = true;
-            this.C21.BackColor = System.Drawing.Color.Transparent;
-            this.C21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C21.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C21.FlatAppearance.BorderSize = 0;
-            this.C21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C21.ForeColor = System.Drawing.Color.Gray;
-            this.C21.Location = new System.Drawing.Point(422, 73);
-            this.C21.Name = "C21";
-            this.C21.Size = new System.Drawing.Size(26, 21);
-            this.C21.TabIndex = 131;
-            this.C21.Text = "69";
-            this.C21.UseVisualStyleBackColor = true;
-            this.C21.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C20
-            // 
-            this.C20.AutoEllipsis = true;
-            this.C20.BackColor = System.Drawing.Color.Transparent;
-            this.C20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C20.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C20.FlatAppearance.BorderSize = 0;
-            this.C20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C20.ForeColor = System.Drawing.Color.Gray;
-            this.C20.Location = new System.Drawing.Point(390, 73);
-            this.C20.Name = "C20";
-            this.C20.Size = new System.Drawing.Size(26, 21);
-            this.C20.TabIndex = 130;
-            this.C20.Text = "68";
-            this.C20.UseVisualStyleBackColor = true;
-            this.C20.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C19
-            // 
-            this.C19.AutoEllipsis = true;
-            this.C19.BackColor = System.Drawing.Color.Transparent;
-            this.C19.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C19.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C19.FlatAppearance.BorderSize = 0;
-            this.C19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C19.ForeColor = System.Drawing.Color.Gray;
-            this.C19.Location = new System.Drawing.Point(356, 73);
-            this.C19.Name = "C19";
-            this.C19.Size = new System.Drawing.Size(26, 21);
-            this.C19.TabIndex = 129;
-            this.C19.Text = "67";
-            this.C19.UseVisualStyleBackColor = true;
-            this.C19.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B21
-            // 
-            this.B21.AutoEllipsis = true;
-            this.B21.BackColor = System.Drawing.Color.Transparent;
-            this.B21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B21.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B21.FlatAppearance.BorderSize = 0;
-            this.B21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B21.ForeColor = System.Drawing.Color.Gray;
-            this.B21.Location = new System.Drawing.Point(422, 35);
-            this.B21.Name = "B21";
-            this.B21.Size = new System.Drawing.Size(26, 21);
-            this.B21.TabIndex = 128;
-            this.B21.Text = "45";
-            this.B21.UseVisualStyleBackColor = true;
-            this.B21.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A21
-            // 
-            this.A21.AutoEllipsis = true;
-            this.A21.BackColor = System.Drawing.Color.Transparent;
-            this.A21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A21.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A21.FlatAppearance.BorderSize = 0;
-            this.A21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A21.ForeColor = System.Drawing.Color.Gray;
-            this.A21.Location = new System.Drawing.Point(422, 17);
-            this.A21.Name = "A21";
-            this.A21.Size = new System.Drawing.Size(26, 21);
-            this.A21.TabIndex = 126;
-            this.A21.Text = "21";
-            this.A21.UseVisualStyleBackColor = true;
-            this.A21.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A20
-            // 
-            this.A20.AutoEllipsis = true;
-            this.A20.BackColor = System.Drawing.Color.Transparent;
-            this.A20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A20.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A20.FlatAppearance.BorderSize = 0;
-            this.A20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A20.ForeColor = System.Drawing.Color.Gray;
-            this.A20.Location = new System.Drawing.Point(390, 17);
-            this.A20.Name = "A20";
-            this.A20.Size = new System.Drawing.Size(26, 21);
-            this.A20.TabIndex = 125;
-            this.A20.Text = "20";
-            this.A20.UseVisualStyleBackColor = true;
-            this.A20.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B20
-            // 
-            this.B20.AutoEllipsis = true;
-            this.B20.BackColor = System.Drawing.Color.Transparent;
-            this.B20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B20.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B20.FlatAppearance.BorderSize = 0;
-            this.B20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B20.ForeColor = System.Drawing.Color.Gray;
-            this.B20.Location = new System.Drawing.Point(390, 35);
-            this.B20.Name = "B20";
-            this.B20.Size = new System.Drawing.Size(26, 21);
-            this.B20.TabIndex = 127;
-            this.B20.Text = "4";
-            this.B20.UseVisualStyleBackColor = true;
-            this.B20.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B19
-            // 
-            this.B19.AutoEllipsis = true;
-            this.B19.BackColor = System.Drawing.Color.Transparent;
-            this.B19.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B19.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B19.FlatAppearance.BorderSize = 0;
-            this.B19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B19.ForeColor = System.Drawing.Color.Gray;
-            this.B19.Location = new System.Drawing.Point(357, 35);
-            this.B19.Name = "B19";
-            this.B19.Size = new System.Drawing.Size(26, 21);
-            this.B19.TabIndex = 105;
-            this.B19.Text = "43";
-            this.B19.UseVisualStyleBackColor = true;
-            this.B19.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C18
-            // 
-            this.C18.AutoEllipsis = true;
-            this.C18.BackColor = System.Drawing.Color.Transparent;
-            this.C18.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C18.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C18.FlatAppearance.BorderSize = 0;
-            this.C18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C18.ForeColor = System.Drawing.Color.Gray;
-            this.C18.Location = new System.Drawing.Point(325, 73);
-            this.C18.Name = "C18";
-            this.C18.Size = new System.Drawing.Size(26, 21);
-            this.C18.TabIndex = 124;
-            this.C18.Text = "66";
-            this.C18.UseVisualStyleBackColor = true;
-            this.C18.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A19
-            // 
-            this.A19.AutoEllipsis = true;
-            this.A19.BackColor = System.Drawing.Color.Transparent;
-            this.A19.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A19.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A19.FlatAppearance.BorderSize = 0;
-            this.A19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A19.ForeColor = System.Drawing.Color.Gray;
-            this.A19.Location = new System.Drawing.Point(357, 17);
-            this.A19.Name = "A19";
-            this.A19.Size = new System.Drawing.Size(26, 21);
-            this.A19.TabIndex = 85;
-            this.A19.Text = "19";
-            this.A19.UseVisualStyleBackColor = true;
-            this.A19.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A8
-            // 
-            this.A8.AutoEllipsis = true;
-            this.A8.BackColor = System.Drawing.Color.Transparent;
-            this.A8.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A8.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A8.FlatAppearance.BorderSize = 0;
-            this.A8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A8.ForeColor = System.Drawing.Color.Gray;
-            this.A8.Location = new System.Drawing.Point(0, 17);
-            this.A8.Name = "A8";
-            this.A8.Size = new System.Drawing.Size(26, 21);
-            this.A8.TabIndex = 74;
-            this.A8.Text = "8";
-            this.A8.UseVisualStyleBackColor = true;
-            this.A8.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A9
-            // 
-            this.A9.AutoEllipsis = true;
-            this.A9.BackColor = System.Drawing.Color.Transparent;
-            this.A9.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A9.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A9.FlatAppearance.BorderSize = 0;
-            this.A9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A9.ForeColor = System.Drawing.Color.Gray;
-            this.A9.Location = new System.Drawing.Point(32, 17);
-            this.A9.Name = "A9";
-            this.A9.Size = new System.Drawing.Size(26, 21);
-            this.A9.TabIndex = 75;
-            this.A9.Text = "9";
-            this.A9.UseVisualStyleBackColor = true;
-            this.A9.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A10
-            // 
-            this.A10.AutoEllipsis = true;
-            this.A10.BackColor = System.Drawing.Color.Transparent;
-            this.A10.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A10.FlatAppearance.BorderSize = 0;
-            this.A10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A10.ForeColor = System.Drawing.Color.Gray;
-            this.A10.Location = new System.Drawing.Point(64, 17);
-            this.A10.Name = "A10";
-            this.A10.Size = new System.Drawing.Size(26, 21);
-            this.A10.TabIndex = 76;
-            this.A10.Text = "10";
-            this.A10.UseVisualStyleBackColor = true;
-            this.A10.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A11
-            // 
-            this.A11.AutoEllipsis = true;
-            this.A11.BackColor = System.Drawing.Color.Transparent;
-            this.A11.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A11.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A11.FlatAppearance.BorderSize = 0;
-            this.A11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A11.ForeColor = System.Drawing.Color.Gray;
-            this.A11.Location = new System.Drawing.Point(96, 17);
-            this.A11.Name = "A11";
-            this.A11.Size = new System.Drawing.Size(26, 21);
-            this.A11.TabIndex = 77;
-            this.A11.Text = "11";
-            this.A11.UseVisualStyleBackColor = true;
-            this.A11.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A12
-            // 
-            this.A12.AutoEllipsis = true;
-            this.A12.BackColor = System.Drawing.Color.Transparent;
-            this.A12.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A12.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A12.FlatAppearance.BorderSize = 0;
-            this.A12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A12.ForeColor = System.Drawing.Color.Gray;
-            this.A12.Location = new System.Drawing.Point(128, 17);
-            this.A12.Name = "A12";
-            this.A12.Size = new System.Drawing.Size(26, 21);
-            this.A12.TabIndex = 78;
-            this.A12.Text = "12";
-            this.A12.UseVisualStyleBackColor = true;
-            this.A12.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C17
-            // 
-            this.C17.AutoEllipsis = true;
-            this.C17.BackColor = System.Drawing.Color.Transparent;
-            this.C17.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C17.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C17.FlatAppearance.BorderSize = 0;
-            this.C17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C17.ForeColor = System.Drawing.Color.Gray;
-            this.C17.Location = new System.Drawing.Point(293, 73);
-            this.C17.Name = "C17";
-            this.C17.Size = new System.Drawing.Size(26, 21);
-            this.C17.TabIndex = 123;
-            this.C17.Text = "65";
-            this.C17.UseVisualStyleBackColor = true;
-            this.C17.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A13
-            // 
-            this.A13.AutoEllipsis = true;
-            this.A13.BackColor = System.Drawing.Color.Transparent;
-            this.A13.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A13.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A13.FlatAppearance.BorderSize = 0;
-            this.A13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A13.ForeColor = System.Drawing.Color.Gray;
-            this.A13.Location = new System.Drawing.Point(163, 17);
-            this.A13.Name = "A13";
-            this.A13.Size = new System.Drawing.Size(26, 21);
-            this.A13.TabIndex = 79;
-            this.A13.Text = "13";
-            this.A13.UseVisualStyleBackColor = true;
-            this.A13.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C16
-            // 
-            this.C16.AutoEllipsis = true;
-            this.C16.BackColor = System.Drawing.Color.Transparent;
-            this.C16.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C16.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C16.FlatAppearance.BorderSize = 0;
-            this.C16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C16.ForeColor = System.Drawing.Color.Gray;
-            this.C16.Location = new System.Drawing.Point(259, 73);
-            this.C16.Name = "C16";
-            this.C16.Size = new System.Drawing.Size(26, 21);
-            this.C16.TabIndex = 122;
-            this.C16.Text = "64";
-            this.C16.UseVisualStyleBackColor = true;
-            this.C16.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A14
-            // 
-            this.A14.AutoEllipsis = true;
-            this.A14.BackColor = System.Drawing.Color.Transparent;
-            this.A14.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A14.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A14.FlatAppearance.BorderSize = 0;
-            this.A14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A14.ForeColor = System.Drawing.Color.Gray;
-            this.A14.Location = new System.Drawing.Point(195, 17);
-            this.A14.Name = "A14";
-            this.A14.Size = new System.Drawing.Size(26, 21);
-            this.A14.TabIndex = 80;
-            this.A14.Text = "14";
-            this.A14.UseVisualStyleBackColor = true;
-            this.A14.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C15
-            // 
-            this.C15.AutoEllipsis = true;
-            this.C15.BackColor = System.Drawing.Color.Transparent;
-            this.C15.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C15.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C15.FlatAppearance.BorderSize = 0;
-            this.C15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C15.ForeColor = System.Drawing.Color.Gray;
-            this.C15.Location = new System.Drawing.Point(226, 73);
-            this.C15.Name = "C15";
-            this.C15.Size = new System.Drawing.Size(26, 21);
-            this.C15.TabIndex = 121;
-            this.C15.Text = "63";
-            this.C15.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.C15.UseVisualStyleBackColor = true;
-            this.C15.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A15
-            // 
-            this.A15.AutoEllipsis = true;
-            this.A15.BackColor = System.Drawing.Color.Transparent;
-            this.A15.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A15.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A15.FlatAppearance.BorderSize = 0;
-            this.A15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A15.ForeColor = System.Drawing.Color.Gray;
-            this.A15.Location = new System.Drawing.Point(227, 17);
-            this.A15.Name = "A15";
-            this.A15.Size = new System.Drawing.Size(26, 21);
-            this.A15.TabIndex = 81;
-            this.A15.Text = "15";
-            this.A15.UseVisualStyleBackColor = true;
-            this.A15.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C14
-            // 
-            this.C14.AutoEllipsis = true;
-            this.C14.BackColor = System.Drawing.Color.Transparent;
-            this.C14.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C14.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C14.FlatAppearance.BorderSize = 0;
-            this.C14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C14.ForeColor = System.Drawing.Color.Gray;
-            this.C14.Location = new System.Drawing.Point(195, 73);
-            this.C14.Name = "C14";
-            this.C14.Size = new System.Drawing.Size(26, 21);
-            this.C14.TabIndex = 120;
-            this.C14.Text = "62";
-            this.C14.UseVisualStyleBackColor = true;
-            this.C14.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A16
-            // 
-            this.A16.AutoEllipsis = true;
-            this.A16.BackColor = System.Drawing.Color.Transparent;
-            this.A16.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A16.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A16.FlatAppearance.BorderSize = 0;
-            this.A16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A16.ForeColor = System.Drawing.Color.Gray;
-            this.A16.Location = new System.Drawing.Point(259, 17);
-            this.A16.Name = "A16";
-            this.A16.Size = new System.Drawing.Size(26, 21);
-            this.A16.TabIndex = 82;
-            this.A16.Text = "16";
-            this.A16.UseVisualStyleBackColor = true;
-            this.A16.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C13
-            // 
-            this.C13.AutoEllipsis = true;
-            this.C13.BackColor = System.Drawing.Color.Transparent;
-            this.C13.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C13.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C13.FlatAppearance.BorderSize = 0;
-            this.C13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C13.ForeColor = System.Drawing.Color.Gray;
-            this.C13.Location = new System.Drawing.Point(163, 73);
-            this.C13.Name = "C13";
-            this.C13.Size = new System.Drawing.Size(26, 21);
-            this.C13.TabIndex = 119;
-            this.C13.Text = "61";
-            this.C13.UseVisualStyleBackColor = true;
-            this.C13.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A17
-            // 
-            this.A17.AutoEllipsis = true;
-            this.A17.BackColor = System.Drawing.Color.Transparent;
-            this.A17.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A17.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A17.FlatAppearance.BorderSize = 0;
-            this.A17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A17.ForeColor = System.Drawing.Color.Gray;
-            this.A17.Location = new System.Drawing.Point(293, 17);
-            this.A17.Name = "A17";
-            this.A17.Size = new System.Drawing.Size(26, 21);
-            this.A17.TabIndex = 83;
-            this.A17.Text = "17";
-            this.A17.UseVisualStyleBackColor = true;
-            this.A17.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C12
-            // 
-            this.C12.AutoEllipsis = true;
-            this.C12.BackColor = System.Drawing.Color.Transparent;
-            this.C12.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C12.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C12.FlatAppearance.BorderSize = 0;
-            this.C12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C12.ForeColor = System.Drawing.Color.Gray;
-            this.C12.Location = new System.Drawing.Point(128, 73);
-            this.C12.Name = "C12";
-            this.C12.Size = new System.Drawing.Size(26, 21);
-            this.C12.TabIndex = 118;
-            this.C12.Text = "60";
-            this.C12.UseVisualStyleBackColor = true;
-            this.C12.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A18
-            // 
-            this.A18.AutoEllipsis = true;
-            this.A18.BackColor = System.Drawing.Color.Transparent;
-            this.A18.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A18.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A18.FlatAppearance.BorderSize = 0;
-            this.A18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A18.ForeColor = System.Drawing.Color.Gray;
-            this.A18.Location = new System.Drawing.Point(325, 17);
-            this.A18.Name = "A18";
-            this.A18.Size = new System.Drawing.Size(26, 21);
-            this.A18.TabIndex = 84;
-            this.A18.Text = "18";
-            this.A18.UseVisualStyleBackColor = true;
-            this.A18.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C11
-            // 
-            this.C11.AutoEllipsis = true;
-            this.C11.BackColor = System.Drawing.Color.Transparent;
-            this.C11.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C11.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C11.FlatAppearance.BorderSize = 0;
-            this.C11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C11.ForeColor = System.Drawing.Color.Gray;
-            this.C11.Location = new System.Drawing.Point(96, 73);
-            this.C11.Name = "C11";
-            this.C11.Size = new System.Drawing.Size(26, 21);
-            this.C11.TabIndex = 117;
-            this.C11.Text = "59";
-            this.C11.UseVisualStyleBackColor = true;
-            this.C11.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C10
-            // 
-            this.C10.AutoEllipsis = true;
-            this.C10.BackColor = System.Drawing.Color.Transparent;
-            this.C10.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C10.FlatAppearance.BorderSize = 0;
-            this.C10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C10.ForeColor = System.Drawing.Color.Gray;
-            this.C10.Location = new System.Drawing.Point(64, 73);
-            this.C10.Name = "C10";
-            this.C10.Size = new System.Drawing.Size(26, 21);
-            this.C10.TabIndex = 116;
-            this.C10.Text = "58";
-            this.C10.UseVisualStyleBackColor = true;
-            this.C10.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C9
-            // 
-            this.C9.AutoEllipsis = true;
-            this.C9.BackColor = System.Drawing.Color.Transparent;
-            this.C9.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C9.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C9.FlatAppearance.BorderSize = 0;
-            this.C9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C9.ForeColor = System.Drawing.Color.Gray;
-            this.C9.Location = new System.Drawing.Point(32, 73);
-            this.C9.Name = "C9";
-            this.C9.Size = new System.Drawing.Size(26, 21);
-            this.C9.TabIndex = 115;
-            this.C9.Text = "57";
-            this.C9.UseVisualStyleBackColor = true;
-            this.C9.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B8
-            // 
-            this.B8.AutoEllipsis = true;
-            this.B8.BackColor = System.Drawing.Color.Transparent;
-            this.B8.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B8.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B8.FlatAppearance.BorderSize = 0;
-            this.B8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B8.ForeColor = System.Drawing.Color.Gray;
-            this.B8.Location = new System.Drawing.Point(0, 35);
-            this.B8.Name = "B8";
-            this.B8.Size = new System.Drawing.Size(26, 21);
-            this.B8.TabIndex = 94;
-            this.B8.Text = "32";
-            this.B8.UseVisualStyleBackColor = true;
-            this.B8.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C8
-            // 
-            this.C8.AutoEllipsis = true;
-            this.C8.BackColor = System.Drawing.Color.Transparent;
-            this.C8.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C8.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C8.FlatAppearance.BorderSize = 0;
-            this.C8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C8.ForeColor = System.Drawing.Color.Gray;
-            this.C8.Location = new System.Drawing.Point(0, 73);
-            this.C8.Name = "C8";
-            this.C8.Size = new System.Drawing.Size(26, 21);
-            this.C8.TabIndex = 114;
-            this.C8.Text = "56";
-            this.C8.UseVisualStyleBackColor = true;
-            this.C8.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B9
-            // 
-            this.B9.AutoEllipsis = true;
-            this.B9.BackColor = System.Drawing.Color.Transparent;
-            this.B9.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B9.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B9.FlatAppearance.BorderSize = 0;
-            this.B9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B9.ForeColor = System.Drawing.Color.Gray;
-            this.B9.Location = new System.Drawing.Point(32, 35);
-            this.B9.Name = "B9";
-            this.B9.Size = new System.Drawing.Size(26, 21);
-            this.B9.TabIndex = 95;
-            this.B9.Text = "33";
-            this.B9.UseVisualStyleBackColor = true;
-            this.B9.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B10
-            // 
-            this.B10.AutoEllipsis = true;
-            this.B10.BackColor = System.Drawing.Color.Transparent;
-            this.B10.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B10.FlatAppearance.BorderSize = 0;
-            this.B10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B10.ForeColor = System.Drawing.Color.Gray;
-            this.B10.Location = new System.Drawing.Point(64, 35);
-            this.B10.Name = "B10";
-            this.B10.Size = new System.Drawing.Size(26, 21);
-            this.B10.TabIndex = 96;
-            this.B10.Text = "34";
-            this.B10.UseVisualStyleBackColor = true;
-            this.B10.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B11
-            // 
-            this.B11.AutoEllipsis = true;
-            this.B11.BackColor = System.Drawing.Color.Transparent;
-            this.B11.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B11.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B11.FlatAppearance.BorderSize = 0;
-            this.B11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B11.ForeColor = System.Drawing.Color.Gray;
-            this.B11.Location = new System.Drawing.Point(96, 35);
-            this.B11.Name = "B11";
-            this.B11.Size = new System.Drawing.Size(26, 21);
-            this.B11.TabIndex = 97;
-            this.B11.Text = "35";
-            this.B11.UseVisualStyleBackColor = true;
-            this.B11.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B12
-            // 
-            this.B12.AutoEllipsis = true;
-            this.B12.BackColor = System.Drawing.Color.Transparent;
-            this.B12.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B12.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B12.FlatAppearance.BorderSize = 0;
-            this.B12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B12.ForeColor = System.Drawing.Color.Gray;
-            this.B12.Location = new System.Drawing.Point(128, 35);
-            this.B12.Name = "B12";
-            this.B12.Size = new System.Drawing.Size(26, 21);
-            this.B12.TabIndex = 98;
-            this.B12.Text = "36";
-            this.B12.UseVisualStyleBackColor = true;
-            this.B12.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B13
-            // 
-            this.B13.AutoEllipsis = true;
-            this.B13.BackColor = System.Drawing.Color.Transparent;
-            this.B13.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B13.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B13.FlatAppearance.BorderSize = 0;
-            this.B13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B13.ForeColor = System.Drawing.Color.Gray;
-            this.B13.Location = new System.Drawing.Point(163, 35);
-            this.B13.Name = "B13";
-            this.B13.Size = new System.Drawing.Size(26, 21);
-            this.B13.TabIndex = 99;
-            this.B13.Text = "37";
-            this.B13.UseVisualStyleBackColor = true;
-            this.B13.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B14
-            // 
-            this.B14.AutoEllipsis = true;
-            this.B14.BackColor = System.Drawing.Color.Transparent;
-            this.B14.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B14.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B14.FlatAppearance.BorderSize = 0;
-            this.B14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B14.ForeColor = System.Drawing.Color.Gray;
-            this.B14.Location = new System.Drawing.Point(195, 35);
-            this.B14.Name = "B14";
-            this.B14.Size = new System.Drawing.Size(26, 21);
-            this.B14.TabIndex = 100;
-            this.B14.Text = "38";
-            this.B14.UseVisualStyleBackColor = true;
-            this.B14.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B15
-            // 
-            this.B15.AutoEllipsis = true;
-            this.B15.BackColor = System.Drawing.Color.Transparent;
-            this.B15.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B15.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B15.FlatAppearance.BorderSize = 0;
-            this.B15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B15.ForeColor = System.Drawing.Color.Gray;
-            this.B15.Location = new System.Drawing.Point(227, 35);
-            this.B15.Name = "B15";
-            this.B15.Size = new System.Drawing.Size(26, 21);
-            this.B15.TabIndex = 101;
-            this.B15.Text = "39";
-            this.B15.UseVisualStyleBackColor = true;
-            this.B15.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B16
-            // 
-            this.B16.AutoEllipsis = true;
-            this.B16.BackColor = System.Drawing.Color.Transparent;
-            this.B16.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B16.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B16.FlatAppearance.BorderSize = 0;
-            this.B16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B16.ForeColor = System.Drawing.Color.Gray;
-            this.B16.Location = new System.Drawing.Point(259, 35);
-            this.B16.Name = "B16";
-            this.B16.Size = new System.Drawing.Size(26, 21);
-            this.B16.TabIndex = 102;
-            this.B16.Text = "40";
-            this.B16.UseVisualStyleBackColor = true;
-            this.B16.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B18
-            // 
-            this.B18.AutoEllipsis = true;
-            this.B18.BackColor = System.Drawing.Color.Transparent;
-            this.B18.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B18.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B18.FlatAppearance.BorderSize = 0;
-            this.B18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B18.ForeColor = System.Drawing.Color.Gray;
-            this.B18.Location = new System.Drawing.Point(325, 35);
-            this.B18.Name = "B18";
-            this.B18.Size = new System.Drawing.Size(26, 21);
-            this.B18.TabIndex = 104;
-            this.B18.Text = "42";
-            this.B18.UseVisualStyleBackColor = true;
-            this.B18.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B17
-            // 
-            this.B17.AutoEllipsis = true;
-            this.B17.BackColor = System.Drawing.Color.Transparent;
-            this.B17.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B17.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B17.FlatAppearance.BorderSize = 0;
-            this.B17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B17.ForeColor = System.Drawing.Color.Gray;
-            this.B17.Location = new System.Drawing.Point(293, 35);
-            this.B17.Name = "B17";
-            this.B17.Size = new System.Drawing.Size(26, 21);
-            this.B17.TabIndex = 103;
-            this.B17.Text = "41";
-            this.B17.UseVisualStyleBackColor = true;
-            this.B17.Click += new System.EventHandler(this.btn_Click);
+            // Koltuk_72
+            // 
+            this.Koltuk_72.AutoEllipsis = true;
+            this.Koltuk_72.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_72.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_72.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_72.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_72.FlatAppearance.BorderSize = 0;
+            this.Koltuk_72.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_72.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_72.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_72.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_72.Location = new System.Drawing.Point(517, 73);
+            this.Koltuk_72.Name = "Koltuk_72";
+            this.Koltuk_72.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_72.TabIndex = 140;
+            this.Koltuk_72.Text = "72";
+            this.Koltuk_72.UseVisualStyleBackColor = true;
+            this.Koltuk_72.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_71
+            // 
+            this.Koltuk_71.AutoEllipsis = true;
+            this.Koltuk_71.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_71.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_71.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_71.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_71.FlatAppearance.BorderSize = 0;
+            this.Koltuk_71.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_71.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_71.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_71.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_71.Location = new System.Drawing.Point(486, 73);
+            this.Koltuk_71.Name = "Koltuk_71";
+            this.Koltuk_71.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_71.TabIndex = 137;
+            this.Koltuk_71.Text = "71";
+            this.Koltuk_71.UseVisualStyleBackColor = true;
+            this.Koltuk_71.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_48
+            // 
+            this.Koltuk_48.AutoEllipsis = true;
+            this.Koltuk_48.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_48.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_48.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_48.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_48.FlatAppearance.BorderSize = 0;
+            this.Koltuk_48.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_48.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_48.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_48.Location = new System.Drawing.Point(517, 35);
+            this.Koltuk_48.Name = "Koltuk_48";
+            this.Koltuk_48.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_48.TabIndex = 139;
+            this.Koltuk_48.Text = "48";
+            this.Koltuk_48.UseVisualStyleBackColor = true;
+            this.Koltuk_48.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_47
+            // 
+            this.Koltuk_47.AutoEllipsis = true;
+            this.Koltuk_47.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_47.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_47.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_47.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_47.FlatAppearance.BorderSize = 0;
+            this.Koltuk_47.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_47.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_47.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_47.Location = new System.Drawing.Point(486, 35);
+            this.Koltuk_47.Name = "Koltuk_47";
+            this.Koltuk_47.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_47.TabIndex = 136;
+            this.Koltuk_47.Text = "47";
+            this.Koltuk_47.UseVisualStyleBackColor = true;
+            this.Koltuk_47.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_23
+            // 
+            this.Koltuk_23.AutoEllipsis = true;
+            this.Koltuk_23.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_23.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_23.FlatAppearance.BorderSize = 0;
+            this.Koltuk_23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_23.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_23.Location = new System.Drawing.Point(486, 17);
+            this.Koltuk_23.Name = "Koltuk_23";
+            this.Koltuk_23.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_23.TabIndex = 135;
+            this.Koltuk_23.Text = "23";
+            this.Koltuk_23.UseVisualStyleBackColor = true;
+            this.Koltuk_23.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_24
+            // 
+            this.Koltuk_24.AutoEllipsis = true;
+            this.Koltuk_24.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_24.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_24.FlatAppearance.BorderSize = 0;
+            this.Koltuk_24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_24.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_24.Location = new System.Drawing.Point(517, 17);
+            this.Koltuk_24.Name = "Koltuk_24";
+            this.Koltuk_24.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_24.TabIndex = 138;
+            this.Koltuk_24.Text = "24";
+            this.Koltuk_24.UseVisualStyleBackColor = true;
+            this.Koltuk_24.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_70
+            // 
+            this.Koltuk_70.AutoEllipsis = true;
+            this.Koltuk_70.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_70.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_70.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_70.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_70.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_70.FlatAppearance.BorderSize = 0;
+            this.Koltuk_70.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_70.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_70.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_70.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_70.Location = new System.Drawing.Point(454, 73);
+            this.Koltuk_70.Name = "Koltuk_70";
+            this.Koltuk_70.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_70.TabIndex = 134;
+            this.Koltuk_70.Text = "70";
+            this.Koltuk_70.UseVisualStyleBackColor = true;
+            this.Koltuk_70.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_46
+            // 
+            this.Koltuk_46.AutoEllipsis = true;
+            this.Koltuk_46.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_46.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_46.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_46.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_46.FlatAppearance.BorderSize = 0;
+            this.Koltuk_46.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_46.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_46.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_46.Location = new System.Drawing.Point(454, 35);
+            this.Koltuk_46.Name = "Koltuk_46";
+            this.Koltuk_46.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_46.TabIndex = 133;
+            this.Koltuk_46.Text = "46";
+            this.Koltuk_46.UseVisualStyleBackColor = true;
+            this.Koltuk_46.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_22
+            // 
+            this.Koltuk_22.AutoEllipsis = true;
+            this.Koltuk_22.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_22.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_22.FlatAppearance.BorderSize = 0;
+            this.Koltuk_22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_22.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_22.Location = new System.Drawing.Point(454, 17);
+            this.Koltuk_22.Name = "Koltuk_22";
+            this.Koltuk_22.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_22.TabIndex = 132;
+            this.Koltuk_22.Text = "22";
+            this.Koltuk_22.UseVisualStyleBackColor = true;
+            this.Koltuk_22.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_69
+            // 
+            this.Koltuk_69.AutoEllipsis = true;
+            this.Koltuk_69.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_69.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_69.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_69.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_69.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_69.FlatAppearance.BorderSize = 0;
+            this.Koltuk_69.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_69.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_69.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_69.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_69.Location = new System.Drawing.Point(422, 73);
+            this.Koltuk_69.Name = "Koltuk_69";
+            this.Koltuk_69.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_69.TabIndex = 131;
+            this.Koltuk_69.Text = "69";
+            this.Koltuk_69.UseVisualStyleBackColor = true;
+            this.Koltuk_69.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_68
+            // 
+            this.Koltuk_68.AutoEllipsis = true;
+            this.Koltuk_68.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_68.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_68.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_68.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_68.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_68.FlatAppearance.BorderSize = 0;
+            this.Koltuk_68.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_68.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_68.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_68.Location = new System.Drawing.Point(390, 73);
+            this.Koltuk_68.Name = "Koltuk_68";
+            this.Koltuk_68.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_68.TabIndex = 130;
+            this.Koltuk_68.Text = "68";
+            this.Koltuk_68.UseVisualStyleBackColor = true;
+            this.Koltuk_68.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_67
+            // 
+            this.Koltuk_67.AutoEllipsis = true;
+            this.Koltuk_67.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_67.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_67.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_67.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_67.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_67.FlatAppearance.BorderSize = 0;
+            this.Koltuk_67.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_67.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_67.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_67.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_67.Location = new System.Drawing.Point(356, 73);
+            this.Koltuk_67.Name = "Koltuk_67";
+            this.Koltuk_67.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_67.TabIndex = 129;
+            this.Koltuk_67.Text = "67";
+            this.Koltuk_67.UseVisualStyleBackColor = true;
+            this.Koltuk_67.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_45
+            // 
+            this.Koltuk_45.AutoEllipsis = true;
+            this.Koltuk_45.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_45.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_45.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_45.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_45.FlatAppearance.BorderSize = 0;
+            this.Koltuk_45.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_45.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_45.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_45.Location = new System.Drawing.Point(422, 35);
+            this.Koltuk_45.Name = "Koltuk_45";
+            this.Koltuk_45.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_45.TabIndex = 128;
+            this.Koltuk_45.Text = "45";
+            this.Koltuk_45.UseVisualStyleBackColor = true;
+            this.Koltuk_45.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_21
+            // 
+            this.Koltuk_21.AutoEllipsis = true;
+            this.Koltuk_21.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_21.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_21.FlatAppearance.BorderSize = 0;
+            this.Koltuk_21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_21.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_21.Location = new System.Drawing.Point(422, 17);
+            this.Koltuk_21.Name = "Koltuk_21";
+            this.Koltuk_21.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_21.TabIndex = 126;
+            this.Koltuk_21.Text = "21";
+            this.Koltuk_21.UseVisualStyleBackColor = true;
+            this.Koltuk_21.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_20
+            // 
+            this.Koltuk_20.AutoEllipsis = true;
+            this.Koltuk_20.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_20.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_20.FlatAppearance.BorderSize = 0;
+            this.Koltuk_20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_20.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_20.Location = new System.Drawing.Point(390, 17);
+            this.Koltuk_20.Name = "Koltuk_20";
+            this.Koltuk_20.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_20.TabIndex = 125;
+            this.Koltuk_20.Text = "20";
+            this.Koltuk_20.UseVisualStyleBackColor = true;
+            this.Koltuk_20.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_44
+            // 
+            this.Koltuk_44.AutoEllipsis = true;
+            this.Koltuk_44.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_44.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_44.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_44.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_44.FlatAppearance.BorderSize = 0;
+            this.Koltuk_44.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_44.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_44.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_44.Location = new System.Drawing.Point(390, 35);
+            this.Koltuk_44.Name = "Koltuk_44";
+            this.Koltuk_44.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_44.TabIndex = 127;
+            this.Koltuk_44.Text = "4";
+            this.Koltuk_44.UseVisualStyleBackColor = true;
+            this.Koltuk_44.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_43
+            // 
+            this.Koltuk_43.AutoEllipsis = true;
+            this.Koltuk_43.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_43.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_43.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_43.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_43.FlatAppearance.BorderSize = 0;
+            this.Koltuk_43.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_43.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_43.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_43.Location = new System.Drawing.Point(357, 35);
+            this.Koltuk_43.Name = "Koltuk_43";
+            this.Koltuk_43.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_43.TabIndex = 105;
+            this.Koltuk_43.Text = "43";
+            this.Koltuk_43.UseVisualStyleBackColor = true;
+            this.Koltuk_43.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_66
+            // 
+            this.Koltuk_66.AutoEllipsis = true;
+            this.Koltuk_66.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_66.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_66.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_66.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_66.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_66.FlatAppearance.BorderSize = 0;
+            this.Koltuk_66.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_66.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_66.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_66.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_66.Location = new System.Drawing.Point(325, 73);
+            this.Koltuk_66.Name = "Koltuk_66";
+            this.Koltuk_66.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_66.TabIndex = 124;
+            this.Koltuk_66.Text = "66";
+            this.Koltuk_66.UseVisualStyleBackColor = true;
+            this.Koltuk_66.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_19
+            // 
+            this.Koltuk_19.AutoEllipsis = true;
+            this.Koltuk_19.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_19.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_19.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_19.FlatAppearance.BorderSize = 0;
+            this.Koltuk_19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_19.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_19.Location = new System.Drawing.Point(357, 17);
+            this.Koltuk_19.Name = "Koltuk_19";
+            this.Koltuk_19.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_19.TabIndex = 85;
+            this.Koltuk_19.Text = "19";
+            this.Koltuk_19.UseVisualStyleBackColor = true;
+            this.Koltuk_19.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_8
+            // 
+            this.Koltuk_8.AutoEllipsis = true;
+            this.Koltuk_8.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_8.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_8.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_8.FlatAppearance.BorderSize = 0;
+            this.Koltuk_8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_8.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_8.Location = new System.Drawing.Point(0, 17);
+            this.Koltuk_8.Name = "Koltuk_8";
+            this.Koltuk_8.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_8.TabIndex = 74;
+            this.Koltuk_8.Text = "8";
+            this.Koltuk_8.UseVisualStyleBackColor = true;
+            this.Koltuk_8.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_9
+            // 
+            this.Koltuk_9.AutoEllipsis = true;
+            this.Koltuk_9.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_9.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_9.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_9.FlatAppearance.BorderSize = 0;
+            this.Koltuk_9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_9.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_9.Location = new System.Drawing.Point(32, 17);
+            this.Koltuk_9.Name = "Koltuk_9";
+            this.Koltuk_9.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_9.TabIndex = 75;
+            this.Koltuk_9.Text = "9";
+            this.Koltuk_9.UseVisualStyleBackColor = true;
+            this.Koltuk_9.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_10
+            // 
+            this.Koltuk_10.AutoEllipsis = true;
+            this.Koltuk_10.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_10.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_10.FlatAppearance.BorderSize = 0;
+            this.Koltuk_10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_10.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_10.Location = new System.Drawing.Point(64, 17);
+            this.Koltuk_10.Name = "Koltuk_10";
+            this.Koltuk_10.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_10.TabIndex = 76;
+            this.Koltuk_10.Text = "10";
+            this.Koltuk_10.UseVisualStyleBackColor = true;
+            this.Koltuk_10.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_11
+            // 
+            this.Koltuk_11.AutoEllipsis = true;
+            this.Koltuk_11.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_11.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_11.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_11.FlatAppearance.BorderSize = 0;
+            this.Koltuk_11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_11.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_11.Location = new System.Drawing.Point(96, 17);
+            this.Koltuk_11.Name = "Koltuk_11";
+            this.Koltuk_11.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_11.TabIndex = 77;
+            this.Koltuk_11.Text = "11";
+            this.Koltuk_11.UseVisualStyleBackColor = true;
+            this.Koltuk_11.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_12
+            // 
+            this.Koltuk_12.AutoEllipsis = true;
+            this.Koltuk_12.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_12.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_12.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_12.FlatAppearance.BorderSize = 0;
+            this.Koltuk_12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_12.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_12.Location = new System.Drawing.Point(128, 17);
+            this.Koltuk_12.Name = "Koltuk_12";
+            this.Koltuk_12.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_12.TabIndex = 78;
+            this.Koltuk_12.Text = "12";
+            this.Koltuk_12.UseVisualStyleBackColor = true;
+            this.Koltuk_12.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_65
+            // 
+            this.Koltuk_65.AutoEllipsis = true;
+            this.Koltuk_65.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_65.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_65.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_65.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_65.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_65.FlatAppearance.BorderSize = 0;
+            this.Koltuk_65.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_65.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_65.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_65.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_65.Location = new System.Drawing.Point(293, 73);
+            this.Koltuk_65.Name = "Koltuk_65";
+            this.Koltuk_65.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_65.TabIndex = 123;
+            this.Koltuk_65.Text = "65";
+            this.Koltuk_65.UseVisualStyleBackColor = true;
+            this.Koltuk_65.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_13
+            // 
+            this.Koltuk_13.AutoEllipsis = true;
+            this.Koltuk_13.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_13.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_13.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_13.FlatAppearance.BorderSize = 0;
+            this.Koltuk_13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_13.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_13.Location = new System.Drawing.Point(163, 17);
+            this.Koltuk_13.Name = "Koltuk_13";
+            this.Koltuk_13.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_13.TabIndex = 79;
+            this.Koltuk_13.Text = "13";
+            this.Koltuk_13.UseVisualStyleBackColor = true;
+            this.Koltuk_13.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_64
+            // 
+            this.Koltuk_64.AutoEllipsis = true;
+            this.Koltuk_64.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_64.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_64.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_64.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_64.FlatAppearance.BorderSize = 0;
+            this.Koltuk_64.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_64.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_64.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_64.Location = new System.Drawing.Point(259, 73);
+            this.Koltuk_64.Name = "Koltuk_64";
+            this.Koltuk_64.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_64.TabIndex = 122;
+            this.Koltuk_64.Text = "64";
+            this.Koltuk_64.UseVisualStyleBackColor = true;
+            this.Koltuk_64.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_14
+            // 
+            this.Koltuk_14.AutoEllipsis = true;
+            this.Koltuk_14.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_14.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_14.FlatAppearance.BorderSize = 0;
+            this.Koltuk_14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_14.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_14.Location = new System.Drawing.Point(195, 17);
+            this.Koltuk_14.Name = "Koltuk_14";
+            this.Koltuk_14.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_14.TabIndex = 80;
+            this.Koltuk_14.Text = "14";
+            this.Koltuk_14.UseVisualStyleBackColor = true;
+            this.Koltuk_14.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_63
+            // 
+            this.Koltuk_63.AutoEllipsis = true;
+            this.Koltuk_63.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_63.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_63.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_63.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_63.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_63.FlatAppearance.BorderSize = 0;
+            this.Koltuk_63.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_63.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_63.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_63.Location = new System.Drawing.Point(226, 73);
+            this.Koltuk_63.Name = "Koltuk_63";
+            this.Koltuk_63.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_63.TabIndex = 121;
+            this.Koltuk_63.Text = "63";
+            this.Koltuk_63.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Koltuk_63.UseVisualStyleBackColor = true;
+            this.Koltuk_63.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_15
+            // 
+            this.Koltuk_15.AutoEllipsis = true;
+            this.Koltuk_15.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_15.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_15.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_15.FlatAppearance.BorderSize = 0;
+            this.Koltuk_15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_15.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_15.Location = new System.Drawing.Point(227, 17);
+            this.Koltuk_15.Name = "Koltuk_15";
+            this.Koltuk_15.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_15.TabIndex = 81;
+            this.Koltuk_15.Text = "15";
+            this.Koltuk_15.UseVisualStyleBackColor = true;
+            this.Koltuk_15.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_62
+            // 
+            this.Koltuk_62.AutoEllipsis = true;
+            this.Koltuk_62.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_62.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_62.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_62.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_62.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_62.FlatAppearance.BorderSize = 0;
+            this.Koltuk_62.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_62.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_62.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_62.Location = new System.Drawing.Point(195, 73);
+            this.Koltuk_62.Name = "Koltuk_62";
+            this.Koltuk_62.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_62.TabIndex = 120;
+            this.Koltuk_62.Text = "62";
+            this.Koltuk_62.UseVisualStyleBackColor = true;
+            this.Koltuk_62.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_16
+            // 
+            this.Koltuk_16.AutoEllipsis = true;
+            this.Koltuk_16.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_16.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_16.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_16.FlatAppearance.BorderSize = 0;
+            this.Koltuk_16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_16.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_16.Location = new System.Drawing.Point(259, 17);
+            this.Koltuk_16.Name = "Koltuk_16";
+            this.Koltuk_16.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_16.TabIndex = 82;
+            this.Koltuk_16.Text = "16";
+            this.Koltuk_16.UseVisualStyleBackColor = true;
+            this.Koltuk_16.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_61
+            // 
+            this.Koltuk_61.AutoEllipsis = true;
+            this.Koltuk_61.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_61.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_61.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_61.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_61.FlatAppearance.BorderSize = 0;
+            this.Koltuk_61.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_61.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_61.Location = new System.Drawing.Point(163, 73);
+            this.Koltuk_61.Name = "Koltuk_61";
+            this.Koltuk_61.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_61.TabIndex = 119;
+            this.Koltuk_61.Text = "61";
+            this.Koltuk_61.UseVisualStyleBackColor = true;
+            this.Koltuk_61.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_17
+            // 
+            this.Koltuk_17.AutoEllipsis = true;
+            this.Koltuk_17.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_17.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_17.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_17.FlatAppearance.BorderSize = 0;
+            this.Koltuk_17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_17.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_17.Location = new System.Drawing.Point(293, 17);
+            this.Koltuk_17.Name = "Koltuk_17";
+            this.Koltuk_17.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_17.TabIndex = 83;
+            this.Koltuk_17.Text = "17";
+            this.Koltuk_17.UseVisualStyleBackColor = true;
+            this.Koltuk_17.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_60
+            // 
+            this.Koltuk_60.AutoEllipsis = true;
+            this.Koltuk_60.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_60.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_60.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_60.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_60.FlatAppearance.BorderSize = 0;
+            this.Koltuk_60.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_60.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_60.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_60.Location = new System.Drawing.Point(128, 73);
+            this.Koltuk_60.Name = "Koltuk_60";
+            this.Koltuk_60.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_60.TabIndex = 118;
+            this.Koltuk_60.Text = "60";
+            this.Koltuk_60.UseVisualStyleBackColor = true;
+            this.Koltuk_60.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_18
+            // 
+            this.Koltuk_18.AutoEllipsis = true;
+            this.Koltuk_18.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_18.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_18.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_18.FlatAppearance.BorderSize = 0;
+            this.Koltuk_18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_18.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_18.Location = new System.Drawing.Point(325, 17);
+            this.Koltuk_18.Name = "Koltuk_18";
+            this.Koltuk_18.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_18.TabIndex = 84;
+            this.Koltuk_18.Text = "18";
+            this.Koltuk_18.UseVisualStyleBackColor = true;
+            this.Koltuk_18.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_59
+            // 
+            this.Koltuk_59.AutoEllipsis = true;
+            this.Koltuk_59.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_59.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_59.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_59.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_59.FlatAppearance.BorderSize = 0;
+            this.Koltuk_59.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_59.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_59.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_59.Location = new System.Drawing.Point(96, 73);
+            this.Koltuk_59.Name = "Koltuk_59";
+            this.Koltuk_59.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_59.TabIndex = 117;
+            this.Koltuk_59.Text = "59";
+            this.Koltuk_59.UseVisualStyleBackColor = true;
+            this.Koltuk_59.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_58
+            // 
+            this.Koltuk_58.AutoEllipsis = true;
+            this.Koltuk_58.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_58.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_58.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_58.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_58.FlatAppearance.BorderSize = 0;
+            this.Koltuk_58.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_58.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_58.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_58.Location = new System.Drawing.Point(64, 73);
+            this.Koltuk_58.Name = "Koltuk_58";
+            this.Koltuk_58.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_58.TabIndex = 116;
+            this.Koltuk_58.Text = "58";
+            this.Koltuk_58.UseVisualStyleBackColor = true;
+            this.Koltuk_58.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_57
+            // 
+            this.Koltuk_57.AutoEllipsis = true;
+            this.Koltuk_57.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_57.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_57.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_57.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_57.FlatAppearance.BorderSize = 0;
+            this.Koltuk_57.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_57.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_57.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_57.Location = new System.Drawing.Point(32, 73);
+            this.Koltuk_57.Name = "Koltuk_57";
+            this.Koltuk_57.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_57.TabIndex = 115;
+            this.Koltuk_57.Text = "57";
+            this.Koltuk_57.UseVisualStyleBackColor = true;
+            this.Koltuk_57.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_32
+            // 
+            this.Koltuk_32.AutoEllipsis = true;
+            this.Koltuk_32.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_32.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_32.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_32.FlatAppearance.BorderSize = 0;
+            this.Koltuk_32.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_32.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_32.Location = new System.Drawing.Point(0, 35);
+            this.Koltuk_32.Name = "Koltuk_32";
+            this.Koltuk_32.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_32.TabIndex = 94;
+            this.Koltuk_32.Text = "32";
+            this.Koltuk_32.UseVisualStyleBackColor = true;
+            this.Koltuk_32.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_56
+            // 
+            this.Koltuk_56.AutoEllipsis = true;
+            this.Koltuk_56.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_56.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_56.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_56.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_56.FlatAppearance.BorderSize = 0;
+            this.Koltuk_56.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_56.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_56.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_56.Location = new System.Drawing.Point(0, 73);
+            this.Koltuk_56.Name = "Koltuk_56";
+            this.Koltuk_56.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_56.TabIndex = 114;
+            this.Koltuk_56.Text = "56";
+            this.Koltuk_56.UseVisualStyleBackColor = true;
+            this.Koltuk_56.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_33
+            // 
+            this.Koltuk_33.AutoEllipsis = true;
+            this.Koltuk_33.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_33.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_33.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_33.FlatAppearance.BorderSize = 0;
+            this.Koltuk_33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_33.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_33.Location = new System.Drawing.Point(32, 35);
+            this.Koltuk_33.Name = "Koltuk_33";
+            this.Koltuk_33.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_33.TabIndex = 95;
+            this.Koltuk_33.Text = "33";
+            this.Koltuk_33.UseVisualStyleBackColor = true;
+            this.Koltuk_33.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_34
+            // 
+            this.Koltuk_34.AutoEllipsis = true;
+            this.Koltuk_34.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_34.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_34.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_34.FlatAppearance.BorderSize = 0;
+            this.Koltuk_34.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_34.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_34.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_34.Location = new System.Drawing.Point(64, 35);
+            this.Koltuk_34.Name = "Koltuk_34";
+            this.Koltuk_34.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_34.TabIndex = 96;
+            this.Koltuk_34.Text = "34";
+            this.Koltuk_34.UseVisualStyleBackColor = true;
+            this.Koltuk_34.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_35
+            // 
+            this.Koltuk_35.AutoEllipsis = true;
+            this.Koltuk_35.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_35.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_35.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_35.FlatAppearance.BorderSize = 0;
+            this.Koltuk_35.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_35.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_35.Location = new System.Drawing.Point(96, 35);
+            this.Koltuk_35.Name = "Koltuk_35";
+            this.Koltuk_35.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_35.TabIndex = 97;
+            this.Koltuk_35.Text = "35";
+            this.Koltuk_35.UseVisualStyleBackColor = true;
+            this.Koltuk_35.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_36
+            // 
+            this.Koltuk_36.AutoEllipsis = true;
+            this.Koltuk_36.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_36.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_36.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_36.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_36.FlatAppearance.BorderSize = 0;
+            this.Koltuk_36.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_36.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_36.Location = new System.Drawing.Point(128, 35);
+            this.Koltuk_36.Name = "Koltuk_36";
+            this.Koltuk_36.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_36.TabIndex = 98;
+            this.Koltuk_36.Text = "36";
+            this.Koltuk_36.UseVisualStyleBackColor = true;
+            this.Koltuk_36.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_37
+            // 
+            this.Koltuk_37.AutoEllipsis = true;
+            this.Koltuk_37.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_37.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_37.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_37.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_37.FlatAppearance.BorderSize = 0;
+            this.Koltuk_37.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_37.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_37.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_37.Location = new System.Drawing.Point(163, 35);
+            this.Koltuk_37.Name = "Koltuk_37";
+            this.Koltuk_37.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_37.TabIndex = 99;
+            this.Koltuk_37.Text = "37";
+            this.Koltuk_37.UseVisualStyleBackColor = true;
+            this.Koltuk_37.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_38
+            // 
+            this.Koltuk_38.AutoEllipsis = true;
+            this.Koltuk_38.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_38.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_38.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_38.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_38.FlatAppearance.BorderSize = 0;
+            this.Koltuk_38.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_38.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_38.Location = new System.Drawing.Point(195, 35);
+            this.Koltuk_38.Name = "Koltuk_38";
+            this.Koltuk_38.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_38.TabIndex = 100;
+            this.Koltuk_38.Text = "38";
+            this.Koltuk_38.UseVisualStyleBackColor = true;
+            this.Koltuk_38.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_39
+            // 
+            this.Koltuk_39.AutoEllipsis = true;
+            this.Koltuk_39.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_39.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_39.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_39.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_39.FlatAppearance.BorderSize = 0;
+            this.Koltuk_39.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_39.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_39.Location = new System.Drawing.Point(227, 35);
+            this.Koltuk_39.Name = "Koltuk_39";
+            this.Koltuk_39.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_39.TabIndex = 101;
+            this.Koltuk_39.Text = "39";
+            this.Koltuk_39.UseVisualStyleBackColor = true;
+            this.Koltuk_39.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_40
+            // 
+            this.Koltuk_40.AutoEllipsis = true;
+            this.Koltuk_40.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_40.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_40.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_40.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_40.FlatAppearance.BorderSize = 0;
+            this.Koltuk_40.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_40.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_40.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_40.Location = new System.Drawing.Point(259, 35);
+            this.Koltuk_40.Name = "Koltuk_40";
+            this.Koltuk_40.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_40.TabIndex = 102;
+            this.Koltuk_40.Text = "40";
+            this.Koltuk_40.UseVisualStyleBackColor = true;
+            this.Koltuk_40.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_42
+            // 
+            this.Koltuk_42.AutoEllipsis = true;
+            this.Koltuk_42.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_42.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_42.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_42.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_42.FlatAppearance.BorderSize = 0;
+            this.Koltuk_42.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_42.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_42.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_42.Location = new System.Drawing.Point(325, 35);
+            this.Koltuk_42.Name = "Koltuk_42";
+            this.Koltuk_42.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_42.TabIndex = 104;
+            this.Koltuk_42.Text = "42";
+            this.Koltuk_42.UseVisualStyleBackColor = true;
+            this.Koltuk_42.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // Koltuk_41
+            // 
+            this.Koltuk_41.AutoEllipsis = true;
+            this.Koltuk_41.BackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_41.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.Koltuk_41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Koltuk_41.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Koltuk_41.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Koltuk_41.FlatAppearance.BorderSize = 0;
+            this.Koltuk_41.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_41.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Koltuk_41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Koltuk_41.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_41.Location = new System.Drawing.Point(293, 35);
+            this.Koltuk_41.Name = "Koltuk_41";
+            this.Koltuk_41.Size = new System.Drawing.Size(26, 21);
+            this.Koltuk_41.TabIndex = 103;
+            this.Koltuk_41.Text = "41";
+            this.Koltuk_41.UseVisualStyleBackColor = true;
+            this.Koltuk_41.Click += new System.EventHandler(this.btn_Click);
             // 
             // koltuklbl
             // 
@@ -1879,29 +1902,6 @@
             this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox1.TabIndex = 0;
             // 
-            // satinalbtn
-            // 
-            this.satinalbtn.Animated = true;
-            this.satinalbtn.AutoRoundedCorners = true;
-            this.satinalbtn.BackColor = System.Drawing.Color.Transparent;
-            this.satinalbtn.BorderColor = System.Drawing.Color.Blue;
-            this.satinalbtn.BorderRadius = 17;
-            this.satinalbtn.CheckedState.Parent = this.satinalbtn;
-            this.satinalbtn.CustomImages.Parent = this.satinalbtn;
-            this.satinalbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.satinalbtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.satinalbtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
-            this.satinalbtn.ForeColor = System.Drawing.Color.White;
-            this.satinalbtn.HoverState.Parent = this.satinalbtn;
-            this.satinalbtn.Location = new System.Drawing.Point(1069, 60);
-            this.satinalbtn.Name = "satinalbtn";
-            this.satinalbtn.ShadowDecoration.Parent = this.satinalbtn;
-            this.satinalbtn.Size = new System.Drawing.Size(114, 36);
-            this.satinalbtn.TabIndex = 141;
-            this.satinalbtn.Text = "Satın Al";
-            this.satinalbtn.UseTransparentBackground = true;
-            this.satinalbtn.Visible = false;
-            // 
             // _72koltukform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1912,6 +1912,7 @@
             this.Name = "_72koltukform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_72koltukform";
+            this.Load += new System.EventHandler(this._72koltukform_Load);
             this.arkapanel.ResumeLayout(false);
             this.arkapanel.PerformLayout();
             this.bussinesgrup.ResumeLayout(false);
@@ -1926,87 +1927,87 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2GradientPanel arkapanel;
         public Guna.UI2.WinForms.Guna2GroupBox bussinesgrup;
-        private System.Windows.Forms.Button C5;
-        private System.Windows.Forms.Button A1;
-        private System.Windows.Forms.Button A2;
-        private System.Windows.Forms.Button A3;
-        private System.Windows.Forms.Button A4;
-        private System.Windows.Forms.Button A5;
-        private System.Windows.Forms.Button C4;
-        private System.Windows.Forms.Button B1;
-        private System.Windows.Forms.Button C3;
-        private System.Windows.Forms.Button B2;
-        private System.Windows.Forms.Button C2;
-        private System.Windows.Forms.Button B3;
-        private System.Windows.Forms.Button C1;
-        private System.Windows.Forms.Button B4;
-        private System.Windows.Forms.Button B5;
+        private System.Windows.Forms.Button Koltuk_53;
+        private System.Windows.Forms.Button Koltuk_1;
+        private System.Windows.Forms.Button Koltuk_2;
+        private System.Windows.Forms.Button Koltuk_3;
+        private System.Windows.Forms.Button Koltuk_4;
+        private System.Windows.Forms.Button Koltuk_5;
+        private System.Windows.Forms.Button Koltuk_52;
+        private System.Windows.Forms.Button Koltuk_25;
+        private System.Windows.Forms.Button Koltuk_51;
+        private System.Windows.Forms.Button Koltuk_26;
+        private System.Windows.Forms.Button Koltuk_50;
+        private System.Windows.Forms.Button Koltuk_27;
+        private System.Windows.Forms.Button Koltuk_49;
+        private System.Windows.Forms.Button Koltuk_28;
+        private System.Windows.Forms.Button Koltuk_29;
         public Guna.UI2.WinForms.Guna2GroupBox ekonomi;
-        private System.Windows.Forms.Button B19;
-        private System.Windows.Forms.Button C18;
-        private System.Windows.Forms.Button A6;
-        private System.Windows.Forms.Button A7;
-        private System.Windows.Forms.Button A19;
-        private System.Windows.Forms.Button A8;
-        private System.Windows.Forms.Button A9;
-        private System.Windows.Forms.Button A10;
-        private System.Windows.Forms.Button A11;
-        private System.Windows.Forms.Button A12;
-        private System.Windows.Forms.Button C17;
-        private System.Windows.Forms.Button A13;
-        private System.Windows.Forms.Button C16;
-        private System.Windows.Forms.Button A14;
-        private System.Windows.Forms.Button C15;
-        private System.Windows.Forms.Button A15;
-        private System.Windows.Forms.Button C14;
-        private System.Windows.Forms.Button A16;
-        private System.Windows.Forms.Button C13;
-        private System.Windows.Forms.Button A17;
-        private System.Windows.Forms.Button C12;
-        private System.Windows.Forms.Button A18;
-        private System.Windows.Forms.Button C11;
-        private System.Windows.Forms.Button B6;
-        private System.Windows.Forms.Button C10;
-        private System.Windows.Forms.Button B7;
-        private System.Windows.Forms.Button C9;
-        private System.Windows.Forms.Button B8;
-        private System.Windows.Forms.Button C8;
-        private System.Windows.Forms.Button B9;
-        private System.Windows.Forms.Button C7;
-        private System.Windows.Forms.Button B10;
-        private System.Windows.Forms.Button C6;
-        private System.Windows.Forms.Button B11;
-        private System.Windows.Forms.Button B12;
-        private System.Windows.Forms.Button B13;
-        private System.Windows.Forms.Button B14;
-        private System.Windows.Forms.Button B15;
-        private System.Windows.Forms.Button B16;
-        private System.Windows.Forms.Button B18;
-        private System.Windows.Forms.Button B17;
+        private System.Windows.Forms.Button Koltuk_43;
+        private System.Windows.Forms.Button Koltuk_66;
+        private System.Windows.Forms.Button Koltuk_6;
+        private System.Windows.Forms.Button Koltuk_7;
+        private System.Windows.Forms.Button Koltuk_19;
+        private System.Windows.Forms.Button Koltuk_8;
+        private System.Windows.Forms.Button Koltuk_9;
+        private System.Windows.Forms.Button Koltuk_10;
+        private System.Windows.Forms.Button Koltuk_11;
+        private System.Windows.Forms.Button Koltuk_12;
+        private System.Windows.Forms.Button Koltuk_65;
+        private System.Windows.Forms.Button Koltuk_13;
+        private System.Windows.Forms.Button Koltuk_64;
+        private System.Windows.Forms.Button Koltuk_14;
+        private System.Windows.Forms.Button Koltuk_63;
+        private System.Windows.Forms.Button Koltuk_15;
+        private System.Windows.Forms.Button Koltuk_62;
+        private System.Windows.Forms.Button Koltuk_16;
+        private System.Windows.Forms.Button Koltuk_61;
+        private System.Windows.Forms.Button Koltuk_17;
+        private System.Windows.Forms.Button Koltuk_60;
+        private System.Windows.Forms.Button Koltuk_18;
+        private System.Windows.Forms.Button Koltuk_59;
+        private System.Windows.Forms.Button Koltuk_30;
+        private System.Windows.Forms.Button Koltuk_58;
+        private System.Windows.Forms.Button Koltuk_31;
+        private System.Windows.Forms.Button Koltuk_57;
+        private System.Windows.Forms.Button Koltuk_32;
+        private System.Windows.Forms.Button Koltuk_56;
+        private System.Windows.Forms.Button Koltuk_33;
+        private System.Windows.Forms.Button Koltuk_55;
+        private System.Windows.Forms.Button Koltuk_34;
+        private System.Windows.Forms.Button Koltuk_54;
+        private System.Windows.Forms.Button Koltuk_35;
+        private System.Windows.Forms.Button Koltuk_36;
+        private System.Windows.Forms.Button Koltuk_37;
+        private System.Windows.Forms.Button Koltuk_38;
+        private System.Windows.Forms.Button Koltuk_39;
+        private System.Windows.Forms.Button Koltuk_40;
+        private System.Windows.Forms.Button Koltuk_42;
+        private System.Windows.Forms.Button Koltuk_41;
         private Guna.UI.WinForms.GunaLabel koltuklbl;
         private Guna.UI.WinForms.GunaLabel secilenkoltuklbl;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2GradientPanel ustpanel;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
-        private System.Windows.Forms.Button C21;
-        private System.Windows.Forms.Button C20;
-        private System.Windows.Forms.Button C19;
-        private System.Windows.Forms.Button B21;
-        private System.Windows.Forms.Button A21;
-        private System.Windows.Forms.Button A20;
-        private System.Windows.Forms.Button B20;
-        private System.Windows.Forms.Button C23;
-        private System.Windows.Forms.Button B23;
-        private System.Windows.Forms.Button A23;
-        private System.Windows.Forms.Button C22;
-        private System.Windows.Forms.Button B22;
-        private System.Windows.Forms.Button A22;
+        private System.Windows.Forms.Button Koltuk_69;
+        private System.Windows.Forms.Button Koltuk_68;
+        private System.Windows.Forms.Button Koltuk_67;
+        private System.Windows.Forms.Button Koltuk_45;
+        private System.Windows.Forms.Button Koltuk_21;
+        private System.Windows.Forms.Button Koltuk_20;
+        private System.Windows.Forms.Button Koltuk_44;
+        private System.Windows.Forms.Button Koltuk_71;
+        private System.Windows.Forms.Button Koltuk_47;
+        private System.Windows.Forms.Button Koltuk_23;
+        private System.Windows.Forms.Button Koltuk_70;
+        private System.Windows.Forms.Button Koltuk_46;
+        private System.Windows.Forms.Button Koltuk_22;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button C24;
-        private System.Windows.Forms.Button B24;
-        private System.Windows.Forms.Button A24;
+        private System.Windows.Forms.Button Koltuk_72;
+        private System.Windows.Forms.Button Koltuk_48;
+        private System.Windows.Forms.Button Koltuk_24;
         private Guna.UI2.WinForms.Guna2GradientButton satinalbtn;
     }
 }

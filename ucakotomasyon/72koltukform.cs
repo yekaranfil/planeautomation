@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,9 @@ namespace ucakotomasyon
 {
     public partial class _72koltukform : Form
     {
+
+        MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
+
         public _72koltukform()
         {
             InitializeComponent();
@@ -21,6 +25,7 @@ namespace ucakotomasyon
 
         public List<String> butonlist = new List<String>();
         public List<String> secilenler = new List<String>();
+        public List<String> secilenkoltuk = new List<String>();
         int sayac = 0;
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -37,6 +42,28 @@ namespace ucakotomasyon
         int kisi;
         int secilensayac = 0;
 
+        void LogAl()
+        {
+            baglanti.Open();
+            //string sql = "SELECT * FROM satis WHERE arac_id=" + arac_id + " AND sefer_id=" + sefer_id + " AND sefer_tarihi=" + tarih + "AND sefer_saati='"+ tarih_saat +"'";
+            MySqlCommand dolukoltuk = new MySqlCommand("SELECT koltuklar_koltuk_id FROM koltuklar_has_ucaklar WHERE dolubos=@doluluk AND ucuslar_ucus_id=@ucus", baglanti);
+            dolukoltuk.Parameters.AddWithValue("@doluluk", dolu);
+            dolukoltuk.Parameters.AddWithValue("@ucus", AnaSayfa.biletucusid);
+            MySqlDataReader dr1 = dolukoltuk.ExecuteReader();
+            while (dr1.Read())
+            {
+
+                string koltuk_No = dr1["koltuklar_koltuk_id"].ToString();
+                //this.Controls.Find("btn" + "2", true)[0].BackColor = Color.Red;
+                Button s = this.Controls.Find("Koltuk_" + koltuk_No, true).FirstOrDefault() as Button;
+                s.BackgroundImage = ucakotomasyon.Properties.Resources.Dolu1;
+                s.Enabled = false;
+            }
+            baglanti.Close();//
+        }
+
+        String dolu = "DOLU";
+        String dolukoltukid;
         public void btn_Click(object sender, EventArgs e)
         {
             //kişi kontrol
@@ -59,7 +86,7 @@ namespace ucakotomasyon
                 {
                     btn.BackgroundImage = ucakotomasyon.Properties.Resources.Secili1;
                     btn.ForeColor = Color.Green;
-
+                    secilenkoltuk.Add(btn.Text);
                     secilenler.Add(btn.Name);
                     koltuklbl.Text += secilenler[0].ToString() + " - ";
                     secilenler.Clear();
@@ -93,6 +120,107 @@ namespace ucakotomasyon
 
 
 
+        }
+
+        String bltid = "";
+        private void satinalbtn_Click(object sender, EventArgs e)
+        {
+
+            for (int i = 0; i < secilenkoltuk.Count; i++)
+            {
+
+                baglanti.Close();
+                baglanti.Open();
+
+                MySqlCommand biletekle = new MySqlCommand("INSERT INTO biletler (biletadi) VALUES ('" + "a" + "')", baglanti);
+                biletekle.ExecuteNonQuery();
+                baglanti.Close();
+                HataBox f = new HataBox();
+                HataBox.mesaj = "Uçuş ekleme";
+                HataBox.text = "Uçuş eklendi";
+                f.hataresim.Visible = false;
+                f.onayresim.Visible = true;
+                f.Show();
+
+
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand biletcek = new MySqlCommand("SELECT bilet_id FROM biletler ORDER BY bilet_id DESC", baglanti);
+                MySqlDataReader dr1 = biletcek.ExecuteReader();
+                if (dr1.Read())
+                {
+
+                    bltid = dr1["bilet_id"].ToString();
+
+
+                }
+                baglanti.Close();
+
+
+
+                // seçiliyse
+
+
+
+                baglanti.Close();
+                baglanti.Open();
+
+                MySqlCommand seferekleme = new MySqlCommand("INSERT INTO biletler_has_yolcular (biletler_bilet_id,yolcular_yolcu_id,ucuslar_ucus_id, koltukno) VALUES ('" + bltid + "','" + Form1.kisiid + "','" + AnaSayfa.biletucusid + "','" + secilenkoltuk[i].ToString() + "' )", baglanti);
+                seferekleme.ExecuteNonQuery();
+                baglanti.Close();
+
+
+
+                try
+                {
+
+                    baglanti.Close();
+                    baglanti.Open();
+                    MySqlCommand ucakekleme = new MySqlCommand("UPDATE koltuklar_has_ucaklar SET dolubos='DOLU' WHERE koltuklar_koltuk_id=@koltukid AND ucuslar_ucus_id=@ucusid", baglanti);
+                    ucakekleme.Parameters.AddWithValue("@ucusid", AnaSayfa.biletucusid);
+                    ucakekleme.Parameters.AddWithValue("@koltukid", secilenkoltuk[i]);
+                    ucakekleme.ExecuteNonQuery();
+                    baglanti.Close();
+
+
+
+                }
+                catch
+                {
+
+                }
+
+
+
+            }
+
+        }
+
+        private void _72koltukform_Load(object sender, EventArgs e)
+        {
+
+            LogAl();
+
+
+
+
+
+
+
+            AnaSayfa ana = new AnaSayfa();
+            if (ana.ekonomiradiobtn.Checked == true)
+            {
+
+                ekonomigrup.Enabled = true;
+                bussinesgrup.Enabled = false;
+
+
+            }
+            else if (ana.bussinesradiobtn.Checked == true)
+            {
+                bussinesgrup.Enabled = true;
+                ekonomigrup.Enabled = false;
+            }
         }
     }
 }

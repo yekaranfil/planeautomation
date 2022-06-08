@@ -39,11 +39,28 @@ namespace ucakotomasyon
         int kisi;
         int secilensayac = 0;
 
-        String deneme = "A2";
         String dolu = "DOLU";
         String dolukoltukid;
 
+        void LogAl()
+        {
+            baglanti.Open();
+            //string sql = "SELECT * FROM satis WHERE arac_id=" + arac_id + " AND sefer_id=" + sefer_id + " AND sefer_tarihi=" + tarih + "AND sefer_saati='"+ tarih_saat +"'";
+            MySqlCommand dolukoltuk = new MySqlCommand("SELECT koltuklar_koltuk_id FROM koltuklar_has_ucaklar WHERE dolubos=@doluluk AND ucuslar_ucus_id=@ucus", baglanti);
+            dolukoltuk.Parameters.AddWithValue("@doluluk", dolu);
+            dolukoltuk.Parameters.AddWithValue("@ucus", AnaSayfa.biletucusid);
+            MySqlDataReader dr1 = dolukoltuk.ExecuteReader();
+            while (dr1.Read())
+            {
 
+                string koltuk_No = dr1["koltuklar_koltuk_id"].ToString();
+                //this.Controls.Find("btn" + "2", true)[0].BackColor = Color.Red;
+                Button s = this.Controls.Find("Koltuk_" + koltuk_No, true).FirstOrDefault() as Button;
+                s.BackgroundImage = ucakotomasyon.Properties.Resources.Dolu1;
+                s.Enabled = false;
+            }
+            baglanti.Close();//
+        }
         public void btn_Click(object sender, EventArgs e)
         {
             //kişi kontrol
@@ -66,7 +83,7 @@ namespace ucakotomasyon
                 {
                     btn.BackgroundImage = ucakotomasyon.Properties.Resources.Secili1;
                     btn.ForeColor = Color.Green;
-
+                    secilenkoltuk.Add(btn.Text);
                     secilenler.Add(btn.Name);
                     koltuklbl.Text += secilenler[0].ToString() + " - ";
                     secilenler.Clear();
@@ -116,41 +133,42 @@ namespace ucakotomasyon
         String bltid = "";
         private void satinalbtn_Click(object sender, EventArgs e)
         {
-
-            baglanti.Close();
-            baglanti.Open();
-
-            MySqlCommand biletekle = new MySqlCommand("INSERT INTO biletler (biletadi) VALUES ('" + "a" + "')", baglanti);
-            biletekle.ExecuteNonQuery();
-            baglanti.Close();
-            HataBox f = new HataBox();
-            HataBox.mesaj = "Uçuş ekleme";
-            HataBox.text = "Uçuş eklendi";
-            f.hataresim.Visible = false;
-            f.onayresim.Visible = true;
-            f.Show();
-
-
-            baglanti.Close();
-            baglanti.Open();
-            MySqlCommand biletcek = new MySqlCommand("SELECT bilet_id FROM biletler ORDER BY bilet_id DESC", baglanti);
-            MySqlDataReader dr1 = biletcek.ExecuteReader();
-            if (dr1.Read())
-            {
-
-                bltid = dr1["bilet_id"].ToString();
-
-
-            }
-            baglanti.Close();
-
-
-
-            // seçiliyse
-
-
             for (int i = 0; i < secilenkoltuk.Count; i++)
             {
+
+                baglanti.Close();
+                baglanti.Open();
+
+                MySqlCommand biletekle = new MySqlCommand("INSERT INTO biletler (biletadi) VALUES ('" + "a" + "')", baglanti);
+                biletekle.ExecuteNonQuery();
+                baglanti.Close();
+                HataBox f = new HataBox();
+                HataBox.mesaj = "Uçuş ekleme";
+                HataBox.text = "Uçuş eklendi";
+                f.hataresim.Visible = false;
+                f.onayresim.Visible = true;
+                f.Show();
+
+
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand biletcek = new MySqlCommand("SELECT bilet_id FROM biletler ORDER BY bilet_id DESC", baglanti);
+                MySqlDataReader dr1 = biletcek.ExecuteReader();
+                if (dr1.Read())
+                {
+
+                    bltid = dr1["bilet_id"].ToString();
+
+
+                }
+                baglanti.Close();
+
+
+
+                // seçiliyse
+
+
+
                 baglanti.Close();
                 baglanti.Open();
 
@@ -170,7 +188,7 @@ namespace ucakotomasyon
                     ucakekleme.Parameters.AddWithValue("@koltukid", secilenkoltuk[i]);
                     ucakekleme.ExecuteNonQuery();
                     baglanti.Close();
-                    secilenkoltuk.Clear();
+
 
 
                 }
@@ -178,6 +196,38 @@ namespace ucakotomasyon
                 {
 
                 }
+
+
+
             }
+
+        }
+
+        private void _40koltukform_Load(object sender, EventArgs e)
+        {
+
+            LogAl();
+
+
+
+
+
+
+
+            AnaSayfa ana = new AnaSayfa();
+            if (ana.ekonomiradiobtn.Checked == true)
+            {
+
+                ekonomigrup.Enabled = true;
+                bussinesgrup.Enabled = false;
+
+
+            }
+            else if (ana.bussinesradiobtn.Checked == true)
+            {
+                bussinesgrup.Enabled = true;
+                ekonomigrup.Enabled = false;
+            }
+        }
     }
 }
