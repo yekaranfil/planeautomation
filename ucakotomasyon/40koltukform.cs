@@ -108,7 +108,7 @@ namespace ucakotomasyon
                     String degisken = koltuklbl.Text.Substring(0, koltuklbl.Text.Length - (btn.Name.Length + 3));
                     btn.BackgroundImage = ucakotomasyon.Properties.Resources.Bos1;
                     secilenler.Remove(btn.Name);
-                    ssecilenkoltuk.Remove(btn.Text.ToString());
+                    secilenkoltuk.Remove(btn.Text.ToString());
                     koltuklbl.Text = degisken;
                     btn.ForeColor = Color.White;
                 }
