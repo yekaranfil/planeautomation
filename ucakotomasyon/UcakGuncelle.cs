@@ -25,7 +25,6 @@ namespace ucakotomasyon
         {
             try
             {
-
                 secim = ucaksecimbox.SelectedItem.ToString();
 
                 // uçak ve firma id çekme
@@ -36,11 +35,9 @@ namespace ucakotomasyon
                 MySqlDataReader dr = ucakidcekme.ExecuteReader();
                 if (dr.Read())
                 {
-
                     UcusBilgileri.ucaklar_firmalar_firmalar_id = dr["firmalar_firmalar_id"].ToString();
                     firmaidlogo = dr["firmalar_firmalar_id"].ToString();
                     UcusBilgileri.ucaklarid = dr["ucak_id"].ToString();
-
                 }
 
             }
@@ -74,14 +71,10 @@ namespace ucakotomasyon
                 logobox.Refresh();
             }
 
-
             String deger;
 
             plakabox.Text = secim.Substring(13, 6);
             koltukbox.Text = secim.Substring(39, 3);
-
-
-
 
         }
 
@@ -96,25 +89,25 @@ namespace ucakotomasyon
 
             baglanti.Close();
             baglanti.Open();
-            MySqlCommand ucakekleme = new MySqlCommand("UPDATE ucaklar SET ucak_plaka=@plaka, ucak_koltuksayisi=@koltuk WHERE ucak_id=@ucakid", baglanti);
-            ucakekleme.Parameters.AddWithValue("@ucakid", UcusBilgileri.ucaklarid);
-            ucakekleme.Parameters.AddWithValue("@plaka", plaka);
-            ucakekleme.Parameters.AddWithValue("@koltuk", koltuksayisi);
-
-            ucakekleme.ExecuteNonQuery();
+            //ucak plaka ve koltuk sayisini ucak id ye göre update etme 
+            MySqlCommand ucakguncelle = new MySqlCommand("UPDATE ucaklar SET ucak_plaka=@plaka, ucak_koltuksayisi=@koltuk WHERE ucak_id=@ucakid", baglanti);
+            ucakguncelle.Parameters.AddWithValue("@ucakid", UcusBilgileri.ucaklarid);
+            ucakguncelle.Parameters.AddWithValue("@plaka", plaka);
+            ucakguncelle.Parameters.AddWithValue("@koltuk", koltuksayisi);
+            ucakguncelle.ExecuteNonQuery();
             baglanti.Close();
             HataBox f = new HataBox();
-            HataBox.mesaj = "Uçak ekleme";
-            HataBox.text = "Uçak Güncellendi";
+            HataBox.mesaj = "Uçak Güncelleme";
+            HataBox.text = "Uçak Başarıyla Güncellendi";
             f.hataresim.Visible = false;
             f.onayresim.Visible = true;
             f.Show();
-
 
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            //seçilen uçağu silme
             try
             {
                 baglanti.Close();
@@ -125,7 +118,7 @@ namespace ucakotomasyon
                 baglanti.Close();
                 HataBox f = new HataBox();
                 HataBox.mesaj = "Uçak ekleme";
-                HataBox.text = "Uçak Silindi";
+                HataBox.text = "Uçak Başarıyla Silindi";
                 f.hataresim.Visible = false;
                 f.onayresim.Visible = true;
 
@@ -154,7 +147,6 @@ namespace ucakotomasyon
             String ucakid1;
             try
             {
-
                 //comboboxa uçakları listeleme
                 baglanti.Close();
                 baglanti.Open();

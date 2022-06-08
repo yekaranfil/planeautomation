@@ -27,6 +27,12 @@ namespace ucakotomasyon
         public List<String> secilenler = new List<String>();
         public List<String> secilenkoltuk = new List<String>();
         int sayac = 0;
+        String bltid = "";
+        int kisi;
+        int secilensayac = 0;
+        String dolu = "DOLU";
+        String dolukoltukid;
+
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -39,8 +45,6 @@ namespace ucakotomasyon
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        int kisi;
-        int secilensayac = 0;
 
         void LogAl()
         {
@@ -62,8 +66,7 @@ namespace ucakotomasyon
             baglanti.Close();//
         }
 
-        String dolu = "DOLU";
-        String dolukoltukid;
+       
         public void btn_Click(object sender, EventArgs e)
         {
             //kişi kontrol
@@ -82,7 +85,7 @@ namespace ucakotomasyon
 
             if (sayac < kisi + 1)
             {
-                if (btn.ForeColor == Color.Gray)
+                if (btn.ForeColor == Color.White)
                 {
                     btn.BackgroundImage = ucakotomasyon.Properties.Resources.Secili1;
                     btn.ForeColor = Color.Green;
@@ -99,8 +102,9 @@ namespace ucakotomasyon
                         String degisken = koltuklbl.Text.Substring(0, koltuklbl.Text.Length - (btn.Name.Length + 3));
                         btn.BackgroundImage = ucakotomasyon.Properties.Resources.Bos1;
                         secilenler.Remove(btn.Name);
+                        secilenkoltuk.Remove(btn.Text.ToString());
                         koltuklbl.Text = degisken;
-                        btn.ForeColor = Color.Gray;
+                        btn.ForeColor = Color.White;
                     }
                 }
 
@@ -113,8 +117,9 @@ namespace ucakotomasyon
                     String degisken = koltuklbl.Text.Substring(0, koltuklbl.Text.Length - (btn.Name.Length + 3));
                     btn.BackgroundImage = ucakotomasyon.Properties.Resources.Bos1;
                     secilenler.Remove(btn.Name);
+                    secilenkoltuk.Remove(btn.Text.ToString());
                     koltuklbl.Text = degisken;
-                    btn.ForeColor = Color.Gray;
+                    btn.ForeColor = Color.White;
                 }
             }
 
@@ -122,7 +127,6 @@ namespace ucakotomasyon
 
         }
 
-        String bltid = "";
         private void satinalbtn_Click(object sender, EventArgs e)
         {
 
@@ -131,38 +135,30 @@ namespace ucakotomasyon
 
                 baglanti.Close();
                 baglanti.Open();
-
+                //boş bilet oluşturma
                 MySqlCommand biletekle = new MySqlCommand("INSERT INTO biletler (biletadi) VALUES ('" + "a" + "')", baglanti);
                 biletekle.ExecuteNonQuery();
                 baglanti.Close();
-                HataBox f = new HataBox();
-                HataBox.mesaj = "Uçuş ekleme";
-                HataBox.text = "Uçuş eklendi";
-                f.hataresim.Visible = false;
-                f.onayresim.Visible = true;
-                f.Show();
-
-
+              
                 baglanti.Close();
                 baglanti.Open();
+                //boş bilet çekme
                 MySqlCommand biletcek = new MySqlCommand("SELECT bilet_id FROM biletler ORDER BY bilet_id DESC", baglanti);
                 MySqlDataReader dr1 = biletcek.ExecuteReader();
                 if (dr1.Read())
                 {
-
                     bltid = dr1["bilet_id"].ToString();
-
 
                 }
                 baglanti.Close();
 
 
 
-                // seçiliyse
+              
 
 
 
-
+                //bileti kaydetme
                 baglanti.Close();
                 baglanti.Open();
 
@@ -174,7 +170,7 @@ namespace ucakotomasyon
 
                 try
                 {
-
+                    //kaydedilen biletin koltuğunu dolu olarak güncelleme
                     baglanti.Close();
                     baglanti.Open();
                     MySqlCommand ucakekleme = new MySqlCommand("UPDATE koltuklar_has_ucaklar SET dolubos='DOLU' WHERE koltuklar_koltuk_id=@koltukid AND ucuslar_ucus_id=@ucusid", baglanti);
@@ -183,12 +179,23 @@ namespace ucakotomasyon
                     ucakekleme.ExecuteNonQuery();
                     baglanti.Close();
 
-
+                    HataBox f1 = new HataBox();
+                    HataBox.mesaj = "Bilet bilgisi";
+                    HataBox.text = "Biletiniz Başarıyla Kaydedilmiştir\nDetaylı Bilgileri Biletlerim\nSekmesinde Bulabilirsiniz.";
+                    f1.hataresim.Visible = false;
+                    f1.onayresim.Visible = true;
+                    f1.Show();
+                    this.Hide();
 
                 }
                 catch
                 {
-
+                    HataBox f1 = new HataBox();
+                    HataBox.mesaj = "Bilet bilgisi";
+                    HataBox.text = "Biletiniz Kaydedilemedi";
+                    f1.hataresim.Visible = false;
+                    f1.onayresim.Visible = true;
+                    f1.Show();
                 }
 
 
@@ -201,12 +208,6 @@ namespace ucakotomasyon
         {
 
             LogAl();
-
-
-
-
-
-
 
             AnaSayfa ana = new AnaSayfa();
             if (ana.ekonomiradiobtn.Checked == true)
@@ -222,6 +223,11 @@ namespace ucakotomasyon
                 bussinesgrup.Enabled = true;
                 ekonomi.Enabled = false;
             }
+        }
+
+        private void geributon_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

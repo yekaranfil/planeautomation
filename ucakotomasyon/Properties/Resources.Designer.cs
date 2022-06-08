@@ -163,6 +163,26 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap biletiptal {
+            get {
+                object obj = ResourceManager.GetObject("biletiptal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap biletiptal1 {
+            get {
+                object obj = ResourceManager.GetObject("biletiptal1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Bos {
             get {
                 object obj = ResourceManager.GetObject("Bos", resourceCulture);
@@ -216,6 +236,16 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap chatbox2 {
             get {
                 object obj = ResourceManager.GetObject("chatbox2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap cikisbutonu {
+            get {
+                object obj = ResourceManager.GetObject("cikisbutonu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,6 +383,16 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap kullanici {
+            get {
+                object obj = ResourceManager.GetObject("kullanici", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap logolar {
             get {
                 object obj = ResourceManager.GetObject("logolar", resourceCulture);
@@ -433,6 +473,46 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap tunex_transparent {
+            get {
+                object obj = ResourceManager.GetObject("tunex transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap TUNEXLOGOturizm {
+            get {
+                object obj = ResourceManager.GetObject("TUNEXLOGOturizm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap TUNEXLOGOturizsiyah {
+            get {
+                object obj = ResourceManager.GetObject("TUNEXLOGOturizsiyah", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap TUNEXturizm {
+            get {
+                object obj = ResourceManager.GetObject("TUNEXturizm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap ucak {
             get {
                 object obj = ResourceManager.GetObject("ucak", resourceCulture);
@@ -446,6 +526,26 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap ucak1 {
             get {
                 object obj = ResourceManager.GetObject("ucak1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ucak2 {
+            get {
+                object obj = ResourceManager.GetObject("ucak2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ucakekle {
+            get {
+                object obj = ResourceManager.GetObject("ucakekle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,9 +573,29 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap ucusekle1 {
+            get {
+                object obj = ResourceManager.GetObject("ucusekle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap ucusguncelle {
             get {
                 object obj = ResourceManager.GetObject("ucusguncelle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ucusguncelle1 {
+            get {
+                object obj = ResourceManager.GetObject("ucusguncelle1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -22,7 +22,7 @@ namespace ucakotomasyon
         {
             InitializeComponent();
         }
-
+        int satirsayisi;
         private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -34,7 +34,7 @@ namespace ucakotomasyon
             try
             {
 
-                //Tabloya uçuşları listeleme
+                //tabloya şikayetleri listeleme
                 baglanti.Close();
                 baglanti.Open();
                 MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM sikayetler", baglanti);
@@ -50,12 +50,13 @@ namespace ucakotomasyon
             }
         }
 
-        int satirsayisi;
+        
         private void ucustable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             satirsayisi = e.RowIndex;
             metintxt.Text = ucustable.Rows[satirsayisi].Cells[1].Value.ToString();
             
         }
+      
     }
 }

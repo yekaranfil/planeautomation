@@ -32,6 +32,10 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.arkapanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.geributon = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaTransfarantPictureBox2 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaTransfarantPictureBox3 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -101,9 +105,6 @@
             this.secilenkoltuklbl = new Guna.UI.WinForms.GunaLabel();
             this.ustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.arkapanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).BeginInit();
@@ -123,6 +124,7 @@
             this.arkapanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.ucak1;
             this.arkapanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.arkapanel.BorderColor = System.Drawing.Color.Transparent;
+            this.arkapanel.Controls.Add(this.geributon);
             this.arkapanel.Controls.Add(this.gunaLabel3);
             this.arkapanel.Controls.Add(this.gunaLabel2);
             this.arkapanel.Controls.Add(this.gunaLabel1);
@@ -147,6 +149,65 @@
             this.arkapanel.ShadowDecoration.Parent = this.arkapanel;
             this.arkapanel.Size = new System.Drawing.Size(1195, 718);
             this.arkapanel.TabIndex = 0;
+            // 
+            // geributon
+            // 
+            this.geributon.Animated = true;
+            this.geributon.AutoRoundedCorners = true;
+            this.geributon.BackColor = System.Drawing.Color.Transparent;
+            this.geributon.BorderColor = System.Drawing.Color.Blue;
+            this.geributon.BorderRadius = 17;
+            this.geributon.CheckedState.Parent = this.geributon;
+            this.geributon.CustomImages.Parent = this.geributon;
+            this.geributon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.geributon.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.geributon.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
+            this.geributon.ForeColor = System.Drawing.Color.White;
+            this.geributon.HoverState.Parent = this.geributon;
+            this.geributon.Location = new System.Drawing.Point(12, 670);
+            this.geributon.Name = "geributon";
+            this.geributon.ShadowDecoration.Parent = this.geributon;
+            this.geributon.Size = new System.Drawing.Size(114, 36);
+            this.geributon.TabIndex = 152;
+            this.geributon.Text = "Geri";
+            this.geributon.UseTransparentBackground = true;
+            this.geributon.Click += new System.EventHandler(this.geributon_Click);
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel3.Font = new System.Drawing.Font("Exo 2 ExtraBold", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.gunaLabel3.Location = new System.Drawing.Point(-4, 148);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(93, 20);
+            this.gunaLabel3.TabIndex = 144;
+            this.gunaLabel3.Text = "BOŞ KOLTUK";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel2.Font = new System.Drawing.Font("Exo 2 ExtraBold", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(101, 148);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(104, 20);
+            this.gunaLabel2.TabIndex = 143;
+            this.gunaLabel2.Text = "DOLU KOLTUK";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Exo 2 ExtraBold", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(223, 148);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(106, 20);
+            this.gunaLabel1.TabIndex = 142;
+            this.gunaLabel1.Text = "SEÇİLİ KOLTUK";
             // 
             // gunaTransfarantPictureBox2
             // 
@@ -198,7 +259,7 @@
             this.satinalbtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
             this.satinalbtn.ForeColor = System.Drawing.Color.White;
             this.satinalbtn.HoverState.Parent = this.satinalbtn;
-            this.satinalbtn.Location = new System.Drawing.Point(12, 278);
+            this.satinalbtn.Location = new System.Drawing.Point(1069, 670);
             this.satinalbtn.Name = "satinalbtn";
             this.satinalbtn.ShadowDecoration.Parent = this.satinalbtn;
             this.satinalbtn.Size = new System.Drawing.Size(114, 36);
@@ -283,7 +344,8 @@
             this.Koltuk_43.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_43.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_43.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_43.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_43.ForeColor = System.Drawing.Color.White;
             this.Koltuk_43.Location = new System.Drawing.Point(129, 60);
             this.Koltuk_43.Name = "Koltuk_43";
             this.Koltuk_43.Size = new System.Drawing.Size(26, 21);
@@ -304,7 +366,8 @@
             this.Koltuk_1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_1.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_1.ForeColor = System.Drawing.Color.White;
             this.Koltuk_1.Location = new System.Drawing.Point(3, 4);
             this.Koltuk_1.Name = "Koltuk_1";
             this.Koltuk_1.Size = new System.Drawing.Size(26, 21);
@@ -312,7 +375,6 @@
             this.Koltuk_1.Text = "1";
             this.Koltuk_1.UseVisualStyleBackColor = true;
             this.Koltuk_1.Click += new System.EventHandler(this.btn_Click);
-            this.Koltuk_1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.A1_ControlAdded);
             // 
             // Koltuk_2
             // 
@@ -326,7 +388,8 @@
             this.Koltuk_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_2.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_2.ForeColor = System.Drawing.Color.White;
             this.Koltuk_2.Location = new System.Drawing.Point(35, 4);
             this.Koltuk_2.Name = "Koltuk_2";
             this.Koltuk_2.Size = new System.Drawing.Size(26, 21);
@@ -347,7 +410,8 @@
             this.Koltuk_3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_3.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_3.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_3.ForeColor = System.Drawing.Color.White;
             this.Koltuk_3.Location = new System.Drawing.Point(67, 4);
             this.Koltuk_3.Name = "Koltuk_3";
             this.Koltuk_3.Size = new System.Drawing.Size(26, 21);
@@ -368,7 +432,8 @@
             this.Koltuk_4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_4.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_4.ForeColor = System.Drawing.Color.White;
             this.Koltuk_4.Location = new System.Drawing.Point(99, 4);
             this.Koltuk_4.Name = "Koltuk_4";
             this.Koltuk_4.Size = new System.Drawing.Size(26, 21);
@@ -389,7 +454,8 @@
             this.Koltuk_5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_5.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_5.ForeColor = System.Drawing.Color.White;
             this.Koltuk_5.Location = new System.Drawing.Point(129, 4);
             this.Koltuk_5.Name = "Koltuk_5";
             this.Koltuk_5.Size = new System.Drawing.Size(26, 21);
@@ -410,7 +476,8 @@
             this.Koltuk_42.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_42.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_42.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_42.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_42.ForeColor = System.Drawing.Color.White;
             this.Koltuk_42.Location = new System.Drawing.Point(99, 60);
             this.Koltuk_42.Name = "Koltuk_42";
             this.Koltuk_42.Size = new System.Drawing.Size(26, 21);
@@ -431,7 +498,8 @@
             this.Koltuk_20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_20.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_20.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_20.ForeColor = System.Drawing.Color.White;
             this.Koltuk_20.Location = new System.Drawing.Point(3, 22);
             this.Koltuk_20.Name = "Koltuk_20";
             this.Koltuk_20.Size = new System.Drawing.Size(26, 21);
@@ -452,7 +520,8 @@
             this.Koltuk_41.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_41.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_41.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_41.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_41.ForeColor = System.Drawing.Color.White;
             this.Koltuk_41.Location = new System.Drawing.Point(67, 60);
             this.Koltuk_41.Name = "Koltuk_41";
             this.Koltuk_41.Size = new System.Drawing.Size(26, 21);
@@ -473,7 +542,8 @@
             this.Koltuk_21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_21.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_21.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_21.ForeColor = System.Drawing.Color.White;
             this.Koltuk_21.Location = new System.Drawing.Point(35, 22);
             this.Koltuk_21.Name = "Koltuk_21";
             this.Koltuk_21.Size = new System.Drawing.Size(26, 21);
@@ -494,7 +564,8 @@
             this.Koltuk_40.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_40.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_40.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_40.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_40.ForeColor = System.Drawing.Color.White;
             this.Koltuk_40.Location = new System.Drawing.Point(35, 60);
             this.Koltuk_40.Name = "Koltuk_40";
             this.Koltuk_40.Size = new System.Drawing.Size(26, 21);
@@ -515,7 +586,8 @@
             this.Koltuk_22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_22.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_22.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_22.ForeColor = System.Drawing.Color.White;
             this.Koltuk_22.Location = new System.Drawing.Point(67, 22);
             this.Koltuk_22.Name = "Koltuk_22";
             this.Koltuk_22.Size = new System.Drawing.Size(26, 21);
@@ -536,7 +608,8 @@
             this.Koltuk_39.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_39.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_39.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_39.ForeColor = System.Drawing.Color.White;
             this.Koltuk_39.Location = new System.Drawing.Point(3, 60);
             this.Koltuk_39.Name = "Koltuk_39";
             this.Koltuk_39.Size = new System.Drawing.Size(26, 21);
@@ -557,7 +630,8 @@
             this.Koltuk_23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_23.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_23.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_23.ForeColor = System.Drawing.Color.White;
             this.Koltuk_23.Location = new System.Drawing.Point(99, 22);
             this.Koltuk_23.Name = "Koltuk_23";
             this.Koltuk_23.Size = new System.Drawing.Size(26, 21);
@@ -578,7 +652,8 @@
             this.Koltuk_24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_24.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_24.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_24.ForeColor = System.Drawing.Color.White;
             this.Koltuk_24.Location = new System.Drawing.Point(129, 22);
             this.Koltuk_24.Name = "Koltuk_24";
             this.Koltuk_24.Size = new System.Drawing.Size(26, 21);
@@ -656,7 +731,8 @@
             this.Koltuk_38.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_38.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_38.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_38.ForeColor = System.Drawing.Color.White;
             this.Koltuk_38.Location = new System.Drawing.Point(422, 35);
             this.Koltuk_38.Name = "Koltuk_38";
             this.Koltuk_38.Size = new System.Drawing.Size(26, 21);
@@ -677,7 +753,8 @@
             this.Koltuk_56.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_56.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_56.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_56.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_56.ForeColor = System.Drawing.Color.White;
             this.Koltuk_56.Location = new System.Drawing.Point(390, 73);
             this.Koltuk_56.Name = "Koltuk_56";
             this.Koltuk_56.Size = new System.Drawing.Size(26, 21);
@@ -698,12 +775,12 @@
             this.Koltuk_6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_6.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_6.ForeColor = System.Drawing.Color.White;
             this.Koltuk_6.Location = new System.Drawing.Point(1, 17);
             this.Koltuk_6.Name = "Koltuk_6";
             this.Koltuk_6.Size = new System.Drawing.Size(26, 21);
             this.Koltuk_6.TabIndex = 72;
-            this.Koltuk_6.Text = "6";
             this.Koltuk_6.UseVisualStyleBackColor = true;
             this.Koltuk_6.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -719,7 +796,8 @@
             this.Koltuk_7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_7.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_7.ForeColor = System.Drawing.Color.White;
             this.Koltuk_7.Location = new System.Drawing.Point(33, 17);
             this.Koltuk_7.Name = "Koltuk_7";
             this.Koltuk_7.Size = new System.Drawing.Size(26, 21);
@@ -740,7 +818,8 @@
             this.Koltuk_19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_19.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_19.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_19.ForeColor = System.Drawing.Color.White;
             this.Koltuk_19.Location = new System.Drawing.Point(422, 17);
             this.Koltuk_19.Name = "Koltuk_19";
             this.Koltuk_19.Size = new System.Drawing.Size(26, 21);
@@ -761,7 +840,8 @@
             this.Koltuk_8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_8.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_8.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_8.ForeColor = System.Drawing.Color.White;
             this.Koltuk_8.Location = new System.Drawing.Point(65, 17);
             this.Koltuk_8.Name = "Koltuk_8";
             this.Koltuk_8.Size = new System.Drawing.Size(26, 21);
@@ -782,7 +862,8 @@
             this.Koltuk_9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_9.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_9.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_9.ForeColor = System.Drawing.Color.White;
             this.Koltuk_9.Location = new System.Drawing.Point(97, 17);
             this.Koltuk_9.Name = "Koltuk_9";
             this.Koltuk_9.Size = new System.Drawing.Size(26, 21);
@@ -803,7 +884,8 @@
             this.Koltuk_10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_10.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_10.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_10.ForeColor = System.Drawing.Color.White;
             this.Koltuk_10.Location = new System.Drawing.Point(129, 17);
             this.Koltuk_10.Name = "Koltuk_10";
             this.Koltuk_10.Size = new System.Drawing.Size(26, 21);
@@ -824,7 +906,8 @@
             this.Koltuk_11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_11.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_11.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_11.ForeColor = System.Drawing.Color.White;
             this.Koltuk_11.Location = new System.Drawing.Point(161, 17);
             this.Koltuk_11.Name = "Koltuk_11";
             this.Koltuk_11.Size = new System.Drawing.Size(26, 21);
@@ -845,7 +928,8 @@
             this.Koltuk_12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_12.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_12.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_12.ForeColor = System.Drawing.Color.White;
             this.Koltuk_12.Location = new System.Drawing.Point(193, 17);
             this.Koltuk_12.Name = "Koltuk_12";
             this.Koltuk_12.Size = new System.Drawing.Size(26, 21);
@@ -866,7 +950,8 @@
             this.Koltuk_55.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_55.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_55.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_55.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_55.ForeColor = System.Drawing.Color.White;
             this.Koltuk_55.Location = new System.Drawing.Point(358, 73);
             this.Koltuk_55.Name = "Koltuk_55";
             this.Koltuk_55.Size = new System.Drawing.Size(26, 21);
@@ -887,7 +972,8 @@
             this.Koltuk_13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_13.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_13.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_13.ForeColor = System.Drawing.Color.White;
             this.Koltuk_13.Location = new System.Drawing.Point(228, 17);
             this.Koltuk_13.Name = "Koltuk_13";
             this.Koltuk_13.Size = new System.Drawing.Size(26, 21);
@@ -908,7 +994,8 @@
             this.Koltuk_54.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_54.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_54.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_54.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_54.ForeColor = System.Drawing.Color.White;
             this.Koltuk_54.Location = new System.Drawing.Point(324, 73);
             this.Koltuk_54.Name = "Koltuk_54";
             this.Koltuk_54.Size = new System.Drawing.Size(26, 21);
@@ -929,7 +1016,8 @@
             this.Koltuk_14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_14.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_14.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_14.ForeColor = System.Drawing.Color.White;
             this.Koltuk_14.Location = new System.Drawing.Point(260, 17);
             this.Koltuk_14.Name = "Koltuk_14";
             this.Koltuk_14.Size = new System.Drawing.Size(26, 21);
@@ -950,7 +1038,8 @@
             this.Koltuk_53.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_53.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_53.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_53.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_53.ForeColor = System.Drawing.Color.White;
             this.Koltuk_53.Location = new System.Drawing.Point(291, 73);
             this.Koltuk_53.Name = "Koltuk_53";
             this.Koltuk_53.Size = new System.Drawing.Size(26, 21);
@@ -971,7 +1060,8 @@
             this.Koltuk_15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_15.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_15.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_15.ForeColor = System.Drawing.Color.White;
             this.Koltuk_15.Location = new System.Drawing.Point(292, 17);
             this.Koltuk_15.Name = "Koltuk_15";
             this.Koltuk_15.Size = new System.Drawing.Size(26, 21);
@@ -992,7 +1082,8 @@
             this.Koltuk_52.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_52.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_52.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_52.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_52.ForeColor = System.Drawing.Color.White;
             this.Koltuk_52.Location = new System.Drawing.Point(260, 73);
             this.Koltuk_52.Name = "Koltuk_52";
             this.Koltuk_52.Size = new System.Drawing.Size(26, 21);
@@ -1013,7 +1104,8 @@
             this.Koltuk_16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_16.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_16.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_16.ForeColor = System.Drawing.Color.White;
             this.Koltuk_16.Location = new System.Drawing.Point(324, 17);
             this.Koltuk_16.Name = "Koltuk_16";
             this.Koltuk_16.Size = new System.Drawing.Size(26, 21);
@@ -1034,7 +1126,8 @@
             this.Koltuk_51.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_51.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_51.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_51.ForeColor = System.Drawing.Color.White;
             this.Koltuk_51.Location = new System.Drawing.Point(228, 73);
             this.Koltuk_51.Name = "Koltuk_51";
             this.Koltuk_51.Size = new System.Drawing.Size(26, 21);
@@ -1055,7 +1148,8 @@
             this.Koltuk_17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_17.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_17.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_17.ForeColor = System.Drawing.Color.White;
             this.Koltuk_17.Location = new System.Drawing.Point(358, 17);
             this.Koltuk_17.Name = "Koltuk_17";
             this.Koltuk_17.Size = new System.Drawing.Size(26, 21);
@@ -1076,7 +1170,8 @@
             this.Koltuk_50.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_50.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_50.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_50.ForeColor = System.Drawing.Color.White;
             this.Koltuk_50.Location = new System.Drawing.Point(193, 73);
             this.Koltuk_50.Name = "Koltuk_50";
             this.Koltuk_50.Size = new System.Drawing.Size(26, 21);
@@ -1097,7 +1192,8 @@
             this.Koltuk_18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_18.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_18.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_18.ForeColor = System.Drawing.Color.White;
             this.Koltuk_18.Location = new System.Drawing.Point(390, 17);
             this.Koltuk_18.Name = "Koltuk_18";
             this.Koltuk_18.Size = new System.Drawing.Size(26, 21);
@@ -1118,7 +1214,8 @@
             this.Koltuk_49.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_49.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_49.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_49.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_49.ForeColor = System.Drawing.Color.White;
             this.Koltuk_49.Location = new System.Drawing.Point(161, 73);
             this.Koltuk_49.Name = "Koltuk_49";
             this.Koltuk_49.Size = new System.Drawing.Size(26, 21);
@@ -1139,7 +1236,8 @@
             this.Koltuk_25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_25.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_25.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_25.ForeColor = System.Drawing.Color.White;
             this.Koltuk_25.Location = new System.Drawing.Point(1, 35);
             this.Koltuk_25.Name = "Koltuk_25";
             this.Koltuk_25.Size = new System.Drawing.Size(26, 21);
@@ -1160,7 +1258,8 @@
             this.Koltuk_48.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_48.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_48.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_48.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_48.ForeColor = System.Drawing.Color.White;
             this.Koltuk_48.Location = new System.Drawing.Point(129, 73);
             this.Koltuk_48.Name = "Koltuk_48";
             this.Koltuk_48.Size = new System.Drawing.Size(26, 21);
@@ -1181,7 +1280,8 @@
             this.Koltuk_26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_26.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_26.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_26.ForeColor = System.Drawing.Color.White;
             this.Koltuk_26.Location = new System.Drawing.Point(33, 35);
             this.Koltuk_26.Name = "Koltuk_26";
             this.Koltuk_26.Size = new System.Drawing.Size(26, 21);
@@ -1202,7 +1302,8 @@
             this.Koltuk_47.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_47.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_47.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_47.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_47.ForeColor = System.Drawing.Color.White;
             this.Koltuk_47.Location = new System.Drawing.Point(97, 73);
             this.Koltuk_47.Name = "Koltuk_47";
             this.Koltuk_47.Size = new System.Drawing.Size(26, 21);
@@ -1223,7 +1324,8 @@
             this.Koltuk_27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_27.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_27.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_27.ForeColor = System.Drawing.Color.White;
             this.Koltuk_27.Location = new System.Drawing.Point(65, 35);
             this.Koltuk_27.Name = "Koltuk_27";
             this.Koltuk_27.Size = new System.Drawing.Size(26, 21);
@@ -1244,7 +1346,8 @@
             this.Koltuk_46.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_46.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_46.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_46.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_46.ForeColor = System.Drawing.Color.White;
             this.Koltuk_46.Location = new System.Drawing.Point(65, 73);
             this.Koltuk_46.Name = "Koltuk_46";
             this.Koltuk_46.Size = new System.Drawing.Size(26, 21);
@@ -1265,7 +1368,8 @@
             this.Koltuk_28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_28.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_28.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_28.ForeColor = System.Drawing.Color.White;
             this.Koltuk_28.Location = new System.Drawing.Point(97, 35);
             this.Koltuk_28.Name = "Koltuk_28";
             this.Koltuk_28.Size = new System.Drawing.Size(26, 21);
@@ -1286,7 +1390,8 @@
             this.Koltuk_45.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_45.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_45.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_45.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_45.ForeColor = System.Drawing.Color.White;
             this.Koltuk_45.Location = new System.Drawing.Point(33, 73);
             this.Koltuk_45.Name = "Koltuk_45";
             this.Koltuk_45.Size = new System.Drawing.Size(26, 21);
@@ -1307,7 +1412,8 @@
             this.Koltuk_29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_29.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_29.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_29.ForeColor = System.Drawing.Color.White;
             this.Koltuk_29.Location = new System.Drawing.Point(129, 35);
             this.Koltuk_29.Name = "Koltuk_29";
             this.Koltuk_29.Size = new System.Drawing.Size(26, 21);
@@ -1328,7 +1434,8 @@
             this.Koltuk_44.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_44.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_44.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_44.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_44.ForeColor = System.Drawing.Color.White;
             this.Koltuk_44.Location = new System.Drawing.Point(1, 73);
             this.Koltuk_44.Name = "Koltuk_44";
             this.Koltuk_44.Size = new System.Drawing.Size(26, 21);
@@ -1349,7 +1456,8 @@
             this.Koltuk_30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_30.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_30.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_30.ForeColor = System.Drawing.Color.White;
             this.Koltuk_30.Location = new System.Drawing.Point(161, 35);
             this.Koltuk_30.Name = "Koltuk_30";
             this.Koltuk_30.Size = new System.Drawing.Size(26, 21);
@@ -1370,7 +1478,8 @@
             this.Koltuk_31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_31.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_31.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_31.ForeColor = System.Drawing.Color.White;
             this.Koltuk_31.Location = new System.Drawing.Point(193, 35);
             this.Koltuk_31.Name = "Koltuk_31";
             this.Koltuk_31.Size = new System.Drawing.Size(26, 21);
@@ -1391,7 +1500,8 @@
             this.Koltuk_32.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_32.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_32.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_32.ForeColor = System.Drawing.Color.White;
             this.Koltuk_32.Location = new System.Drawing.Point(228, 35);
             this.Koltuk_32.Name = "Koltuk_32";
             this.Koltuk_32.Size = new System.Drawing.Size(26, 21);
@@ -1412,7 +1522,8 @@
             this.Koltuk_33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_33.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_33.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_33.ForeColor = System.Drawing.Color.White;
             this.Koltuk_33.Location = new System.Drawing.Point(260, 35);
             this.Koltuk_33.Name = "Koltuk_33";
             this.Koltuk_33.Size = new System.Drawing.Size(26, 21);
@@ -1433,7 +1544,8 @@
             this.Koltuk_34.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_34.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_34.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_34.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_34.ForeColor = System.Drawing.Color.White;
             this.Koltuk_34.Location = new System.Drawing.Point(292, 35);
             this.Koltuk_34.Name = "Koltuk_34";
             this.Koltuk_34.Size = new System.Drawing.Size(26, 21);
@@ -1454,7 +1566,8 @@
             this.Koltuk_35.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_35.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_35.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_35.ForeColor = System.Drawing.Color.White;
             this.Koltuk_35.Location = new System.Drawing.Point(324, 35);
             this.Koltuk_35.Name = "Koltuk_35";
             this.Koltuk_35.Size = new System.Drawing.Size(26, 21);
@@ -1475,7 +1588,8 @@
             this.Koltuk_37.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_37.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_37.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_37.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_37.ForeColor = System.Drawing.Color.White;
             this.Koltuk_37.Location = new System.Drawing.Point(390, 35);
             this.Koltuk_37.Name = "Koltuk_37";
             this.Koltuk_37.Size = new System.Drawing.Size(26, 21);
@@ -1496,7 +1610,8 @@
             this.Koltuk_36.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Koltuk_36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Koltuk_36.ForeColor = System.Drawing.Color.Gray;
+            this.Koltuk_36.Font = new System.Drawing.Font("Bahnschrift SemiBold", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Koltuk_36.ForeColor = System.Drawing.Color.White;
             this.Koltuk_36.Location = new System.Drawing.Point(358, 35);
             this.Koltuk_36.Name = "Koltuk_36";
             this.Koltuk_36.Size = new System.Drawing.Size(26, 21);
@@ -1527,7 +1642,6 @@
             this.secilenkoltuklbl.Size = new System.Drawing.Size(209, 29);
             this.secilenkoltuklbl.TabIndex = 126;
             this.secilenkoltuklbl.Text = "SEÇİLEN KOLTUKLAR";
-            this.secilenkoltuklbl.Click += new System.EventHandler(this.secilenkoltuklbl_Click);
             // 
             // ustpanel
             // 
@@ -1557,42 +1671,6 @@
             this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox1.TabIndex = 0;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Font = new System.Drawing.Font("Exo 2 ExtraBold", 10F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(223, 148);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(106, 20);
-            this.gunaLabel1.TabIndex = 142;
-            this.gunaLabel1.Text = "SEÇİLİ KOLTUK";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Font = new System.Drawing.Font("Exo 2 ExtraBold", 10F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(101, 148);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(104, 20);
-            this.gunaLabel2.TabIndex = 143;
-            this.gunaLabel2.Text = "DOLU KOLTUK";
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel3.Font = new System.Drawing.Font("Exo 2 ExtraBold", 10F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(-4, 148);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(93, 20);
-            this.gunaLabel3.TabIndex = 144;
-            this.gunaLabel3.Text = "BOŞ KOLTUK";
             // 
             // _56koltukform
             // 
@@ -1695,5 +1773,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI2.WinForms.Guna2GradientButton geributon;
     }
 }

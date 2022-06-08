@@ -14,38 +14,37 @@ namespace ucakotomasyon
     public partial class AdminGiris : Form
     {
         int sayac = 0;
+        public static String adminkullanici;
         public AdminGiris()
         {
             InitializeComponent();
         }
         MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
-        private void txtgiris_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void kayitbuton2_Click(object sender, EventArgs e)
         {
-
             baglanti.Close();
             baglanti.Open();
             MySqlCommand kontroltc = new MySqlCommand("SELECT admin_kullanici_adi,admin_sifre FROM adminler WHERE (admin_kullanici_adi = @kullanici AND admin_sifre = @sifre)", baglanti);
             kontroltc.Parameters.AddWithValue("@kullanici", txtgiris.Text);
             kontroltc.Parameters.AddWithValue("@sifre", txtgirissifre.Text);
             MySqlDataReader dr = kontroltc.ExecuteReader();
-
+            adminkullanici = txtgiris.Text;
             if (dr.Read())
             {
+                
                 HataBox.mesaj = "Giriş başarılı";
                 HataBox.text = "Giriş Yapıldı";
                 HataBox hataform = new HataBox();
                 this.Hide();
-
                 AdminPanelForm adminform = new AdminPanelForm();
                 adminform.Show();
                 hataform.hataresim.Visible = false;
                 hataform.onayresim.Visible = true;
                 hataform.Show();
+
+                
+
             }
             else
             {
@@ -54,10 +53,6 @@ namespace ucakotomasyon
                 HataBox f = new HataBox();
                 f.Show();
             }
-
-
-
-
         }
 
         private void txtgirissifre_KeyPress(object sender, KeyPressEventArgs e)

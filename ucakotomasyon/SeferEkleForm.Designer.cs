@@ -75,7 +75,7 @@
             this.onaylabuton1.CustomImages.Parent = this.onaylabuton1;
             this.onaylabuton1.FillColor = System.Drawing.Color.Blue;
             this.onaylabuton1.FillColor2 = System.Drawing.Color.Teal;
-            this.onaylabuton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.onaylabuton1.Font = new System.Drawing.Font("Exo 2", 9.749999F);
             this.onaylabuton1.ForeColor = System.Drawing.Color.White;
             this.onaylabuton1.HoverState.Parent = this.onaylabuton1;
             this.onaylabuton1.Location = new System.Drawing.Point(171, 457);
@@ -135,8 +135,8 @@
             this.neredenbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.neredenbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.neredenbox.FocusedState.Parent = this.neredenbox;
-            this.neredenbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.neredenbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.neredenbox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.neredenbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.neredenbox.FormattingEnabled = true;
             this.neredenbox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.neredenbox.HoverState.Parent = this.neredenbox;
@@ -153,7 +153,6 @@
             this.neredenbox.Sorted = true;
             this.neredenbox.TabIndex = 17;
             this.neredenbox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            this.neredenbox.SelectedIndexChanged += new System.EventHandler(this.neredenbox_SelectedIndexChanged);
             this.neredenbox.SelectedValueChanged += new System.EventHandler(this.neredenbox_SelectedValueChanged);
             // 
             // nereyebox
@@ -169,8 +168,8 @@
             this.nereyebox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.nereyebox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.nereyebox.FocusedState.Parent = this.nereyebox;
-            this.nereyebox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.nereyebox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.nereyebox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.nereyebox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.nereyebox.FormattingEnabled = true;
             this.nereyebox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.nereyebox.HoverState.Parent = this.nereyebox;
@@ -187,7 +186,6 @@
             this.nereyebox.Sorted = true;
             this.nereyebox.TabIndex = 16;
             this.nereyebox.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            this.nereyebox.SelectedIndexChanged += new System.EventHandler(this.nereyebox_SelectedIndexChanged);
             this.nereyebox.Click += new System.EventHandler(this.nereyebox_Click);
             // 
             // gidistarihlbl
@@ -221,7 +219,6 @@
             this.gidistarihbox.TabIndex = 35;
             this.gidistarihbox.UseTransparentBackground = true;
             this.gidistarihbox.Value = new System.DateTime(2022, 5, 18, 0, 0, 0, 0);
-            this.gidistarihbox.ValueChanged += new System.EventHandler(this.gidistarihbox_ValueChanged);
             // 
             // bussineslbl
             // 
@@ -261,6 +258,8 @@
             this.ekonomifiyatbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.ekonomifiyatbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ekonomifiyatbox.FocusedState.Parent = this.ekonomifiyatbox;
+            this.ekonomifiyatbox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.ekonomifiyatbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ekonomifiyatbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ekonomifiyatbox.HoverState.Parent = this.ekonomifiyatbox;
             this.ekonomifiyatbox.Location = new System.Drawing.Point(249, 228);
@@ -288,6 +287,8 @@
             this.bussinesfiyatbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.bussinesfiyatbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.bussinesfiyatbox.FocusedState.Parent = this.bussinesfiyatbox;
+            this.bussinesfiyatbox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.bussinesfiyatbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bussinesfiyatbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.bussinesfiyatbox.HoverState.Parent = this.bussinesfiyatbox;
             this.bussinesfiyatbox.Location = new System.Drawing.Point(249, 260);
@@ -311,8 +312,8 @@
             this.ucusdakikabox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ucusdakikabox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ucusdakikabox.FocusedState.Parent = this.ucusdakikabox;
-            this.ucusdakikabox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ucusdakikabox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ucusdakikabox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.ucusdakikabox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ucusdakikabox.FormattingEnabled = true;
             this.ucusdakikabox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.ucusdakikabox.HoverState.Parent = this.ucusdakikabox;
@@ -387,8 +388,8 @@
             this.tahminidakikabox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.tahminidakikabox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.tahminidakikabox.FocusedState.Parent = this.tahminidakikabox;
-            this.tahminidakikabox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tahminidakikabox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.tahminidakikabox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.tahminidakikabox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tahminidakikabox.FormattingEnabled = true;
             this.tahminidakikabox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.tahminidakikabox.HoverState.Parent = this.tahminidakikabox;
@@ -430,8 +431,8 @@
             this.tahminisaatbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.tahminisaatbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.tahminisaatbox.FocusedState.Parent = this.tahminisaatbox;
-            this.tahminisaatbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tahminisaatbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.tahminisaatbox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.tahminisaatbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tahminisaatbox.FormattingEnabled = true;
             this.tahminisaatbox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.tahminisaatbox.HoverState.Parent = this.tahminisaatbox;
@@ -507,8 +508,8 @@
             this.ucaksecimbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ucaksecimbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ucaksecimbox.FocusedState.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ucaksecimbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ucaksecimbox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.ucaksecimbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ucaksecimbox.FormattingEnabled = true;
             this.ucaksecimbox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.ucaksecimbox.HoverState.Parent = this.ucaksecimbox;
@@ -572,7 +573,6 @@
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1007, 582);
             this.guna2GradientPanel1.TabIndex = 53;
-            this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
             // logobox
             // 
@@ -597,8 +597,8 @@
             this.ucussaatbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ucussaatbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ucussaatbox.FocusedState.Parent = this.ucussaatbox;
-            this.ucussaatbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ucussaatbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ucussaatbox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.ucussaatbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ucussaatbox.FormattingEnabled = true;
             this.ucussaatbox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.ucussaatbox.HoverState.Parent = this.ucussaatbox;

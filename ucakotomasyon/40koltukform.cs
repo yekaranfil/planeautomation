@@ -23,7 +23,12 @@ namespace ucakotomasyon
         public List<String> secilenler = new List<String>();
         public List<String> secilenkoltuk = new List<String>();
         int sayac = 0;
+        int kisi;
+        int secilensayac = 0;
+        String bltid = "";
 
+        String dolu = "DOLU";
+        String dolukoltukid;
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -34,32 +39,23 @@ namespace ucakotomasyon
         {
 
         }
-
-
-        int kisi;
-        int secilensayac = 0;
-
-        String dolu = "DOLU";
-        String dolukoltukid;
-
         void LogAl()
         {
-            baglanti.Open();
-            //string sql = "SELECT * FROM satis WHERE arac_id=" + arac_id + " AND sefer_id=" + sefer_id + " AND sefer_tarihi=" + tarih + "AND sefer_saati='"+ tarih_saat +"'";
+            //koltukların dolu boş kontrolünü yapma
+            baglanti.Open();      
             MySqlCommand dolukoltuk = new MySqlCommand("SELECT koltuklar_koltuk_id FROM koltuklar_has_ucaklar WHERE dolubos=@doluluk AND ucuslar_ucus_id=@ucus", baglanti);
             dolukoltuk.Parameters.AddWithValue("@doluluk", dolu);
             dolukoltuk.Parameters.AddWithValue("@ucus", AnaSayfa.biletucusid);
             MySqlDataReader dr1 = dolukoltuk.ExecuteReader();
             while (dr1.Read())
             {
-
-                string koltuk_No = dr1["koltuklar_koltuk_id"].ToString();
-                //this.Controls.Find("btn" + "2", true)[0].BackColor = Color.Red;
+                //dolu koltukları kırmızı yapma
+                string koltuk_No = dr1["koltuklar_koltuk_id"].ToString();     
                 Button s = this.Controls.Find("Koltuk_" + koltuk_No, true).FirstOrDefault() as Button;
                 s.BackgroundImage = ucakotomasyon.Properties.Resources.Dolu1;
                 s.Enabled = false;
             }
-            baglanti.Close();//
+            baglanti.Close();
         }
 
         public void btn_Click(object sender, EventArgs e)
@@ -80,7 +76,7 @@ namespace ucakotomasyon
 
             if (sayac < kisi + 1)
             {
-                if (btn.ForeColor == Color.Gray)
+                if (btn.ForeColor == Color.White)
                 {
                     btn.BackgroundImage = ucakotomasyon.Properties.Resources.Secili1;
                     btn.ForeColor = Color.Green;
@@ -97,8 +93,9 @@ namespace ucakotomasyon
                         String degisken = koltuklbl.Text.Substring(0, koltuklbl.Text.Length - (btn.Name.Length + 3));
                         btn.BackgroundImage = ucakotomasyon.Properties.Resources.Bos1;
                         secilenler.Remove(btn.Name);
+                        secilenkoltuk.Remove(btn.Text.ToString());
                         koltuklbl.Text = degisken;
-                        btn.ForeColor = Color.Gray;
+                        btn.ForeColor = Color.White;
                     }
                 }
 
@@ -111,8 +108,9 @@ namespace ucakotomasyon
                     String degisken = koltuklbl.Text.Substring(0, koltuklbl.Text.Length - (btn.Name.Length + 3));
                     btn.BackgroundImage = ucakotomasyon.Properties.Resources.Bos1;
                     secilenler.Remove(btn.Name);
+                    ssecilenkoltuk.Remove(btn.Text.ToString());
                     koltuklbl.Text = degisken;
-                    btn.ForeColor = Color.Gray;
+                    btn.ForeColor = Color.White;
                 }
             }
 
@@ -126,58 +124,36 @@ namespace ucakotomasyon
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void bussinesgrup_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        String bltid = "";
+        
         private void satinalbtn_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < secilenkoltuk.Count; i++)
             {
-
                 baglanti.Close();
                 baglanti.Open();
-
+                //boş bilet kaydı oluşturma
                 MySqlCommand biletekle = new MySqlCommand("INSERT INTO biletler (biletadi) VALUES ('" + "a" + "')", baglanti);
                 biletekle.ExecuteNonQuery();
                 baglanti.Close();
-                HataBox f = new HataBox();
-                HataBox.mesaj = "Uçuş ekleme";
-                HataBox.text = "Uçuş eklendi";
-                f.hataresim.Visible = false;
-                f.onayresim.Visible = true;
-                f.Show();
 
-
+                //boş bilet id çekme
                 baglanti.Close();
                 baglanti.Open();
                 MySqlCommand biletcek = new MySqlCommand("SELECT bilet_id FROM biletler ORDER BY bilet_id DESC", baglanti);
                 MySqlDataReader dr1 = biletcek.ExecuteReader();
                 if (dr1.Read())
                 {
-
                     bltid = dr1["bilet_id"].ToString();
-
 
                 }
                 baglanti.Close();
 
-
-
-                // seçiliyse
-
-
-
-                baglanti.Close();
+                //bilet kaydı yapma
                 baglanti.Open();
 
-                MySqlCommand seferekleme = new MySqlCommand("INSERT INTO biletler_has_yolcular (biletler_bilet_id,yolcular_yolcu_id,ucuslar_ucus_id, koltukno,bilettur) VALUES ('" + bltid + "','" + Form1.kisiid + "','" + AnaSayfa.biletucusid + "','" + secilenkoltuk[i].ToString() + "','" + AnaSayfa.biletturu + "' )", baglanti);
-                seferekleme.ExecuteNonQuery();
+                MySqlCommand biletkayit = new MySqlCommand("INSERT INTO biletler_has_yolcular (biletler_bilet_id,yolcular_yolcu_id,ucuslar_ucus_id, koltukno,bilettur) VALUES ('" + bltid + "','" + Form1.kisiid + "','" + AnaSayfa.biletucusid + "','" + secilenkoltuk[i].ToString() + "','" + AnaSayfa.biletturu + "' )", baglanti);
+                biletkayit.ExecuteNonQuery();
                 baglanti.Close();
-
-
 
                 try
                 {
@@ -190,12 +166,24 @@ namespace ucakotomasyon
                     ucakekleme.ExecuteNonQuery();
                     baglanti.Close();
 
+                    HataBox f = new HataBox();
+                    HataBox.mesaj = "Bilet bilgisi";
+                    HataBox.text = "Biletiniz Başarıyla Kaydedilmiştir\nDetaylı Bilgileri Biletlerim\nSekmesinde Bulabilirsiniz.";
+                    f.hataresim.Visible = false;
+                    f.onayresim.Visible = true;
+                    f.Show();
+                    this.Hide();
 
 
                 }
                 catch
                 {
-
+                    HataBox f = new HataBox();
+                    HataBox.mesaj = "Bilet bilgisi";
+                    HataBox.text = "Biletiniz Kaydedilemedi";
+                    f.hataresim.Visible = false;
+                    f.onayresim.Visible = true;
+                    f.Show();
                 }
 
 
@@ -208,13 +196,6 @@ namespace ucakotomasyon
         {
 
             LogAl();
-
-
-
-
-
-
-
             AnaSayfa ana = new AnaSayfa();
             if (ana.ekonomiradiobtn.Checked == true)
             {
@@ -229,6 +210,11 @@ namespace ucakotomasyon
                 bussinesgrup.Enabled = true;
                 ekonomigrup.Enabled = false;
             }
+        }
+
+        private void geributon_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

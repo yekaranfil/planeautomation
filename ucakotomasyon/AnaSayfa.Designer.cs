@@ -35,6 +35,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.anamenupanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.tunexlogo = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.anamenulabel2 = new Guna.UI.WinForms.GunaLabel();
             this.islemlerpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.satinalbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.logobox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -48,18 +50,14 @@
             this.ucustable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.tekyonradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.gidisdonusradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.ekonomiradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.bussinesradiobtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.ucusarabtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gidisgelisicon = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.donustarihlbl = new System.Windows.Forms.Label();
-            this.donustarihbox = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.gidistarihlbl = new System.Windows.Forms.Label();
             this.gidistarihbox = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.tekyonlbl = new System.Windows.Forms.Label();
-            this.gidisdonuslbl = new System.Windows.Forms.Label();
             this.bussineslbl = new System.Windows.Forms.Label();
             this.ekonomilbl = new System.Windows.Forms.Label();
             this.nereyetxt = new System.Windows.Forms.Label();
@@ -67,15 +65,15 @@
             this.kisisayilbl = new System.Windows.Forms.Label();
             this.kisibox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ucakicon = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.anamenulabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.anamenulabel = new Guna.UI.WinForms.GunaLabel();
             this.anamenuustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.secenekbuton2 = new Guna.UI2.WinForms.Guna2Button();
             this.secenekbuton1 = new Guna.UI2.WinForms.Guna2Button();
             this.secenekbuton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.anamenupanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tunexlogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucustable)).BeginInit();
             this.guna2GroupBox2.SuspendLayout();
@@ -93,6 +91,8 @@
             // 
             this.anamenupanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.anamenu1;
             this.anamenupanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.anamenupanel.Controls.Add(this.tunexlogo);
+            this.anamenupanel.Controls.Add(this.anamenulabel2);
             this.anamenupanel.Controls.Add(this.islemlerpanel);
             this.anamenupanel.Controls.Add(this.satinalbtn);
             this.anamenupanel.Controls.Add(this.logobox);
@@ -108,12 +108,9 @@
             this.anamenupanel.Controls.Add(this.guna2GroupBox1);
             this.anamenupanel.Controls.Add(this.ucusarabtn);
             this.anamenupanel.Controls.Add(this.gidisgelisicon);
-            this.anamenupanel.Controls.Add(this.donustarihlbl);
-            this.anamenupanel.Controls.Add(this.donustarihbox);
             this.anamenupanel.Controls.Add(this.gidistarihlbl);
             this.anamenupanel.Controls.Add(this.gidistarihbox);
             this.anamenupanel.Controls.Add(this.tekyonlbl);
-            this.anamenupanel.Controls.Add(this.gidisdonuslbl);
             this.anamenupanel.Controls.Add(this.bussineslbl);
             this.anamenupanel.Controls.Add(this.ekonomilbl);
             this.anamenupanel.Controls.Add(this.nereyetxt);
@@ -121,8 +118,6 @@
             this.anamenupanel.Controls.Add(this.kisisayilbl);
             this.anamenupanel.Controls.Add(this.kisibox);
             this.anamenupanel.Controls.Add(this.ucakicon);
-            this.anamenupanel.Controls.Add(this.anamenulabel2);
-            this.anamenupanel.Controls.Add(this.anamenulabel);
             this.anamenupanel.Controls.Add(this.anamenuustpanel);
             this.anamenupanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.anamenupanel.FillColor = System.Drawing.Color.Transparent;
@@ -133,13 +128,37 @@
             this.anamenupanel.Size = new System.Drawing.Size(1197, 581);
             this.anamenupanel.TabIndex = 2;
             // 
+            // tunexlogo
+            // 
+            this.tunexlogo.BackColor = System.Drawing.Color.Transparent;
+            this.tunexlogo.BaseColor = System.Drawing.Color.Black;
+            this.tunexlogo.Image = global::ucakotomasyon.Properties.Resources.TUNEXLOGOturizsiyah;
+            this.tunexlogo.Location = new System.Drawing.Point(85, 182);
+            this.tunexlogo.Name = "tunexlogo";
+            this.tunexlogo.Size = new System.Drawing.Size(532, 178);
+            this.tunexlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.tunexlogo.TabIndex = 47;
+            this.tunexlogo.TabStop = false;
+            // 
+            // anamenulabel2
+            // 
+            this.anamenulabel2.AutoSize = true;
+            this.anamenulabel2.BackColor = System.Drawing.Color.Transparent;
+            this.anamenulabel2.Font = new System.Drawing.Font("Exo 2", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.anamenulabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
+            this.anamenulabel2.Location = new System.Drawing.Point(90, 354);
+            this.anamenulabel2.Name = "anamenulabel2";
+            this.anamenulabel2.Size = new System.Drawing.Size(514, 39);
+            this.anamenulabel2.TabIndex = 46;
+            this.anamenulabel2.Text = "LÜTFEN YUKARIDAN İŞLEMİNİZİ SEÇİNİZ";
+            // 
             // islemlerpanel
             // 
             this.islemlerpanel.BackColor = System.Drawing.Color.Transparent;
-            this.islemlerpanel.Location = new System.Drawing.Point(16, 72);
+            this.islemlerpanel.Location = new System.Drawing.Point(7, 72);
             this.islemlerpanel.Name = "islemlerpanel";
             this.islemlerpanel.ShadowDecoration.Parent = this.islemlerpanel;
-            this.islemlerpanel.Size = new System.Drawing.Size(1140, 461);
+            this.islemlerpanel.Size = new System.Drawing.Size(1183, 464);
             this.islemlerpanel.TabIndex = 45;
             this.islemlerpanel.Visible = false;
             // 
@@ -171,7 +190,7 @@
             // 
             this.logobox.BackColor = System.Drawing.Color.Transparent;
             this.logobox.BaseColor = System.Drawing.Color.Black;
-            this.logobox.Location = new System.Drawing.Point(240, 205);
+            this.logobox.Location = new System.Drawing.Point(240, 212);
             this.logobox.Name = "logobox";
             this.logobox.Size = new System.Drawing.Size(195, 117);
             this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -382,7 +401,6 @@
             this.guna2GroupBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.BorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.Controls.Add(this.tekyonradiobtn);
-            this.guna2GroupBox2.Controls.Add(this.gidisdonusradiobtn);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -417,29 +435,6 @@
             this.tekyonradiobtn.UncheckedState.Parent = this.tekyonradiobtn;
             this.tekyonradiobtn.Visible = false;
             this.tekyonradiobtn.CheckedChanged += new System.EventHandler(this.tekyonradiobtn_CheckedChanged);
-            // 
-            // gidisdonusradiobtn
-            // 
-            this.gidisdonusradiobtn.Animated = true;
-            this.gidisdonusradiobtn.BackColor = System.Drawing.Color.Transparent;
-            this.gidisdonusradiobtn.CheckedState.BorderColor = System.Drawing.Color.Navy;
-            this.gidisdonusradiobtn.CheckedState.BorderThickness = 2;
-            this.gidisdonusradiobtn.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gidisdonusradiobtn.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.gidisdonusradiobtn.CheckedState.InnerOffset = 10;
-            this.gidisdonusradiobtn.CheckedState.Parent = this.gidisdonusradiobtn;
-            this.gidisdonusradiobtn.Location = new System.Drawing.Point(0, 37);
-            this.gidisdonusradiobtn.Name = "gidisdonusradiobtn";
-            this.gidisdonusradiobtn.ShadowDecoration.Parent = this.gidisdonusradiobtn;
-            this.gidisdonusradiobtn.Size = new System.Drawing.Size(15, 15);
-            this.gidisdonusradiobtn.TabIndex = 22;
-            this.gidisdonusradiobtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gidisdonusradiobtn.UncheckedState.BorderThickness = 2;
-            this.gidisdonusradiobtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gidisdonusradiobtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.gidisdonusradiobtn.UncheckedState.Parent = this.gidisdonusradiobtn;
-            this.gidisdonusradiobtn.Visible = false;
-            this.gidisdonusradiobtn.CheckedChanged += new System.EventHandler(this.gidisdonusradiobtn_CheckedChanged);
             // 
             // guna2GroupBox1
             // 
@@ -540,39 +535,6 @@
             this.gidisgelisicon.TabStop = false;
             this.gidisgelisicon.Visible = false;
             // 
-            // donustarihlbl
-            // 
-            this.donustarihlbl.AutoSize = true;
-            this.donustarihlbl.BackColor = System.Drawing.Color.Transparent;
-            this.donustarihlbl.Font = new System.Drawing.Font("Exo 2", 11.25F, System.Drawing.FontStyle.Bold);
-            this.donustarihlbl.Location = new System.Drawing.Point(258, 218);
-            this.donustarihlbl.Name = "donustarihlbl";
-            this.donustarihlbl.Size = new System.Drawing.Size(98, 22);
-            this.donustarihlbl.TabIndex = 28;
-            this.donustarihlbl.Text = "Dönüş Tarihi";
-            this.donustarihlbl.Visible = false;
-            // 
-            // donustarihbox
-            // 
-            this.donustarihbox.Animated = true;
-            this.donustarihbox.AutoRoundedCorners = true;
-            this.donustarihbox.BackColor = System.Drawing.Color.Transparent;
-            this.donustarihbox.BorderRadius = 17;
-            this.donustarihbox.CheckedState.Parent = this.donustarihbox;
-            this.donustarihbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.donustarihbox.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.donustarihbox.HoverState.Parent = this.donustarihbox;
-            this.donustarihbox.Location = new System.Drawing.Point(253, 243);
-            this.donustarihbox.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.donustarihbox.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.donustarihbox.Name = "donustarihbox";
-            this.donustarihbox.ShadowDecoration.Parent = this.donustarihbox;
-            this.donustarihbox.Size = new System.Drawing.Size(200, 36);
-            this.donustarihbox.TabIndex = 27;
-            this.donustarihbox.UseTransparentBackground = true;
-            this.donustarihbox.Value = new System.DateTime(2022, 5, 16, 2, 54, 19, 43);
-            this.donustarihbox.Visible = false;
-            // 
             // gidistarihlbl
             // 
             this.gidistarihlbl.AutoSize = true;
@@ -617,18 +579,6 @@
             this.tekyonlbl.TabIndex = 24;
             this.tekyonlbl.Text = "Tek yön";
             this.tekyonlbl.Visible = false;
-            // 
-            // gidisdonuslbl
-            // 
-            this.gidisdonuslbl.AutoSize = true;
-            this.gidisdonuslbl.BackColor = System.Drawing.Color.Transparent;
-            this.gidisdonuslbl.Font = new System.Drawing.Font("Exo 2", 10.25F, System.Drawing.FontStyle.Bold);
-            this.gidisdonuslbl.Location = new System.Drawing.Point(455, 188);
-            this.gidisdonuslbl.Name = "gidisdonuslbl";
-            this.gidisdonuslbl.Size = new System.Drawing.Size(88, 20);
-            this.gidisdonuslbl.TabIndex = 23;
-            this.gidisdonuslbl.Text = "Gidiş-Dönüş";
-            this.gidisdonuslbl.Visible = false;
             // 
             // bussineslbl
             // 
@@ -739,33 +689,10 @@
             this.ucakicon.TabStop = false;
             this.ucakicon.Visible = false;
             // 
-            // anamenulabel2
-            // 
-            this.anamenulabel2.AutoSize = true;
-            this.anamenulabel2.BackColor = System.Drawing.Color.Transparent;
-            this.anamenulabel2.Font = new System.Drawing.Font("Exo 2", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.anamenulabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(121)))));
-            this.anamenulabel2.Location = new System.Drawing.Point(656, 150);
-            this.anamenulabel2.Name = "anamenulabel2";
-            this.anamenulabel2.Size = new System.Drawing.Size(514, 39);
-            this.anamenulabel2.TabIndex = 2;
-            this.anamenulabel2.Text = "LÜTFEN YUKARIDAN İŞLEMİNİZİ SEÇİNİZ";
-            // 
-            // anamenulabel
-            // 
-            this.anamenulabel.AutoSize = true;
-            this.anamenulabel.BackColor = System.Drawing.Color.Transparent;
-            this.anamenulabel.Font = new System.Drawing.Font("Exo 2 ExtraBold", 57F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.anamenulabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.anamenulabel.Location = new System.Drawing.Point(641, 32);
-            this.anamenulabel.Name = "anamenulabel";
-            this.anamenulabel.Size = new System.Drawing.Size(553, 112);
-            this.anamenulabel.TabIndex = 1;
-            this.anamenulabel.Text = "HOŞ GELDİNİZ";
-            // 
             // anamenuustpanel
             // 
             this.anamenuustpanel.BackColor = System.Drawing.Color.Transparent;
+            this.anamenuustpanel.Controls.Add(this.guna2Button1);
             this.anamenuustpanel.Controls.Add(this.secenekbuton2);
             this.anamenuustpanel.Controls.Add(this.secenekbuton1);
             this.anamenuustpanel.Controls.Add(this.secenekbuton);
@@ -881,6 +808,29 @@
             this.guna2ControlBox1.UseTransparentBackground = true;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click_1);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BorderRadius = 20;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Exo 2 ExtraBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.AliceBlue;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(459, 7);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.guna2Button1.ShadowDecoration.Depth = 50;
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(144, 42);
+            this.guna2Button1.TabIndex = 5;
+            this.guna2Button1.Text = "GERİ";
+            this.guna2Button1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -894,6 +844,7 @@
             this.Load += new System.EventHandler(this.AnaSayfa_Load);
             this.anamenupanel.ResumeLayout(false);
             this.anamenupanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tunexlogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logobox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucustable)).EndInit();
             this.guna2GroupBox2.ResumeLayout(false);
@@ -915,8 +866,6 @@
         private Guna.UI2.WinForms.Guna2Button secenekbuton;
         private Guna.UI2.WinForms.Guna2Button secenekbuton2;
         private Guna.UI2.WinForms.Guna2Button secenekbuton1;
-        private Guna.UI.WinForms.GunaLabel anamenulabel2;
-        private Guna.UI.WinForms.GunaLabel anamenulabel;
         private Guna.UI.WinForms.GunaTransfarantPictureBox ucakicon;
         public Guna.UI2.WinForms.Guna2ComboBox kisibox;
         private System.Windows.Forms.Label bussineslbl;
@@ -926,11 +875,7 @@
         private System.Windows.Forms.Label kisisayilbl;
         private Guna.UI2.WinForms.Guna2DateTimePicker gidistarihbox;
         private System.Windows.Forms.Label tekyonlbl;
-        private System.Windows.Forms.Label gidisdonuslbl;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton gidisdonusradiobtn;
         private Guna.UI2.WinForms.Guna2CustomRadioButton tekyonradiobtn;
-        private System.Windows.Forms.Label donustarihlbl;
-        private Guna.UI2.WinForms.Guna2DateTimePicker donustarihbox;
         private System.Windows.Forms.Label gidistarihlbl;
         private Guna.UI.WinForms.GunaTransfarantPictureBox gidisgelisicon;
         private Guna.UI2.WinForms.Guna2GradientButton ucusarabtn;
@@ -949,5 +894,8 @@
         public Guna.UI2.WinForms.Guna2CustomRadioButton bussinesradiobtn;
         public Guna.UI2.WinForms.Guna2CustomRadioButton ekonomiradiobtn;
         private Guna.UI2.WinForms.Guna2GradientPanel islemlerpanel;
+        private Guna.UI.WinForms.GunaLabel anamenulabel2;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox tunexlogo;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -72,3 +72,4 @@ C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\uca
 C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.BiletlerForm.resources
 C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.BiletiptalForm.resources
 C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.AdminbiletiptalForm.resources
+C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.Acilis.resources

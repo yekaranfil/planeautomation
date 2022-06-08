@@ -18,14 +18,11 @@ namespace ucakotomasyon
             InitializeComponent();
             
         }
-
-
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
 
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
 
         private void guna2GradientPanel2_MouseDown(object sender, MouseEventArgs e)
         {
@@ -36,7 +33,7 @@ namespace ucakotomasyon
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-
+            // uçuşekleme formunu panele basma
             islemlerpanel.Controls.Clear();
             SeferEkleForm seferform = new SeferEkleForm();
             seferform.TopLevel = false;
@@ -45,13 +42,11 @@ namespace ucakotomasyon
             seferform.Dock = DockStyle.Fill;
             seferform.BringToFront();
 
-
-
-
         }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
+            // ucak ekleme formunu panele basma
             islemlerpanel.Controls.Clear();
             AdminUcusEkleForm ucakekleform = new AdminUcusEkleForm();
             ucakekleform.TopLevel = false;
@@ -63,7 +58,7 @@ namespace ucakotomasyon
 
         private void ucakguncellebuton_Click(object sender, EventArgs e)
         {
-
+            // ucak günncelleme formunu panele basma
             islemlerpanel.Controls.Clear();
             UcakGuncelle ucakguncelle = new UcakGuncelle();
             ucakguncelle.TopLevel = false;
@@ -74,14 +69,9 @@ namespace ucakotomasyon
 
 
         }
-
-        private void adminformkapatma_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
+            // uçuş güncelleme formunu panele basma
             islemlerpanel.Controls.Clear();
             UcusGuncelleForm ucusguncelle = new UcusGuncelleForm();
             ucusguncelle.TopLevel = false;
@@ -93,6 +83,7 @@ namespace ucakotomasyon
 
         private void guna2GradientButton5_Click(object sender, EventArgs e)
         {
+            // destek formunu panele basma
             islemlerpanel.Controls.Clear();
             AdminDestekForm admindestek = new AdminDestekForm();
             admindestek.TopLevel = false;
@@ -104,7 +95,7 @@ namespace ucakotomasyon
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
-
+            // bilet güncelle formunu panele basma
             islemlerpanel.Controls.Clear();
             AdminbiletiptalForm iptalform = new AdminbiletiptalForm();
             iptalform.TopLevel = false;
@@ -112,6 +103,21 @@ namespace ucakotomasyon
             iptalform.Show();
             iptalform.Dock = DockStyle.Fill;
             iptalform.BringToFront();
+        }
+
+        private void AdminPanelForm_Load(object sender, EventArgs e)
+        {
+            kullanicilbl.Text = AdminGiris.adminkullanici.ToString();
+        }
+
+        private void guna2GradientButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void adminformkapatma_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

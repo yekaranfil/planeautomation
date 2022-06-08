@@ -69,6 +69,8 @@
             this.plakabox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.plakabox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.plakabox.FocusedState.Parent = this.plakabox;
+            this.plakabox.Font = new System.Drawing.Font("Exo 2", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.plakabox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.plakabox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.plakabox.HoverState.Parent = this.plakabox;
             this.plakabox.Location = new System.Drawing.Point(226, 195);
@@ -77,7 +79,7 @@
             this.plakabox.PlaceholderText = "";
             this.plakabox.SelectedText = "";
             this.plakabox.ShadowDecoration.Parent = this.plakabox;
-            this.plakabox.Size = new System.Drawing.Size(200, 36);
+            this.plakabox.Size = new System.Drawing.Size(185, 36);
             this.plakabox.TabIndex = 0;
             // 
             // firmabox
@@ -91,8 +93,8 @@
             this.firmabox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.firmabox.FocusedColor = System.Drawing.Color.Empty;
             this.firmabox.FocusedState.Parent = this.firmabox;
-            this.firmabox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.firmabox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.firmabox.Font = new System.Drawing.Font("Exo 2", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.firmabox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.firmabox.FormattingEnabled = true;
             this.firmabox.HoverState.Parent = this.firmabox;
             this.firmabox.ItemHeight = 30;
@@ -100,7 +102,7 @@
             this.firmabox.Location = new System.Drawing.Point(226, 140);
             this.firmabox.Name = "firmabox";
             this.firmabox.ShadowDecoration.Parent = this.firmabox;
-            this.firmabox.Size = new System.Drawing.Size(180, 36);
+            this.firmabox.Size = new System.Drawing.Size(185, 36);
             this.firmabox.TabIndex = 2;
             this.firmabox.SelectedIndexChanged += new System.EventHandler(this.firmabox_SelectedIndexChanged);
             // 
@@ -114,7 +116,7 @@
             this.onaylabuton.CustomImages.Parent = this.onaylabuton;
             this.onaylabuton.FillColor = System.Drawing.Color.Blue;
             this.onaylabuton.FillColor2 = System.Drawing.Color.Teal;
-            this.onaylabuton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.onaylabuton.Font = new System.Drawing.Font("Exo 2", 9.749999F);
             this.onaylabuton.ForeColor = System.Drawing.Color.White;
             this.onaylabuton.HoverState.Parent = this.onaylabuton;
             this.onaylabuton.Location = new System.Drawing.Point(211, 302);
@@ -190,8 +192,8 @@
             this.koltukbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.koltukbox.FocusedColor = System.Drawing.Color.Empty;
             this.koltukbox.FocusedState.Parent = this.koltukbox;
-            this.koltukbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.koltukbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.koltukbox.Font = new System.Drawing.Font("Exo 2", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.koltukbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.koltukbox.FormattingEnabled = true;
             this.koltukbox.HoverState.Parent = this.koltukbox;
             this.koltukbox.ItemHeight = 30;
@@ -200,10 +202,10 @@
             "56",
             "72"});
             this.koltukbox.ItemsAppearance.Parent = this.koltukbox;
-            this.koltukbox.Location = new System.Drawing.Point(231, 246);
+            this.koltukbox.Location = new System.Drawing.Point(226, 246);
             this.koltukbox.Name = "koltukbox";
             this.koltukbox.ShadowDecoration.Parent = this.koltukbox;
-            this.koltukbox.Size = new System.Drawing.Size(180, 36);
+            this.koltukbox.Size = new System.Drawing.Size(185, 36);
             this.koltukbox.TabIndex = 56;
             // 
             // logobox
@@ -216,7 +218,6 @@
             this.logobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logobox.TabIndex = 5;
             this.logobox.TabStop = false;
-            this.logobox.Click += new System.EventHandler(this.logobox_Click);
             // 
             // AdminUcusEkleForm
             // 

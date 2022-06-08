@@ -69,7 +69,7 @@
             this.onayresim.Image = global::ucakotomasyon.Properties.Resources.Onay;
             this.onayresim.Location = new System.Drawing.Point(12, 62);
             this.onayresim.Name = "onayresim";
-            this.onayresim.Size = new System.Drawing.Size(100, 57);
+            this.onayresim.Size = new System.Drawing.Size(81, 57);
             this.onayresim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.onayresim.TabIndex = 5;
             this.onayresim.TabStop = false;
@@ -83,12 +83,12 @@
             this.guna2GradientButton1.BorderRadius = 13;
             this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Teal;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(72)))), ((int)(((byte)(231)))));
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.CornflowerBlue;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(250, 126);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(250, 123);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(96, 28);
@@ -101,10 +101,10 @@
             // 
             this.hatayazi.AutoSize = true;
             this.hatayazi.BackColor = System.Drawing.Color.Transparent;
-            this.hatayazi.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hatayazi.Location = new System.Drawing.Point(118, 62);
+            this.hatayazi.Font = new System.Drawing.Font("Exo 2 SemiBold", 10.25F, System.Drawing.FontStyle.Bold);
+            this.hatayazi.Location = new System.Drawing.Point(94, 62);
             this.hatayazi.Name = "hatayazi";
-            this.hatayazi.Size = new System.Drawing.Size(42, 17);
+            this.hatayazi.Size = new System.Drawing.Size(43, 20);
             this.hatayazi.TabIndex = 3;
             this.hatayazi.Text = "HATA";
             // 
@@ -113,7 +113,7 @@
             this.hataresim.Image = ((System.Drawing.Image)(resources.GetObject("hataresim.Image")));
             this.hataresim.Location = new System.Drawing.Point(12, 62);
             this.hataresim.Name = "hataresim";
-            this.hataresim.Size = new System.Drawing.Size(100, 57);
+            this.hataresim.Size = new System.Drawing.Size(81, 57);
             this.hataresim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hataresim.TabIndex = 1;
             this.hataresim.TabStop = false;
@@ -124,8 +124,8 @@
             this.guna2GradientPanel2.Controls.Add(this.guna2ControlBox3);
             this.guna2GradientPanel2.Controls.Add(this.guna2ControlBox1);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.MediumPurple;
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Red;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(72)))), ((int)(((byte)(231)))));
             this.guna2GradientPanel2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
@@ -138,10 +138,10 @@
             // 
             this.hatamesaj.AutoSize = true;
             this.hatamesaj.BackColor = System.Drawing.Color.Transparent;
-            this.hatamesaj.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hatamesaj.Font = new System.Drawing.Font("Exo 2 SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.hatamesaj.Location = new System.Drawing.Point(8, 9);
             this.hatamesaj.Name = "hatamesaj";
-            this.hatamesaj.Size = new System.Drawing.Size(53, 21);
+            this.hatamesaj.Size = new System.Drawing.Size(58, 28);
             this.hatamesaj.TabIndex = 2;
             this.hatamesaj.Text = "HATA";
             // 

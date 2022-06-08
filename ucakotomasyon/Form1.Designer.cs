@@ -33,6 +33,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.maildestekbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.geributon = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -52,6 +53,7 @@
             this.cikisbuton = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.destekboxcerceve)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.firmalogo)).BeginInit();
@@ -74,6 +76,7 @@
             // 
             this.panel1.BackgroundImage = global::ucakotomasyon.Properties.Resources.arkapan_giriş;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.gunaTransfarantPictureBox1);
             this.panel1.Controls.Add(this.guna2GradientButton1);
             this.panel1.Controls.Add(this.maildestekbox);
             this.panel1.Controls.Add(this.geributon);
@@ -96,6 +99,18 @@
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseEnter += new System.EventHandler(this.guna2GradientPanel1_MouseEnter);
+            // 
+            // gunaTransfarantPictureBox1
+            // 
+            this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox1.Image = global::ucakotomasyon.Properties.Resources.TUNEXLOGOturizsiyah;
+            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(80, 51);
+            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
+            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(212, 100);
+            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaTransfarantPictureBox1.TabIndex = 18;
+            this.gunaTransfarantPictureBox1.TabStop = false;
             // 
             // guna2GradientButton1
             // 
@@ -139,6 +154,7 @@
             this.maildestekbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.maildestekbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.maildestekbox.FocusedState.Parent = this.maildestekbox;
+            this.maildestekbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.maildestekbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.maildestekbox.HoverState.Parent = this.maildestekbox;
             this.maildestekbox.IconLeft = global::ucakotomasyon.Properties.Resources.mailbox;
@@ -229,6 +245,7 @@
             this.mailtext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.mailtext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.mailtext.FocusedState.Parent = this.mailtext;
+            this.mailtext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.mailtext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.mailtext.HoverState.Parent = this.mailtext;
             this.mailtext.IconLeft = global::ucakotomasyon.Properties.Resources.mailbox;
@@ -252,6 +269,7 @@
             this.destekbox.BackColor = System.Drawing.Color.White;
             this.destekbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.destekbox.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.destekbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.destekbox.Location = new System.Drawing.Point(809, 241);
             this.destekbox.Name = "destekbox";
             this.destekbox.Size = new System.Drawing.Size(218, 156);
@@ -388,6 +406,7 @@
             this.txtgirissifre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtgirissifre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtgirissifre.FocusedState.Parent = this.txtgirissifre;
+            this.txtgirissifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtgirissifre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtgirissifre.HoverState.Parent = this.txtgirissifre;
             this.txtgirissifre.IconLeft = global::ucakotomasyon.Properties.Resources.resim_2022_05_13_203358808_removebg_preview;
@@ -421,6 +440,7 @@
             this.txtgiris.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtgiris.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtgiris.FocusedState.Parent = this.txtgiris;
+            this.txtgiris.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtgiris.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtgiris.HoverState.Parent = this.txtgiris;
             this.txtgiris.IconLeft = global::ucakotomasyon.Properties.Resources.user;
@@ -499,6 +519,7 @@
             this.cikisbuton.Size = new System.Drawing.Size(50, 31);
             this.cikisbuton.TabIndex = 0;
             this.cikisbuton.UseTransparentBackground = true;
+            this.cikisbuton.Click += new System.EventHandler(this.cikisbuton_Click);
             // 
             // Form1
             // 
@@ -512,6 +533,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.destekboxcerceve)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.firmalogo)).EndInit();
@@ -542,6 +564,7 @@
         public Guna.UI2.WinForms.Guna2GradientPanel panel1;
         public Guna.UI2.WinForms.Guna2TextBox maildestekbox;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
     }
 }
 

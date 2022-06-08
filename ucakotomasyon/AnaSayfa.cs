@@ -49,8 +49,9 @@ namespace ucakotomasyon
         private void secenekbuton_Click(object sender, EventArgs e)
         {
             //componentlerin görünürlüğünü ayarlama
+            satinalbtn.Visible = false;
             islemlerpanel.Visible = false;
-            anamenulabel.Visible = false;
+            tunexlogo.Visible = false;
             anamenulabel2.Visible = false;
             neredenbox.Visible = true;
             nereyebox.Visible = true;
@@ -65,8 +66,7 @@ namespace ucakotomasyon
             bussinesradiobtn.Visible = true;
             tekyonlbl.Visible = true;
             tekyonradiobtn.Visible = true;
-            gidisdonuslbl.Visible = true;
-            gidisdonusradiobtn.Visible = true;
+
             neredentxt.Visible = true;
             nereyetxt.Visible = true;
             ucusarabtn.Visible = true;
@@ -81,8 +81,7 @@ namespace ucakotomasyon
 
 
 
-            donustarihbox.Visible = false;
-            donustarihlbl.Visible = false;
+
             gidisgelisicon.Visible = false;
         }
         private void gidisdonusradiobtn_CheckedChanged(object sender, EventArgs e)
@@ -91,8 +90,7 @@ namespace ucakotomasyon
 
             gidistarihbox.Visible = true;
             gidistarihlbl.Visible = true;
-            donustarihbox.Visible = true;
-            donustarihlbl.Visible = true;
+
             gidisgelisicon.Visible = true;
 
         }
@@ -208,6 +206,13 @@ namespace ucakotomasyon
             }
         }
 
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Form1 n = new Form1();
+            n.Show();
+            this.Close();
+        }
+
         private void nereyebox_Click(object sender, EventArgs e)
         {
             // combobox şehir çakışma kontrol
@@ -312,15 +317,11 @@ namespace ucakotomasyon
             {
 
                 HataBox hataform = new HataBox();
-                HataBox.mesaj = "Giriş başarılı";
-                HataBox.text = "Giriş Yapıldı";
-                hataform.Show();
+             
 
                 _40koltukform secim1 = new _40koltukform();
                 secim1.Show();
-                hataform.hataresim.Visible = false;
-                hataform.onayresim.Visible = true;
-                hataform.Show();
+              
 
                 if (ekonomiradiobtn.Checked == true)
                 {
@@ -340,16 +341,11 @@ namespace ucakotomasyon
             else if (koltuksayisi =="56")
             {
 
-                HataBox hataform = new HataBox();
-                HataBox.mesaj = "Giriş başarılı";
-                HataBox.text = "Giriş Yapıldı";
-                hataform.Show();
+                
 
                 _56koltukform secim2 = new _56koltukform();
                 secim2.Show();
-                hataform.hataresim.Visible = false;
-                hataform.onayresim.Visible = true;
-                hataform.Show();
+                
 
                 
                 if (ekonomiradiobtn.Checked == true)
@@ -373,17 +369,11 @@ namespace ucakotomasyon
             {
 
                 HataBox hataform = new HataBox();
-                HataBox.mesaj = "Giriş başarılı";
-                HataBox.text = "Giriş Yapıldı";
-                hataform.Show();
+             
 
                 _72koltukform secim3 = new _72koltukform();
                 secim3.Show();
-                hataform.hataresim.Visible = false;
-                hataform.onayresim.Visible = true;
-                hataform.Show();
-
-
+           
                 if (ekonomiradiobtn.Checked == true)
                 {
                     secim3.ekonomi.Enabled = true;
@@ -402,6 +392,10 @@ namespace ucakotomasyon
 
         private void secenekbuton1_Click(object sender, EventArgs e)
         {
+            satinalbtn.Visible = false;
+
+            tunexlogo.Visible = false;
+            anamenulabel2.Visible = false;
             //seçilen menü için ekrana paneli basma
             islemlerpanel.Visible = true;
             islemlerpanel.Controls.Clear();
@@ -415,6 +409,10 @@ namespace ucakotomasyon
 
         private void secenekbuton2_Click(object sender, EventArgs e)
         {
+            satinalbtn.Visible = false;
+
+            tunexlogo.Visible = false;
+            anamenulabel2.Visible = false;
             //seçilen menü için ekrana paneli basma
 
             islemlerpanel.Visible = false;

@@ -65,7 +65,7 @@
             this.guncellebuton.CustomImages.Parent = this.guncellebuton;
             this.guncellebuton.FillColor = System.Drawing.Color.Blue;
             this.guncellebuton.FillColor2 = System.Drawing.Color.Teal;
-            this.guncellebuton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guncellebuton.Font = new System.Drawing.Font("Exo 2", 9.749999F);
             this.guncellebuton.ForeColor = System.Drawing.Color.White;
             this.guncellebuton.HoverState.Parent = this.guncellebuton;
             this.guncellebuton.Location = new System.Drawing.Point(3, 493);
@@ -87,7 +87,7 @@
             this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.FillColor = System.Drawing.Color.Blue;
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Teal;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Exo 2", 9.749999F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Location = new System.Drawing.Point(3, 442);
@@ -167,7 +167,6 @@
             this.ucustable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.ucustable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ucustable_CellClick);
             this.ucustable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ucustable_CellContentClick);
-            this.ucustable.Click += new System.EventHandler(this.ucustable_Click);
             // 
             // guna2GradientPanel1
             // 
@@ -206,8 +205,8 @@
             this.ucaksecimbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ucaksecimbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ucaksecimbox.FocusedState.Parent = this.ucaksecimbox;
-            this.ucaksecimbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ucaksecimbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ucaksecimbox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.ucaksecimbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ucaksecimbox.FormattingEnabled = true;
             this.ucaksecimbox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.ucaksecimbox.HoverState.Parent = this.ucaksecimbox;
@@ -269,8 +268,8 @@
             this.nereyebox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.nereyebox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.nereyebox.FocusedState.Parent = this.nereyebox;
-            this.nereyebox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.nereyebox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.nereyebox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.nereyebox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.nereyebox.FormattingEnabled = true;
             this.nereyebox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.nereyebox.HoverState.Parent = this.nereyebox;
@@ -303,8 +302,8 @@
             this.neredenbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.neredenbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.neredenbox.FocusedState.Parent = this.neredenbox;
-            this.neredenbox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.neredenbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.neredenbox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.neredenbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.neredenbox.FormattingEnabled = true;
             this.neredenbox.HoverState.BorderColor = System.Drawing.Color.Blue;
             this.neredenbox.HoverState.Parent = this.neredenbox;

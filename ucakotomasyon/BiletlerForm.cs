@@ -92,7 +92,6 @@ namespace ucakotomasyon
 
             try
             {
-
                 //Tabloya seçilen bilete göre uçuşları listeleme
                 baglanti.Close();
                 baglanti.Open();
@@ -123,23 +122,12 @@ namespace ucakotomasyon
                 else
                 {
 
-                    HataBox f = new HataBox();
-                    HataBox.mesaj = "Uçuş Arama Hatası";
-                    HataBox.text = "Lütfen Bilet Türü Seçiniz";
-                    f.hataresim.Visible = true;
-                    f.onayresim.Visible = false;
-                    f.Show();
                 }
+                
 
-
-
-                iddizi.Clear();
-                firmaiddizi.Clear();
-
-                AnaSayfa radio = new AnaSayfa();
                 if (biletsinifi.Equals("EKONOMİ"))
-
                 {
+                    //seçilen sınıf eğer ekonomiyse belli sutunlari gizleme
                     biletdetaytablo.Columns[1].Visible = false;
                     biletdetaytablo.Columns[2].Visible = false;
                     biletdetaytablo.Columns[3].Visible = false;
@@ -151,7 +139,8 @@ namespace ucakotomasyon
 
                 } else if(biletsinifi.Equals("BUSSİNES"))
                 {
-
+                    //seçilen sınıf eğer bussinessa belli sutunlari gizleme
+                    biletdetaytablo.Columns[1].Visible = false;
                     biletdetaytablo.Columns[1].Visible = false;
                     biletdetaytablo.Columns[2].Visible = false;
                     biletdetaytablo.Columns[3].Visible = false;
@@ -160,17 +149,11 @@ namespace ucakotomasyon
                     biletdetaytablo.Columns[9].Visible = false;
                     biletdetaytablo.Columns[10].Visible = false;
                 }
-
-
-
-
             }
             catch (Exception ex)
             {
 
             }
-
-
         }
     }
 }

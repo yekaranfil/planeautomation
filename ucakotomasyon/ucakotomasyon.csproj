@@ -115,6 +115,12 @@
     <Compile Include="72koltukform.Designer.cs">
       <DependentUpon>72koltukform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Acilis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acilis.Designer.cs">
+      <DependentUpon>Acilis.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminbiletiptalForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="72koltukform.resx">
       <DependentUpon>72koltukform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acilis.resx">
+      <DependentUpon>Acilis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminbiletiptalForm.resx">
       <DependentUpon>AdminbiletiptalForm.cs</DependentUpon>
@@ -418,6 +427,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Secili.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biletiptal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucak2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucusekle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucusguncelle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucakekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biletiptal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tunex transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TUNEXturizm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TUNEXLOGOturizm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TUNEXLOGOturizsiyah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikisbutonu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

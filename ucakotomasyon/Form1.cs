@@ -153,6 +153,13 @@ namespace ucakotomasyon
         }
         public static String kisiid, kisitc = "";
 
+        private void cikisbuton_Click(object sender, EventArgs e)
+        {
+
+            Application.Exit();
+            
+        }
+
         private void girisbuton_Click(object sender, EventArgs e)
         {
 

@@ -21,20 +21,20 @@ namespace ucakotomasyon
         {
             InitializeComponent();
         }
-        String koltuksayi,ucusid;
-
-
-
+        String firmaidlogo;
+        String koltuksayi, ucusid;
+        String ucussaat, ucusdakika, tahminisaat, tahminidakika;
         private void onaylabuton1_Click(object sender, EventArgs e)
         {
-            String ucussaat, ucusdakika, tahminisaat, tahminidakika;
+            
+          
 
             int ucakid, firmaid;
+            //componentlerden verileri değişkenlere aktarma 
             ucussaat = ucussaatbox.Text;
             ucusdakika = ucusdakikabox.Text;
             tahminisaat = tahminisaatbox.Text;
             tahminidakika = tahminidakikabox.Text;
-
             gidistarihbox.Format = DateTimePickerFormat.Custom;
             gidistarihbox.CustomFormat = "yyyy-MM-dd";
             UcusBilgileri.ucustarihi = gidistarihbox.Text;
@@ -93,13 +93,9 @@ namespace ucakotomasyon
             {
 
             }
-
-
-
-
+            // alınan verilerin uçuş olarak veritabanına kaydı
             baglanti.Close();
             baglanti.Open();
-
             MySqlCommand seferekleme = new MySqlCommand("INSERT INTO ucuslar (ucus_neredenID,ucus_nereyeID,ucus_saati, ucus_tarih, ucus_tahminsure,normal_bilet,bussines_bilet,ucaklar_ucak_id,ucaklar_firmalar_firmalar_id) VALUES ('" + UcusBilgileri.ucusnereden + "','" + UcusBilgileri.ucusnereye + "','" + UcusBilgileri.ucussaati + "','" + UcusBilgileri.ucustarihi + "','" + UcusBilgileri.ucustahminisure +
                 "','" + UcusBilgileri.normalbilet + "','" + UcusBilgileri.bussinesbilet + "','" + int.Parse(UcusBilgileri.ucaklarid) + "','" + int.Parse(UcusBilgileri.ucaklar_firmalar_firmalar_id) + "')", baglanti);
             seferekleme.ExecuteNonQuery();
@@ -110,15 +106,10 @@ namespace ucakotomasyon
             f.hataresim.Visible = false;
             f.onayresim.Visible = true;
             f.Show();
-
-
-
             try
             {
-                
-                
 
-                // uçak ve firma id çekme
+                // ucak id ye göre koltuksayisi  çekme
                 baglanti.Close();
                 baglanti.Open();
                 MySqlCommand koltuksayisi = new MySqlCommand("SELECT ucak_koltuksayisi FROM ucaklar WHERE (ucak_id=@ucakid)", baglanti);
@@ -126,47 +117,32 @@ namespace ucakotomasyon
                 MySqlDataReader dr = koltuksayisi.ExecuteReader();
                 if (dr.Read())
                 {
-
                     koltuksayi = dr["ucak_koltuksayisi"].ToString();
-                    
-
-
-
-
                 }
                 baglanti.Close();
 
 
-                // uçak id çekme
+                // uçuşid sıralı çekme
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand ucusid1 = new MySqlCommand("SELECT ucus_id FROM ucuslar ORDER BY ucus_id DESC", baglanti);         
+                MySqlCommand ucusid1 = new MySqlCommand("SELECT ucus_id FROM ucuslar ORDER BY ucus_id DESC", baglanti);
                 MySqlDataReader dr1 = ucusid1.ExecuteReader();
                 if (dr1.Read())
                 {
-
                     ucusid = dr1["ucus_id"].ToString();
-
-
                 }
-
-
                 baglanti.Close();
 
+
+                //oluşturulan uçağın koltuk sayısı kadar boş koltuk ekleme
                 for (int i = 1; i <= int.Parse(koltuksayi); i++)
                 {
-    
-                    baglanti.Open();
 
+                    baglanti.Open();
                     MySqlCommand koltukekleme = new MySqlCommand("INSERT INTO koltuklar_has_ucaklar (koltuklar_koltuk_id,ucuslar_ucus_id,dolubos) VALUES ('" + i + "','" + ucusid + "','" + "BOS" + "')", baglanti);
                     koltukekleme.ExecuteNonQuery();
 
-
-
                     baglanti.Close();
-
-
-
 
                 }
 
@@ -180,17 +156,16 @@ namespace ucakotomasyon
 
 
         }
-        String firmaidlogo;
+        
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
             try
             {
                 String secim;
+                //seçilen uçağın substring ile plakasını alma
                 secim = ucaksecimbox.SelectedItem.ToString();
 
-                // uçak ve firma id çekme
+                // plakaya göre uçak ve firma id çekme
                 baglanti.Close();
                 baglanti.Open();
                 MySqlCommand ucakidcekme = new MySqlCommand("SELECT ucak_id,firmalar_firmalar_id FROM ucaklar WHERE (ucak_plaka=@ucakplaka)", baglanti);
@@ -199,6 +174,7 @@ namespace ucakotomasyon
                 if (dr.Read())
                 {
 
+                    //plakaya göre firma id ucak id ve firma id logoların alınması
                     UcusBilgileri.ucaklar_firmalar_firmalar_id = dr["firmalar_firmalar_id"].ToString();
                     firmaidlogo = dr["firmalar_firmalar_id"].ToString();
                     UcusBilgileri.ucaklarid = dr["ucak_id"].ToString();
@@ -247,8 +223,8 @@ namespace ucakotomasyon
             {
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler", baglanti);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                MySqlCommand ceksehir = new MySqlCommand("SELECT sehir_ad FROM sehirler", baglanti);
+                MySqlDataReader dr = ceksehir.ExecuteReader();
                 while (dr.Read())
                 {
 
@@ -307,10 +283,6 @@ namespace ucakotomasyon
 
             }
 
-
-
-
-
         }
 
         private void neredenbox_SelectedValueChanged(object sender, EventArgs e)
@@ -326,29 +298,21 @@ namespace ucakotomasyon
             {
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler", baglanti);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                MySqlCommand kontrolsehir = new MySqlCommand("SELECT sehir_ad FROM sehirler", baglanti);
+                MySqlDataReader dr = kontrolsehir.ExecuteReader();
                 while (dr.Read())
                 {
-
                     nereyebox.Items.Add(dr["sehir_ad"]);
-
-
                 }
             }
             catch (Exception ex)
             {
 
             }
-
             nereyebox.Items.Remove(secim1);
-
         }
 
-        private void nereyebox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void nereyebox_Click(object sender, EventArgs e)
         {
@@ -369,29 +333,7 @@ namespace ucakotomasyon
 
             }
 
-
-
-
         }
 
-        private void neredenbox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2ComboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gidistarihbox_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

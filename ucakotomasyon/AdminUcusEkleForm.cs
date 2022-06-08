@@ -22,6 +22,7 @@ namespace ucakotomasyon
             InitializeComponent();
         }
 
+        public static String firmaid, firmaadi;
         private void AdminUcusEkleForm_Load(object sender, EventArgs e)
         {
             //comboboxa firma adı çekme
@@ -43,13 +44,11 @@ namespace ucakotomasyon
 
             try
             {
-                
-
+  
                 koltuk = koltukbox.Text;
                 plaka = plakabox.Text;
 
-
-
+                //boş kontrol
                 if (plaka != "" && koltuk != "" && firmaid != "")
                 {
 
@@ -71,17 +70,15 @@ namespace ucakotomasyon
                         {
                             HataBox f1 = new HataBox();
                             HataBox.mesaj = "Veri hatası";
-                            HataBox.text = "Lütfen 250 den az bir koltuk sayısı giriniz";
+                            HataBox.text = "";
                             f1.hataresim.Visible = true;
                             f1.onayresim.Visible = false;
                             f1.Show();
                         }
                         else
                         {
+
                             koltuk = koltukbox.Text;
-
-
-                           
                                 //ucak verileri kaydetme
                                 baglanti.Close();
                                 baglanti.Open();
@@ -90,7 +87,7 @@ namespace ucakotomasyon
                                 baglanti.Close();
                                 HataBox f = new HataBox();
                                 HataBox.mesaj = "Uçak ekleme";
-                                HataBox.text = "Uçak eklendi";
+                                HataBox.text = "Uçak Başarıyla eklendi";
                                 f.hataresim.Visible = false;
                                 f.onayresim.Visible = true;
 
@@ -116,14 +113,6 @@ namespace ucakotomasyon
             }
 
         }
-
-        public static String firmaid,firmaadi;
-
-        private void logobox_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void firmabox_SelectedIndexChanged(object sender, EventArgs e)
         {
             String secim;
@@ -154,7 +143,6 @@ namespace ucakotomasyon
                 logobox.Refresh();
             }
 
-            
               firmaadi = firmabox.SelectedItem.ToString();
                 //firma id alma
                 baglanti.Close();
@@ -172,11 +160,6 @@ namespace ucakotomasyon
                 {
 
                 }
-
-
-
-
-
         }
     }
 }
