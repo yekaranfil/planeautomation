@@ -17,19 +17,18 @@ namespace ucakotomasyon
 
     public partial class AnaSayfa : Form
     {
-        public static String nereden, nereye, tarih,kisisayisi;
+        public static String nereden, nereye, tarih,kisisayisi, biletucusid, biletturu, secilenucakid, koltuksayisi;
+        public static int kisiindex;
+        int satirsayisi, ucusid;
         MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
         DataTable tablo = new DataTable();
         DataSet data = new DataSet();
-
-
         ArrayList iddizi = new ArrayList();
         ArrayList firmaiddizi = new ArrayList();
 
         public AnaSayfa()
         {
             InitializeComponent();
-
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -37,16 +36,6 @@ namespace ucakotomasyon
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
 
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void guna2ControlBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ControlBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2ControlBox1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
@@ -57,9 +46,9 @@ namespace ucakotomasyon
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
         private void secenekbuton_Click(object sender, EventArgs e)
         {
+            //componentlerin görünürlüğünü ayarlama
             islemlerpanel.Visible = false;
             anamenulabel.Visible = false;
             anamenulabel2.Visible = false;
@@ -83,9 +72,10 @@ namespace ucakotomasyon
             ucusarabtn.Visible = true;
 
         }
-
         private void tekyonradiobtn_CheckedChanged(object sender, EventArgs e)
         {
+            //componentlerin görünürlüğünü ayarlama
+
             gidistarihbox.Visible = true;
             gidistarihlbl.Visible = true;
 
@@ -95,14 +85,10 @@ namespace ucakotomasyon
             donustarihlbl.Visible = false;
             gidisgelisicon.Visible = false;
         }
-
-        private void gidisdonuslbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void gidisdonusradiobtn_CheckedChanged(object sender, EventArgs e)
         {
+            //componentlerin görünürlüğünü ayarlama
+
             gidistarihbox.Visible = true;
             gidistarihlbl.Visible = true;
             donustarihbox.Visible = true;
@@ -110,9 +96,6 @@ namespace ucakotomasyon
             gidisgelisicon.Visible = true;
 
         }
-
-
-
         private void AnaSayfa_Load(object sender, EventArgs e)
         {
             //combobox şehir bilgisi çekme
@@ -120,8 +103,8 @@ namespace ucakotomasyon
             {
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler", baglanti);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                MySqlCommand sehirbilgi = new MySqlCommand("SELECT sehir_ad FROM sehirler", baglanti);
+                MySqlDataReader dr = sehirbilgi.ExecuteReader();
                 while (dr.Read())
                 {
 
@@ -136,7 +119,7 @@ namespace ucakotomasyon
             {
 
             }
-
+            //combobox şehir bilgisi çekme bitiş
 
 
         }
@@ -156,13 +139,12 @@ namespace ucakotomasyon
             {
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler", baglanti);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                MySqlCommand sehirbilgi = new MySqlCommand("SELECT sehir_ad FROM sehirler", baglanti);
+                MySqlDataReader dr = sehirbilgi.ExecuteReader();
                 while (dr.Read())
                 {
-
+                    //comboboxa sehir doldurma
                     nereyebox.Items.Add(dr["sehir_ad"]);
-
 
                 }
             }
@@ -173,6 +155,7 @@ namespace ucakotomasyon
 
             nereyebox.Items.Remove(secim1);
 
+            // combobox şehir çakışma kontrol bitiş
 
 
             //şehir id çekme
@@ -180,12 +163,12 @@ namespace ucakotomasyon
             {
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
-                kontrolfirma.Parameters.AddWithValue("@sehirad", neredenbox.Text);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                MySqlCommand sehirid = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
+                sehirid.Parameters.AddWithValue("@sehirad", neredenbox.Text);
+                MySqlDataReader dr = sehirid.ExecuteReader();
                 while (dr.Read())
                 {
-                    //seçilen hücrenin içindeki şehrin adını lbl yazdırma
+                   //sehir id alma
                     nereden = (dr["sehir_id"]).ToString();
 
                 }
@@ -203,9 +186,9 @@ namespace ucakotomasyon
 
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
-                kontrolfirma.Parameters.AddWithValue("@sehirad", nereyebox.Text);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                MySqlCommand sehirid = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
+                sehirid.Parameters.AddWithValue("@sehirad", nereyebox.Text);
+                MySqlDataReader dr = sehirid.ExecuteReader();
                 while (dr.Read())
                 {
                     //seçilen hücrenin içindeki şehrin adını lbl yazdırma
@@ -244,28 +227,13 @@ namespace ucakotomasyon
             }
         }
 
-        private void gidistarihbox_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        int ucusid;
-
-        private void gidistarihbox_TextChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-        int satirsayisi;
-        String secilenucakid;
-        public static String biletucusid;
         private void ucustable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //satir sayısı alma
             satirsayisi = e.RowIndex;
             try
             {
+                // logo getirme
                 if (ucustable.Rows[satirsayisi].Cells[0].Value.ToString().Equals("Pegasus"))
                 {
                     logobox.Image = Image.FromFile(Application.StartupPath + "\\pegasus.png");
@@ -292,37 +260,38 @@ namespace ucakotomasyon
             {
 
             }
+            // seçilen bilet türünü değişkene atma
 
+            if (ekonomiradiobtn.Checked == true)
+
+            {
+                biletturu = "EKONOMİ";
+
+
+
+            }
+            else if (bussinesradiobtn.Checked == true)
+            {
+                biletturu = "BUSSİNES";
+
+            }
+            // tablodan gerekli verileri değişkenlere atma
             biletucusid = ucustable.Rows[satirsayisi].Cells[1].Value.ToString();
             secilenucakid = ucustable.Rows[satirsayisi].Cells[9].Value.ToString();
             satinalbtn.Visible = true;
             
         }
         
-        String koltuksayisi;
+        
         private void satinalbtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                //seçilen uçuşun satın ala basınca uçuş idsini alma
-                String a = ucustable.Rows[satirsayisi].Cells[1].Value.ToString();
-
-
-            } catch
-            {
-
-            }
-
-
-
-
+        {       
             try
             {
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT ucak_koltuksayisi FROM ucaklar WHERE (ucak_id=@ucakid)", baglanti);
-                kontrolfirma.Parameters.AddWithValue("@ucakid", secilenucakid);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                MySqlCommand koltuksayikontrol = new MySqlCommand("SELECT ucak_koltuksayisi FROM ucaklar WHERE (ucak_id=@ucakid)", baglanti);
+                koltuksayikontrol.Parameters.AddWithValue("@ucakid", secilenucakid);
+                MySqlDataReader dr = koltuksayikontrol.ExecuteReader();
                 if (dr.Read())
                 {
                    // seçilen uçuşun uçağının şablonuu getirmek için ucak koltuk sayısını alma
@@ -338,6 +307,7 @@ namespace ucakotomasyon
 
             }
 
+            // seçilen uçağın koltuk sayısına göre bilet alma ekranı getirme
             if(koltuksayisi == "40")
             {
 
@@ -366,7 +336,8 @@ namespace ucakotomasyon
                     secim1.ekonomigrup.Enabled = false;
                 }
             }
-            else if(koltuksayisi =="56")
+            // seçilen uçağın koltuk sayısına göre bilet alma ekranı getirme
+            else if (koltuksayisi =="56")
             {
 
                 HataBox hataform = new HataBox();
@@ -395,7 +366,10 @@ namespace ucakotomasyon
                     secim2.ekonomigrup.Enabled = false;
                 }
 
-            } else if(koltuksayisi == "72")
+
+            }
+            // seçilen uçağın koltuk sayısına göre bilet alma ekranı getirme
+            else if (koltuksayisi == "72")
             {
 
                 HataBox hataform = new HataBox();
@@ -424,15 +398,11 @@ namespace ucakotomasyon
                 }
             }
 
-
-
-
-
         }
-        public static int kisiindex;
 
         private void secenekbuton1_Click(object sender, EventArgs e)
         {
+            //seçilen menü için ekrana paneli basma
             islemlerpanel.Visible = true;
             islemlerpanel.Controls.Clear();
             BiletlerForm biletform = new BiletlerForm();
@@ -445,11 +415,22 @@ namespace ucakotomasyon
 
         private void secenekbuton2_Click(object sender, EventArgs e)
         {
+            //seçilen menü için ekrana paneli basma
+
             islemlerpanel.Visible = false;
+            islemlerpanel.Visible = true;
+            islemlerpanel.Controls.Clear();
+            BiletiptalForm biletiptalform = new BiletiptalForm();
+            biletiptalform.TopLevel = false;
+            islemlerpanel.Controls.Add(biletiptalform);
+            biletiptalform.Show();
+            biletiptalform.Dock = DockStyle.Fill;
+            biletiptalform.BringToFront();
         }
 
         private void kisibox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //kişi sayısını alma
             kisisayisi = kisibox.SelectedItem.ToString();
             kisiindex = kisibox.SelectedIndex;
         }
@@ -476,7 +457,7 @@ namespace ucakotomasyon
             label5.Visible = true;
 
 
-            
+            // Ekonomi veya bussines seçilmişse işlemde devam et
             if (ekonomiradiobtn.Checked == true || bussinesradiobtn.Checked == true )
             {
                 tablo.Clear();
@@ -491,11 +472,11 @@ namespace ucakotomasyon
                 {
                     baglanti.Close();
                     baglanti.Open();
-                    MySqlCommand kontrolfirma = new MySqlCommand("SELECT ucus_id FROM ucuslar WHERE (ucus_neredenID=@neredenid and ucus_nereyeID=@nereyeid and ucus_tarih=@ucustarih)", baglanti);
-                    kontrolfirma.Parameters.AddWithValue("@neredenid", nereden);
-                    kontrolfirma.Parameters.AddWithValue("@nereyeid", nereye);
-                    kontrolfirma.Parameters.AddWithValue("@ucustarih", tarih);
-                    MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                    MySqlCommand ucusidgetir = new MySqlCommand("SELECT ucus_id FROM ucuslar WHERE (ucus_neredenID=@neredenid and ucus_nereyeID=@nereyeid and ucus_tarih=@ucustarih)", baglanti);
+                    ucusidgetir.Parameters.AddWithValue("@neredenid", nereden);
+                    ucusidgetir.Parameters.AddWithValue("@nereyeid", nereye);
+                    ucusidgetir.Parameters.AddWithValue("@ucustarih", tarih);
+                    MySqlDataReader dr = ucusidgetir.ExecuteReader();
                     while (dr.Read())
                     {
                         //seçilen hücrenin içindeki şehrin adını lbl yazdırma
@@ -513,9 +494,11 @@ namespace ucakotomasyon
 
                 }
 
+
                 int secim = 0;
                 RadioButton rb = null;
-                // ekonomi seçildiyse
+
+                // ekonomi seçildiyse ekonomiye göre tabloyu düzenleme
                 if (ekonomiradiobtn.Checked == true)
                 {
                     tablo.Clear();
@@ -577,7 +560,6 @@ namespace ucakotomasyon
 
                         iddizi.Clear();
                         firmaiddizi.Clear();
-
                         ucustable.Columns[1].Visible = false;
                         ucustable.Columns[2].Visible = false;
                         ucustable.Columns[3].Visible = false;
@@ -592,13 +574,9 @@ namespace ucakotomasyon
                     {
 
                     }
-
-
-                   
-
                 }
 
-                // bussines seçildiyse
+                // bussines seçildiyse bussinesa göre tabloyu listeleme
                 else if (bussinesradiobtn.Checked == true)
                 {
                     tablo.Clear();
@@ -650,14 +628,9 @@ namespace ucakotomasyon
                                 f.onayresim.Visible = false;
                                 f.Show();
                             }
-
-
                         }
                         iddizi.Clear();
                         firmaiddizi.Clear();
-
-
-
                         ucustable.Columns[1].Visible = false;
                         ucustable.Columns[2].Visible = false;
                         ucustable.Columns[3].Visible = false;
@@ -665,25 +638,17 @@ namespace ucakotomasyon
                         ucustable.Columns[8].Visible = true;
                         ucustable.Columns[9].Visible = false;
                         ucustable.Columns[10].Visible = false;
-
-
                     }
                     catch (Exception ex)
                     {
 
                     }
-
-
-
-
                 }
                 else
                 {
-
                     tablo.Clear();
                     ucustable.DataSource = tablo;
                     ucustable.Refresh();
-
                 }
             }
             else
@@ -698,7 +663,6 @@ namespace ucakotomasyon
 
         }
 
-
         private void nereyebox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //şehir id çekme
@@ -706,9 +670,9 @@ namespace ucakotomasyon
             {
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
-                kontrolfirma.Parameters.AddWithValue("@sehirad", neredenbox.Text);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                MySqlCommand sehiridcekme = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
+                sehiridcekme.Parameters.AddWithValue("@sehirad", neredenbox.Text);
+                MySqlDataReader dr = sehiridcekme.ExecuteReader();
                 while (dr.Read())
                 {
                     //seçilen hücrenin içindeki şehrin adını lbl yazdırma
@@ -722,16 +686,15 @@ namespace ucakotomasyon
 
             }
 
-
             // şehir id çekme
             try
             {
 
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
-                kontrolfirma.Parameters.AddWithValue("@sehirad", nereyebox.Text);
-                MySqlDataReader dr = kontrolfirma.ExecuteReader();
+                MySqlCommand sehiridcekme = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
+                sehiridcekme.Parameters.AddWithValue("@sehirad", nereyebox.Text);
+                MySqlDataReader dr = sehiridcekme.ExecuteReader();
                 while (dr.Read())
                 {
                     //seçilen hücrenin içindeki şehrin adını lbl yazdırma

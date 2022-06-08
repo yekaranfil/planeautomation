@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.anamenupanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.islemlerpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -70,7 +70,6 @@
             this.anamenulabel2 = new Guna.UI.WinForms.GunaLabel();
             this.anamenulabel = new Guna.UI.WinForms.GunaLabel();
             this.anamenuustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.secenekbuton3 = new Guna.UI2.WinForms.Guna2Button();
             this.secenekbuton2 = new Guna.UI2.WinForms.Guna2Button();
             this.secenekbuton1 = new Guna.UI2.WinForms.Guna2Button();
             this.secenekbuton = new Guna.UI2.WinForms.Guna2Button();
@@ -311,42 +310,42 @@
             // 
             // ucustable
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ucustable.BackgroundColor = System.Drawing.Color.White;
             this.ucustable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ucustable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ucustable.ColumnHeadersHeight = 15;
             this.ucustable.ColumnHeadersVisible = false;
             this.ucustable.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ucustable.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ucustable.DefaultCellStyle = dataGridViewCellStyle3;
             this.ucustable.EnableHeadersVisualStyles = false;
             this.ucustable.GridColor = System.Drawing.Color.Navy;
             this.ucustable.Location = new System.Drawing.Point(0, 318);
             this.ucustable.Name = "ucustable";
             this.ucustable.ReadOnly = true;
             this.ucustable.RowHeadersVisible = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
-            this.ucustable.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.ucustable.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.ucustable.RowTemplate.Height = 35;
             this.ucustable.RowTemplate.ReadOnly = true;
             this.ucustable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -606,8 +605,6 @@
             this.gidistarihbox.UseTransparentBackground = true;
             this.gidistarihbox.Value = new System.DateTime(2022, 5, 24, 0, 0, 0, 0);
             this.gidistarihbox.Visible = false;
-            this.gidistarihbox.ValueChanged += new System.EventHandler(this.gidistarihbox_ValueChanged);
-            this.gidistarihbox.TextChanged += new System.EventHandler(this.gidistarihbox_TextChanged);
             // 
             // tekyonlbl
             // 
@@ -632,7 +629,6 @@
             this.gidisdonuslbl.TabIndex = 23;
             this.gidisdonuslbl.Text = "Gidiş-Dönüş";
             this.gidisdonuslbl.Visible = false;
-            this.gidisdonuslbl.Click += new System.EventHandler(this.gidisdonuslbl_Click);
             // 
             // bussineslbl
             // 
@@ -770,7 +766,6 @@
             // anamenuustpanel
             // 
             this.anamenuustpanel.BackColor = System.Drawing.Color.Transparent;
-            this.anamenuustpanel.Controls.Add(this.secenekbuton3);
             this.anamenuustpanel.Controls.Add(this.secenekbuton2);
             this.anamenuustpanel.Controls.Add(this.secenekbuton1);
             this.anamenuustpanel.Controls.Add(this.secenekbuton);
@@ -786,28 +781,6 @@
             this.anamenuustpanel.TabIndex = 0;
             this.anamenuustpanel.UseTransparentBackground = true;
             this.anamenuustpanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.guna2GradientPanel2_MouseDown);
-            // 
-            // secenekbuton3
-            // 
-            this.secenekbuton3.Animated = true;
-            this.secenekbuton3.AutoRoundedCorners = true;
-            this.secenekbuton3.BorderRadius = 20;
-            this.secenekbuton3.CheckedState.Parent = this.secenekbuton3;
-            this.secenekbuton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.secenekbuton3.CustomImages.Parent = this.secenekbuton3;
-            this.secenekbuton3.FillColor = System.Drawing.Color.Transparent;
-            this.secenekbuton3.Font = new System.Drawing.Font("Exo 2 ExtraBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.secenekbuton3.ForeColor = System.Drawing.Color.AliceBlue;
-            this.secenekbuton3.HoverState.Parent = this.secenekbuton3;
-            this.secenekbuton3.Location = new System.Drawing.Point(459, 7);
-            this.secenekbuton3.Name = "secenekbuton3";
-            this.secenekbuton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.secenekbuton3.ShadowDecoration.Depth = 50;
-            this.secenekbuton3.ShadowDecoration.Parent = this.secenekbuton3;
-            this.secenekbuton3.Size = new System.Drawing.Size(144, 42);
-            this.secenekbuton3.TabIndex = 5;
-            this.secenekbuton3.Text = "BİLET DEĞİŞİM";
-            this.secenekbuton3.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
             // secenekbuton2
             // 
@@ -940,7 +913,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Button secenekbuton;
-        private Guna.UI2.WinForms.Guna2Button secenekbuton3;
         private Guna.UI2.WinForms.Guna2Button secenekbuton2;
         private Guna.UI2.WinForms.Guna2Button secenekbuton1;
         private Guna.UI.WinForms.GunaLabel anamenulabel2;

@@ -20,15 +20,15 @@ namespace ucakotomasyon
         {
             InitializeComponent();
         }
+        String ucusbilgiid, ucusfirmaid, biletsinifi;
         DataTable tablo = new DataTable();
         DataTable tablo2 = new DataTable();
         DataSet data = new DataSet();
         ArrayList iddizi = new ArrayList();
         ArrayList firmaiddizi = new ArrayList();
-
-
         private void BiletlerForm_Load(object sender, EventArgs e)
         {
+            //firma sütunu ekleme
             biletdetaytablo.ColumnCount = 1;
             biletdetaytablo.Columns[0].Name = "firmaadı";
             biletdetaytablo.Columns[0].ValueType = typeof(String);
@@ -39,42 +39,30 @@ namespace ucakotomasyon
 
             try
             {
-
-                //Tabloya uçuşları listeleme
+                //Tabloya biletleri listeleme
                 baglanti.Close();
                 baglanti.Open();
-
-
-
                 MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM biletler_has_yolcular WHERE (yolcular_yolcu_id=@yolcuid)", baglanti);
                 dr.SelectCommand.Parameters.AddWithValue("@yolcuid", Form1.kisiid);
                 data = new DataSet();
                 dr.Fill(tablo);
                 ucustable.DataSource = tablo;
-
-
-
-
-                iddizi.Clear();
-                firmaiddizi.Clear();
-
                 baglanti.Close();
-
             }
             catch (Exception ex)
             {
-
             }
-
-
 
         }
 
-        String ucusbilgiid,ucusfirmaid;
+     
+
+    
+
         private void ucustable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int satirsayisi = e.RowIndex;
-
+            biletsinifi = ucustable.Rows[satirsayisi].Cells[4].Value.ToString();
             tablo2.Clear();
             biletdetaytablo.DataSource = tablo;
             biletdetaytablo.Refresh();
@@ -91,7 +79,7 @@ namespace ucakotomasyon
                 MySqlDataReader dr = kontrolfirmaid.ExecuteReader();
                 while (dr.Read())
                 {
-                    //seçilen hücrenin içindeki şehrin adını lbl yazdırma
+                    //ucus id ye göre firma id alma
                     ucusfirmaid = (dr["ucaklar_firmalar_firmalar_id"]).ToString();
 
                 }
@@ -99,29 +87,22 @@ namespace ucakotomasyon
             catch (Exception ex)
 
             {
-              
+
             }
 
             try
             {
 
-                //Tabloya uçuşları listeleme
+                //Tabloya seçilen bilete göre uçuşları listeleme
                 baglanti.Close();
                 baglanti.Open();
-
-
-
-                
-
                 MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM ucuslar WHERE (ucus_id=@ucusid)", baglanti);
                 dr.SelectCommand.Parameters.AddWithValue("@ucusid", ucusbilgiid);
                 data = new DataSet();
                 dr.Fill(tablo2);
                 biletdetaytablo.DataSource = tablo2;
 
-                //firmaiddizi.Add(ucustable.Rows[satirsayisi].Cells[10].Value.ToString());
-
-
+                // tabloya firma ismini yazdırma
                 if (ucusfirmaid == "1")
                 {
                     biletdetaytablo.Rows[0].Cells[0].Value = "Pegasus";
@@ -155,13 +136,33 @@ namespace ucakotomasyon
                 iddizi.Clear();
                 firmaiddizi.Clear();
 
-                biletdetaytablo.Columns[1].Visible = false;
-                biletdetaytablo.Columns[2].Visible = false;
-                biletdetaytablo.Columns[3].Visible = false;
-                biletdetaytablo.Columns[7].Visible = true;
-                biletdetaytablo.Columns[8].Visible = false;
-                biletdetaytablo.Columns[9].Visible = false;
-                biletdetaytablo.Columns[10].Visible = false;
+                AnaSayfa radio = new AnaSayfa();
+                if (biletsinifi.Equals("EKONOMİ"))
+
+                {
+                    biletdetaytablo.Columns[1].Visible = false;
+                    biletdetaytablo.Columns[2].Visible = false;
+                    biletdetaytablo.Columns[3].Visible = false;
+                    biletdetaytablo.Columns[7].Visible = true;
+                    biletdetaytablo.Columns[8].Visible = false;
+                    biletdetaytablo.Columns[9].Visible = false;
+                    biletdetaytablo.Columns[10].Visible = false;
+
+
+                } else if(biletsinifi.Equals("BUSSİNES"))
+                {
+
+                    biletdetaytablo.Columns[1].Visible = false;
+                    biletdetaytablo.Columns[2].Visible = false;
+                    biletdetaytablo.Columns[3].Visible = false;
+                    biletdetaytablo.Columns[7].Visible = false;
+                    biletdetaytablo.Columns[8].Visible = true;
+                    biletdetaytablo.Columns[9].Visible = false;
+                    biletdetaytablo.Columns[10].Visible = false;
+                }
+
+
+
 
             }
             catch (Exception ex)

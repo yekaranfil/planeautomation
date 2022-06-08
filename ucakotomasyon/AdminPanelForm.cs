@@ -101,5 +101,17 @@ namespace ucakotomasyon
             admindestek.Dock = DockStyle.Fill;
             admindestek.BringToFront();
         }
+
+        private void guna2GradientButton4_Click(object sender, EventArgs e)
+        {
+
+            islemlerpanel.Controls.Clear();
+            AdminbiletiptalForm iptalform = new AdminbiletiptalForm();
+            iptalform.TopLevel = false;
+            islemlerpanel.Controls.Add(iptalform);
+            iptalform.Show();
+            iptalform.Dock = DockStyle.Fill;
+            iptalform.BringToFront();
+        }
     }
 }

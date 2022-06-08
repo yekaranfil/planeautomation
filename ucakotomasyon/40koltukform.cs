@@ -61,6 +61,7 @@ namespace ucakotomasyon
             }
             baglanti.Close();//
         }
+
         public void btn_Click(object sender, EventArgs e)
         {
             //kişi kontrol
@@ -172,7 +173,7 @@ namespace ucakotomasyon
                 baglanti.Close();
                 baglanti.Open();
 
-                MySqlCommand seferekleme = new MySqlCommand("INSERT INTO biletler_has_yolcular (biletler_bilet_id,yolcular_yolcu_id,ucuslar_ucus_id, koltukno) VALUES ('" + bltid + "','" + Form1.kisiid + "','" + AnaSayfa.biletucusid + "','" + secilenkoltuk[i].ToString() + "' )", baglanti);
+                MySqlCommand seferekleme = new MySqlCommand("INSERT INTO biletler_has_yolcular (biletler_bilet_id,yolcular_yolcu_id,ucuslar_ucus_id, koltukno,bilettur) VALUES ('" + bltid + "','" + Form1.kisiid + "','" + AnaSayfa.biletucusid + "','" + secilenkoltuk[i].ToString() + "','" + AnaSayfa.biletturu + "' )", baglanti);
                 seferekleme.ExecuteNonQuery();
                 baglanti.Close();
 

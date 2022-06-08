@@ -245,7 +245,6 @@
             this.mailtext.Size = new System.Drawing.Size(243, 41);
             this.mailtext.TabIndex = 13;
             this.mailtext.Visible = false;
-            this.mailtext.TextChanged += new System.EventHandler(this.mailtext_TextChanged);
             this.mailtext.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mailtext_KeyPress);
             // 
             // destekbox
@@ -317,7 +316,6 @@
             this.destekbutonn.Size = new System.Drawing.Size(58, 61);
             this.destekbutonn.TabIndex = 9;
             this.destekbutonn.UseTransparentBackground = true;
-            this.destekbutonn.Click += new System.EventHandler(this.destekbutonn_Click);
             this.destekbutonn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.destekbutonn_MouseDown);
             // 
             // kayitolbuton
@@ -436,7 +434,6 @@
             this.txtgiris.ShadowDecoration.Parent = this.txtgiris;
             this.txtgiris.Size = new System.Drawing.Size(243, 41);
             this.txtgiris.TabIndex = 1;
-            this.txtgiris.TextChanged += new System.EventHandler(this.txtgiris_TextChanged);
             this.txtgiris.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgiris_KeyPress);
             // 
             // guna2GradientPanel2

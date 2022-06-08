@@ -144,6 +144,7 @@
             this.guna2GradientButton4.Text = "BİLET GÜNCELLE";
             this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton4.UseTransparentBackground = true;
+            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // guna2GradientButton3
             // 

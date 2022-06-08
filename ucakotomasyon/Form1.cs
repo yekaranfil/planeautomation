@@ -14,7 +14,6 @@ using MySql.Data;
 namespace ucakotomasyon
 {
 
-
     public partial class Form1 : Form
     {
         MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
@@ -75,6 +74,7 @@ namespace ucakotomasyon
 
         private void guna2GradientPanel1_MouseEnter(object sender, EventArgs e)
         {
+            // txt içi yazıların düzenlenmesi
 
             if (txtgirissifre.Text.Equals(""))
             {
@@ -99,6 +99,7 @@ namespace ucakotomasyon
         private void txtgirissifre_KeyPress(object sender, KeyPressEventArgs e)
         {
 
+            // txt içi yazıların düzenlenmesi
 
             if (sayac == 0)
             {
@@ -120,6 +121,8 @@ namespace ucakotomasyon
 
         private void txtgiris_KeyPress(object sender, KeyPressEventArgs e)
         {
+            // txt içi yazıların düzenlenmesi
+
             if (txtgiris.Text.Equals("T.C. Kimlik Numarası"))
             {
                 txtgiris.Clear();
@@ -133,6 +136,8 @@ namespace ucakotomasyon
 
         private void mailtext_KeyPress(object sender, KeyPressEventArgs e)
         {
+            // txt içi yazıların düzenlenmesi
+
             if (mailtext.Text.Equals("Mail Adresi"))
             {
                 mailtext.Clear();
@@ -174,10 +179,6 @@ namespace ucakotomasyon
                 hataform.hataresim.Visible = false;
                 hataform.onayresim.Visible = true;
                 hataform.Show();
-
-
-
-
             }
             else
             {
@@ -186,11 +187,8 @@ namespace ucakotomasyon
                 HataBox f = new HataBox();
                 f.Show();
             }
-
-
             if (kisitc != "")
             {
-
                 baglanti.Close();
                 baglanti.Open();
                 MySqlCommand idkontrol = new MySqlCommand("SELECT yolcu_id FROM yolcular WHERE (yolcu_tc = @tc)", baglanti);
@@ -201,33 +199,21 @@ namespace ucakotomasyon
                 {
                     kisiid = dr1["yolcu_id"].ToString();
                 }
-
-                baglanti.Close();
+               baglanti.Close();
             }
-
-
+            //giriş ekranı veritabanı tc şifre kontrolü bitiş
 
 
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            //adminpanel girişi
             AdminGiris adminpanelgiris = new AdminGiris();
             adminpanelgiris.Show();
 
 
         }
-
-        private void mailtext_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void destekbutonn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void maildestekbox_KeyPress(object sender, KeyPressEventArgs e)
         {
 
@@ -302,19 +288,6 @@ namespace ucakotomasyon
             destekbox.Clear();
 
         }
-
-
-
-
-
-        private void txtgiris_TextChanged(object sender, EventArgs e)
-        {
-
-
-
-
-        }
-
         private void kayitolbuton_Click(object sender, EventArgs e)
         {
             girisbuton.Visible = false;
@@ -334,14 +307,14 @@ namespace ucakotomasyon
             _sifre = Convert.ToString(txtgirissifre.Text);
             _mail = Convert.ToString(mailtext.Text);
 
-            //boş kontrol
+            //boş alan kontrol
             if (_tcno == "" || _sifre == "" || _mail == "" || _tcno == "T.C Kimlik Numarası" || _sifre == "Şifre" || _mail == "Mail Adresi")
             {
                 HataBox.mesaj = "Uyarı";
                 HataBox.text = "Zorunlu alanlar boş geçilemez!";
                 HataBox f = new HataBox();
                 f.Show();
-                // MessageBox.Show("Zorunlu alanlar boş geçilemez!","Hata",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                
             }
             else
             {
@@ -353,8 +326,10 @@ namespace ucakotomasyon
                     HataBox.text = "Lütfen Geçerli Bir T.C kimlik \nNumarası Giriniz";
                     HataBox f = new HataBox();
                     f.Show();
-                    //tc kayıtlı mı?
+                   
                 }
+
+                //tc veritabanına kayıtlı mı ?
                 else if (TcKontrol() == true)
                 {
                     baglanti.Close();
@@ -370,7 +345,7 @@ namespace ucakotomasyon
                         f.Show();
                     }
 
-                    // tc veritabanında kayıtlıysa 
+                    // tc veritabanında kayıtlı değilse 
                     else
                     {
                         //baglanti veri kaydı
@@ -397,20 +372,11 @@ namespace ucakotomasyon
 
                     }
                 }
-
-
-
-
-
-
             }
-
-
         }
 
         private void geributon_Click(object sender, EventArgs e)
         {
-
             girisbuton.Visible = true;
             mailtext.Visible = false;
             kayitolbuton.Visible = true;
@@ -418,7 +384,6 @@ namespace ucakotomasyon
             geributon.Visible = false;
             txtgiris.BorderColor = Color.Blue;
             txtgirissifre.BorderColor = Color.Blue;
-
         }
     }
 }

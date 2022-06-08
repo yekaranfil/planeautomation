@@ -115,6 +115,12 @@
     <Compile Include="72koltukform.Designer.cs">
       <DependentUpon>72koltukform.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminbiletiptalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminbiletiptalForm.Designer.cs">
+      <DependentUpon>AdminbiletiptalForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminDestekForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,12 @@
     </Compile>
     <Compile Include="AnaSayfa.Designer.cs">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiletiptalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletiptalForm.Designer.cs">
+      <DependentUpon>BiletiptalForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BiletlerForm.cs">
       <SubType>Form</SubType>
@@ -194,6 +206,9 @@
     <EmbeddedResource Include="72koltukform.resx">
       <DependentUpon>72koltukform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminbiletiptalForm.resx">
+      <DependentUpon>AdminbiletiptalForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminDestekForm.resx">
       <DependentUpon>AdminDestekForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AnaSayfa.resx">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletiptalForm.resx">
+      <DependentUpon>BiletiptalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BiletlerForm.resx">
       <DependentUpon>BiletlerForm.cs</DependentUpon>
