@@ -211,7 +211,7 @@ namespace ucakotomasyon
             if (ana.ekonomiradiobtn.Checked == true)
             {
 
-                ekonomigrup.Enabled = true;
+                ekonomi.Enabled = true;
                 bussinesgrup.Enabled = false;
 
 
@@ -219,7 +219,7 @@ namespace ucakotomasyon
             else if (ana.bussinesradiobtn.Checked == true)
             {
                 bussinesgrup.Enabled = true;
-                ekonomigrup.Enabled = false;
+                ekonomi.Enabled = false;
             }
         }
     }

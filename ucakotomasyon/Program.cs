@@ -16,7 +16,7 @@ namespace ucakotomasyon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AnaSayfa());
+            Application.Run(new Form1());
         }
     }
 }
