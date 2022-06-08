@@ -20,7 +20,7 @@ namespace ucakotomasyon
         {
             InitializeComponent();
         }
-        String ucusbilgiid, ucusfirmaid, biletsinifi;
+        String ucusbilgiid, ucusfirmaid, biletsinifi, nereden,nereye, neredenad, nereyead;
         DataTable tablo = new DataTable();
         DataTable tablo2 = new DataTable();
         DataSet data = new DataSet();
@@ -154,6 +154,65 @@ namespace ucakotomasyon
             {
 
             }
+
+
+
+            nereden = biletdetaytablo.Rows[0].Cells[2].Value.ToString();
+            nereye = biletdetaytablo.Rows[0].Cells[3].Value.ToString();
+
+
+
+
+            //şehir ad çekme
+            try
+            {
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand sehirid = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", baglanti);
+                sehirid.Parameters.AddWithValue("@sehirid", nereden);
+                MySqlDataReader dr = sehirid.ExecuteReader();
+                while (dr.Read())
+                {
+                    //sehir id alma
+                    neredenad = (dr["sehir_ad"]).ToString();
+
+                }
+                baglanti.Close();
+            }
+            catch (Exception ex)
+
+            {
+
+            }
+
+
+            //şehir ad çekme
+            try
+            {
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand sehirid = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", baglanti);
+                sehirid.Parameters.AddWithValue("@sehirid", nereye);
+                MySqlDataReader dr = sehirid.ExecuteReader();
+                while (dr.Read())
+                {
+                    //sehir id alma
+                    nereyead = (dr["sehir_ad"]).ToString();
+
+                }
+                baglanti.Close();
+            }
+            catch (Exception ex)
+
+            {
+
+            }
+
+            neredenlbl.Text = neredenad;
+            nereyelbl.Text = nereyead;
+
+
+
         }
     }
 }

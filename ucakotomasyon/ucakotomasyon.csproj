@@ -464,5 +464,11 @@
   <ItemGroup>
     <None Include="Resources\cikisbutonu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\destekbutonbeyaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gidisgelis2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

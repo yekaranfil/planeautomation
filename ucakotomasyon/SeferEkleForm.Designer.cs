@@ -263,6 +263,7 @@
             this.ekonomifiyatbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ekonomifiyatbox.HoverState.Parent = this.ekonomifiyatbox;
             this.ekonomifiyatbox.Location = new System.Drawing.Point(249, 228);
+            this.ekonomifiyatbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ekonomifiyatbox.Name = "ekonomifiyatbox";
             this.ekonomifiyatbox.PasswordChar = '\0';
             this.ekonomifiyatbox.PlaceholderText = "";
@@ -292,6 +293,7 @@
             this.bussinesfiyatbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.bussinesfiyatbox.HoverState.Parent = this.bussinesfiyatbox;
             this.bussinesfiyatbox.Location = new System.Drawing.Point(249, 260);
+            this.bussinesfiyatbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bussinesfiyatbox.Name = "bussinesfiyatbox";
             this.bussinesfiyatbox.PasswordChar = '\0';
             this.bussinesfiyatbox.PlaceholderText = "";
@@ -566,8 +568,8 @@
             this.guna2GradientPanel1.Controls.Add(this.ekonomifiyatbox);
             this.guna2GradientPanel1.Controls.Add(this.bussinesfiyatbox);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Cyan;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.DeepSkyBlue;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;

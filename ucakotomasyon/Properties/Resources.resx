@@ -181,6 +181,9 @@
   <data name="Onay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Onay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="istockphoto-1212284111-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1212284111-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ucusicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ucusicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,6 +217,9 @@
   <data name="chatbox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chatbox1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cikisbutonu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cikisbutonu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dolu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dolu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,6 +247,9 @@
   <data name="gidisgelis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gidisgelis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="destekbutonbeyaz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\destekbutonbeyaz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ucusekle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ucusekle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -250,11 +259,8 @@
   <data name="Dolu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dolu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="istockphoto-1212284111-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\istockphoto-1212284111-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_lock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_lock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ucusekle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ucusekle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kullanici" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kullanici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,10 +292,10 @@
   <data name="ucak2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ucak2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ucusekle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ucusekle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_lock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_lock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cikisbutonu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cikisbutonu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gidisgelis2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gidisgelis2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

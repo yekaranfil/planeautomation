@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ucustable = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -53,9 +53,13 @@
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.talepbuton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.arkapanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.neredenlbl = new Guna.UI.WinForms.GunaLabel();
+            this.nereyelbl = new Guna.UI.WinForms.GunaLabel();
+            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ucustable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biletdetaytablo)).BeginInit();
             this.arkapanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -64,42 +68,42 @@
             // 
             // ucustable
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ucustable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
             this.ucustable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ucustable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.ucustable.ColumnHeadersHeight = 15;
             this.ucustable.ColumnHeadersVisible = false;
             this.ucustable.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ucustable.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ucustable.DefaultCellStyle = dataGridViewCellStyle15;
             this.ucustable.EnableHeadersVisualStyles = false;
             this.ucustable.GridColor = System.Drawing.Color.Navy;
             this.ucustable.Location = new System.Drawing.Point(3, 156);
             this.ucustable.Name = "ucustable";
             this.ucustable.ReadOnly = true;
             this.ucustable.RowHeadersVisible = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
-            this.ucustable.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.ucustable.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.ucustable.RowTemplate.Height = 35;
             this.ucustable.RowTemplate.ReadOnly = true;
             this.ucustable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -132,42 +136,42 @@
             // 
             // biletdetaytablo
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.biletdetaytablo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.biletdetaytablo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.biletdetaytablo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.biletdetaytablo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
             this.biletdetaytablo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.biletdetaytablo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.biletdetaytablo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.biletdetaytablo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.biletdetaytablo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.biletdetaytablo.ColumnHeadersHeight = 15;
             this.biletdetaytablo.ColumnHeadersVisible = false;
             this.biletdetaytablo.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.biletdetaytablo.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.biletdetaytablo.DefaultCellStyle = dataGridViewCellStyle11;
             this.biletdetaytablo.EnableHeadersVisualStyles = false;
             this.biletdetaytablo.GridColor = System.Drawing.Color.Navy;
             this.biletdetaytablo.Location = new System.Drawing.Point(461, 156);
             this.biletdetaytablo.Name = "biletdetaytablo";
             this.biletdetaytablo.ReadOnly = true;
             this.biletdetaytablo.RowHeadersVisible = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
-            this.biletdetaytablo.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.biletdetaytablo.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.biletdetaytablo.RowTemplate.Height = 35;
             this.biletdetaytablo.RowTemplate.ReadOnly = true;
             this.biletdetaytablo.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -342,6 +346,9 @@
             // 
             // arkapanel
             // 
+            this.arkapanel.Controls.Add(this.gunaTransfarantPictureBox1);
+            this.arkapanel.Controls.Add(this.nereyelbl);
+            this.arkapanel.Controls.Add(this.neredenlbl);
             this.arkapanel.Controls.Add(this.talepbuton);
             this.arkapanel.Controls.Add(this.gunaLabel9);
             this.arkapanel.Controls.Add(this.gunaLabel8);
@@ -364,6 +371,42 @@
             this.arkapanel.Size = new System.Drawing.Size(1140, 461);
             this.arkapanel.TabIndex = 1;
             // 
+            // neredenlbl
+            // 
+            this.neredenlbl.AutoSize = true;
+            this.neredenlbl.BackColor = System.Drawing.Color.Transparent;
+            this.neredenlbl.Font = new System.Drawing.Font("Exo 2 ExtraBold", 12F, System.Drawing.FontStyle.Bold);
+            this.neredenlbl.ForeColor = System.Drawing.Color.White;
+            this.neredenlbl.Location = new System.Drawing.Point(457, 245);
+            this.neredenlbl.Name = "neredenlbl";
+            this.neredenlbl.Size = new System.Drawing.Size(14, 24);
+            this.neredenlbl.TabIndex = 48;
+            this.neredenlbl.Text = ".";
+            // 
+            // nereyelbl
+            // 
+            this.nereyelbl.AutoSize = true;
+            this.nereyelbl.BackColor = System.Drawing.Color.Transparent;
+            this.nereyelbl.Font = new System.Drawing.Font("Exo 2 ExtraBold", 12F, System.Drawing.FontStyle.Bold);
+            this.nereyelbl.ForeColor = System.Drawing.Color.White;
+            this.nereyelbl.Location = new System.Drawing.Point(754, 245);
+            this.nereyelbl.Name = "nereyelbl";
+            this.nereyelbl.Size = new System.Drawing.Size(14, 24);
+            this.nereyelbl.TabIndex = 49;
+            this.nereyelbl.Text = ".";
+            // 
+            // gunaTransfarantPictureBox1
+            // 
+            this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox1.Image = global::ucakotomasyon.Properties.Resources.gidisgelis;
+            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(690, 245);
+            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
+            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(51, 45);
+            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaTransfarantPictureBox1.TabIndex = 50;
+            this.gunaTransfarantPictureBox1.TabStop = false;
+            // 
             // BiletiptalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -378,6 +421,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.biletdetaytablo)).EndInit();
             this.arkapanel.ResumeLayout(false);
             this.arkapanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -400,5 +444,8 @@
         private Guna.UI.WinForms.GunaLabel anamenulabel;
         private Guna.UI2.WinForms.Guna2DataGridView biletdetaytablo;
         private Guna.UI2.WinForms.Guna2DataGridView ucustable;
+        private Guna.UI.WinForms.GunaLabel nereyelbl;
+        private Guna.UI.WinForms.GunaLabel neredenlbl;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
     }
 }

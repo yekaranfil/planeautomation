@@ -56,8 +56,8 @@
             this.guna2GradientPanel1.Controls.Add(this.ucustable);
             this.guna2GradientPanel1.Controls.Add(this.label6);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Cyan;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.DeepSkyBlue;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
@@ -89,9 +89,10 @@
             // 
             // metintxt
             // 
-            this.metintxt.BackColor = System.Drawing.Color.Cyan;
+            this.metintxt.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.metintxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metintxt.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.metintxt.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold);
             this.metintxt.Location = new System.Drawing.Point(691, 412);
             this.metintxt.Name = "metintxt";
             this.metintxt.ReadOnly = true;
@@ -104,7 +105,7 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.ucustable.BackgroundColor = System.Drawing.Color.Cyan;
+            this.ucustable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
             this.ucustable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -140,7 +141,7 @@
             this.ucustable.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.ucustable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.ucustable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.ucustable.ThemeStyle.BackColor = System.Drawing.Color.Cyan;
+            this.ucustable.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
             this.ucustable.ThemeStyle.GridColor = System.Drawing.Color.Blue;
             this.ucustable.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.ucustable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;

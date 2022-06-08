@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.adminformpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.gunaTransfarantPictureBox9 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaTransfarantPictureBox8 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.kullanicilbl = new Guna.UI.WinForms.GunaLabel();
             this.gunaTransfarantPictureBox7 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -51,9 +53,8 @@
             this.adminformustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.adminformminimize = new Guna.UI2.WinForms.Guna2ControlBox();
             this.adminformkapatma = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.gunaTransfarantPictureBox9 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.adminformpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox6)).BeginInit();
@@ -63,7 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.adminformustpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -76,13 +76,13 @@
             this.adminformpanel.BackColor = System.Drawing.Color.Transparent;
             this.adminformpanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.adminpanel_1_1210x770;
             this.adminformpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adminformpanel.Controls.Add(this.gunaTransfarantPictureBox6);
             this.adminformpanel.Controls.Add(this.gunaTransfarantPictureBox9);
             this.adminformpanel.Controls.Add(this.guna2GradientButton1);
             this.adminformpanel.Controls.Add(this.gunaTransfarantPictureBox8);
             this.adminformpanel.Controls.Add(this.kullanicilbl);
             this.adminformpanel.Controls.Add(this.gunaTransfarantPictureBox7);
             this.adminformpanel.Controls.Add(this.gunaLabel2);
-            this.adminformpanel.Controls.Add(this.gunaTransfarantPictureBox6);
             this.adminformpanel.Controls.Add(this.gunaTransfarantPictureBox5);
             this.adminformpanel.Controls.Add(this.gunaTransfarantPictureBox4);
             this.adminformpanel.Controls.Add(this.gunaTransfarantPictureBox3);
@@ -101,6 +101,39 @@
             this.adminformpanel.ShadowDecoration.Parent = this.adminformpanel;
             this.adminformpanel.Size = new System.Drawing.Size(1256, 818);
             this.adminformpanel.TabIndex = 0;
+            // 
+            // gunaTransfarantPictureBox9
+            // 
+            this.gunaTransfarantPictureBox9.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox9.Image = global::ucakotomasyon.Properties.Resources.cikisbutonu;
+            this.gunaTransfarantPictureBox9.Location = new System.Drawing.Point(40, 591);
+            this.gunaTransfarantPictureBox9.Name = "gunaTransfarantPictureBox9";
+            this.gunaTransfarantPictureBox9.Size = new System.Drawing.Size(46, 52);
+            this.gunaTransfarantPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaTransfarantPictureBox9.TabIndex = 154;
+            this.gunaTransfarantPictureBox9.TabStop = false;
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.Animated = true;
+            this.guna2GradientButton1.AutoRoundedCorners = true;
+            this.guna2GradientButton1.BorderRadius = 18;
+            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(84, 603);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(61, 38);
+            this.guna2GradientButton1.TabIndex = 153;
+            this.guna2GradientButton1.Text = "ÇIKIŞ";
+            this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton1.UseTransparentBackground = true;
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click_1);
             // 
             // gunaTransfarantPictureBox8
             // 
@@ -150,11 +183,11 @@
             // gunaTransfarantPictureBox6
             // 
             this.gunaTransfarantPictureBox6.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox6.Image = global::ucakotomasyon.Properties.Resources.biletiptal1;
-            this.gunaTransfarantPictureBox6.Location = new System.Drawing.Point(29, 539);
+            this.gunaTransfarantPictureBox6.Image = global::ucakotomasyon.Properties.Resources.destekbutonbeyaz;
+            this.gunaTransfarantPictureBox6.Location = new System.Drawing.Point(40, 550);
             this.gunaTransfarantPictureBox6.Name = "gunaTransfarantPictureBox6";
-            this.gunaTransfarantPictureBox6.Size = new System.Drawing.Size(61, 59);
-            this.gunaTransfarantPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaTransfarantPictureBox6.Size = new System.Drawing.Size(42, 45);
+            this.gunaTransfarantPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaTransfarantPictureBox6.TabIndex = 13;
             this.gunaTransfarantPictureBox6.TabStop = false;
             // 
@@ -162,9 +195,9 @@
             // 
             this.gunaTransfarantPictureBox5.BaseColor = System.Drawing.Color.Black;
             this.gunaTransfarantPictureBox5.Image = global::ucakotomasyon.Properties.Resources.biletiptal1;
-            this.gunaTransfarantPictureBox5.Location = new System.Drawing.Point(28, 494);
+            this.gunaTransfarantPictureBox5.Location = new System.Drawing.Point(29, 492);
             this.gunaTransfarantPictureBox5.Name = "gunaTransfarantPictureBox5";
-            this.gunaTransfarantPictureBox5.Size = new System.Drawing.Size(61, 59);
+            this.gunaTransfarantPictureBox5.Size = new System.Drawing.Size(55, 59);
             this.gunaTransfarantPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaTransfarantPictureBox5.TabIndex = 12;
             this.gunaTransfarantPictureBox5.TabStop = false;
@@ -238,8 +271,8 @@
             // islemlerpanel
             // 
             this.islemlerpanel.BackColor = System.Drawing.Color.Transparent;
-            this.islemlerpanel.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.islemlerpanel.FillColor2 = System.Drawing.Color.Cyan;
+            this.islemlerpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
+            this.islemlerpanel.FillColor2 = System.Drawing.Color.DeepSkyBlue;
             this.islemlerpanel.Location = new System.Drawing.Point(225, 85);
             this.islemlerpanel.Name = "islemlerpanel";
             this.islemlerpanel.ShadowDecoration.Parent = this.islemlerpanel;
@@ -361,7 +394,7 @@
             this.adminformustpanel.Controls.Add(this.adminformminimize);
             this.adminformustpanel.Controls.Add(this.adminformkapatma);
             this.adminformustpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
-            this.adminformustpanel.FillColor2 = System.Drawing.Color.Aqua;
+            this.adminformustpanel.FillColor2 = System.Drawing.Color.DeepSkyBlue;
             this.adminformustpanel.Location = new System.Drawing.Point(225, 23);
             this.adminformustpanel.Name = "adminformustpanel";
             this.adminformustpanel.ShadowDecoration.Parent = this.adminformustpanel;
@@ -399,39 +432,6 @@
             this.adminformkapatma.UseTransparentBackground = true;
             this.adminformkapatma.Click += new System.EventHandler(this.adminformkapatma_Click);
             // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.AutoRoundedCorners = true;
-            this.guna2GradientButton1.BorderRadius = 18;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Exo 2", 12.25F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(84, 603);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(61, 38);
-            this.guna2GradientButton1.TabIndex = 153;
-            this.guna2GradientButton1.Text = "ÇIKIŞ";
-            this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton1.UseTransparentBackground = true;
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click_1);
-            // 
-            // gunaTransfarantPictureBox9
-            // 
-            this.gunaTransfarantPictureBox9.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox9.Image = global::ucakotomasyon.Properties.Resources.cikisbutonu;
-            this.gunaTransfarantPictureBox9.Location = new System.Drawing.Point(40, 591);
-            this.gunaTransfarantPictureBox9.Name = "gunaTransfarantPictureBox9";
-            this.gunaTransfarantPictureBox9.Size = new System.Drawing.Size(46, 52);
-            this.gunaTransfarantPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaTransfarantPictureBox9.TabIndex = 154;
-            this.gunaTransfarantPictureBox9.TabStop = false;
-            // 
             // AdminPanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,6 +445,7 @@
             this.Load += new System.EventHandler(this.AdminPanelForm_Load);
             this.adminformpanel.ResumeLayout(false);
             this.adminformpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox6)).EndInit();
@@ -454,7 +455,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.adminformustpanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }

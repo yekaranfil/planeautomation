@@ -253,6 +253,16 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap destekbutonbeyaz {
+            get {
+                object obj = ResourceManager.GetObject("destekbutonbeyaz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Destekkutusu {
             get {
                 object obj = ResourceManager.GetObject("Destekkutusu", resourceCulture);
@@ -316,6 +326,16 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap gidisgelis1 {
             get {
                 object obj = ResourceManager.GetObject("gidisgelis1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap gidisgelis2 {
+            get {
+                object obj = ResourceManager.GetObject("gidisgelis2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
