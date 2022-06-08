@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.arkapanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.bussinesgrup = new Guna.UI2.WinForms.Guna2GroupBox();
             this.C5 = new System.Windows.Forms.Button();
             this.A1 = new System.Windows.Forms.Button();
@@ -38,20 +41,40 @@
             this.A3 = new System.Windows.Forms.Button();
             this.A4 = new System.Windows.Forms.Button();
             this.A5 = new System.Windows.Forms.Button();
+            this.C7 = new System.Windows.Forms.Button();
+            this.B7 = new System.Windows.Forms.Button();
             this.C4 = new System.Windows.Forms.Button();
+            this.A7 = new System.Windows.Forms.Button();
             this.B1 = new System.Windows.Forms.Button();
             this.C3 = new System.Windows.Forms.Button();
+            this.A6 = new System.Windows.Forms.Button();
             this.B2 = new System.Windows.Forms.Button();
             this.C2 = new System.Windows.Forms.Button();
             this.B3 = new System.Windows.Forms.Button();
             this.C1 = new System.Windows.Forms.Button();
             this.B4 = new System.Windows.Forms.Button();
             this.B5 = new System.Windows.Forms.Button();
+            this.C6 = new System.Windows.Forms.Button();
+            this.B6 = new System.Windows.Forms.Button();
             this.ekonomi = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.C24 = new System.Windows.Forms.Button();
+            this.C23 = new System.Windows.Forms.Button();
+            this.B24 = new System.Windows.Forms.Button();
+            this.B23 = new System.Windows.Forms.Button();
+            this.A23 = new System.Windows.Forms.Button();
+            this.A24 = new System.Windows.Forms.Button();
+            this.C22 = new System.Windows.Forms.Button();
+            this.B22 = new System.Windows.Forms.Button();
+            this.A22 = new System.Windows.Forms.Button();
+            this.C21 = new System.Windows.Forms.Button();
+            this.C20 = new System.Windows.Forms.Button();
+            this.C19 = new System.Windows.Forms.Button();
+            this.B21 = new System.Windows.Forms.Button();
+            this.A21 = new System.Windows.Forms.Button();
+            this.A20 = new System.Windows.Forms.Button();
+            this.B20 = new System.Windows.Forms.Button();
             this.B19 = new System.Windows.Forms.Button();
             this.C18 = new System.Windows.Forms.Button();
-            this.A6 = new System.Windows.Forms.Button();
-            this.A7 = new System.Windows.Forms.Button();
             this.A19 = new System.Windows.Forms.Button();
             this.A8 = new System.Windows.Forms.Button();
             this.A9 = new System.Windows.Forms.Button();
@@ -71,16 +94,12 @@
             this.C12 = new System.Windows.Forms.Button();
             this.A18 = new System.Windows.Forms.Button();
             this.C11 = new System.Windows.Forms.Button();
-            this.B6 = new System.Windows.Forms.Button();
             this.C10 = new System.Windows.Forms.Button();
-            this.B7 = new System.Windows.Forms.Button();
             this.C9 = new System.Windows.Forms.Button();
             this.B8 = new System.Windows.Forms.Button();
             this.C8 = new System.Windows.Forms.Button();
             this.B9 = new System.Windows.Forms.Button();
-            this.C7 = new System.Windows.Forms.Button();
             this.B10 = new System.Windows.Forms.Button();
-            this.C6 = new System.Windows.Forms.Button();
             this.B11 = new System.Windows.Forms.Button();
             this.B12 = new System.Windows.Forms.Button();
             this.B13 = new System.Windows.Forms.Button();
@@ -94,25 +113,7 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.ustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
-            this.B21 = new System.Windows.Forms.Button();
-            this.A21 = new System.Windows.Forms.Button();
-            this.A20 = new System.Windows.Forms.Button();
-            this.B20 = new System.Windows.Forms.Button();
-            this.C21 = new System.Windows.Forms.Button();
-            this.C20 = new System.Windows.Forms.Button();
-            this.C19 = new System.Windows.Forms.Button();
-            this.C22 = new System.Windows.Forms.Button();
-            this.B22 = new System.Windows.Forms.Button();
-            this.A22 = new System.Windows.Forms.Button();
-            this.C23 = new System.Windows.Forms.Button();
-            this.B23 = new System.Windows.Forms.Button();
-            this.A23 = new System.Windows.Forms.Button();
-            this.C24 = new System.Windows.Forms.Button();
-            this.B24 = new System.Windows.Forms.Button();
-            this.A24 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.satinalbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.arkapanel.SuspendLayout();
             this.bussinesgrup.SuspendLayout();
             this.ekonomi.SuspendLayout();
@@ -129,6 +130,7 @@
             this.arkapanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.ucak1;
             this.arkapanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.arkapanel.BorderColor = System.Drawing.Color.Transparent;
+            this.arkapanel.Controls.Add(this.satinalbtn);
             this.arkapanel.Controls.Add(this.label3);
             this.arkapanel.Controls.Add(this.label2);
             this.arkapanel.Controls.Add(this.label1);
@@ -147,6 +149,39 @@
             this.arkapanel.ShadowDecoration.Parent = this.arkapanel;
             this.arkapanel.Size = new System.Drawing.Size(1195, 718);
             this.arkapanel.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label3.Location = new System.Drawing.Point(247, 274);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 25);
+            this.label3.TabIndex = 133;
+            this.label3.Text = "BUSSINES";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label2.Location = new System.Drawing.Point(190, 403);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(222, 25);
+            this.label2.TabIndex = 132;
+            this.label2.Text = "------------------------------";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label1.Location = new System.Drawing.Point(190, 288);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 25);
+            this.label1.TabIndex = 131;
+            this.label1.Text = "------------------------------";
             // 
             // bussinesgrup
             // 
@@ -203,6 +238,7 @@
             this.C5.Name = "C5";
             this.C5.Size = new System.Drawing.Size(26, 21);
             this.C5.TabIndex = 111;
+            this.C5.Text = "53";
             this.C5.UseVisualStyleBackColor = true;
             this.C5.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -223,6 +259,7 @@
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(26, 21);
             this.A1.TabIndex = 67;
+            this.A1.Text = "1";
             this.A1.UseVisualStyleBackColor = true;
             this.A1.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -243,6 +280,7 @@
             this.A2.Name = "A2";
             this.A2.Size = new System.Drawing.Size(26, 21);
             this.A2.TabIndex = 68;
+            this.A2.Text = "2";
             this.A2.UseVisualStyleBackColor = true;
             this.A2.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -263,6 +301,7 @@
             this.A3.Name = "A3";
             this.A3.Size = new System.Drawing.Size(26, 21);
             this.A3.TabIndex = 69;
+            this.A3.Text = "3";
             this.A3.UseVisualStyleBackColor = true;
             this.A3.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -283,6 +322,7 @@
             this.A4.Name = "A4";
             this.A4.Size = new System.Drawing.Size(26, 21);
             this.A4.TabIndex = 70;
+            this.A4.Text = "4";
             this.A4.UseVisualStyleBackColor = true;
             this.A4.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -303,8 +343,51 @@
             this.A5.Name = "A5";
             this.A5.Size = new System.Drawing.Size(26, 21);
             this.A5.TabIndex = 71;
+            this.A5.Text = "5";
             this.A5.UseVisualStyleBackColor = true;
             this.A5.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // C7
+            // 
+            this.C7.AutoEllipsis = true;
+            this.C7.BackColor = System.Drawing.Color.Transparent;
+            this.C7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.C7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.C7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.C7.FlatAppearance.BorderSize = 0;
+            this.C7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.C7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.C7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C7.ForeColor = System.Drawing.Color.Gray;
+            this.C7.Location = new System.Drawing.Point(192, 60);
+            this.C7.Name = "C7";
+            this.C7.Size = new System.Drawing.Size(26, 21);
+            this.C7.TabIndex = 113;
+            this.C7.Text = "55";
+            this.C7.UseVisualStyleBackColor = true;
+            this.C7.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // B7
+            // 
+            this.B7.AutoEllipsis = true;
+            this.B7.BackColor = System.Drawing.Color.Transparent;
+            this.B7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.B7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.B7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.B7.FlatAppearance.BorderSize = 0;
+            this.B7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.B7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.B7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B7.ForeColor = System.Drawing.Color.Gray;
+            this.B7.Location = new System.Drawing.Point(192, 22);
+            this.B7.Name = "B7";
+            this.B7.Size = new System.Drawing.Size(26, 21);
+            this.B7.TabIndex = 93;
+            this.B7.Text = "31";
+            this.B7.UseVisualStyleBackColor = true;
+            this.B7.Click += new System.EventHandler(this.btn_Click);
             // 
             // C4
             // 
@@ -323,8 +406,30 @@
             this.C4.Name = "C4";
             this.C4.Size = new System.Drawing.Size(26, 21);
             this.C4.TabIndex = 110;
+            this.C4.Text = "52";
             this.C4.UseVisualStyleBackColor = true;
             this.C4.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // A7
+            // 
+            this.A7.AutoEllipsis = true;
+            this.A7.BackColor = System.Drawing.Color.Transparent;
+            this.A7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.A7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.A7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.A7.FlatAppearance.BorderSize = 0;
+            this.A7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.A7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.A7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A7.ForeColor = System.Drawing.Color.Gray;
+            this.A7.Location = new System.Drawing.Point(192, 4);
+            this.A7.Name = "A7";
+            this.A7.Size = new System.Drawing.Size(26, 21);
+            this.A7.TabIndex = 73;
+            this.A7.Text = "7";
+            this.A7.UseVisualStyleBackColor = true;
+            this.A7.Click += new System.EventHandler(this.btn_Click);
             // 
             // B1
             // 
@@ -343,6 +448,7 @@
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(26, 21);
             this.B1.TabIndex = 87;
+            this.B1.Text = "25";
             this.B1.UseVisualStyleBackColor = true;
             this.B1.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -363,8 +469,30 @@
             this.C3.Name = "C3";
             this.C3.Size = new System.Drawing.Size(26, 21);
             this.C3.TabIndex = 109;
+            this.C3.Text = "51";
             this.C3.UseVisualStyleBackColor = true;
             this.C3.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // A6
+            // 
+            this.A6.AutoEllipsis = true;
+            this.A6.BackColor = System.Drawing.Color.Transparent;
+            this.A6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.A6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.A6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.A6.FlatAppearance.BorderSize = 0;
+            this.A6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.A6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.A6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A6.ForeColor = System.Drawing.Color.Gray;
+            this.A6.Location = new System.Drawing.Point(161, 4);
+            this.A6.Name = "A6";
+            this.A6.Size = new System.Drawing.Size(26, 21);
+            this.A6.TabIndex = 72;
+            this.A6.Text = "6";
+            this.A6.UseVisualStyleBackColor = true;
+            this.A6.Click += new System.EventHandler(this.btn_Click);
             // 
             // B2
             // 
@@ -383,6 +511,7 @@
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(26, 21);
             this.B2.TabIndex = 88;
+            this.B2.Text = "26";
             this.B2.UseVisualStyleBackColor = true;
             this.B2.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -403,6 +532,7 @@
             this.C2.Name = "C2";
             this.C2.Size = new System.Drawing.Size(26, 21);
             this.C2.TabIndex = 108;
+            this.C2.Text = "50";
             this.C2.UseVisualStyleBackColor = true;
             this.C2.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -423,6 +553,7 @@
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(26, 21);
             this.B3.TabIndex = 89;
+            this.B3.Text = "27";
             this.B3.UseVisualStyleBackColor = true;
             this.B3.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -443,6 +574,7 @@
             this.C1.Name = "C1";
             this.C1.Size = new System.Drawing.Size(26, 21);
             this.C1.TabIndex = 107;
+            this.C1.Text = "49";
             this.C1.UseVisualStyleBackColor = true;
             this.C1.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -463,6 +595,7 @@
             this.B4.Name = "B4";
             this.B4.Size = new System.Drawing.Size(26, 21);
             this.B4.TabIndex = 90;
+            this.B4.Text = "2";
             this.B4.UseVisualStyleBackColor = true;
             this.B4.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -483,8 +616,51 @@
             this.B5.Name = "B5";
             this.B5.Size = new System.Drawing.Size(26, 21);
             this.B5.TabIndex = 91;
+            this.B5.Text = "29";
             this.B5.UseVisualStyleBackColor = true;
             this.B5.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // C6
+            // 
+            this.C6.AutoEllipsis = true;
+            this.C6.BackColor = System.Drawing.Color.Transparent;
+            this.C6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.C6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.C6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.C6.FlatAppearance.BorderSize = 0;
+            this.C6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.C6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.C6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C6.ForeColor = System.Drawing.Color.Gray;
+            this.C6.Location = new System.Drawing.Point(161, 60);
+            this.C6.Name = "C6";
+            this.C6.Size = new System.Drawing.Size(26, 21);
+            this.C6.TabIndex = 112;
+            this.C6.Text = "54";
+            this.C6.UseVisualStyleBackColor = true;
+            this.C6.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // B6
+            // 
+            this.B6.AutoEllipsis = true;
+            this.B6.BackColor = System.Drawing.Color.Transparent;
+            this.B6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.B6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.B6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.B6.FlatAppearance.BorderSize = 0;
+            this.B6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.B6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.B6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B6.ForeColor = System.Drawing.Color.Gray;
+            this.B6.Location = new System.Drawing.Point(161, 22);
+            this.B6.Name = "B6";
+            this.B6.Size = new System.Drawing.Size(26, 21);
+            this.B6.TabIndex = 92;
+            this.B6.Text = "30";
+            this.B6.UseVisualStyleBackColor = true;
+            this.B6.Click += new System.EventHandler(this.btn_Click);
             // 
             // ekonomi
             // 
@@ -553,6 +729,342 @@
             this.ekonomi.Text = "guna2GroupBox1";
             this.ekonomi.UseTransparentBackground = true;
             // 
+            // C24
+            // 
+            this.C24.AutoEllipsis = true;
+            this.C24.BackColor = System.Drawing.Color.Transparent;
+            this.C24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.C24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.C24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C24.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.C24.FlatAppearance.BorderSize = 0;
+            this.C24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.C24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.C24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C24.ForeColor = System.Drawing.Color.Gray;
+            this.C24.Location = new System.Drawing.Point(517, 73);
+            this.C24.Name = "C24";
+            this.C24.Size = new System.Drawing.Size(26, 21);
+            this.C24.TabIndex = 140;
+            this.C24.Text = "72";
+            this.C24.UseVisualStyleBackColor = true;
+            this.C24.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // C23
+            // 
+            this.C23.AutoEllipsis = true;
+            this.C23.BackColor = System.Drawing.Color.Transparent;
+            this.C23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.C23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.C23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C23.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.C23.FlatAppearance.BorderSize = 0;
+            this.C23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.C23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.C23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C23.ForeColor = System.Drawing.Color.Gray;
+            this.C23.Location = new System.Drawing.Point(486, 73);
+            this.C23.Name = "C23";
+            this.C23.Size = new System.Drawing.Size(26, 21);
+            this.C23.TabIndex = 137;
+            this.C23.Text = "71";
+            this.C23.UseVisualStyleBackColor = true;
+            this.C23.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // B24
+            // 
+            this.B24.AutoEllipsis = true;
+            this.B24.BackColor = System.Drawing.Color.Transparent;
+            this.B24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.B24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.B24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B24.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.B24.FlatAppearance.BorderSize = 0;
+            this.B24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.B24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.B24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B24.ForeColor = System.Drawing.Color.Gray;
+            this.B24.Location = new System.Drawing.Point(517, 35);
+            this.B24.Name = "B24";
+            this.B24.Size = new System.Drawing.Size(26, 21);
+            this.B24.TabIndex = 139;
+            this.B24.Text = "48";
+            this.B24.UseVisualStyleBackColor = true;
+            this.B24.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // B23
+            // 
+            this.B23.AutoEllipsis = true;
+            this.B23.BackColor = System.Drawing.Color.Transparent;
+            this.B23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.B23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.B23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B23.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.B23.FlatAppearance.BorderSize = 0;
+            this.B23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.B23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.B23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B23.ForeColor = System.Drawing.Color.Gray;
+            this.B23.Location = new System.Drawing.Point(486, 35);
+            this.B23.Name = "B23";
+            this.B23.Size = new System.Drawing.Size(26, 21);
+            this.B23.TabIndex = 136;
+            this.B23.Text = "47";
+            this.B23.UseVisualStyleBackColor = true;
+            this.B23.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // A23
+            // 
+            this.A23.AutoEllipsis = true;
+            this.A23.BackColor = System.Drawing.Color.Transparent;
+            this.A23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.A23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.A23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A23.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.A23.FlatAppearance.BorderSize = 0;
+            this.A23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.A23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.A23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A23.ForeColor = System.Drawing.Color.Gray;
+            this.A23.Location = new System.Drawing.Point(486, 17);
+            this.A23.Name = "A23";
+            this.A23.Size = new System.Drawing.Size(26, 21);
+            this.A23.TabIndex = 135;
+            this.A23.Text = "23";
+            this.A23.UseVisualStyleBackColor = true;
+            this.A23.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // A24
+            // 
+            this.A24.AutoEllipsis = true;
+            this.A24.BackColor = System.Drawing.Color.Transparent;
+            this.A24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.A24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.A24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A24.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.A24.FlatAppearance.BorderSize = 0;
+            this.A24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.A24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.A24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A24.ForeColor = System.Drawing.Color.Gray;
+            this.A24.Location = new System.Drawing.Point(517, 17);
+            this.A24.Name = "A24";
+            this.A24.Size = new System.Drawing.Size(26, 21);
+            this.A24.TabIndex = 138;
+            this.A24.Text = "24";
+            this.A24.UseVisualStyleBackColor = true;
+            this.A24.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // C22
+            // 
+            this.C22.AutoEllipsis = true;
+            this.C22.BackColor = System.Drawing.Color.Transparent;
+            this.C22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.C22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.C22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C22.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.C22.FlatAppearance.BorderSize = 0;
+            this.C22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.C22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.C22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C22.ForeColor = System.Drawing.Color.Gray;
+            this.C22.Location = new System.Drawing.Point(454, 73);
+            this.C22.Name = "C22";
+            this.C22.Size = new System.Drawing.Size(26, 21);
+            this.C22.TabIndex = 134;
+            this.C22.Text = "70";
+            this.C22.UseVisualStyleBackColor = true;
+            this.C22.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // B22
+            // 
+            this.B22.AutoEllipsis = true;
+            this.B22.BackColor = System.Drawing.Color.Transparent;
+            this.B22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.B22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.B22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B22.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.B22.FlatAppearance.BorderSize = 0;
+            this.B22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.B22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.B22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B22.ForeColor = System.Drawing.Color.Gray;
+            this.B22.Location = new System.Drawing.Point(454, 35);
+            this.B22.Name = "B22";
+            this.B22.Size = new System.Drawing.Size(26, 21);
+            this.B22.TabIndex = 133;
+            this.B22.Text = "46";
+            this.B22.UseVisualStyleBackColor = true;
+            this.B22.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // A22
+            // 
+            this.A22.AutoEllipsis = true;
+            this.A22.BackColor = System.Drawing.Color.Transparent;
+            this.A22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.A22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.A22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A22.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.A22.FlatAppearance.BorderSize = 0;
+            this.A22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.A22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.A22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A22.ForeColor = System.Drawing.Color.Gray;
+            this.A22.Location = new System.Drawing.Point(454, 17);
+            this.A22.Name = "A22";
+            this.A22.Size = new System.Drawing.Size(26, 21);
+            this.A22.TabIndex = 132;
+            this.A22.Text = "22";
+            this.A22.UseVisualStyleBackColor = true;
+            this.A22.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // C21
+            // 
+            this.C21.AutoEllipsis = true;
+            this.C21.BackColor = System.Drawing.Color.Transparent;
+            this.C21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.C21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.C21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C21.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.C21.FlatAppearance.BorderSize = 0;
+            this.C21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.C21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.C21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C21.ForeColor = System.Drawing.Color.Gray;
+            this.C21.Location = new System.Drawing.Point(422, 73);
+            this.C21.Name = "C21";
+            this.C21.Size = new System.Drawing.Size(26, 21);
+            this.C21.TabIndex = 131;
+            this.C21.Text = "69";
+            this.C21.UseVisualStyleBackColor = true;
+            this.C21.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // C20
+            // 
+            this.C20.AutoEllipsis = true;
+            this.C20.BackColor = System.Drawing.Color.Transparent;
+            this.C20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.C20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.C20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C20.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.C20.FlatAppearance.BorderSize = 0;
+            this.C20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.C20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.C20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C20.ForeColor = System.Drawing.Color.Gray;
+            this.C20.Location = new System.Drawing.Point(390, 73);
+            this.C20.Name = "C20";
+            this.C20.Size = new System.Drawing.Size(26, 21);
+            this.C20.TabIndex = 130;
+            this.C20.Text = "68";
+            this.C20.UseVisualStyleBackColor = true;
+            this.C20.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // C19
+            // 
+            this.C19.AutoEllipsis = true;
+            this.C19.BackColor = System.Drawing.Color.Transparent;
+            this.C19.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.C19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.C19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C19.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.C19.FlatAppearance.BorderSize = 0;
+            this.C19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.C19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.C19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C19.ForeColor = System.Drawing.Color.Gray;
+            this.C19.Location = new System.Drawing.Point(356, 73);
+            this.C19.Name = "C19";
+            this.C19.Size = new System.Drawing.Size(26, 21);
+            this.C19.TabIndex = 129;
+            this.C19.Text = "67";
+            this.C19.UseVisualStyleBackColor = true;
+            this.C19.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // B21
+            // 
+            this.B21.AutoEllipsis = true;
+            this.B21.BackColor = System.Drawing.Color.Transparent;
+            this.B21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.B21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.B21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B21.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.B21.FlatAppearance.BorderSize = 0;
+            this.B21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.B21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.B21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B21.ForeColor = System.Drawing.Color.Gray;
+            this.B21.Location = new System.Drawing.Point(422, 35);
+            this.B21.Name = "B21";
+            this.B21.Size = new System.Drawing.Size(26, 21);
+            this.B21.TabIndex = 128;
+            this.B21.Text = "45";
+            this.B21.UseVisualStyleBackColor = true;
+            this.B21.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // A21
+            // 
+            this.A21.AutoEllipsis = true;
+            this.A21.BackColor = System.Drawing.Color.Transparent;
+            this.A21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.A21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.A21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A21.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.A21.FlatAppearance.BorderSize = 0;
+            this.A21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.A21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.A21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A21.ForeColor = System.Drawing.Color.Gray;
+            this.A21.Location = new System.Drawing.Point(422, 17);
+            this.A21.Name = "A21";
+            this.A21.Size = new System.Drawing.Size(26, 21);
+            this.A21.TabIndex = 126;
+            this.A21.Text = "21";
+            this.A21.UseVisualStyleBackColor = true;
+            this.A21.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // A20
+            // 
+            this.A20.AutoEllipsis = true;
+            this.A20.BackColor = System.Drawing.Color.Transparent;
+            this.A20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.A20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.A20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A20.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.A20.FlatAppearance.BorderSize = 0;
+            this.A20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.A20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.A20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A20.ForeColor = System.Drawing.Color.Gray;
+            this.A20.Location = new System.Drawing.Point(390, 17);
+            this.A20.Name = "A20";
+            this.A20.Size = new System.Drawing.Size(26, 21);
+            this.A20.TabIndex = 125;
+            this.A20.Text = "20";
+            this.A20.UseVisualStyleBackColor = true;
+            this.A20.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // B20
+            // 
+            this.B20.AutoEllipsis = true;
+            this.B20.BackColor = System.Drawing.Color.Transparent;
+            this.B20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
+            this.B20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.B20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B20.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.B20.FlatAppearance.BorderSize = 0;
+            this.B20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.B20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.B20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B20.ForeColor = System.Drawing.Color.Gray;
+            this.B20.Location = new System.Drawing.Point(390, 35);
+            this.B20.Name = "B20";
+            this.B20.Size = new System.Drawing.Size(26, 21);
+            this.B20.TabIndex = 127;
+            this.B20.Text = "4";
+            this.B20.UseVisualStyleBackColor = true;
+            this.B20.Click += new System.EventHandler(this.btn_Click);
+            // 
             // B19
             // 
             this.B19.AutoEllipsis = true;
@@ -570,6 +1082,7 @@
             this.B19.Name = "B19";
             this.B19.Size = new System.Drawing.Size(26, 21);
             this.B19.TabIndex = 105;
+            this.B19.Text = "43";
             this.B19.UseVisualStyleBackColor = true;
             this.B19.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -590,48 +1103,9 @@
             this.C18.Name = "C18";
             this.C18.Size = new System.Drawing.Size(26, 21);
             this.C18.TabIndex = 124;
+            this.C18.Text = "66";
             this.C18.UseVisualStyleBackColor = true;
             this.C18.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A6
-            // 
-            this.A6.AutoEllipsis = true;
-            this.A6.BackColor = System.Drawing.Color.Transparent;
-            this.A6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A6.FlatAppearance.BorderSize = 0;
-            this.A6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A6.ForeColor = System.Drawing.Color.Gray;
-            this.A6.Location = new System.Drawing.Point(161, 4);
-            this.A6.Name = "A6";
-            this.A6.Size = new System.Drawing.Size(26, 21);
-            this.A6.TabIndex = 72;
-            this.A6.UseVisualStyleBackColor = true;
-            this.A6.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A7
-            // 
-            this.A7.AutoEllipsis = true;
-            this.A7.BackColor = System.Drawing.Color.Transparent;
-            this.A7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A7.FlatAppearance.BorderSize = 0;
-            this.A7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A7.ForeColor = System.Drawing.Color.Gray;
-            this.A7.Location = new System.Drawing.Point(192, 4);
-            this.A7.Name = "A7";
-            this.A7.Size = new System.Drawing.Size(26, 21);
-            this.A7.TabIndex = 73;
-            this.A7.UseVisualStyleBackColor = true;
-            this.A7.Click += new System.EventHandler(this.btn_Click);
             // 
             // A19
             // 
@@ -650,6 +1124,7 @@
             this.A19.Name = "A19";
             this.A19.Size = new System.Drawing.Size(26, 21);
             this.A19.TabIndex = 85;
+            this.A19.Text = "19";
             this.A19.UseVisualStyleBackColor = true;
             this.A19.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -670,6 +1145,7 @@
             this.A8.Name = "A8";
             this.A8.Size = new System.Drawing.Size(26, 21);
             this.A8.TabIndex = 74;
+            this.A8.Text = "8";
             this.A8.UseVisualStyleBackColor = true;
             this.A8.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -690,6 +1166,7 @@
             this.A9.Name = "A9";
             this.A9.Size = new System.Drawing.Size(26, 21);
             this.A9.TabIndex = 75;
+            this.A9.Text = "9";
             this.A9.UseVisualStyleBackColor = true;
             this.A9.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -710,6 +1187,7 @@
             this.A10.Name = "A10";
             this.A10.Size = new System.Drawing.Size(26, 21);
             this.A10.TabIndex = 76;
+            this.A10.Text = "10";
             this.A10.UseVisualStyleBackColor = true;
             this.A10.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -730,6 +1208,7 @@
             this.A11.Name = "A11";
             this.A11.Size = new System.Drawing.Size(26, 21);
             this.A11.TabIndex = 77;
+            this.A11.Text = "11";
             this.A11.UseVisualStyleBackColor = true;
             this.A11.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -750,6 +1229,7 @@
             this.A12.Name = "A12";
             this.A12.Size = new System.Drawing.Size(26, 21);
             this.A12.TabIndex = 78;
+            this.A12.Text = "12";
             this.A12.UseVisualStyleBackColor = true;
             this.A12.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -770,6 +1250,7 @@
             this.C17.Name = "C17";
             this.C17.Size = new System.Drawing.Size(26, 21);
             this.C17.TabIndex = 123;
+            this.C17.Text = "65";
             this.C17.UseVisualStyleBackColor = true;
             this.C17.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -790,6 +1271,7 @@
             this.A13.Name = "A13";
             this.A13.Size = new System.Drawing.Size(26, 21);
             this.A13.TabIndex = 79;
+            this.A13.Text = "13";
             this.A13.UseVisualStyleBackColor = true;
             this.A13.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -810,6 +1292,7 @@
             this.C16.Name = "C16";
             this.C16.Size = new System.Drawing.Size(26, 21);
             this.C16.TabIndex = 122;
+            this.C16.Text = "64";
             this.C16.UseVisualStyleBackColor = true;
             this.C16.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -830,6 +1313,7 @@
             this.A14.Name = "A14";
             this.A14.Size = new System.Drawing.Size(26, 21);
             this.A14.TabIndex = 80;
+            this.A14.Text = "14";
             this.A14.UseVisualStyleBackColor = true;
             this.A14.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -850,6 +1334,8 @@
             this.C15.Name = "C15";
             this.C15.Size = new System.Drawing.Size(26, 21);
             this.C15.TabIndex = 121;
+            this.C15.Text = "63";
+            this.C15.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.C15.UseVisualStyleBackColor = true;
             this.C15.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -870,6 +1356,7 @@
             this.A15.Name = "A15";
             this.A15.Size = new System.Drawing.Size(26, 21);
             this.A15.TabIndex = 81;
+            this.A15.Text = "15";
             this.A15.UseVisualStyleBackColor = true;
             this.A15.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -890,6 +1377,7 @@
             this.C14.Name = "C14";
             this.C14.Size = new System.Drawing.Size(26, 21);
             this.C14.TabIndex = 120;
+            this.C14.Text = "62";
             this.C14.UseVisualStyleBackColor = true;
             this.C14.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -910,6 +1398,7 @@
             this.A16.Name = "A16";
             this.A16.Size = new System.Drawing.Size(26, 21);
             this.A16.TabIndex = 82;
+            this.A16.Text = "16";
             this.A16.UseVisualStyleBackColor = true;
             this.A16.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -930,6 +1419,7 @@
             this.C13.Name = "C13";
             this.C13.Size = new System.Drawing.Size(26, 21);
             this.C13.TabIndex = 119;
+            this.C13.Text = "61";
             this.C13.UseVisualStyleBackColor = true;
             this.C13.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -950,6 +1440,7 @@
             this.A17.Name = "A17";
             this.A17.Size = new System.Drawing.Size(26, 21);
             this.A17.TabIndex = 83;
+            this.A17.Text = "17";
             this.A17.UseVisualStyleBackColor = true;
             this.A17.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -970,6 +1461,7 @@
             this.C12.Name = "C12";
             this.C12.Size = new System.Drawing.Size(26, 21);
             this.C12.TabIndex = 118;
+            this.C12.Text = "60";
             this.C12.UseVisualStyleBackColor = true;
             this.C12.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -990,6 +1482,7 @@
             this.A18.Name = "A18";
             this.A18.Size = new System.Drawing.Size(26, 21);
             this.A18.TabIndex = 84;
+            this.A18.Text = "18";
             this.A18.UseVisualStyleBackColor = true;
             this.A18.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1010,28 +1503,9 @@
             this.C11.Name = "C11";
             this.C11.Size = new System.Drawing.Size(26, 21);
             this.C11.TabIndex = 117;
+            this.C11.Text = "59";
             this.C11.UseVisualStyleBackColor = true;
             this.C11.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B6
-            // 
-            this.B6.AutoEllipsis = true;
-            this.B6.BackColor = System.Drawing.Color.Transparent;
-            this.B6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B6.FlatAppearance.BorderSize = 0;
-            this.B6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B6.ForeColor = System.Drawing.Color.Gray;
-            this.B6.Location = new System.Drawing.Point(161, 22);
-            this.B6.Name = "B6";
-            this.B6.Size = new System.Drawing.Size(26, 21);
-            this.B6.TabIndex = 92;
-            this.B6.UseVisualStyleBackColor = true;
-            this.B6.Click += new System.EventHandler(this.btn_Click);
             // 
             // C10
             // 
@@ -1050,28 +1524,9 @@
             this.C10.Name = "C10";
             this.C10.Size = new System.Drawing.Size(26, 21);
             this.C10.TabIndex = 116;
+            this.C10.Text = "58";
             this.C10.UseVisualStyleBackColor = true;
             this.C10.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B7
-            // 
-            this.B7.AutoEllipsis = true;
-            this.B7.BackColor = System.Drawing.Color.Transparent;
-            this.B7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B7.FlatAppearance.BorderSize = 0;
-            this.B7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B7.ForeColor = System.Drawing.Color.Gray;
-            this.B7.Location = new System.Drawing.Point(192, 22);
-            this.B7.Name = "B7";
-            this.B7.Size = new System.Drawing.Size(26, 21);
-            this.B7.TabIndex = 93;
-            this.B7.UseVisualStyleBackColor = true;
-            this.B7.Click += new System.EventHandler(this.btn_Click);
             // 
             // C9
             // 
@@ -1090,6 +1545,7 @@
             this.C9.Name = "C9";
             this.C9.Size = new System.Drawing.Size(26, 21);
             this.C9.TabIndex = 115;
+            this.C9.Text = "57";
             this.C9.UseVisualStyleBackColor = true;
             this.C9.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1110,6 +1566,7 @@
             this.B8.Name = "B8";
             this.B8.Size = new System.Drawing.Size(26, 21);
             this.B8.TabIndex = 94;
+            this.B8.Text = "32";
             this.B8.UseVisualStyleBackColor = true;
             this.B8.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1130,6 +1587,7 @@
             this.C8.Name = "C8";
             this.C8.Size = new System.Drawing.Size(26, 21);
             this.C8.TabIndex = 114;
+            this.C8.Text = "56";
             this.C8.UseVisualStyleBackColor = true;
             this.C8.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1150,28 +1608,9 @@
             this.B9.Name = "B9";
             this.B9.Size = new System.Drawing.Size(26, 21);
             this.B9.TabIndex = 95;
+            this.B9.Text = "33";
             this.B9.UseVisualStyleBackColor = true;
             this.B9.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C7
-            // 
-            this.C7.AutoEllipsis = true;
-            this.C7.BackColor = System.Drawing.Color.Transparent;
-            this.C7.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C7.FlatAppearance.BorderSize = 0;
-            this.C7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C7.ForeColor = System.Drawing.Color.Gray;
-            this.C7.Location = new System.Drawing.Point(192, 60);
-            this.C7.Name = "C7";
-            this.C7.Size = new System.Drawing.Size(26, 21);
-            this.C7.TabIndex = 113;
-            this.C7.UseVisualStyleBackColor = true;
-            this.C7.Click += new System.EventHandler(this.btn_Click);
             // 
             // B10
             // 
@@ -1190,28 +1629,9 @@
             this.B10.Name = "B10";
             this.B10.Size = new System.Drawing.Size(26, 21);
             this.B10.TabIndex = 96;
+            this.B10.Text = "34";
             this.B10.UseVisualStyleBackColor = true;
             this.B10.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C6
-            // 
-            this.C6.AutoEllipsis = true;
-            this.C6.BackColor = System.Drawing.Color.Transparent;
-            this.C6.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C6.FlatAppearance.BorderSize = 0;
-            this.C6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C6.ForeColor = System.Drawing.Color.Gray;
-            this.C6.Location = new System.Drawing.Point(161, 60);
-            this.C6.Name = "C6";
-            this.C6.Size = new System.Drawing.Size(26, 21);
-            this.C6.TabIndex = 112;
-            this.C6.UseVisualStyleBackColor = true;
-            this.C6.Click += new System.EventHandler(this.btn_Click);
             // 
             // B11
             // 
@@ -1230,6 +1650,7 @@
             this.B11.Name = "B11";
             this.B11.Size = new System.Drawing.Size(26, 21);
             this.B11.TabIndex = 97;
+            this.B11.Text = "35";
             this.B11.UseVisualStyleBackColor = true;
             this.B11.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1250,6 +1671,7 @@
             this.B12.Name = "B12";
             this.B12.Size = new System.Drawing.Size(26, 21);
             this.B12.TabIndex = 98;
+            this.B12.Text = "36";
             this.B12.UseVisualStyleBackColor = true;
             this.B12.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1270,6 +1692,7 @@
             this.B13.Name = "B13";
             this.B13.Size = new System.Drawing.Size(26, 21);
             this.B13.TabIndex = 99;
+            this.B13.Text = "37";
             this.B13.UseVisualStyleBackColor = true;
             this.B13.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1290,6 +1713,7 @@
             this.B14.Name = "B14";
             this.B14.Size = new System.Drawing.Size(26, 21);
             this.B14.TabIndex = 100;
+            this.B14.Text = "38";
             this.B14.UseVisualStyleBackColor = true;
             this.B14.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1310,6 +1734,7 @@
             this.B15.Name = "B15";
             this.B15.Size = new System.Drawing.Size(26, 21);
             this.B15.TabIndex = 101;
+            this.B15.Text = "39";
             this.B15.UseVisualStyleBackColor = true;
             this.B15.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1330,6 +1755,7 @@
             this.B16.Name = "B16";
             this.B16.Size = new System.Drawing.Size(26, 21);
             this.B16.TabIndex = 102;
+            this.B16.Text = "40";
             this.B16.UseVisualStyleBackColor = true;
             this.B16.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1350,6 +1776,7 @@
             this.B18.Name = "B18";
             this.B18.Size = new System.Drawing.Size(26, 21);
             this.B18.TabIndex = 104;
+            this.B18.Text = "42";
             this.B18.UseVisualStyleBackColor = true;
             this.B18.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1370,6 +1797,7 @@
             this.B17.Name = "B17";
             this.B17.Size = new System.Drawing.Size(26, 21);
             this.B17.TabIndex = 103;
+            this.B17.Text = "41";
             this.B17.UseVisualStyleBackColor = true;
             this.B17.Click += new System.EventHandler(this.btn_Click);
             // 
@@ -1451,358 +1879,28 @@
             this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox1.TabIndex = 0;
             // 
-            // B21
+            // satinalbtn
             // 
-            this.B21.AutoEllipsis = true;
-            this.B21.BackColor = System.Drawing.Color.Transparent;
-            this.B21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B21.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B21.FlatAppearance.BorderSize = 0;
-            this.B21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B21.ForeColor = System.Drawing.Color.Gray;
-            this.B21.Location = new System.Drawing.Point(422, 35);
-            this.B21.Name = "B21";
-            this.B21.Size = new System.Drawing.Size(26, 21);
-            this.B21.TabIndex = 128;
-            this.B21.UseVisualStyleBackColor = true;
-            this.B21.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A21
-            // 
-            this.A21.AutoEllipsis = true;
-            this.A21.BackColor = System.Drawing.Color.Transparent;
-            this.A21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A21.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A21.FlatAppearance.BorderSize = 0;
-            this.A21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A21.ForeColor = System.Drawing.Color.Gray;
-            this.A21.Location = new System.Drawing.Point(422, 17);
-            this.A21.Name = "A21";
-            this.A21.Size = new System.Drawing.Size(26, 21);
-            this.A21.TabIndex = 126;
-            this.A21.UseVisualStyleBackColor = true;
-            this.A21.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A20
-            // 
-            this.A20.AutoEllipsis = true;
-            this.A20.BackColor = System.Drawing.Color.Transparent;
-            this.A20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A20.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A20.FlatAppearance.BorderSize = 0;
-            this.A20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A20.ForeColor = System.Drawing.Color.Gray;
-            this.A20.Location = new System.Drawing.Point(390, 17);
-            this.A20.Name = "A20";
-            this.A20.Size = new System.Drawing.Size(26, 21);
-            this.A20.TabIndex = 125;
-            this.A20.UseVisualStyleBackColor = true;
-            this.A20.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B20
-            // 
-            this.B20.AutoEllipsis = true;
-            this.B20.BackColor = System.Drawing.Color.Transparent;
-            this.B20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B20.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B20.FlatAppearance.BorderSize = 0;
-            this.B20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B20.ForeColor = System.Drawing.Color.Gray;
-            this.B20.Location = new System.Drawing.Point(390, 35);
-            this.B20.Name = "B20";
-            this.B20.Size = new System.Drawing.Size(26, 21);
-            this.B20.TabIndex = 127;
-            this.B20.UseVisualStyleBackColor = true;
-            this.B20.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C21
-            // 
-            this.C21.AutoEllipsis = true;
-            this.C21.BackColor = System.Drawing.Color.Transparent;
-            this.C21.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C21.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C21.FlatAppearance.BorderSize = 0;
-            this.C21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C21.ForeColor = System.Drawing.Color.Gray;
-            this.C21.Location = new System.Drawing.Point(422, 73);
-            this.C21.Name = "C21";
-            this.C21.Size = new System.Drawing.Size(26, 21);
-            this.C21.TabIndex = 131;
-            this.C21.UseVisualStyleBackColor = true;
-            this.C21.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C20
-            // 
-            this.C20.AutoEllipsis = true;
-            this.C20.BackColor = System.Drawing.Color.Transparent;
-            this.C20.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C20.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C20.FlatAppearance.BorderSize = 0;
-            this.C20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C20.ForeColor = System.Drawing.Color.Gray;
-            this.C20.Location = new System.Drawing.Point(390, 73);
-            this.C20.Name = "C20";
-            this.C20.Size = new System.Drawing.Size(26, 21);
-            this.C20.TabIndex = 130;
-            this.C20.UseVisualStyleBackColor = true;
-            this.C20.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C19
-            // 
-            this.C19.AutoEllipsis = true;
-            this.C19.BackColor = System.Drawing.Color.Transparent;
-            this.C19.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C19.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C19.FlatAppearance.BorderSize = 0;
-            this.C19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C19.ForeColor = System.Drawing.Color.Gray;
-            this.C19.Location = new System.Drawing.Point(356, 73);
-            this.C19.Name = "C19";
-            this.C19.Size = new System.Drawing.Size(26, 21);
-            this.C19.TabIndex = 129;
-            this.C19.UseVisualStyleBackColor = true;
-            this.C19.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C22
-            // 
-            this.C22.AutoEllipsis = true;
-            this.C22.BackColor = System.Drawing.Color.Transparent;
-            this.C22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C22.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C22.FlatAppearance.BorderSize = 0;
-            this.C22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C22.ForeColor = System.Drawing.Color.Gray;
-            this.C22.Location = new System.Drawing.Point(454, 73);
-            this.C22.Name = "C22";
-            this.C22.Size = new System.Drawing.Size(26, 21);
-            this.C22.TabIndex = 134;
-            this.C22.UseVisualStyleBackColor = true;
-            this.C22.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B22
-            // 
-            this.B22.AutoEllipsis = true;
-            this.B22.BackColor = System.Drawing.Color.Transparent;
-            this.B22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B22.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B22.FlatAppearance.BorderSize = 0;
-            this.B22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B22.ForeColor = System.Drawing.Color.Gray;
-            this.B22.Location = new System.Drawing.Point(454, 35);
-            this.B22.Name = "B22";
-            this.B22.Size = new System.Drawing.Size(26, 21);
-            this.B22.TabIndex = 133;
-            this.B22.UseVisualStyleBackColor = true;
-            this.B22.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A22
-            // 
-            this.A22.AutoEllipsis = true;
-            this.A22.BackColor = System.Drawing.Color.Transparent;
-            this.A22.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A22.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A22.FlatAppearance.BorderSize = 0;
-            this.A22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A22.ForeColor = System.Drawing.Color.Gray;
-            this.A22.Location = new System.Drawing.Point(454, 17);
-            this.A22.Name = "A22";
-            this.A22.Size = new System.Drawing.Size(26, 21);
-            this.A22.TabIndex = 132;
-            this.A22.UseVisualStyleBackColor = true;
-            this.A22.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C23
-            // 
-            this.C23.AutoEllipsis = true;
-            this.C23.BackColor = System.Drawing.Color.Transparent;
-            this.C23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C23.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C23.FlatAppearance.BorderSize = 0;
-            this.C23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C23.ForeColor = System.Drawing.Color.Gray;
-            this.C23.Location = new System.Drawing.Point(486, 73);
-            this.C23.Name = "C23";
-            this.C23.Size = new System.Drawing.Size(26, 21);
-            this.C23.TabIndex = 137;
-            this.C23.UseVisualStyleBackColor = true;
-            this.C23.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B23
-            // 
-            this.B23.AutoEllipsis = true;
-            this.B23.BackColor = System.Drawing.Color.Transparent;
-            this.B23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B23.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B23.FlatAppearance.BorderSize = 0;
-            this.B23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B23.ForeColor = System.Drawing.Color.Gray;
-            this.B23.Location = new System.Drawing.Point(486, 35);
-            this.B23.Name = "B23";
-            this.B23.Size = new System.Drawing.Size(26, 21);
-            this.B23.TabIndex = 136;
-            this.B23.UseVisualStyleBackColor = true;
-            this.B23.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A23
-            // 
-            this.A23.AutoEllipsis = true;
-            this.A23.BackColor = System.Drawing.Color.Transparent;
-            this.A23.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A23.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A23.FlatAppearance.BorderSize = 0;
-            this.A23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A23.ForeColor = System.Drawing.Color.Gray;
-            this.A23.Location = new System.Drawing.Point(486, 17);
-            this.A23.Name = "A23";
-            this.A23.Size = new System.Drawing.Size(26, 21);
-            this.A23.TabIndex = 135;
-            this.A23.UseVisualStyleBackColor = true;
-            this.A23.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // C24
-            // 
-            this.C24.AutoEllipsis = true;
-            this.C24.BackColor = System.Drawing.Color.Transparent;
-            this.C24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.C24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C24.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.C24.FlatAppearance.BorderSize = 0;
-            this.C24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.C24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.C24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C24.ForeColor = System.Drawing.Color.Gray;
-            this.C24.Location = new System.Drawing.Point(517, 73);
-            this.C24.Name = "C24";
-            this.C24.Size = new System.Drawing.Size(26, 21);
-            this.C24.TabIndex = 140;
-            this.C24.UseVisualStyleBackColor = true;
-            this.C24.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // B24
-            // 
-            this.B24.AutoEllipsis = true;
-            this.B24.BackColor = System.Drawing.Color.Transparent;
-            this.B24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.B24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B24.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.B24.FlatAppearance.BorderSize = 0;
-            this.B24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.B24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.B24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B24.ForeColor = System.Drawing.Color.Gray;
-            this.B24.Location = new System.Drawing.Point(517, 35);
-            this.B24.Name = "B24";
-            this.B24.Size = new System.Drawing.Size(26, 21);
-            this.B24.TabIndex = 139;
-            this.B24.UseVisualStyleBackColor = true;
-            this.B24.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // A24
-            // 
-            this.A24.AutoEllipsis = true;
-            this.A24.BackColor = System.Drawing.Color.Transparent;
-            this.A24.BackgroundImage = global::ucakotomasyon.Properties.Resources.Bos1;
-            this.A24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.A24.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.A24.FlatAppearance.BorderSize = 0;
-            this.A24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.A24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.A24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A24.ForeColor = System.Drawing.Color.Gray;
-            this.A24.Location = new System.Drawing.Point(517, 17);
-            this.A24.Name = "A24";
-            this.A24.Size = new System.Drawing.Size(26, 21);
-            this.A24.TabIndex = 138;
-            this.A24.UseVisualStyleBackColor = true;
-            this.A24.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label1.Location = new System.Drawing.Point(190, 288);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 25);
-            this.label1.TabIndex = 131;
-            this.label1.Text = "------------------------------";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label2.Location = new System.Drawing.Point(190, 403);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 25);
-            this.label2.TabIndex = 132;
-            this.label2.Text = "------------------------------";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label3.Location = new System.Drawing.Point(247, 274);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 25);
-            this.label3.TabIndex = 133;
-            this.label3.Text = "BUSSINES";
+            this.satinalbtn.Animated = true;
+            this.satinalbtn.AutoRoundedCorners = true;
+            this.satinalbtn.BackColor = System.Drawing.Color.Transparent;
+            this.satinalbtn.BorderColor = System.Drawing.Color.Blue;
+            this.satinalbtn.BorderRadius = 17;
+            this.satinalbtn.CheckedState.Parent = this.satinalbtn;
+            this.satinalbtn.CustomImages.Parent = this.satinalbtn;
+            this.satinalbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.satinalbtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.satinalbtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
+            this.satinalbtn.ForeColor = System.Drawing.Color.White;
+            this.satinalbtn.HoverState.Parent = this.satinalbtn;
+            this.satinalbtn.Location = new System.Drawing.Point(1069, 60);
+            this.satinalbtn.Name = "satinalbtn";
+            this.satinalbtn.ShadowDecoration.Parent = this.satinalbtn;
+            this.satinalbtn.Size = new System.Drawing.Size(114, 36);
+            this.satinalbtn.TabIndex = 141;
+            this.satinalbtn.Text = "Satın Al";
+            this.satinalbtn.UseTransparentBackground = true;
+            this.satinalbtn.Visible = false;
             // 
             // _72koltukform
             // 
@@ -1909,5 +2007,6 @@
         private System.Windows.Forms.Button C24;
         private System.Windows.Forms.Button B24;
         private System.Windows.Forms.Button A24;
+        private Guna.UI2.WinForms.Guna2GradientButton satinalbtn;
     }
 }

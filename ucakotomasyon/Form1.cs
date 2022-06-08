@@ -146,6 +146,7 @@ namespace ucakotomasyon
         {
 
         }
+        public static String kisiid, kisitc = "";
 
         private void girisbuton_Click(object sender, EventArgs e)
         {
@@ -163,16 +164,20 @@ namespace ucakotomasyon
 
             if (dr.Read())
             {
+                kisitc = _tcno;
                 HataBox.mesaj = "Giriş başarılı";
                 HataBox.text = "Giriş Yapıldı";
                 HataBox hataform = new HataBox();
                 this.Hide();
-
                 AnaSayfa anasayfaform = new AnaSayfa();
                 anasayfaform.Show();
                 hataform.hataresim.Visible = false;
                 hataform.onayresim.Visible = true;
                 hataform.Show();
+
+
+
+
             }
             else
             {
@@ -181,6 +186,27 @@ namespace ucakotomasyon
                 HataBox f = new HataBox();
                 f.Show();
             }
+
+
+            if (kisitc != "")
+            {
+
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand idkontrol = new MySqlCommand("SELECT yolcu_id FROM yolcular WHERE (yolcu_tc = @tc)", baglanti);
+                idkontrol.Parameters.AddWithValue("@tc", kisitc);
+                MySqlDataReader dr1 = idkontrol.ExecuteReader();
+
+                if (dr1.Read())
+                {
+                    kisiid = dr1["yolcu_id"].ToString();
+                }
+
+                baglanti.Close();
+            }
+
+
+
 
         }
 

@@ -260,7 +260,7 @@ namespace ucakotomasyon
 
         int satirsayisi;
         String secilenucakid;
-
+        public static String biletucusid;
         private void ucustable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             satirsayisi = e.RowIndex;
@@ -293,12 +293,12 @@ namespace ucakotomasyon
 
             }
 
-
+            biletucusid = ucustable.Rows[satirsayisi].Cells[1].Value.ToString();
             secilenucakid = ucustable.Rows[satirsayisi].Cells[9].Value.ToString();
             satinalbtn.Visible = true;
             
         }
-
+        
         String koltuksayisi;
         private void satinalbtn_Click(object sender, EventArgs e)
         {

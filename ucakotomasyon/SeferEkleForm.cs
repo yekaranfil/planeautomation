@@ -21,7 +21,7 @@ namespace ucakotomasyon
         {
             InitializeComponent();
         }
-
+        String koltuksayi,ucusid;
 
 
 
@@ -110,6 +110,72 @@ namespace ucakotomasyon
             f.hataresim.Visible = false;
             f.onayresim.Visible = true;
             f.Show();
+
+
+
+            try
+            {
+                
+                
+
+                // uçak ve firma id çekme
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand koltuksayisi = new MySqlCommand("SELECT ucak_koltuksayisi FROM ucaklar WHERE (ucak_id=@ucakid)", baglanti);
+                koltuksayisi.Parameters.AddWithValue("@ucakid", UcusBilgileri.ucaklarid);
+                MySqlDataReader dr = koltuksayisi.ExecuteReader();
+                if (dr.Read())
+                {
+
+                    koltuksayi = dr["ucak_koltuksayisi"].ToString();
+                    
+
+
+
+
+                }
+                baglanti.Close();
+
+
+                // uçak id çekme
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand ucusid1 = new MySqlCommand("SELECT ucus_id FROM ucuslar ORDER BY ucus_id DESC", baglanti);         
+                MySqlDataReader dr1 = ucusid1.ExecuteReader();
+                if (dr1.Read())
+                {
+
+                    ucusid = dr1["ucus_id"].ToString();
+
+
+                }
+
+
+                baglanti.Close();
+
+                for (int i = 1; i <= int.Parse(koltuksayi); i++)
+                {
+    
+                    baglanti.Open();
+
+                    MySqlCommand koltukekleme = new MySqlCommand("INSERT INTO koltuklar_has_ucaklar (koltuklar_koltuk_id,ucuslar_ucus_id,dolubos) VALUES ('" + i + "','" + ucusid + "','" + "BOS" + "')", baglanti);
+                    koltukekleme.ExecuteNonQuery();
+
+
+
+                    baglanti.Close();
+
+
+
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            };
+
 
 
 
