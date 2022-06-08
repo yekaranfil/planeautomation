@@ -69,3 +69,4 @@ C:\Users\yekar\Source\Repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\uca
 C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon._56koltukform.resources
 C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon._40koltukform.resources
 C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon._72koltukform.resources
+C:\Users\yekar\source\repos\yekaranfil\ucakotomasyon\ucakotomasyon\obj\Debug\ucakotomasyon.BiletlerForm.resources

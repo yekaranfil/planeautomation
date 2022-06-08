@@ -145,6 +145,12 @@
     <Compile Include="AnaSayfa.Designer.cs">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="BiletlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletlerForm.Designer.cs">
+      <DependentUpon>BiletlerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AnaSayfa.resx">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletlerForm.resx">
+      <DependentUpon>BiletlerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -385,6 +394,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dolu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Secili.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

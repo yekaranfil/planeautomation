@@ -253,6 +253,16 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Dolu {
+            get {
+                object obj = ResourceManager.GetObject("Dolu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Dolu1 {
             get {
                 object obj = ResourceManager.GetObject("Dolu1", resourceCulture);
@@ -396,6 +406,16 @@ namespace ucakotomasyon.Properties {
         internal static System.Drawing.Bitmap resim_2022_05_13_203358808_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("resim_2022-05-13_203358808-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Secili {
+            get {
+                object obj = ResourceManager.GetObject("Secili", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -60,7 +60,7 @@ namespace ucakotomasyon
 
         private void secenekbuton_Click(object sender, EventArgs e)
         {
-
+            islemlerpanel.Visible = false;
             anamenulabel.Visible = false;
             anamenulabel2.Visible = false;
             neredenbox.Visible = true;
@@ -430,6 +430,24 @@ namespace ucakotomasyon
 
         }
         public static int kisiindex;
+
+        private void secenekbuton1_Click(object sender, EventArgs e)
+        {
+            islemlerpanel.Visible = true;
+            islemlerpanel.Controls.Clear();
+            BiletlerForm biletform = new BiletlerForm();
+            biletform.TopLevel = false;
+            islemlerpanel.Controls.Add(biletform);
+            biletform.Show();
+            biletform.Dock = DockStyle.Fill;
+            biletform.BringToFront();
+        }
+
+        private void secenekbuton2_Click(object sender, EventArgs e)
+        {
+            islemlerpanel.Visible = false;
+        }
+
         private void kisibox_SelectedIndexChanged(object sender, EventArgs e)
         {
             kisisayisi = kisibox.SelectedItem.ToString();
@@ -485,7 +503,7 @@ namespace ucakotomasyon
                         ucusid = int.Parse(ucus);
                         iddizi.Add(ucusid);
                     }
-
+                    baglanti.Close();
                 }
                 catch (Exception ex)
 

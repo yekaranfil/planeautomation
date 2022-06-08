@@ -81,13 +81,21 @@
             this.Koltuk_30 = new System.Windows.Forms.Button();
             this.koltuklbl = new Guna.UI.WinForms.GunaLabel();
             this.secilenkoltuklbl = new Guna.UI.WinForms.GunaLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.ustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaTransfarantPictureBox2 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.gunaTransfarantPictureBox3 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.arkapanel.SuspendLayout();
             this.ekonomigrup.SuspendLayout();
             this.bussinesgrup.SuspendLayout();
             this.ustpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -100,6 +108,12 @@
             this.arkapanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.ucak1;
             this.arkapanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.arkapanel.BorderColor = System.Drawing.Color.Transparent;
+            this.arkapanel.Controls.Add(this.gunaLabel3);
+            this.arkapanel.Controls.Add(this.gunaLabel2);
+            this.arkapanel.Controls.Add(this.gunaLabel1);
+            this.arkapanel.Controls.Add(this.gunaTransfarantPictureBox2);
+            this.arkapanel.Controls.Add(this.gunaTransfarantPictureBox3);
+            this.arkapanel.Controls.Add(this.gunaTransfarantPictureBox1);
             this.arkapanel.Controls.Add(this.satinalbtn);
             this.arkapanel.Controls.Add(this.label3);
             this.arkapanel.Controls.Add(this.label2);
@@ -108,7 +122,6 @@
             this.arkapanel.Controls.Add(this.bussinesgrup);
             this.arkapanel.Controls.Add(this.koltuklbl);
             this.arkapanel.Controls.Add(this.secilenkoltuklbl);
-            this.arkapanel.Controls.Add(this.guna2TextBox1);
             this.arkapanel.Controls.Add(this.ustpanel);
             this.arkapanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.arkapanel.FillColor = System.Drawing.Color.Transparent;
@@ -134,7 +147,7 @@
             this.satinalbtn.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
             this.satinalbtn.ForeColor = System.Drawing.Color.White;
             this.satinalbtn.HoverState.Parent = this.satinalbtn;
-            this.satinalbtn.Location = new System.Drawing.Point(1069, 60);
+            this.satinalbtn.Location = new System.Drawing.Point(7, 278);
             this.satinalbtn.Name = "satinalbtn";
             this.satinalbtn.ShadowDecoration.Parent = this.satinalbtn;
             this.satinalbtn.Size = new System.Drawing.Size(114, 36);
@@ -1095,7 +1108,7 @@
             this.koltuklbl.BackColor = System.Drawing.Color.Transparent;
             this.koltuklbl.Font = new System.Drawing.Font("Exo 2 ExtraBold", 15F, System.Drawing.FontStyle.Bold);
             this.koltuklbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.koltuklbl.Location = new System.Drawing.Point(7, 572);
+            this.koltuklbl.Location = new System.Drawing.Point(12, 211);
             this.koltuklbl.Name = "koltuklbl";
             this.koltuklbl.Size = new System.Drawing.Size(0, 29);
             this.koltuklbl.TabIndex = 127;
@@ -1106,38 +1119,12 @@
             this.secilenkoltuklbl.BackColor = System.Drawing.Color.Transparent;
             this.secilenkoltuklbl.Font = new System.Drawing.Font("Exo 2 ExtraBold", 15F, System.Drawing.FontStyle.Bold);
             this.secilenkoltuklbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.secilenkoltuklbl.Location = new System.Drawing.Point(7, 543);
+            this.secilenkoltuklbl.Location = new System.Drawing.Point(2, 182);
             this.secilenkoltuklbl.Name = "secilenkoltuklbl";
             this.secilenkoltuklbl.Size = new System.Drawing.Size(209, 29);
             this.secilenkoltuklbl.TabIndex = 126;
             this.secilenkoltuklbl.Text = "SEÇİLEN KOLTUKLAR";
             this.secilenkoltuklbl.Click += new System.EventHandler(this.secilenkoltuklbl_Click);
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Aqua;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Blue;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(12, 657);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(204, 36);
-            this.guna2TextBox1.TabIndex = 125;
             // 
             // ustpanel
             // 
@@ -1168,6 +1155,78 @@
             this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox1.TabIndex = 0;
             // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel3.Font = new System.Drawing.Font("Exo 2 ExtraBold", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.gunaLabel3.Location = new System.Drawing.Point(2, 148);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(93, 20);
+            this.gunaLabel3.TabIndex = 150;
+            this.gunaLabel3.Text = "BOŞ KOLTUK";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel2.Font = new System.Drawing.Font("Exo 2 ExtraBold", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(107, 148);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(104, 20);
+            this.gunaLabel2.TabIndex = 149;
+            this.gunaLabel2.Text = "DOLU KOLTUK";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Exo 2 ExtraBold", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(229, 148);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(106, 20);
+            this.gunaLabel1.TabIndex = 148;
+            this.gunaLabel1.Text = "SEÇİLİ KOLTUK";
+            // 
+            // gunaTransfarantPictureBox2
+            // 
+            this.gunaTransfarantPictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox2.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox2.Image = global::ucakotomasyon.Properties.Resources.Dolu;
+            this.gunaTransfarantPictureBox2.Location = new System.Drawing.Point(122, 60);
+            this.gunaTransfarantPictureBox2.Name = "gunaTransfarantPictureBox2";
+            this.gunaTransfarantPictureBox2.Size = new System.Drawing.Size(77, 85);
+            this.gunaTransfarantPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaTransfarantPictureBox2.TabIndex = 147;
+            this.gunaTransfarantPictureBox2.TabStop = false;
+            // 
+            // gunaTransfarantPictureBox3
+            // 
+            this.gunaTransfarantPictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox3.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox3.Image = global::ucakotomasyon.Properties.Resources.Secili;
+            this.gunaTransfarantPictureBox3.Location = new System.Drawing.Point(240, 60);
+            this.gunaTransfarantPictureBox3.Name = "gunaTransfarantPictureBox3";
+            this.gunaTransfarantPictureBox3.Size = new System.Drawing.Size(77, 85);
+            this.gunaTransfarantPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaTransfarantPictureBox3.TabIndex = 146;
+            this.gunaTransfarantPictureBox3.TabStop = false;
+            // 
+            // gunaTransfarantPictureBox1
+            // 
+            this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox1.Image = global::ucakotomasyon.Properties.Resources.Bos;
+            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(6, 60);
+            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
+            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(77, 85);
+            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaTransfarantPictureBox1.TabIndex = 145;
+            this.gunaTransfarantPictureBox1.TabStop = false;
+            // 
             // _40koltukform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1184,6 +1243,9 @@
             this.ekonomigrup.ResumeLayout(false);
             this.bussinesgrup.ResumeLayout(false);
             this.ustpanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1194,7 +1256,6 @@
         private Guna.UI2.WinForms.Guna2GradientPanel arkapanel;
         private Guna.UI.WinForms.GunaLabel koltuklbl;
         private Guna.UI.WinForms.GunaLabel secilenkoltuklbl;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Button C14;
         private System.Windows.Forms.Button Koltuk_38;
         private System.Windows.Forms.Button Koltuk_37;
@@ -1245,5 +1306,11 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GradientButton satinalbtn;
         private System.Windows.Forms.Button Koltuk_39;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox2;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox3;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
     }
 }
