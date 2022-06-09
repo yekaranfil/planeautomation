@@ -94,8 +94,38 @@ namespace ucakotomasyon
             gidisgelisicon.Visible = true;
 
         }
+
+        public static String isim, soyisim;
         private void AnaSayfa_Load(object sender, EventArgs e)
         {
+            try
+            {
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand adbilgi = new MySqlCommand("SELECT yolcu_adi,yolcu_soyadi FROM yolcular WHERE yolcu_tc=@yolcu", baglanti);
+                adbilgi.Parameters.AddWithValue("@yolcu", Form1._tcno);
+                MySqlDataReader dr = adbilgi.ExecuteReader();
+                while (dr.Read())
+                {
+                    isim = dr["yolcu_adi"].ToString(); 
+                    soyisim = dr["yolcu_soyadi"].ToString(); 
+                   
+                }
+            }
+            catch (Exception ex)
+
+            {
+
+            }
+
+
+
+
+            isimlbl.Visible = true;
+            soyisimlbl.Visible = true;
+            isimlbl.Text = isim;
+            soyisimlbl.Text = soyisim;
+
             //combobox şehir bilgisi çekme
             try
             {

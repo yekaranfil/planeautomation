@@ -92,6 +92,14 @@ namespace ucakotomasyon
             {
                 mailtext.Text = "Mail Adresi";
             }
+            if (adbox.Text.Equals(""))
+            {
+                adbox.Text = "Ad";
+            }
+            if (soyadbox.Text.Equals(""))
+            {
+                 soyadbox.Text = "Soyad";
+            }
 
 
 
@@ -152,6 +160,24 @@ namespace ucakotomasyon
 
         }
         public static String kisiid, kisitc = "";
+
+        private void adbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (adbox.Text.Equals("Ad"))
+            {
+                adbox.Clear();
+            }
+
+        }
+
+        private void soyadbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (soyadbox.Text.Equals("Soyad"))
+            {
+                soyadbox.Clear();
+            }
+        }
 
         private void cikisbuton_Click(object sender, EventArgs e)
         {
@@ -297,6 +323,8 @@ namespace ucakotomasyon
         }
         private void kayitolbuton_Click(object sender, EventArgs e)
         {
+            adbox.Visible = true;
+            soyadbox.Visible = true;
             girisbuton.Visible = false;
             mailtext.Visible = true;
             kayitolbuton.Visible = false;
@@ -309,13 +337,14 @@ namespace ucakotomasyon
 
         private void kayitbuton2_Click(object sender, EventArgs e)
         {
-
+            _ad = Convert.ToString(adbox.Text);
+            _soyad = Convert.ToString(soyadbox.Text);
             _tcno = Convert.ToString(txtgiris.Text);
             _sifre = Convert.ToString(txtgirissifre.Text);
             _mail = Convert.ToString(mailtext.Text);
 
             //boş alan kontrol
-            if (_tcno == "" || _sifre == "" || _mail == "" || _tcno == "T.C Kimlik Numarası" || _sifre == "Şifre" || _mail == "Mail Adresi")
+            if (_tcno == "" || _sifre == "" || _mail == ""|| _ad =="" || _soyad=="" || _tcno == "T.C Kimlik Numarası" || _sifre == "Şifre" || _mail == "Mail Adresi" || _ad == "Ad" || _soyad == "Soyad")
             {
                 HataBox.mesaj = "Uyarı";
                 HataBox.text = "Zorunlu alanlar boş geçilemez!";
@@ -359,7 +388,7 @@ namespace ucakotomasyon
                         errorProvider1.Clear();
                         baglanti.Close();
                         baglanti.Open();
-                        MySqlCommand kayitkomut1 = new MySqlCommand("INSERT INTO yolcular (yolcu_tc,yolcu_mail,yolcu_sifre,cinsiyetler_cinsiyet_id) VALUES ('" + _tcno + "','" + _mail + "','" + _sifre + "','0')", baglanti);
+                        MySqlCommand kayitkomut1 = new MySqlCommand("INSERT INTO yolcular (yolcu_tc,yolcu_mail,yolcu_sifre,cinsiyetler_cinsiyet_id,yolcu_adi,yolcu_soyadi) VALUES ('" + _tcno + "','" + _mail + "','" + _sifre + "','0','" + _ad + "','" + _soyad + "')", baglanti);
                         kayitkomut1.ExecuteNonQuery();
                         baglanti.Close();
                         HataBox f = new HataBox();
@@ -369,6 +398,8 @@ namespace ucakotomasyon
                         f.onayresim.Visible = true;
                         f.Show();
                         // kayit ekranı geri çıkış
+                        adbox.Visible = false;
+                        soyadbox.Visible = false;
                         girisbuton.Visible = true;
                         mailtext.Visible = false;
                         kayitolbuton.Visible = true;
@@ -384,6 +415,8 @@ namespace ucakotomasyon
 
         private void geributon_Click(object sender, EventArgs e)
         {
+            adbox.Visible = false;
+            soyadbox.Visible = false;
             girisbuton.Visible = true;
             mailtext.Visible = false;
             kayitolbuton.Visible = true;
