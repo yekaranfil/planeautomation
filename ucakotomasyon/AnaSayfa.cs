@@ -17,7 +17,7 @@ namespace ucakotomasyon
 
     public partial class AnaSayfa : Form
     {
-        public static String nereden, nereye, tarih,kisisayisi, biletucusid, biletturu, secilenucakid, koltuksayisi;
+        public static String nereden, nereye, tarih,kisisayisi, biletucusid, biletturu, secilenucakid, koltuksayisi,yolcumail,tutar,mailnereden,mailnereye;
         public static int kisiindex;
         int satirsayisi, ucusid;
         MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
@@ -102,13 +102,14 @@ namespace ucakotomasyon
             {
                 baglanti.Close();
                 baglanti.Open();
-                MySqlCommand adbilgi = new MySqlCommand("SELECT yolcu_adi,yolcu_soyadi FROM yolcular WHERE yolcu_tc=@yolcu", baglanti);
+                MySqlCommand adbilgi = new MySqlCommand("SELECT yolcu_adi,yolcu_soyadi,yolcu_mail FROM yolcular WHERE yolcu_tc=@yolcu", baglanti);
                 adbilgi.Parameters.AddWithValue("@yolcu", Form1._tcno);
                 MySqlDataReader dr = adbilgi.ExecuteReader();
                 while (dr.Read())
                 {
                     isim = dr["yolcu_adi"].ToString(); 
-                    soyisim = dr["yolcu_soyadi"].ToString(); 
+                    soyisim = dr["yolcu_soyadi"].ToString();
+                    yolcumail = dr["yolcu_mail"].ToString();
                    
                 }
             }
@@ -154,7 +155,7 @@ namespace ucakotomasyon
 
         private void neredenbox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-
+            mailnereden = neredenbox.SelectedItem.ToString();
            
 
             // combobox şehir çakışma kontrol
@@ -262,6 +263,7 @@ namespace ucakotomasyon
             }
         }
 
+        public static String mailfirmaismi,mailucustarih,mailucussaat;
         private void ucustable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             //satir sayısı alma
@@ -271,23 +273,26 @@ namespace ucakotomasyon
                 // logo getirme
                 if (ucustable.Rows[satirsayisi].Cells[0].Value.ToString().Equals("Pegasus"))
                 {
+                    mailfirmaismi = ucustable.Rows[satirsayisi].Cells[0].Value.ToString();
                     logobox.Image = Image.FromFile(Application.StartupPath + "\\pegasus.png");
                     logobox.Refresh();
                 }
                 else if (ucustable.Rows[satirsayisi].Cells[0].Value.ToString().Equals("Türk Hava Yolları"))
                 {
-
+                    mailfirmaismi = ucustable.Rows[satirsayisi].Cells[0].Value.ToString();
                     logobox.Image = Image.FromFile(Application.StartupPath + "\\turkishairlines.png");
                     logobox.Refresh();
                 }
                 else if (ucustable.Rows[satirsayisi].Cells[0].Value.ToString().Equals("Sunexpress"))
                 {
+                    mailfirmaismi = ucustable.Rows[satirsayisi].Cells[0].Value.ToString();
                     logobox.Image = Image.FromFile(Application.StartupPath + "\\sunexpress.png");
                     logobox.Refresh();
                 }
 
                 else if (ucustable.Rows[satirsayisi].Cells[0].Value.ToString().Equals("AnadoluJet"))
                 {
+                    mailfirmaismi = ucustable.Rows[satirsayisi].Cells[0].Value.ToString();
                     logobox.Image = Image.FromFile(Application.StartupPath + "\\anadolujet.png");
                     logobox.Refresh();
                 }
@@ -300,6 +305,8 @@ namespace ucakotomasyon
             if (ekonomiradiobtn.Checked == true)
 
             {
+                tutar = ucustable.Rows[satirsayisi].Cells[7].Value.ToString();
+                
                 biletturu = "EKONOMİ";
 
 
@@ -307,6 +314,7 @@ namespace ucakotomasyon
             }
             else if (bussinesradiobtn.Checked == true)
             {
+                tutar = ucustable.Rows[satirsayisi].Cells[8].Value.ToString();
                 biletturu = "BUSSİNES";
 
             }
@@ -314,7 +322,13 @@ namespace ucakotomasyon
             biletucusid = ucustable.Rows[satirsayisi].Cells[1].Value.ToString();
             secilenucakid = ucustable.Rows[satirsayisi].Cells[9].Value.ToString();
             satinalbtn.Visible = true;
-            
+
+            mailucustarih = ucustable.Rows[satirsayisi].Cells[5].Value.ToString();
+            mailucussaat = ucustable.Rows[satirsayisi].Cells[4].Value.ToString();
+
+
+
+
         }
         
         
@@ -693,6 +707,7 @@ namespace ucakotomasyon
 
         private void nereyebox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            mailnereye = nereyebox.SelectedItem.ToString();
             //şehir id çekme
             try
             {

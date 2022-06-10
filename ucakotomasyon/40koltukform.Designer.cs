@@ -33,6 +33,7 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.arkapanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.geributon = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
@@ -89,7 +90,6 @@
             this.secilenkoltuklbl = new Guna.UI.WinForms.GunaLabel();
             this.ustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
-            this.geributon = new Guna.UI2.WinForms.Guna2GradientButton();
             this.arkapanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).BeginInit();
@@ -134,6 +134,29 @@
             this.arkapanel.ShadowDecoration.Parent = this.arkapanel;
             this.arkapanel.Size = new System.Drawing.Size(1195, 718);
             this.arkapanel.TabIndex = 1;
+            // 
+            // geributon
+            // 
+            this.geributon.Animated = true;
+            this.geributon.AutoRoundedCorners = true;
+            this.geributon.BackColor = System.Drawing.Color.Transparent;
+            this.geributon.BorderColor = System.Drawing.Color.Blue;
+            this.geributon.BorderRadius = 17;
+            this.geributon.CheckedState.Parent = this.geributon;
+            this.geributon.CustomImages.Parent = this.geributon;
+            this.geributon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.geributon.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
+            this.geributon.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
+            this.geributon.ForeColor = System.Drawing.Color.White;
+            this.geributon.HoverState.Parent = this.geributon;
+            this.geributon.Location = new System.Drawing.Point(12, 670);
+            this.geributon.Name = "geributon";
+            this.geributon.ShadowDecoration.Parent = this.geributon;
+            this.geributon.Size = new System.Drawing.Size(114, 36);
+            this.geributon.TabIndex = 151;
+            this.geributon.Text = "Geri";
+            this.geributon.UseTransparentBackground = true;
+            this.geributon.Click += new System.EventHandler(this.geributon_Click);
             // 
             // gunaLabel3
             // 
@@ -1267,29 +1290,6 @@
             this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox1.TabIndex = 0;
-            // 
-            // geributon
-            // 
-            this.geributon.Animated = true;
-            this.geributon.AutoRoundedCorners = true;
-            this.geributon.BackColor = System.Drawing.Color.Transparent;
-            this.geributon.BorderColor = System.Drawing.Color.Blue;
-            this.geributon.BorderRadius = 17;
-            this.geributon.CheckedState.Parent = this.geributon;
-            this.geributon.CustomImages.Parent = this.geributon;
-            this.geributon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.geributon.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(86)))), ((int)(((byte)(155)))));
-            this.geributon.Font = new System.Drawing.Font("Exo 2", 9.5F, System.Drawing.FontStyle.Bold);
-            this.geributon.ForeColor = System.Drawing.Color.White;
-            this.geributon.HoverState.Parent = this.geributon;
-            this.geributon.Location = new System.Drawing.Point(12, 670);
-            this.geributon.Name = "geributon";
-            this.geributon.ShadowDecoration.Parent = this.geributon;
-            this.geributon.Size = new System.Drawing.Size(114, 36);
-            this.geributon.TabIndex = 151;
-            this.geributon.Text = "Geri";
-            this.geributon.UseTransparentBackground = true;
-            this.geributon.Click += new System.EventHandler(this.geributon_Click);
             // 
             // _40koltukform
             // 
