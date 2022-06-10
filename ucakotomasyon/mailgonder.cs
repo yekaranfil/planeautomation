@@ -19,7 +19,7 @@ namespace ucakotomasyon
             sc.Port = 587;
             sc.Host = "smtp.office365.com";
             sc.EnableSsl = true;
-            sc.Credentials = new NetworkCredential("tunexturizm@outlook.com", "75952.yek");
+            sc.Credentials = new NetworkCredential("tunexturizm@outlook.com", "turizmtunex159357");
             MailMessage mail = new MailMessage();
             mail.From = new MailAddress("tunexturizm@outlook.com");
             mail.To.Add(kime);

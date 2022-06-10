@@ -333,7 +333,7 @@ namespace ucakotomasyon
                         email.mailyolla(AnaSayfa.yolcumail, konu, mailtext);
                         HataBox f12 = new HataBox();
                         HataBox.mesaj = "Bilet bilgisi";
-                        HataBox.text = "BİLET BİLGİLERİNİZ MAİL ADRESİNİZE GÖNDERİLMİŞTİR";
+                        HataBox.text = "BİLET BİLGİLERİNİZ MAİL\nADRESİNİZE GÖNDERİLMİŞTİR";
                         f12.hataresim.Visible = false;
                         f12.onayresim.Visible = true;
                         f12.Show();
