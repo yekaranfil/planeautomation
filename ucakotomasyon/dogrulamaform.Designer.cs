@@ -64,8 +64,8 @@
             this.anamenulabel.AutoSize = true;
             this.anamenulabel.BackColor = System.Drawing.Color.Transparent;
             this.anamenulabel.Font = new System.Drawing.Font("Exo 2 ExtraBold", 13F, System.Drawing.FontStyle.Bold);
-            this.anamenulabel.ForeColor = System.Drawing.Color.Navy;
-            this.anamenulabel.Location = new System.Drawing.Point(23, 94);
+            this.anamenulabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.anamenulabel.Location = new System.Drawing.Point(2, 94);
             this.anamenulabel.Name = "anamenulabel";
             this.anamenulabel.Size = new System.Drawing.Size(306, 54);
             this.anamenulabel.TabIndex = 17;
@@ -107,9 +107,12 @@
             this.dogrulamabox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.dogrulamabox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.dogrulamabox.FocusedState.Parent = this.dogrulamabox;
+            this.dogrulamabox.Font = new System.Drawing.Font("Exo 2", 9.749999F);
+            this.dogrulamabox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dogrulamabox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.dogrulamabox.HoverState.Parent = this.dogrulamabox;
             this.dogrulamabox.Location = new System.Drawing.Point(65, 176);
+            this.dogrulamabox.MaxLength = 6;
             this.dogrulamabox.Name = "dogrulamabox";
             this.dogrulamabox.PasswordChar = '\0';
             this.dogrulamabox.PlaceholderText = "";
@@ -117,6 +120,7 @@
             this.dogrulamabox.ShadowDecoration.Parent = this.dogrulamabox;
             this.dogrulamabox.Size = new System.Drawing.Size(200, 36);
             this.dogrulamabox.TabIndex = 1;
+            this.dogrulamabox.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // ustpanel
             // 
@@ -153,7 +157,7 @@
             this.Name = "dogrulamaform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "dogrulamaform";
-           
+            this.Load += new System.EventHandler(this.dogrulamaform_Load);
             this.arkapanel.ResumeLayout(false);
             this.arkapanel.PerformLayout();
             this.ustpanel.ResumeLayout(false);

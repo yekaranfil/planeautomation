@@ -45,5 +45,9 @@ namespace ucakotomasyon
 
         }
 
+        private void dogrulamaform_Load(object sender, EventArgs e)
+        {
+            anamenulabel.Text = "Lütfen  " + Form1.dogrulamamail +"  \nAdresine gönderilen Doğrulama Kodunu \nGiriniz";
+        }
     }
 }

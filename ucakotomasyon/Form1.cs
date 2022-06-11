@@ -450,7 +450,7 @@ namespace ucakotomasyon
 
                 HataBox uyari = new HataBox();
                 HataBox.mesaj = "Mail Bilgilendirme";
-                HataBox.text = "Doğrulama Kodu Mail \nAdresinize Gönderilmiştir.";
+                HataBox.text = "Doğrulama Kodu \n"+ dogrulamamail +" Mail \nAdresinize Gönderilmiştir.";
                 uyari.onayresim.Visible = true;
                 uyari.hataresim.Visible = false;
                 dform.Show();
