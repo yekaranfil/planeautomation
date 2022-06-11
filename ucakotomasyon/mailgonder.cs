@@ -16,6 +16,7 @@ namespace ucakotomasyon
         public void mailyolla(String kime, String konu, String icerik)
         {
             SmtpClient sc = new SmtpClient();
+
             sc.Port = 587;
             sc.Host = "smtp.office365.com";
             sc.EnableSsl = true;
