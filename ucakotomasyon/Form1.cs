@@ -18,6 +18,10 @@ namespace ucakotomasyon
     {
         MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
 
+        internal void kayitbuton2_Click()
+        {
+            throw new NotImplementedException();
+        }
 
         int sayac = 0;
         public static String _tcno, _mail, _sifre, _ad, _soyad, _telefon, _dogumtarihi, _cinsiyet, _sikayetmetin, _sikayetmail;
@@ -25,7 +29,7 @@ namespace ucakotomasyon
         //tc kontrol fonksiyonu
         public bool TcKontrol()
         {
-            _tcno = txtgiris.Text;
+            
             _tcno = _tcno.Trim();
             if (_tcno.Length != 11)
             {
@@ -333,24 +337,25 @@ namespace ucakotomasyon
             txtgiris.BorderColor = Color.Red;
             txtgirissifre.BorderColor = Color.Red;
             mailtext.BorderColor = Color.Red;
+            adbox.BorderColor = Color.Red;
+            soyadbox.BorderColor = Color.Red;
         }
 
-        private void kayitbuton2_Click(object sender, EventArgs e)
+
+
+        // veritabanına yolcu kaydı yapan fonksiyon
+        public void kayit()
         {
-            _ad = Convert.ToString(adbox.Text);
-            _soyad = Convert.ToString(soyadbox.Text);
-            _tcno = Convert.ToString(txtgiris.Text);
-            _sifre = Convert.ToString(txtgirissifre.Text);
-            _mail = Convert.ToString(mailtext.Text);
+            
 
             //boş alan kontrol
-            if (_tcno == "" || _sifre == "" || _mail == ""|| _ad =="" || _soyad=="" || _tcno == "T.C Kimlik Numarası" || _sifre == "Şifre" || _mail == "Mail Adresi" || _ad == "Ad" || _soyad == "Soyad")
+            if (_tcno == "" || _sifre == "" || _mail == "" || _ad == "" || _soyad == "" || _tcno == "T.C Kimlik Numarası" || _sifre == "Şifre" || _mail == "Mail Adresi" || _ad == "Ad" || _soyad == "Soyad")
             {
                 HataBox.mesaj = "Uyarı";
                 HataBox.text = "Zorunlu alanlar boş geçilemez!";
                 HataBox f = new HataBox();
                 f.Show();
-                
+
             }
             else
             {
@@ -362,7 +367,7 @@ namespace ucakotomasyon
                     HataBox.text = "Lütfen Geçerli Bir T.C kimlik \nNumarası Giriniz";
                     HataBox f = new HataBox();
                     f.Show();
-                   
+
                 }
 
                 //tc veritabanına kayıtlı mı ?
@@ -398,6 +403,7 @@ namespace ucakotomasyon
                         f.onayresim.Visible = true;
                         f.Show();
                         // kayit ekranı geri çıkış
+
                         adbox.Visible = false;
                         soyadbox.Visible = false;
                         girisbuton.Visible = true;
@@ -407,13 +413,77 @@ namespace ucakotomasyon
                         geributon.Visible = false;
                         txtgiris.BorderColor = Color.Blue;
                         txtgirissifre.BorderColor = Color.Blue;
+                        mailtext.BorderColor = Color.Blue;
+                        adbox.BorderColor = Color.Blue;
+                        soyadbox.BorderColor = Color.Blue;
+
+
 
                     }
                 }
             }
+
+        }
+        public static int dogrulamakodu;
+        // girilen verileri çekme ve doğrulama kodu için diğer forma gönderme
+        public static String dogrulamamail;
+        public void kayitbuton2_Click(object sender, EventArgs e)
+        {
+
+            _ad = Convert.ToString(adbox.Text);
+            _soyad = Convert.ToString(soyadbox.Text);
+            _tcno = Convert.ToString(txtgiris.Text);
+            _sifre = Convert.ToString(txtgirissifre.Text);
+            _mail = Convert.ToString(mailtext.Text);
+            dogrulamamail = mailtext.Text;
+            dogrulamaform dform = new dogrulamaform();
+            
+
+            try
+            {
+                Random rastgele = new Random();
+                dogrulamakodu = rastgele.Next(100000, 999999);
+                mailgonder mail = new mailgonder();
+                String konu = "TUNEX TURİZM KAYIT DOĞRULAMA KODU";
+                String icerik = "KAYIT DOĞRULAMA KODUNUZ :" + dogrulamakodu;
+                mail.mailyolla(Form1.dogrulamamail, konu, icerik);
+
+                HataBox uyari = new HataBox();
+                HataBox.mesaj = "Mail Bilgilendirme";
+                HataBox.text = "Doğrulama Kodu Mail \nAdresinize Gönderilmiştir.";
+                uyari.onayresim.Visible = true;
+                uyari.hataresim.Visible = false;
+                dform.Show();
+                uyari.Show();
+
+                adbox.Visible = false;
+                soyadbox.Visible = false;
+                girisbuton.Visible = true;
+                mailtext.Visible = false;
+                kayitolbuton.Visible = true;
+                kayitbuton2.Visible = false;
+                geributon.Visible = false;
+                txtgiris.BorderColor = Color.Blue;
+                txtgirissifre.BorderColor = Color.Blue;
+                mailtext.BorderColor = Color.Blue;
+                adbox.BorderColor = Color.Blue;
+                soyadbox.BorderColor = Color.Blue;
+
+            }
+            catch
+            {
+
+                HataBox uyari = new HataBox();
+                HataBox.mesaj = "Mail Bilgilendirme";
+                HataBox.text = "Doğrulama Kodu Gönderilemedi Lütfen \nDoğru Mail Adresi Girdiğinizden\n Emin Olun";
+                uyari.onayresim.Visible = false;
+                uyari.hataresim.Visible = true;
+                uyari.Show();
+            }
+
         }
 
-        private void geributon_Click(object sender, EventArgs e)
+        public void geributon_Click(object sender, EventArgs e)
         {
             adbox.Visible = false;
             soyadbox.Visible = false;

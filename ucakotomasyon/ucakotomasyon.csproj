@@ -169,6 +169,12 @@
     <Compile Include="BiletlerForm.Designer.cs">
       <DependentUpon>BiletlerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="dogrulamaform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dogrulamaform.Designer.cs">
+      <DependentUpon>dogrulamaform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BiletlerForm.resx">
       <DependentUpon>BiletlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dogrulamaform.resx">
+      <DependentUpon>dogrulamaform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

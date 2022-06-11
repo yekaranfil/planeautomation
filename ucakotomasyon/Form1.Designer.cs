@@ -30,9 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.soyadbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.adbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.maildestekbox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,8 +52,6 @@
             this.firmalogo = new System.Windows.Forms.PictureBox();
             this.minimizebuton = new Guna.UI2.WinForms.Guna2ControlBox();
             this.cikisbuton = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.adbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.soyadbox = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
@@ -64,11 +63,6 @@
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // errorProvider1
             // 
@@ -103,6 +97,78 @@
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseEnter += new System.EventHandler(this.guna2GradientPanel1_MouseEnter);
+            // 
+            // soyadbox
+            // 
+            this.soyadbox.Animated = true;
+            this.soyadbox.AutoRoundedCorners = true;
+            this.soyadbox.BackColor = System.Drawing.Color.Transparent;
+            this.soyadbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.soyadbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(141)))), ((int)(((byte)(251)))));
+            this.soyadbox.BorderRadius = 19;
+            this.soyadbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.soyadbox.DefaultText = "Soyad";
+            this.soyadbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.soyadbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.soyadbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.soyadbox.DisabledState.Parent = this.soyadbox;
+            this.soyadbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.soyadbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.soyadbox.FocusedState.Parent = this.soyadbox;
+            this.soyadbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.soyadbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.soyadbox.HoverState.Parent = this.soyadbox;
+            this.soyadbox.IconLeft = global::ucakotomasyon.Properties.Resources.user;
+            this.soyadbox.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.soyadbox.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.soyadbox.IconRightSize = new System.Drawing.Size(25, 25);
+            this.soyadbox.Location = new System.Drawing.Point(325, 200);
+            this.soyadbox.Name = "soyadbox";
+            this.soyadbox.PasswordChar = '\0';
+            this.soyadbox.PlaceholderText = "";
+            this.soyadbox.SelectedText = "";
+            this.soyadbox.SelectionStart = 5;
+            this.soyadbox.ShadowDecoration.Parent = this.soyadbox;
+            this.soyadbox.Size = new System.Drawing.Size(243, 41);
+            this.soyadbox.TabIndex = 20;
+            this.soyadbox.Visible = false;
+            this.soyadbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soyadbox_KeyPress);
+            // 
+            // adbox
+            // 
+            this.adbox.Animated = true;
+            this.adbox.AutoRoundedCorners = true;
+            this.adbox.BackColor = System.Drawing.Color.Transparent;
+            this.adbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.adbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(141)))), ((int)(((byte)(251)))));
+            this.adbox.BorderRadius = 19;
+            this.adbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.adbox.DefaultText = "Ad";
+            this.adbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.adbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.adbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.adbox.DisabledState.Parent = this.adbox;
+            this.adbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.adbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.adbox.FocusedState.Parent = this.adbox;
+            this.adbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.adbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.adbox.HoverState.Parent = this.adbox;
+            this.adbox.IconLeft = global::ucakotomasyon.Properties.Resources.user;
+            this.adbox.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.adbox.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.adbox.IconRightSize = new System.Drawing.Size(25, 25);
+            this.adbox.Location = new System.Drawing.Point(325, 138);
+            this.adbox.Name = "adbox";
+            this.adbox.PasswordChar = '\0';
+            this.adbox.PlaceholderText = "";
+            this.adbox.SelectedText = "";
+            this.adbox.SelectionStart = 2;
+            this.adbox.ShadowDecoration.Parent = this.adbox;
+            this.adbox.Size = new System.Drawing.Size(243, 41);
+            this.adbox.TabIndex = 19;
+            this.adbox.Visible = false;
+            this.adbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.adbox_KeyPress);
             // 
             // gunaTransfarantPictureBox1
             // 
@@ -525,76 +591,6 @@
             this.cikisbuton.UseTransparentBackground = true;
             this.cikisbuton.Click += new System.EventHandler(this.cikisbuton_Click);
             // 
-            // adbox
-            // 
-            this.adbox.Animated = true;
-            this.adbox.AutoRoundedCorners = true;
-            this.adbox.BackColor = System.Drawing.Color.Transparent;
-            this.adbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.adbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(141)))), ((int)(((byte)(251)))));
-            this.adbox.BorderRadius = 19;
-            this.adbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.adbox.DefaultText = "Ad";
-            this.adbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.adbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.adbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.adbox.DisabledState.Parent = this.adbox;
-            this.adbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.adbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.adbox.FocusedState.Parent = this.adbox;
-            this.adbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.adbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.adbox.HoverState.Parent = this.adbox;
-            this.adbox.IconLeft = global::ucakotomasyon.Properties.Resources.user;
-            this.adbox.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.adbox.IconRightOffset = new System.Drawing.Point(10, 0);
-            this.adbox.IconRightSize = new System.Drawing.Size(25, 25);
-            this.adbox.Location = new System.Drawing.Point(325, 138);
-            this.adbox.Name = "adbox";
-            this.adbox.PasswordChar = '\0';
-            this.adbox.PlaceholderText = "";
-            this.adbox.SelectedText = "";
-            this.adbox.ShadowDecoration.Parent = this.adbox;
-            this.adbox.Size = new System.Drawing.Size(243, 41);
-            this.adbox.TabIndex = 19;
-            this.adbox.Visible = false;
-            this.adbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.adbox_KeyPress);
-            // 
-            // soyadbox
-            // 
-            this.soyadbox.Animated = true;
-            this.soyadbox.AutoRoundedCorners = true;
-            this.soyadbox.BackColor = System.Drawing.Color.Transparent;
-            this.soyadbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.soyadbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(141)))), ((int)(((byte)(251)))));
-            this.soyadbox.BorderRadius = 19;
-            this.soyadbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.soyadbox.DefaultText = "Soyad";
-            this.soyadbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.soyadbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.soyadbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.soyadbox.DisabledState.Parent = this.soyadbox;
-            this.soyadbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.soyadbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.soyadbox.FocusedState.Parent = this.soyadbox;
-            this.soyadbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.soyadbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.soyadbox.HoverState.Parent = this.soyadbox;
-            this.soyadbox.IconLeft = global::ucakotomasyon.Properties.Resources.user;
-            this.soyadbox.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.soyadbox.IconRightOffset = new System.Drawing.Point(10, 0);
-            this.soyadbox.IconRightSize = new System.Drawing.Size(25, 25);
-            this.soyadbox.Location = new System.Drawing.Point(325, 200);
-            this.soyadbox.Name = "soyadbox";
-            this.soyadbox.PasswordChar = '\0';
-            this.soyadbox.PlaceholderText = "";
-            this.soyadbox.SelectedText = "";
-            this.soyadbox.ShadowDecoration.Parent = this.soyadbox;
-            this.soyadbox.Size = new System.Drawing.Size(243, 41);
-            this.soyadbox.TabIndex = 20;
-            this.soyadbox.Visible = false;
-            this.soyadbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soyadbox_KeyPress);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -621,14 +617,12 @@
         public Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2ControlBox minimizebuton;
         private Guna.UI2.WinForms.Guna2ControlBox cikisbuton;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         public Guna.UI2.WinForms.Guna2TextBox txtgirissifre;
         internal System.Windows.Forms.PictureBox firmalogo;
         private Guna.UI2.WinForms.Guna2GradientButton destekbutonn;
         private Guna.UI2.WinForms.Guna2GradientButton destekgonderb;
         private Guna.UI.WinForms.GunaTransfarantPictureBox destekboxcerceve;
         private System.Windows.Forms.RichTextBox destekbox;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
         public Guna.UI2.WinForms.Guna2TextBox txtgiris;
         public Guna.UI2.WinForms.Guna2TextBox mailtext;
         public Guna.UI2.WinForms.Guna2GradientButton kayitbuton2;
@@ -641,6 +635,7 @@
         private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
         public Guna.UI2.WinForms.Guna2TextBox soyadbox;
         public Guna.UI2.WinForms.Guna2TextBox adbox;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
