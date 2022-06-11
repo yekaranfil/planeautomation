@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dogrulamaform));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.arkapanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.anamenulabel = new Guna.UI.WinForms.GunaLabel();
@@ -46,13 +47,15 @@
             // 
             // arkapanel
             // 
+            this.arkapanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.Varlık_2;
+            this.arkapanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.arkapanel.Controls.Add(this.anamenulabel);
             this.arkapanel.Controls.Add(this.dogrulabuton);
             this.arkapanel.Controls.Add(this.dogrulamabox);
             this.arkapanel.Controls.Add(this.ustpanel);
             this.arkapanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.arkapanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
-            this.arkapanel.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.arkapanel.FillColor = System.Drawing.Color.Transparent;
+            this.arkapanel.FillColor2 = System.Drawing.Color.Transparent;
             this.arkapanel.Location = new System.Drawing.Point(0, 0);
             this.arkapanel.Name = "arkapanel";
             this.arkapanel.ShadowDecoration.Parent = this.arkapanel;
@@ -63,11 +66,11 @@
             // 
             this.anamenulabel.AutoSize = true;
             this.anamenulabel.BackColor = System.Drawing.Color.Transparent;
-            this.anamenulabel.Font = new System.Drawing.Font("Exo 2 ExtraBold", 13F, System.Drawing.FontStyle.Bold);
-            this.anamenulabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.anamenulabel.Location = new System.Drawing.Point(2, 94);
+            this.anamenulabel.Font = new System.Drawing.Font("Exo 2 ExtraBold", 11F, System.Drawing.FontStyle.Bold);
+            this.anamenulabel.ForeColor = System.Drawing.Color.White;
+            this.anamenulabel.Location = new System.Drawing.Point(32, 103);
             this.anamenulabel.Name = "anamenulabel";
-            this.anamenulabel.Size = new System.Drawing.Size(306, 54);
+            this.anamenulabel.Size = new System.Drawing.Size(255, 44);
             this.anamenulabel.TabIndex = 17;
             this.anamenulabel.Text = "Lütfen Mail Adresinize Gönderilen\r\n       Doğrulama Kodunu Giriniz\r\n";
             // 
@@ -76,20 +79,24 @@
             this.dogrulabuton.Animated = true;
             this.dogrulabuton.AutoRoundedCorners = true;
             this.dogrulabuton.BackColor = System.Drawing.Color.Transparent;
+            this.dogrulabuton.BorderColor = System.Drawing.Color.Brown;
             this.dogrulabuton.BorderRadius = 18;
+            this.dogrulabuton.BorderThickness = 2;
+            this.dogrulabuton.CheckedState.BorderColor = System.Drawing.Color.Cyan;
             this.dogrulabuton.CheckedState.Parent = this.dogrulabuton;
             this.dogrulabuton.CustomImages.Parent = this.dogrulabuton;
-            this.dogrulabuton.FillColor = System.Drawing.Color.DodgerBlue;
-            this.dogrulabuton.FillColor2 = System.Drawing.Color.Cyan;
-            this.dogrulabuton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dogrulabuton.ForeColor = System.Drawing.Color.Black;
+            this.dogrulabuton.FillColor = System.Drawing.Color.Transparent;
+            this.dogrulabuton.FillColor2 = System.Drawing.Color.Transparent;
+            this.dogrulabuton.Font = new System.Drawing.Font("Exo 2", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dogrulabuton.ForeColor = System.Drawing.Color.White;
+            this.dogrulabuton.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dogrulabuton.HoverState.Parent = this.dogrulabuton;
-            this.dogrulabuton.Location = new System.Drawing.Point(99, 218);
+            this.dogrulabuton.Location = new System.Drawing.Point(100, 219);
             this.dogrulabuton.Name = "dogrulabuton";
             this.dogrulabuton.ShadowDecoration.Parent = this.dogrulabuton;
             this.dogrulabuton.Size = new System.Drawing.Size(129, 38);
             this.dogrulabuton.TabIndex = 2;
-            this.dogrulabuton.Text = "DOĞRULA";
+            this.dogrulabuton.Text = "Doğrula";
             this.dogrulabuton.Click += new System.EventHandler(this.dogrulabuton_Click);
             // 
             // dogrulamabox
@@ -112,7 +119,7 @@
             this.dogrulamabox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.dogrulamabox.HoverState.Parent = this.dogrulamabox;
             this.dogrulamabox.Location = new System.Drawing.Point(65, 176);
-            this.dogrulamabox.MaxLength = 6;
+            this.dogrulamabox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dogrulamabox.Name = "dogrulamabox";
             this.dogrulamabox.PasswordChar = '\0';
             this.dogrulamabox.PlaceholderText = "";
@@ -124,14 +131,15 @@
             // 
             // ustpanel
             // 
+            this.ustpanel.BackgroundImage = global::ucakotomasyon.Properties.Resources.Varlık_2;
             this.ustpanel.Controls.Add(this.guna2ControlBox1);
             this.ustpanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ustpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
-            this.ustpanel.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.ustpanel.FillColor = System.Drawing.Color.Transparent;
+            this.ustpanel.FillColor2 = System.Drawing.Color.Transparent;
             this.ustpanel.Location = new System.Drawing.Point(0, 0);
             this.ustpanel.Name = "ustpanel";
             this.ustpanel.ShadowDecoration.Parent = this.ustpanel;
-            this.ustpanel.Size = new System.Drawing.Size(344, 49);
+            this.ustpanel.Size = new System.Drawing.Size(344, 48);
             this.ustpanel.TabIndex = 0;
             // 
             // guna2ControlBox1
@@ -154,6 +162,7 @@
             this.ClientSize = new System.Drawing.Size(344, 313);
             this.Controls.Add(this.arkapanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "dogrulamaform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "dogrulamaform";

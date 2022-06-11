@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acilis));
             this.arkapanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.hatayazi = new System.Windows.Forms.Label();
             this.panel = new Guna.UI2.WinForms.Guna2Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.hatayazi = new System.Windows.Forms.Label();
             this.arkapanel.SuspendLayout();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
@@ -55,12 +56,23 @@
             this.arkapanel.Size = new System.Drawing.Size(800, 450);
             this.arkapanel.TabIndex = 1;
             // 
+            // hatayazi
+            // 
+            this.hatayazi.AutoSize = true;
+            this.hatayazi.BackColor = System.Drawing.Color.Transparent;
+            this.hatayazi.Font = new System.Drawing.Font("Exo 2 SemiBold", 13.25F, System.Drawing.FontStyle.Bold);
+            this.hatayazi.Location = new System.Drawing.Point(326, 404);
+            this.hatayazi.Name = "hatayazi";
+            this.hatayazi.Size = new System.Drawing.Size(112, 27);
+            this.hatayazi.TabIndex = 4;
+            this.hatayazi.Text = "Yükleniyor...";
+            // 
             // panel
             // 
             this.panel.AutoRoundedCorners = true;
             this.panel.BackColor = System.Drawing.Color.Transparent;
             this.panel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel.BorderRadius = 2;
+            this.panel.BorderRadius = 5;
             this.panel.BorderThickness = 2;
             this.panel.Controls.Add(this.panel2);
             this.panel.Location = new System.Drawing.Point(99, 389);
@@ -100,17 +112,6 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // hatayazi
-            // 
-            this.hatayazi.AutoSize = true;
-            this.hatayazi.BackColor = System.Drawing.Color.Transparent;
-            this.hatayazi.Font = new System.Drawing.Font("Exo 2 SemiBold", 13.25F, System.Drawing.FontStyle.Bold);
-            this.hatayazi.Location = new System.Drawing.Point(326, 404);
-            this.hatayazi.Name = "hatayazi";
-            this.hatayazi.Size = new System.Drawing.Size(112, 27);
-            this.hatayazi.TabIndex = 4;
-            this.hatayazi.Text = "Yükleniyor...";
-            // 
             // Acilis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,6 +120,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.arkapanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Acilis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acilis";

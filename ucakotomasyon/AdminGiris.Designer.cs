@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminGiris));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.anamenulabel = new Guna.UI.WinForms.GunaLabel();
             this.kayitbuton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.txtgirissifre = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtgiris = new Guna.UI2.WinForms.Guna2TextBox();
-            this.anamenulabel = new Guna.UI.WinForms.GunaLabel();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +62,18 @@
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(422, 373);
             this.guna2GradientPanel1.TabIndex = 0;
+            // 
+            // anamenulabel
+            // 
+            this.anamenulabel.AutoSize = true;
+            this.anamenulabel.BackColor = System.Drawing.Color.Transparent;
+            this.anamenulabel.Font = new System.Drawing.Font("Exo 2 ExtraBold", 25F, System.Drawing.FontStyle.Bold);
+            this.anamenulabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
+            this.anamenulabel.Location = new System.Drawing.Point(90, 56);
+            this.anamenulabel.Name = "anamenulabel";
+            this.anamenulabel.Size = new System.Drawing.Size(238, 50);
+            this.anamenulabel.TabIndex = 16;
+            this.anamenulabel.Text = "ADMİN GİRİŞİ";
             // 
             // kayitbuton2
             // 
@@ -87,34 +100,6 @@
             this.kayitbuton2.TabIndex = 15;
             this.kayitbuton2.Text = "Giriş";
             this.kayitbuton2.Click += new System.EventHandler(this.kayitbuton2_Click);
-            // 
-            // guna2GradientPanel2
-            // 
-            this.guna2GradientPanel2.Controls.Add(this.gunaControlBox1);
-            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.DarkOrchid;
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.CornflowerBlue;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(422, 56);
-            this.guna2GradientPanel2.TabIndex = 0;
-            // 
-            // gunaControlBox1
-            // 
-            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox1.AnimationSpeed = 0.03F;
-            this.gunaControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.IconSize = 15F;
-            this.gunaControlBox1.Location = new System.Drawing.Point(344, 3);
-            this.gunaControlBox1.Name = "gunaControlBox1";
-            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
-            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.Size = new System.Drawing.Size(75, 42);
-            this.gunaControlBox1.TabIndex = 0;
             // 
             // txtgirissifre
             // 
@@ -183,17 +168,33 @@
             this.txtgiris.TabIndex = 3;
             this.txtgiris.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgiris_KeyPress);
             // 
-            // anamenulabel
+            // guna2GradientPanel2
             // 
-            this.anamenulabel.AutoSize = true;
-            this.anamenulabel.BackColor = System.Drawing.Color.Transparent;
-            this.anamenulabel.Font = new System.Drawing.Font("Exo 2 ExtraBold", 25F, System.Drawing.FontStyle.Bold);
-            this.anamenulabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(63)))));
-            this.anamenulabel.Location = new System.Drawing.Point(90, 56);
-            this.anamenulabel.Name = "anamenulabel";
-            this.anamenulabel.Size = new System.Drawing.Size(238, 50);
-            this.anamenulabel.TabIndex = 16;
-            this.anamenulabel.Text = "ADMİN GİRİŞİ";
+            this.guna2GradientPanel2.Controls.Add(this.gunaControlBox1);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.DarkOrchid;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.CornflowerBlue;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(422, 56);
+            this.guna2GradientPanel2.TabIndex = 0;
+            // 
+            // gunaControlBox1
+            // 
+            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox1.AnimationSpeed = 0.03F;
+            this.gunaControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.IconSize = 15F;
+            this.gunaControlBox1.Location = new System.Drawing.Point(344, 3);
+            this.gunaControlBox1.Name = "gunaControlBox1";
+            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.Size = new System.Drawing.Size(75, 42);
+            this.gunaControlBox1.TabIndex = 0;
             // 
             // AdminGiris
             // 
@@ -202,6 +203,7 @@
             this.ClientSize = new System.Drawing.Size(422, 373);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminGiris";

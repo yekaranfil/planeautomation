@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcakGuncelle));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.koltukbox = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -252,6 +253,7 @@
             this.ClientSize = new System.Drawing.Size(1007, 582);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UcakGuncelle";
             this.Text = "UcakGuncelle";
             this.Load += new System.EventHandler(this.UcakGuncelle_Load);

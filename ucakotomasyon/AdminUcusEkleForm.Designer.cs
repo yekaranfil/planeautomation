@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminUcusEkleForm));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.plakabox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -228,6 +229,7 @@
             this.ClientSize = new System.Drawing.Size(1007, 582);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminUcusEkleForm";
             this.Text = "AdminUcusEkleForm";
             this.Load += new System.EventHandler(this.AdminUcusEkleForm_Load);

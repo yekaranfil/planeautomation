@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPanelForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.adminformpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.gunaTransfarantPictureBox6 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaTransfarantPictureBox9 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaTransfarantPictureBox8 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.kullanicilbl = new Guna.UI.WinForms.GunaLabel();
             this.gunaTransfarantPictureBox7 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTransfarantPictureBox6 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaTransfarantPictureBox5 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaTransfarantPictureBox4 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaTransfarantPictureBox3 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -54,10 +55,10 @@
             this.adminformminimize = new Guna.UI2.WinForms.Guna2ControlBox();
             this.adminformkapatma = new Guna.UI2.WinForms.Guna2ControlBox();
             this.adminformpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).BeginInit();
@@ -101,6 +102,17 @@
             this.adminformpanel.ShadowDecoration.Parent = this.adminformpanel;
             this.adminformpanel.Size = new System.Drawing.Size(1256, 818);
             this.adminformpanel.TabIndex = 0;
+            // 
+            // gunaTransfarantPictureBox6
+            // 
+            this.gunaTransfarantPictureBox6.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox6.Image = global::ucakotomasyon.Properties.Resources.destekbutonbeyaz;
+            this.gunaTransfarantPictureBox6.Location = new System.Drawing.Point(40, 550);
+            this.gunaTransfarantPictureBox6.Name = "gunaTransfarantPictureBox6";
+            this.gunaTransfarantPictureBox6.Size = new System.Drawing.Size(42, 45);
+            this.gunaTransfarantPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaTransfarantPictureBox6.TabIndex = 13;
+            this.gunaTransfarantPictureBox6.TabStop = false;
             // 
             // gunaTransfarantPictureBox9
             // 
@@ -179,17 +191,6 @@
             this.gunaLabel2.Size = new System.Drawing.Size(94, 28);
             this.gunaLabel2.TabIndex = 150;
             this.gunaLabel2.Text = "Kullanıcı";
-            // 
-            // gunaTransfarantPictureBox6
-            // 
-            this.gunaTransfarantPictureBox6.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox6.Image = global::ucakotomasyon.Properties.Resources.destekbutonbeyaz;
-            this.gunaTransfarantPictureBox6.Location = new System.Drawing.Point(40, 550);
-            this.gunaTransfarantPictureBox6.Name = "gunaTransfarantPictureBox6";
-            this.gunaTransfarantPictureBox6.Size = new System.Drawing.Size(42, 45);
-            this.gunaTransfarantPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaTransfarantPictureBox6.TabIndex = 13;
-            this.gunaTransfarantPictureBox6.TabStop = false;
             // 
             // gunaTransfarantPictureBox5
             // 
@@ -439,16 +440,17 @@
             this.ClientSize = new System.Drawing.Size(1210, 640);
             this.Controls.Add(this.adminformpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminPanelForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPanelForm";
             this.Load += new System.EventHandler(this.AdminPanelForm_Load);
             this.adminformpanel.ResumeLayout(false);
             this.adminformpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).EndInit();

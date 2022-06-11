@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaSayfa));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.anamenupanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tunexlogo = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -66,14 +67,14 @@
             this.kisibox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ucakicon = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.anamenuustpanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.soyisimlbl = new Guna.UI.WinForms.GunaLabel();
+            this.isimlbl = new Guna.UI.WinForms.GunaLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.secenekbuton2 = new Guna.UI2.WinForms.Guna2Button();
             this.secenekbuton1 = new Guna.UI2.WinForms.Guna2Button();
             this.secenekbuton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.isimlbl = new Guna.UI.WinForms.GunaLabel();
-            this.soyisimlbl = new Guna.UI.WinForms.GunaLabel();
             this.anamenupanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tunexlogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logobox)).BeginInit();
@@ -331,42 +332,42 @@
             // 
             // ucustable
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ucustable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ucustable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ucustable.BackgroundColor = System.Drawing.Color.White;
             this.ucustable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ucustable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ucustable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ucustable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ucustable.ColumnHeadersHeight = 15;
             this.ucustable.ColumnHeadersVisible = false;
             this.ucustable.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ucustable.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ucustable.DefaultCellStyle = dataGridViewCellStyle3;
             this.ucustable.EnableHeadersVisualStyles = false;
             this.ucustable.GridColor = System.Drawing.Color.Navy;
             this.ucustable.Location = new System.Drawing.Point(0, 318);
             this.ucustable.Name = "ucustable";
             this.ucustable.ReadOnly = true;
             this.ucustable.RowHeadersVisible = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
-            this.ucustable.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.ucustable.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.ucustable.RowTemplate.Height = 35;
             this.ucustable.RowTemplate.ReadOnly = true;
             this.ucustable.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -713,6 +714,30 @@
             this.anamenuustpanel.UseTransparentBackground = true;
             this.anamenuustpanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.guna2GradientPanel2_MouseDown);
             // 
+            // soyisimlbl
+            // 
+            this.soyisimlbl.AutoSize = true;
+            this.soyisimlbl.BackColor = System.Drawing.Color.Transparent;
+            this.soyisimlbl.Font = new System.Drawing.Font("Exo 2", 15.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.soyisimlbl.ForeColor = System.Drawing.Color.White;
+            this.soyisimlbl.Location = new System.Drawing.Point(987, 9);
+            this.soyisimlbl.Name = "soyisimlbl";
+            this.soyisimlbl.Size = new System.Drawing.Size(96, 31);
+            this.soyisimlbl.TabIndex = 49;
+            this.soyisimlbl.Text = "SOYİSİM";
+            // 
+            // isimlbl
+            // 
+            this.isimlbl.AutoSize = true;
+            this.isimlbl.BackColor = System.Drawing.Color.Transparent;
+            this.isimlbl.Font = new System.Drawing.Font("Exo 2", 15.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.isimlbl.ForeColor = System.Drawing.Color.White;
+            this.isimlbl.Location = new System.Drawing.Point(871, 9);
+            this.isimlbl.Name = "isimlbl";
+            this.isimlbl.Size = new System.Drawing.Size(57, 31);
+            this.isimlbl.TabIndex = 48;
+            this.isimlbl.Text = "İSİM";
+            // 
             // guna2Button1
             // 
             this.guna2Button1.Animated = true;
@@ -835,30 +860,6 @@
             this.guna2ControlBox1.UseTransparentBackground = true;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click_1);
             // 
-            // isimlbl
-            // 
-            this.isimlbl.AutoSize = true;
-            this.isimlbl.BackColor = System.Drawing.Color.Transparent;
-            this.isimlbl.Font = new System.Drawing.Font("Exo 2", 15.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.isimlbl.ForeColor = System.Drawing.Color.White;
-            this.isimlbl.Location = new System.Drawing.Point(871, 9);
-            this.isimlbl.Name = "isimlbl";
-            this.isimlbl.Size = new System.Drawing.Size(57, 31);
-            this.isimlbl.TabIndex = 48;
-            this.isimlbl.Text = "İSİM";
-            // 
-            // soyisimlbl
-            // 
-            this.soyisimlbl.AutoSize = true;
-            this.soyisimlbl.BackColor = System.Drawing.Color.Transparent;
-            this.soyisimlbl.Font = new System.Drawing.Font("Exo 2", 15.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.soyisimlbl.ForeColor = System.Drawing.Color.White;
-            this.soyisimlbl.Location = new System.Drawing.Point(987, 9);
-            this.soyisimlbl.Name = "soyisimlbl";
-            this.soyisimlbl.Size = new System.Drawing.Size(96, 31);
-            this.soyisimlbl.TabIndex = 49;
-            this.soyisimlbl.Text = "SOYİSİM";
-            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -866,6 +867,7 @@
             this.ClientSize = new System.Drawing.Size(1197, 581);
             this.Controls.Add(this.anamenupanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AnaSayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AnaSayfa";

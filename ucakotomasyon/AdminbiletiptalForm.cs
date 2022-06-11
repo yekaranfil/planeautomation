@@ -20,8 +20,8 @@ namespace ucakotomasyon
         }
         DataTable tablo = new DataTable();
         DataSet data = new DataSet();
-
-        public static String talepid, biletid, iptalkoltukid, iptalucusid;
+        String konu,icerik;
+        public static String talepid, biletid, iptalkoltukid, iptalucusid, iptalkisiid,iptalkisiad,iptalkisisoyad,iptalkisimail;
         private void AdminbiletiptalForm_Load(object sender, EventArgs e)
         {
 
@@ -51,6 +51,29 @@ namespace ucakotomasyon
         public static String silinenkoltuk;
         private void guncellebuton_Click(object sender, EventArgs e)
         {
+
+            try
+            {
+                baglanti.Close();
+                baglanti.Open();
+                MySqlCommand sehiridcekme = new MySqlCommand("SELECT yolcu_adi,yolcu_soyadi,yolcu_mail FROM yolcular WHERE (yolcu_id=@yolcu)", baglanti);
+                sehiridcekme.Parameters.AddWithValue("@yolcu", iptalkisiid);
+                MySqlDataReader dr = sehiridcekme.ExecuteReader();
+                if (dr.Read())
+                {
+                    //seçilen hücrenin içindeki şehrin adını lbl yazdırma
+                     iptalkisiad= (dr["yolcu_adi"]).ToString();
+                     iptalkisisoyad= (dr["yolcu_soyadi"]).ToString();
+                     iptalkisimail= (dr["yolcu_mail"]).ToString();
+
+                }
+                baglanti.Close();
+            }
+            catch
+            {
+
+            }
+
             try
             {
                 //biletler tablosundan seçilen bileti silme
@@ -79,8 +102,21 @@ namespace ucakotomasyon
                 HataBox.text = "Bilet Başarıyla Silindi";
                 f.hataresim.Visible = false;
                 f.onayresim.Visible = true;
-
                 f.Show();
+
+
+                konu = "TUNEX TURİZM BİLET İPTAL TALEBİNİZ ONAYLANMIŞTIR.";
+                icerik = "SAYIN "+ iptalkisiad+" "+ iptalkisisoyad +" İPTAL TALEBİ OLUŞTURDUĞUNUZ " + iptalkoltukid +" Koltuk Numaralı "+ biletid +" Numaralı Biletiniz Başarıyla Silinmiştir.";
+                mailgonder email = new mailgonder();
+                email.mailyolla(iptalkisimail, konu, icerik);
+                HataBox f12 = new HataBox();
+                HataBox.mesaj = "Bilet bilgisi";
+                HataBox.text = iptalkisiad + " " + iptalkisisoyad + " İsimli \nKullanıcının Mail Adresine \nBilgilendirme Yapılmıştır.";
+                f12.hataresim.Visible = false;
+                f12.onayresim.Visible = true;
+                f12.Show();
+
+
             }
             catch (Exception ex)
             {
@@ -106,6 +142,7 @@ namespace ucakotomasyon
             biletid = ucustable.Rows[satirsayisi].Cells[1].Value.ToString();
             iptalkoltukid = ucustable.Rows[satirsayisi].Cells[3].Value.ToString();
             iptalucusid = ucustable.Rows[satirsayisi].Cells[2].Value.ToString();
+            iptalkisiid = ucustable.Rows[satirsayisi].Cells[4].Value.ToString();
        
         }
     }
