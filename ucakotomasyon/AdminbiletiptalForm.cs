@@ -106,7 +106,129 @@ namespace ucakotomasyon
 
 
                 konu = "TUNEX TURİZM BİLET İPTAL TALEBİNİZ ONAYLANMIŞTIR.";
-                icerik = "SAYIN "+ iptalkisiad+" "+ iptalkisisoyad +" İPTAL TALEBİ OLUŞTURDUĞUNUZ " + iptalkoltukid +" Koltuk Numaralı "+ biletid +" Numaralı Biletiniz Başarıyla Silinmiştir.";
+
+                icerik = "<html>" +
+                                                       "<div align=center><img src = https://i.hizliresim.com/qeh85fy.png  width=350px height=100px   alt=\"TUNEX TURİZM\"></div>" +
+                                                       " <head>" +
+                                                       "  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>" +
+                                                       "  <style type='text/css'>" +
+
+                                                       " .onayla" +
+                                                       " {" +
+                                                            " background-color:#33FFFF;" +
+                                                            " cursor:pointer;" +
+                                                            " height:50px;" +
+                                                            "  width:398px;" +
+                                                            " color:#FFFFFF;" +
+                                                       " }" +
+                                                       " .onayla:hover" +
+                                                       " {" +
+                                                            " background-color:#66CDAA;" +
+                                                       " }" +
+                                                       " .onayla:active" +
+                                                       " {" +
+                                                            " background-color:#2E8B57;" +
+                                                       " }" +
+                                                       " .onayla a" +
+                                                       " {" +
+                                                            " text-decoration:none;" +
+                                                            " color:white;" +
+                                                            " width:100%;" +
+                                                            " height:100%;" +
+                                                            " display:block;" +
+                                                            " padding-top:13px;" +
+                                                            " overflow:hidden;" +
+                                                       " }" +
+
+
+                                                       " .link1" +
+                                                       " {" +
+                                                            " background-color:#6633FF;" +
+                                                            "cursor:pointer;" +
+                                                            " height:50px;" +
+                                                            " width:400px;" +
+                                                            "color:#FFFFFF;" +
+                                                       " }" +
+                                                       " .link1:hover" +
+                                                       " {" +
+                                                            " background-color:#FFA07A;" +
+                                                       " }" +
+                                                       " .link1:active" +
+                                                       " {" +
+                                                            " background-color:#CD5C5C;" +
+                                                       " }" +
+                                                       " .link1 a" +
+                                                       " {" +
+                                                            " text-decoration:none;" +
+                                                            " color:white;" +
+                                                            " width:100%;" +
+                                                            " height:100%;" +
+                                                            " display:block;" +
+                                                            " padding-top:13px;" +
+                                                            " overflow:hidden;" +
+                                                       " }" +
+
+
+                                                       " .link2" +
+                                                       " {" +
+                                                            " background-color:#1E90FF;" +
+                                                            " cursor:pointer;" +
+                                                            " color:#FFFFFF;" +
+                                                            " width:800px;" +
+                                                            "height:50px;" +
+                                                       " }" +
+                                                       " .link2:hover" +
+                                                       " {" +
+                                                            " background-color:#00BFFF;" +
+                                                       " }" +
+                                                       " .link2:active" +
+                                                       " {" +
+                                                            " background-color:#0000FF;" +
+                                                       " }" +
+                                                       " .link2 a" +
+                                                       " {" +
+                                                            " text-decoration:none;" +
+                                                            " color:white;" +
+                                                            " width:100%;" +
+                                                            " height:100%;" +
+                                                            " display:block;" +
+                                                            " padding-top:13px;" +
+                                                            " overflow:hidden;" +
+                                                       " }" +
+                                                       " </style>" +
+                                                       " </head>" +
+                                                       " <body>" +
+                                                         " <table border='1' cellpadding='0' cellspacing='0' align='center'>" +
+                                                           " <tr>" +
+                                                             " <td align='center' style='height:50px; width:800px;'  bgcolor='6633CC'><b><font color='FFFFFF'>TUNEX TURİZM BİLET İPTAL TALEBİNİZ ONAYLANMIŞTIR.</font></b></td>" +
+                                                           " </tr>" +
+                                                         " </table>" +
+
+
+
+                                                         " <table border='1' cellpadding='0' cellspacing='0' align='center'>" +
+                                                           " <td align='center' height='30' width='800' bgcolor='DCDCDC'><b>İPTAL BİLGİLERİ</b></td>" +
+                                                         " </table>" +
+
+                                                         " <table border='1' cellpadding='0' cellspacing='0' align='center'>" +
+                                                           " <td align='right' height='100' width='200' bgcolor='DCDCDC'><b>SAYIN</b> <br> <b>KOLTUK NO: </b> <br> <b>BİLET NO: </b> <br> <b>BİLGİ: </b> <br><br></b></td>" +
+                                                           " <td align='left' height='100' width='598'>: "+ iptalkisiad+" "+iptalkisisoyad + " <br>" + iptalkoltukid + "<br>"+ biletid + "<br> YUKARIDA BİLGİLERİ VERİLEN iPTAL TALEBİ OLUŞTURULMUŞ UÇUŞ BİLETİNİZİN İPTAL İŞLEMLERİ TAMAMLANMIŞTIR. </td>" +
+                                                         " </table>" +
+
+
+
+                                                         " <table border='1' cellpadding='0' style='height:50px; width:800px;' cellspacing='0' align='center'>" +
+                                                           " <tr>" +
+                                                             " <td class='onayla' align='center'> <a href='http://digitalepinsatis.com/prestashop/tr/'>Diğer Şirketlerimiz(DigitalE-PİN)</a> </td>" +
+                                                             " <td class='link1' align='center'> <a href='https://www.instagram.com/emreekrnfl/'>Destek ve iletişim için Tıkla</a> </td>" +
+                                                           " </tr>" +
+                                                         " </table>" +
+
+                                                         " <table border='1' cellpadding='0' cellspacing='0' align='center'>" +
+                                                           " <td class='link2' align='center'> <a href='https://www.google.com'>Kullanım Şartları</a> </td>  " +
+                                                         " </table> " +
+                                                       " </body>" +
+                                                       " </html>";
                 mailgonder email = new mailgonder();
                 email.mailyolla(iptalkisimail, konu, icerik);
                 HataBox f12 = new HataBox();

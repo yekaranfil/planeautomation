@@ -253,6 +253,16 @@ namespace ucakotomasyon.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_verified_account_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_verified_account_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap kullanici {
             get {
                 object obj = ResourceManager.GetObject("kullanici", resourceCulture);

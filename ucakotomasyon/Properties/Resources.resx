@@ -124,9 +124,6 @@
   <data name="arkapan giriş" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arkapan giriş.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arkaplan üst" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arkaplan üst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Secili" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Secili.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,6 +148,9 @@
   <data name="mailbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mailbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="biletiptal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\biletiptal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Secili1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Secili1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,20 +166,23 @@
   <data name="cikisbutonu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cikisbutonu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yonetici" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yonetici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Dolu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dolu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gidisgelis1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gidisgelis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Varlık 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Varlık 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Varlık 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Varlık 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="carpi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carpi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="destekbutonbeyaz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\destekbutonbeyaz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +202,8 @@
   <data name="ucak1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ucak1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="destekbutonbeyaz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\destekbutonbeyaz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arkaplan üst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arkaplan üst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dolu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dolu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,8 +220,8 @@
   <data name="adminpanel_1_1210x770" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adminpanel_1_1210x770.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="biletiptal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\biletiptal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="yonetici" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yonetici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Destekkutusu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Destekkutusu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,7 +232,7 @@
   <data name="gidisgelis2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gidisgelis2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Varlık 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Varlık 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_verified_account_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_verified_account_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

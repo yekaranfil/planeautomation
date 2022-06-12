@@ -505,6 +505,7 @@
     <None Include="Resources\Varlık 2.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8_verified_account_32.png" />
     <Content Include="tunexucaklogo.ico" />
   </ItemGroup>
   <ItemGroup>

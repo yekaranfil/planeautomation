@@ -133,6 +133,7 @@
             this.ucustable.Name = "ucustable";
             this.ucustable.ReadOnly = true;
             this.ucustable.RowHeadersVisible = false;
+            this.ucustable.RowTemplate.Height = 35;
             this.ucustable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ucustable.Size = new System.Drawing.Size(992, 280);
             this.ucustable.TabIndex = 84;
@@ -155,7 +156,7 @@
             this.ucustable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ucustable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.ucustable.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.ucustable.ThemeStyle.RowsStyle.Height = 22;
+            this.ucustable.ThemeStyle.RowsStyle.Height = 35;
             this.ucustable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ucustable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.ucustable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ucustable_CellClick);

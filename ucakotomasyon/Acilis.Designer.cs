@@ -60,10 +60,10 @@
             // 
             this.hatayazi.AutoSize = true;
             this.hatayazi.BackColor = System.Drawing.Color.Transparent;
-            this.hatayazi.Font = new System.Drawing.Font("Exo 2 SemiBold", 13.25F, System.Drawing.FontStyle.Bold);
+            this.hatayazi.Font = new System.Drawing.Font("Exo 2 SemiBold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.hatayazi.Location = new System.Drawing.Point(326, 404);
             this.hatayazi.Name = "hatayazi";
-            this.hatayazi.Size = new System.Drawing.Size(112, 27);
+            this.hatayazi.Size = new System.Drawing.Size(132, 31);
             this.hatayazi.TabIndex = 4;
             this.hatayazi.Text = "Yükleniyor...";
             // 
