@@ -749,7 +749,7 @@ namespace ucakotomasyon
 
             {
                 HataBox f = new HataBox();
-                HataBox.mesaj = "Uçuş arama";
+                HataBox.mesaj = "Uçuş Arama";
                 HataBox.text = "Hatalı Seçim";
                 f.hataresim.Visible = true;
                 f.onayresim.Visible = false;
