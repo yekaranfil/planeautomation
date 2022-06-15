@@ -163,7 +163,7 @@ namespace ucakotomasyon
 
 
 
-            //şehir ad çekme
+            //şehir adi çekme
             try
             {
                 baglanti.Close();
@@ -173,7 +173,7 @@ namespace ucakotomasyon
                 MySqlDataReader dr = sehirid.ExecuteReader();
                 while (dr.Read())
                 {
-                    //sehir id alma
+                    //sehir adi alma
                     neredenad = (dr["sehir_ad"]).ToString();
 
                 }
@@ -186,7 +186,7 @@ namespace ucakotomasyon
             }
 
 
-            //şehir ad çekme
+            //şehir adi çekme
             try
             {
                 baglanti.Close();
@@ -196,7 +196,7 @@ namespace ucakotomasyon
                 MySqlDataReader dr = sehirid.ExecuteReader();
                 while (dr.Read())
                 {
-                    //sehir id alma
+                    //sehir adi alma
                     nereyead = (dr["sehir_ad"]).ToString();
 
                 }
