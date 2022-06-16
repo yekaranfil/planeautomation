@@ -328,7 +328,7 @@ namespace ucakotomasyon
                     {
                         HataBox f12 = new HataBox();
                         HataBox.mesaj = "Bilet bilgisi";
-                        HataBox.text = "MAİL GÖNDERİLEMEDİ";
+                        HataBox.text = "MAİL BİLGİSİ GÖNDERİLEMEDİ";
                         f12.hataresim.Visible = true;
                         f12.onayresim.Visible = false;
                         f12.Show();
