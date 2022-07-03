@@ -378,6 +378,11 @@ namespace ucakotomasyon
             }
         }
 
+        private void gunaTransfarantPictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void geributon_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -219,6 +219,7 @@
     <Compile Include="SeferEkleForm.Designer.cs">
       <DependentUpon>SeferEkleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SqlBaglanti.cs" />
     <Compile Include="UcakBilgileri.cs" />
     <Compile Include="UcakGuncelle.cs">
       <SubType>Form</SubType>
