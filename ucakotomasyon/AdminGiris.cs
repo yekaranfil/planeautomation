@@ -19,13 +19,12 @@ namespace ucakotomasyon
         {
             InitializeComponent();
         }
-        MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
 
         private void kayitbuton2_Click(object sender, EventArgs e)
         {
-            baglanti.Close();
-            baglanti.Open();
-            MySqlCommand kontroltc = new MySqlCommand("SELECT admin_kullanici_adi,admin_sifre FROM adminler WHERE (admin_kullanici_adi = @kullanici AND admin_sifre = @sifre)", baglanti);
+            SqlBaglanti.baglanti.Close();
+            SqlBaglanti.baglanti.Open();
+            MySqlCommand kontroltc = new MySqlCommand("SELECT admin_kullanici_adi,admin_sifre FROM adminler WHERE (admin_kullanici_adi = @kullanici AND admin_sifre = @sifre)", SqlBaglanti.baglanti);
             kontroltc.Parameters.AddWithValue("@kullanici", txtgiris.Text);
             kontroltc.Parameters.AddWithValue("@sifre", txtgirissifre.Text);
             MySqlDataReader dr = kontroltc.ExecuteReader();

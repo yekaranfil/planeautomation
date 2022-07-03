@@ -13,7 +13,6 @@ namespace ucakotomasyon
 {
     public partial class dogrulamaform : Form
     {
-        MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
         public dogrulamaform()
         {
             InitializeComponent();

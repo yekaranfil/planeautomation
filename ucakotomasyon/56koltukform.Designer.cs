@@ -221,6 +221,7 @@
             this.gunaTransfarantPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaTransfarantPictureBox2.TabIndex = 141;
             this.gunaTransfarantPictureBox2.TabStop = false;
+            this.gunaTransfarantPictureBox2.Click += new System.EventHandler(this.gunaTransfarantPictureBox2_Click);
             // 
             // gunaTransfarantPictureBox3
             // 

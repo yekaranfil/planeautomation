@@ -13,7 +13,6 @@ namespace ucakotomasyon
 {
     public partial class AdminbiletiptalForm : Form
     {
-        MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
         public AdminbiletiptalForm()
         {
             InitializeComponent();
@@ -28,9 +27,9 @@ namespace ucakotomasyon
             try
             {
                 //Tabloya uçuşları listeleme
-                baglanti.Close();
-                baglanti.Open();
-                MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM iptaltalebi", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM iptaltalebi", SqlBaglanti.baglanti);
                 data = new DataSet();
                 dr.Fill(tablo);
                 ucustable.DataSource = tablo;
@@ -54,9 +53,9 @@ namespace ucakotomasyon
 
             try
             {
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand sehiridcekme = new MySqlCommand("SELECT yolcu_adi,yolcu_soyadi,yolcu_mail FROM yolcular WHERE (yolcu_id=@yolcu)", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlCommand sehiridcekme = new MySqlCommand("SELECT yolcu_adi,yolcu_soyadi,yolcu_mail FROM yolcular WHERE (yolcu_id=@yolcu)", SqlBaglanti.baglanti);
                 sehiridcekme.Parameters.AddWithValue("@yolcu", iptalkisiid);
                 MySqlDataReader dr = sehiridcekme.ExecuteReader();
                 if (dr.Read())
@@ -67,7 +66,7 @@ namespace ucakotomasyon
                      iptalkisimail= (dr["yolcu_mail"]).ToString();
 
                 }
-                baglanti.Close();
+                SqlBaglanti.baglanti.Close();
             }
             catch
             {
@@ -77,26 +76,26 @@ namespace ucakotomasyon
             try
             {
                 //biletler tablosundan seçilen bileti silme
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand biletsilme = new MySqlCommand("DELETE FROM biletler_has_yolcular WHERE biletler_bilet_id=@biletid", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlCommand biletsilme = new MySqlCommand("DELETE FROM biletler_has_yolcular WHERE biletler_bilet_id=@biletid", SqlBaglanti.baglanti);
                 biletsilme.Parameters.AddWithValue("@biletid", biletid);
                 biletsilme.ExecuteNonQuery();
 
 
 
                 //talepler tablosundan seçilen bileti silme
-                MySqlCommand talepsilme = new MySqlCommand("DELETE FROM iptaltalebi WHERE talep_id=@talepid", baglanti);
+                MySqlCommand talepsilme = new MySqlCommand("DELETE FROM iptaltalebi WHERE talep_id=@talepid", SqlBaglanti.baglanti);
                 talepsilme.Parameters.AddWithValue("@talepid", talepid);
                 talepsilme.ExecuteNonQuery();
 
                 //Silinen biletlerin koltuklarını boşa çevirme
-                MySqlCommand koltukguncelle = new MySqlCommand("UPDATE koltuklar_has_ucaklar SET dolubos=@doluluk WHERE ucuslar_ucus_id=@ucusid AND koltuklar_koltuk_id=@koltuk", baglanti);
+                MySqlCommand koltukguncelle = new MySqlCommand("UPDATE koltuklar_has_ucaklar SET dolubos=@doluluk WHERE ucuslar_ucus_id=@ucusid AND koltuklar_koltuk_id=@koltuk", SqlBaglanti.baglanti);
                 koltukguncelle.Parameters.AddWithValue("@ucusid", iptalucusid);
                 koltukguncelle.Parameters.AddWithValue("@koltuk", iptalkoltukid);
                 koltukguncelle.Parameters.AddWithValue("@doluluk", doluluk);
                 koltukguncelle.ExecuteNonQuery();
-                baglanti.Close();
+                SqlBaglanti.baglanti.Close();
                 HataBox f = new HataBox();
                 HataBox.mesaj = "Bilet Silme";
                 HataBox.text = "Bilet Başarıyla Silindi";

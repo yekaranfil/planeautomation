@@ -100,6 +100,7 @@
             this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaTransfarantPictureBox1.TabIndex = 53;
             this.gunaTransfarantPictureBox1.TabStop = false;
+            this.gunaTransfarantPictureBox1.Click += new System.EventHandler(this.gunaTransfarantPictureBox1_Click);
             // 
             // nereyelbl
             // 

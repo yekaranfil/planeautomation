@@ -14,7 +14,6 @@ namespace ucakotomasyon
 {
     public partial class UcusGuncelleForm : Form
     {
-        MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
         DataTable tablo = new DataTable();
         DataSet data = new DataSet();
         MySqlCommandBuilder upt = new MySqlCommandBuilder();
@@ -33,9 +32,9 @@ namespace ucakotomasyon
             {
 
                 //Tabloya uçuşları listeleme
-                baglanti.Close();
-                baglanti.Open();
-                MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM ucuslar", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM ucuslar", SqlBaglanti.baglanti);
                 data = new DataSet();
                 dr.Fill(tablo);
                 ucustable.DataSource = tablo;
@@ -49,9 +48,9 @@ namespace ucakotomasyon
             //combobox şehir bilgisi çekme
             try
             {
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand kontrolsehir = new MySqlCommand("SELECT sehir_ad FROM sehirler", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlCommand kontrolsehir = new MySqlCommand("SELECT sehir_ad FROM sehirler", SqlBaglanti.baglanti);
                 MySqlDataReader dr = kontrolsehir.ExecuteReader();
                 while (dr.Read())
                 {
@@ -70,9 +69,9 @@ namespace ucakotomasyon
             {
 
                 //comboboxa uçakları listeleme
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand ucakekle = new MySqlCommand("SELECT *FROM ucaklar", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlCommand ucakekle = new MySqlCommand("SELECT *FROM ucaklar", SqlBaglanti.baglanti);
                 MySqlDataReader dr = ucakekle.ExecuteReader();
                 while (dr.Read())
                 {
@@ -115,9 +114,9 @@ namespace ucakotomasyon
             // tablodaki verileri güncelleyip veritabanına kaydetme
             try
             {
-                baglanti.Close();
-                baglanti.Open();
-                MySqlDataAdapter dr = new MySqlDataAdapter("SELECT *FROM ucuslar", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlDataAdapter dr = new MySqlDataAdapter("SELECT *FROM ucuslar", SqlBaglanti.baglanti);
                 data = new DataSet();
                 upt = new MySqlCommandBuilder(dr);
                 tablo = (DataTable)ucustable.DataSource;
@@ -157,9 +156,9 @@ namespace ucakotomasyon
                 //alınan id ile şehir adını çekme
                 try
                 {
-                    baglanti.Close();
-                    baglanti.Open();
-                    MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", baglanti);
+                    SqlBaglanti.baglanti.Close();
+                    SqlBaglanti.baglanti.Open();
+                    MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", SqlBaglanti.baglanti);
                     kontrolfirma.Parameters.AddWithValue("@sehirid", deger);
                     MySqlDataReader dr = kontrolfirma.ExecuteReader();
                     while (dr.Read())
@@ -178,9 +177,9 @@ namespace ucakotomasyon
                 try
                 {
 
-                    baglanti.Close();
-                    baglanti.Open();
-                    MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", baglanti);
+                    SqlBaglanti.baglanti.Close();
+                    SqlBaglanti.baglanti.Open();
+                    MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_ad FROM sehirler WHERE (sehir_id=@sehirid)", SqlBaglanti.baglanti);
                     kontrolfirma.Parameters.AddWithValue("@sehirid", deger1);
                     MySqlDataReader dr = kontrolfirma.ExecuteReader();
                     while (dr.Read())
@@ -213,9 +212,9 @@ namespace ucakotomasyon
             //secilen nereden şehrin idsini tabloya aktarma
             try
             {
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlCommand kontrolfirma = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", SqlBaglanti.baglanti);
                 kontrolfirma.Parameters.AddWithValue("@sehirad", neredenbox.SelectedItem);
                 MySqlDataReader dr = kontrolfirma.ExecuteReader();
                 while (dr.Read())
@@ -238,9 +237,9 @@ namespace ucakotomasyon
             //secilen nereye şehrin idsini tabloya aktarma
             try
             {
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand kontrolsehir = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlCommand kontrolsehir = new MySqlCommand("SELECT sehir_id FROM sehirler WHERE (sehir_ad=@sehirad)", SqlBaglanti.baglanti);
                 kontrolsehir.Parameters.AddWithValue("@sehirad", nereyebox.SelectedItem);
                 MySqlDataReader dr = kontrolsehir.ExecuteReader();
                 while (dr.Read())
@@ -265,9 +264,9 @@ namespace ucakotomasyon
                 secim = ucaksecimbox.SelectedItem.ToString();
 
                 // uçak ve firma id çekme
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand ucakidcekme = new MySqlCommand("SELECT ucak_id,firmalar_firmalar_id FROM ucaklar WHERE (ucak_plaka=@ucakplaka)", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlCommand ucakidcekme = new MySqlCommand("SELECT ucak_id,firmalar_firmalar_id FROM ucaklar WHERE (ucak_plaka=@ucakplaka)", SqlBaglanti.baglanti);
                 ucakidcekme.Parameters.AddWithValue("@ucakplaka", secim.Substring(13, 6));
                 MySqlDataReader dr = ucakidcekme.ExecuteReader();
                 if (dr.Read())
@@ -318,12 +317,12 @@ namespace ucakotomasyon
             //seçilen uçuşu silme
             try
             {
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand ucussilme = new MySqlCommand("DELETE FROM ucuslar WHERE ucus_id=@ucusid", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlCommand ucussilme = new MySqlCommand("DELETE FROM ucuslar WHERE ucus_id=@ucusid", SqlBaglanti.baglanti);
                 ucussilme.Parameters.AddWithValue("@ucusid", ucustable.Rows[satirsayisi].Cells[0].Value);
                 ucussilme.ExecuteNonQuery();
-                baglanti.Close();
+                SqlBaglanti.baglanti.Close();
                 HataBox f = new HataBox();
                 HataBox.mesaj = "Uçuş silme";
                 HataBox.text = "Uçuş Başarıyla Silindi";

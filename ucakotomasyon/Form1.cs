@@ -16,7 +16,6 @@ namespace ucakotomasyon
 
     public partial class Form1 : Form
     {
-        MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
 
         internal void kayitbuton2_Click()
         {
@@ -197,9 +196,9 @@ namespace ucakotomasyon
             _tcno = txtgiris.Text;
             _sifre = txtgirissifre.Text;
 
-            baglanti.Close();
-            baglanti.Open();
-            MySqlCommand kontroltc = new MySqlCommand("SELECT yolcu_tc,yolcu_sifre FROM yolcular WHERE (yolcu_tc = @tc AND yolcu_sifre = @sifre)", baglanti);
+            SqlBaglanti.baglanti.Close();
+            SqlBaglanti.baglanti.Open();
+            MySqlCommand kontroltc = new MySqlCommand("SELECT yolcu_tc,yolcu_sifre FROM yolcular WHERE (yolcu_tc = @tc AND yolcu_sifre = @sifre)", SqlBaglanti.baglanti);
             kontroltc.Parameters.AddWithValue("@tc", _tcno);
             kontroltc.Parameters.AddWithValue("@sifre", _sifre);
             MySqlDataReader dr = kontroltc.ExecuteReader();
@@ -226,9 +225,9 @@ namespace ucakotomasyon
             }
             if (kisitc != "")
             {
-                baglanti.Close();
-                baglanti.Open();
-                MySqlCommand idkontrol = new MySqlCommand("SELECT yolcu_id FROM yolcular WHERE (yolcu_tc = @tc)", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlCommand idkontrol = new MySqlCommand("SELECT yolcu_id FROM yolcular WHERE (yolcu_tc = @tc)", SqlBaglanti.baglanti);
                 idkontrol.Parameters.AddWithValue("@tc", kisitc);
                 MySqlDataReader dr1 = idkontrol.ExecuteReader();
 
@@ -236,7 +235,7 @@ namespace ucakotomasyon
                 {
                     kisiid = dr1["yolcu_id"].ToString();
                 }
-               baglanti.Close();
+               SqlBaglanti.baglanti.Close();
             }
             //giriş ekranı veritabanı tc şifre kontrolü bitiş
 
@@ -303,11 +302,11 @@ namespace ucakotomasyon
             _sikayetmail = maildestekbox.Text;
             _sikayetmetin = destekbox.Text;
 
-            baglanti.Close();
-            baglanti.Open();
-            MySqlCommand sikayetkomut = new MySqlCommand("INSERT INTO sikayetler (sikayet_metin,sikayet_mail) VALUES ('" + _sikayetmetin + "','" + _sikayetmail + "')", baglanti);
+            SqlBaglanti.baglanti.Close();
+            SqlBaglanti.baglanti.Open();
+            MySqlCommand sikayetkomut = new MySqlCommand("INSERT INTO sikayetler (sikayet_metin,sikayet_mail) VALUES ('" + _sikayetmetin + "','" + _sikayetmail + "')", SqlBaglanti.baglanti);
             sikayetkomut.ExecuteNonQuery();
-            baglanti.Close();
+            SqlBaglanti.baglanti.Close();
             HataBox f = new HataBox();
             HataBox.mesaj = "Talep Oluşturuldu";
             HataBox.text = "Talebiniz başarılı bir şekilde \nGönderilmiştir!";
@@ -373,9 +372,9 @@ namespace ucakotomasyon
                 //tc veritabanına kayıtlı mı ?
                 else if (TcKontrol() == true)
                 {
-                    baglanti.Close();
-                    baglanti.Open();
-                    MySqlCommand kayitkomuttc = new MySqlCommand("SELECT yolcu_tc FROM yolcular WHERE yolcu_tc = @tc", baglanti);
+                    SqlBaglanti.baglanti.Close();
+                    SqlBaglanti.baglanti.Open();
+                    MySqlCommand kayitkomuttc = new MySqlCommand("SELECT yolcu_tc FROM yolcular WHERE yolcu_tc = @tc", SqlBaglanti.baglanti);
                     kayitkomuttc.Parameters.AddWithValue("@tc", _tcno);
                     MySqlDataReader dr = kayitkomuttc.ExecuteReader();
                     if (dr.Read())
@@ -391,11 +390,11 @@ namespace ucakotomasyon
                     {
                         //baglanti veri kaydı
                         errorProvider1.Clear();
-                        baglanti.Close();
-                        baglanti.Open();
-                        MySqlCommand kayitkomut1 = new MySqlCommand("INSERT INTO yolcular (yolcu_tc,yolcu_mail,yolcu_sifre,cinsiyetler_cinsiyet_id,yolcu_adi,yolcu_soyadi) VALUES ('" + _tcno + "','" + _mail + "','" + _sifre + "','0','" + _ad + "','" + _soyad + "')", baglanti);
+                        SqlBaglanti.baglanti.Close();
+                        SqlBaglanti.baglanti.Open();
+                        MySqlCommand kayitkomut1 = new MySqlCommand("INSERT INTO yolcular (yolcu_tc,yolcu_mail,yolcu_sifre,cinsiyetler_cinsiyet_id,yolcu_adi,yolcu_soyadi) VALUES ('" + _tcno + "','" + _mail + "','" + _sifre + "','0','" + _ad + "','" + _soyad + "')", SqlBaglanti.baglanti);
                         kayitkomut1.ExecuteNonQuery();
-                        baglanti.Close();
+                        SqlBaglanti.baglanti.Close();
                         HataBox f = new HataBox();
                         HataBox.mesaj = "Kayıt Başarılı";
                         HataBox.text = "Kaydınız başarılı bir şekilde \ntamamlanmıştır!";

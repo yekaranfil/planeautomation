@@ -15,7 +15,6 @@ namespace ucakotomasyon
     public partial class _72koltukform : Form
     {
 
-        MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
 
         public _72koltukform()
         {
@@ -49,9 +48,10 @@ namespace ucakotomasyon
 
         void LogAl()
         {
-            baglanti.Open();
+            SqlBaglanti.baglanti.Close();
+            SqlBaglanti.baglanti.Open();
             //string sql = "SELECT * FROM satis WHERE arac_id=" + arac_id + " AND sefer_id=" + sefer_id + " AND sefer_tarihi=" + tarih + "AND sefer_saati='"+ tarih_saat +"'";
-            MySqlCommand dolukoltuk = new MySqlCommand("SELECT koltuklar_koltuk_id FROM koltuklar_has_ucaklar WHERE dolubos=@doluluk AND ucuslar_ucus_id=@ucus", baglanti);
+            MySqlCommand dolukoltuk = new MySqlCommand("SELECT koltuklar_koltuk_id FROM koltuklar_has_ucaklar WHERE dolubos=@doluluk AND ucuslar_ucus_id=@ucus", SqlBaglanti.baglanti);
             dolukoltuk.Parameters.AddWithValue("@doluluk", dolu);
             dolukoltuk.Parameters.AddWithValue("@ucus", AnaSayfa.biletucusid);
             MySqlDataReader dr1 = dolukoltuk.ExecuteReader();
@@ -64,7 +64,7 @@ namespace ucakotomasyon
                 s.BackgroundImage = ucakotomasyon.Properties.Resources.Dolu1;
                 s.Enabled = false;
             }
-            baglanti.Close();//
+            SqlBaglanti.baglanti.Close();//
         }
 
        
@@ -134,51 +134,51 @@ namespace ucakotomasyon
             for (int i = 0; i < secilenkoltuk.Count; i++)
             {
 
-                baglanti.Close();
-                baglanti.Open();
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
                 //boş bilet oluşturma
-                MySqlCommand biletekle = new MySqlCommand("INSERT INTO biletler (biletadi) VALUES ('" + "a" + "')", baglanti);
+                MySqlCommand biletekle = new MySqlCommand("INSERT INTO biletler (biletadi) VALUES ('" + "a" + "')", SqlBaglanti.baglanti);
                 biletekle.ExecuteNonQuery();
-                baglanti.Close();
-              
-                baglanti.Close();
-                baglanti.Open();
+                SqlBaglanti.baglanti.Close();
+
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
                 //boş bilet çekme
-                MySqlCommand biletcek = new MySqlCommand("SELECT bilet_id FROM biletler ORDER BY bilet_id DESC", baglanti);
+                MySqlCommand biletcek = new MySqlCommand("SELECT bilet_id FROM biletler ORDER BY bilet_id DESC", SqlBaglanti.baglanti);
                 MySqlDataReader dr1 = biletcek.ExecuteReader();
                 if (dr1.Read())
                 {
                     bltid = dr1["bilet_id"].ToString();
 
                 }
-                baglanti.Close();
+                SqlBaglanti.baglanti.Close();
 
 
 
-              
+
 
 
 
                 //bileti kaydetme
-                baglanti.Close();
-                baglanti.Open();
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
 
-                MySqlCommand seferekleme = new MySqlCommand("INSERT INTO biletler_has_yolcular (biletler_bilet_id,yolcular_yolcu_id,ucuslar_ucus_id, koltukno,bilettur) VALUES ('" + bltid + "','" + Form1.kisiid + "','" + AnaSayfa.biletucusid + "','" + secilenkoltuk[i].ToString() + "','" + AnaSayfa.biletturu + "' )", baglanti);
+                MySqlCommand seferekleme = new MySqlCommand("INSERT INTO biletler_has_yolcular (biletler_bilet_id,yolcular_yolcu_id,ucuslar_ucus_id, koltukno,bilettur) VALUES ('" + bltid + "','" + Form1.kisiid + "','" + AnaSayfa.biletucusid + "','" + secilenkoltuk[i].ToString() + "','" + AnaSayfa.biletturu + "' )", SqlBaglanti.baglanti);
                 seferekleme.ExecuteNonQuery();
-                baglanti.Close();
+                SqlBaglanti.baglanti.Close();
 
 
 
                 try
                 {
                     //kaydedilen biletin koltuğunu dolu olarak güncelleme
-                    baglanti.Close();
-                    baglanti.Open();
-                    MySqlCommand ucakekleme = new MySqlCommand("UPDATE koltuklar_has_ucaklar SET dolubos='DOLU' WHERE koltuklar_koltuk_id=@koltukid AND ucuslar_ucus_id=@ucusid", baglanti);
+                    SqlBaglanti.baglanti.Close();
+                    SqlBaglanti.baglanti.Open();
+                    MySqlCommand ucakekleme = new MySqlCommand("UPDATE koltuklar_has_ucaklar SET dolubos='DOLU' WHERE koltuklar_koltuk_id=@koltukid AND ucuslar_ucus_id=@ucusid", SqlBaglanti.baglanti);
                     ucakekleme.Parameters.AddWithValue("@ucusid", AnaSayfa.biletucusid);
                     ucakekleme.Parameters.AddWithValue("@koltukid", secilenkoltuk[i]);
                     ucakekleme.ExecuteNonQuery();
-                    baglanti.Close();
+                    SqlBaglanti.baglanti.Close();
 
                     HataBox f1 = new HataBox();
                     HataBox.mesaj = "Bilet bilgisi";
@@ -389,6 +389,11 @@ namespace ucakotomasyon
                 bussinesgrup.Enabled = true;
                 ekonomi.Enabled = false;
             }
+        }
+
+        private void gunaTransfarantPictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void geributon_Click(object sender, EventArgs e)

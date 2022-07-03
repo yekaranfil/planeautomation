@@ -15,7 +15,6 @@ namespace ucakotomasyon
     public partial class AdminDestekForm : Form
     {
 
-        MySqlConnection baglanti = new MySqlConnection("Server=localhost;port=3306;Database=otomasyon;user=root;password=1234;SslMode=none;");
         DataTable tablo = new DataTable();
         DataSet data = new DataSet();
         public AdminDestekForm()
@@ -35,9 +34,9 @@ namespace ucakotomasyon
             {
 
                 //tabloya şikayetleri listeleme
-                baglanti.Close();
-                baglanti.Open();
-                MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM sikayetler", baglanti);
+                SqlBaglanti.baglanti.Close();
+                SqlBaglanti.baglanti.Open();
+                MySqlDataAdapter dr = new MySqlDataAdapter("SELECT * FROM sikayetler", SqlBaglanti.baglanti);
                 data = new DataSet();
                 dr.Fill(tablo);
                 ucustable.DataSource = tablo;
@@ -57,6 +56,10 @@ namespace ucakotomasyon
             metintxt.Text = ucustable.Rows[satirsayisi].Cells[1].Value.ToString();
             
         }
-      
+
+        private void ucustable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
