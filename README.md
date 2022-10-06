@@ -1,5 +1,5 @@
-# UÇAK BİLETİ SATIŞ OTAMASYONU
-Görsel programlama dersi dönem proje ödevi Uçak Bileti Satış Otamasyonu
+# UÇAK BİLETİ SATIŞ OTOMASYONU
+Görsel programlama dersi dönem proje ödevi Uçak Bileti Satış Otomasyonu
 
 ## 🏴 By TuneX 
 ![see](https://i.hizliresim.com/93r66og.png)
